@@ -38,6 +38,19 @@ def slugify(title: str) -> str:
     return re.sub(r'[^a-z0-9]+', '-', title.lower()).strip('-')
 
 
+def parse_date(raw: str) -> str:
+    """Parse date from either ISO (2026-02-04T18:40:34) or compact (20260214_081825) format."""
+    if not raw:
+        return ""
+    if "T" in raw:
+        return raw[:10]  # Already ISO
+    # Compact: YYYYMMDD_HHMMSS
+    m = re.match(r'(\d{4})(\d{2})(\d{2})', raw)
+    if m:
+        return f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
+    return raw[:10]
+
+
 def find_cover(title: str) -> Optional[Path]:
     """Find the cover image for a book title."""
     # Cover files use underscores: cover_Title_Words.png
@@ -160,7 +173,7 @@ def build_catalog(dry_run=False):
         slug = slugify(title)
         tag = f"book-{slug}"
         haiku_count = book.get("haiku_count", 0)
-        date = book.get("generated_at", "")[:10]  # YYYY-MM-DD
+        date = parse_date(book.get("generated_at", ""))
 
         print(f"\n[{title}] by {author}")
 
