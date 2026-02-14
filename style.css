@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #faf8f5;
+    color: #2c2c2c;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    padding: 3rem 1.5rem 1.5rem;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    color: #3a3a3a;
+}
+
+.subtitle {
+    margin-top: 0.5rem;
+    color: #888;
+    font-size: 0.95rem;
+}
+
+.controls {
+    display: flex;
+    gap: 0.75rem;
+    max-width: 500px;
+    margin: 0 auto 0.5rem;
+    padding: 0 1.5rem;
+}
+
+#search {
+    flex: 1;
+    padding: 0.6rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    background: #fff;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+#search:focus {
+    border-color: #999;
+}
+
+#sort {
+    padding: 0.6rem 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    background: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+.book-count {
+    text-align: center;
+    padding: 0.75rem 1.5rem;
+    color: #999;
+    font-size: 0.85rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 2rem;
+    padding: 1rem 2rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    transition: box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    background: #eee;
+}
+
+.card-body {
+    padding: 1rem 1.25rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #2c2c2c;
+    margin-bottom: 0.25rem;
+}
+
+.card-author {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 0.5rem;
+}
+
+.card-meta {
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-bottom: 0.75rem;
+}
+
+.card-downloads {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+.card-downloads a {
+    flex: 1;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.btn-pdf {
+    background: #f0ebe4;
+    color: #5a4a3a;
+}
+
+.btn-pdf:hover {
+    background: #e5ddd3;
+}
+
+.btn-epub {
+    background: #e8ede4;
+    color: #3a5a3a;
+}
+
+.btn-epub:hover {
+    background: #dce5d6;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.pagination button {
+    padding: 0.5rem 0.9rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #555;
+    transition: all 0.2s;
+}
+
+.pagination button:hover {
+    background: #f0ebe4;
+}
+
+.pagination button.active {
+    background: #3a3a3a;
+    color: #fff;
+    border-color: #3a3a3a;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    color: #aaa;
+    font-size: 0.85rem;
+    margin-top: auto;
+}
+
+.no-cover {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: linear-gradient(135deg, #e8e4df, #d4cfc8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #b5afa6;
+}
+
+@media (max-width: 600px) {
+    header { padding: 2rem 1rem 1rem; }
+    header h1 { font-size: 1.8rem; }
+    .controls { flex-direction: column; }
+    .grid { padding: 1rem; gap: 1.5rem; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+}
