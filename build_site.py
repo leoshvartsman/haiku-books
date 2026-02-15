@@ -30,9 +30,24 @@ OUTPUT_DIR = Path.home() / "haikus" / "book_formatter" / "output"
 # GitHub repo for releases
 GITHUB_REPO = "leoshvartsman/haiku-books"
 
+# Base URL for the Cloudflare Worker proxy (serves files with Content-Disposition: inline)
+DOWNLOAD_PROXY = "https://shmindle.com/dl"
+
 # Output
 SITE_DIR = Path(__file__).parent
 CATALOG_FILE = SITE_DIR / "catalog.json"
+
+
+def to_proxy_url(github_url: str) -> str:
+    """Convert a GitHub Release asset URL to use our Cloudflare Worker proxy.
+
+    GitHub: https://github.com/leoshvartsman/haiku-books/releases/download/book-slug/file.pdf
+    Proxy:  https://shmindle.com/dl/book-slug/file.pdf
+    """
+    prefix = f"https://github.com/{GITHUB_REPO}/releases/download/"
+    if github_url.startswith(prefix):
+        return DOWNLOAD_PROXY + "/" + github_url[len(prefix):]
+    return github_url
 
 
 def slugify(title: str) -> str:
@@ -224,14 +239,17 @@ def build_catalog(dry_run=False):
 
             urls = create_release(tag, title, assets)
 
+        pdf_url = urls.get("pdf", "")
+        epub_url = urls.get("epub", "")
         catalog.append({
             "title": title,
             "author": author,
             "haiku_count": haiku_count,
             "date": date,
+            "slug": slug,
             "cover_url": urls.get("cover", ""),
-            "pdf_url": urls.get("pdf", ""),
-            "epub_url": urls.get("epub", ""),
+            "pdf_url": to_proxy_url(pdf_url) if pdf_url else "",
+            "epub_url": to_proxy_url(epub_url) if epub_url else "",
         })
 
     # Sort by date descending
