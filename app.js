@@ -61,7 +61,7 @@ function render() {
                 <div class="card-author">${book.author}</div>
                 <div class="card-meta">${book.haiku_count} haiku</div>
                 <div class="card-downloads">
-                    ${book.pdf_url ? `<a href="${book.pdf_url}" class="btn-pdf" download>PDF</a>` : ''}
+                    ${book.pdf_url ? `<a href="${book.pdf_url}" class="btn-pdf" type="application/pdf">PDF</a>` : ''}
                     ${book.epub_url ? `<a href="${book.epub_url}" class="btn-epub" type="application/epub+zip">EPUB</a>` : ''}
                 </div>
             </div>
