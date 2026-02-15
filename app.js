@@ -54,16 +54,21 @@ function render() {
             ? `<img src="${book.cover_url}" alt="${book.title}" loading="lazy">`
             : `<div class="no-cover">&#x2727;</div>`;
 
+        const slug = book.slug || book.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+        const pageUrl = `books/${slug}.html`;
+
         return `<div class="card">
-            ${coverHtml}
-            <div class="card-body">
-                <div class="card-title">${book.title}</div>
-                <div class="card-author">${book.author}</div>
-                <div class="card-meta">${book.haiku_count} haiku</div>
-                <div class="card-downloads">
-                    ${book.pdf_url ? `<a href="${book.pdf_url}" class="btn-pdf" type="application/pdf">PDF</a>` : ''}
-                    ${book.epub_url ? `<a href="${book.epub_url}" class="btn-epub" type="application/epub+zip">EPUB</a>` : ''}
+            <a href="${pageUrl}" class="card-link">
+                ${coverHtml}
+                <div class="card-body">
+                    <div class="card-title">${book.title}</div>
+                    <div class="card-author">${book.author}</div>
+                    <div class="card-meta">${book.haiku_count} haiku</div>
                 </div>
+            </a>
+            <div class="card-downloads">
+                ${book.pdf_url ? `<a href="${book.pdf_url}" class="btn-pdf" type="application/pdf">PDF</a>` : ''}
+                ${book.epub_url ? `<a href="${book.epub_url}" class="btn-epub" type="application/epub+zip">EPUB</a>` : ''}
             </div>
         </div>`;
     }).join('');

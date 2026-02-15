@@ -11,8 +11,10 @@ Usage:
     python3 build_site.py --dry    # Show what would be uploaded without doing it
 """
 
+import html
 import json
 import re
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -243,9 +245,249 @@ def build_catalog(dry_run=False):
     print(f"Catalog written: {CATALOG_FILE}")
     print(f"Books in catalog: {len(catalog)}")
 
+    # Generate individual book pages
+    if not dry_run:
+        generate_book_pages(catalog, index)
+        generate_sitemap(catalog)
+        generate_robots()
+
     # Cleanup tmp
-    import shutil
     shutil.rmtree(tmp_dir, ignore_errors=True)
+
+
+def extract_sample_haiku(book_index_entry: Dict, count: int = 6) -> List[str]:
+    """Extract sample haiku from a book's text file."""
+    book_txt = book_index_entry.get("files", {}).get("book_txt", "")
+    if not book_txt:
+        return []
+
+    # Try both possible base paths
+    for base in [PIPELINE_DIR, Path.home() / "haikus" / "haiku-generator"]:
+        path = base / book_txt if not Path(book_txt).is_absolute() else Path(book_txt)
+        if path.exists():
+            break
+    else:
+        return []
+
+    try:
+        text = path.read_text(encoding='utf-8')
+    except Exception:
+        return []
+
+    # Extract haiku: lines starting with a number followed by a period
+    haiku_list = []
+    lines = text.split('\n')
+    i = 0
+    while i < len(lines):
+        line = lines[i].strip()
+        if re.match(r'^\d+\.\s*$', line):
+            # Next 3 lines are the haiku
+            h_lines = []
+            for j in range(1, 4):
+                if i + j < len(lines) and lines[i + j].strip():
+                    h_lines.append(lines[i + j].strip())
+            if len(h_lines) == 3:
+                haiku_list.append('\n'.join(h_lines))
+            i += 4
+        else:
+            i += 1
+
+    # Pick evenly spaced samples
+    if len(haiku_list) <= count:
+        return haiku_list
+    step = len(haiku_list) / count
+    return [haiku_list[int(i * step)] for i in range(count)]
+
+
+def extract_intro(book_index_entry: Dict) -> str:
+    """Extract the book introduction from the text file."""
+    book_txt = book_index_entry.get("files", {}).get("book_txt", "")
+    if not book_txt:
+        return ""
+
+    for base in [PIPELINE_DIR, Path.home() / "haikus" / "haiku-generator"]:
+        path = base / book_txt if not Path(book_txt).is_absolute() else Path(book_txt)
+        if path.exists():
+            break
+    else:
+        return ""
+
+    try:
+        text = path.read_text(encoding='utf-8')
+    except Exception:
+        return ""
+
+    # Intro is between the header block and the first section
+    lines = text.split('\n')
+    intro_lines = []
+    in_intro = False
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith('=' * 10) and not in_intro:
+            in_intro = True
+            continue
+        if in_intro and stripped.startswith('=' * 10):
+            continue
+        if in_intro and stripped.startswith('---'):
+            break
+        if in_intro and stripped and not stripped.startswith('='):
+            # Skip the title and "by Author" lines
+            if stripped.isupper() or stripped.startswith('by '):
+                continue
+            intro_lines.append(stripped)
+
+    intro = ' '.join(intro_lines).strip()
+    # Limit to ~300 chars for the page
+    if len(intro) > 400:
+        intro = intro[:397] + '...'
+    return intro
+
+
+def generate_book_page(book_catalog: Dict, book_index_entry: Dict) -> None:
+    """Generate an individual HTML page for a book."""
+    slug = slugify(book_catalog["title"])
+    title = html.escape(book_catalog["title"])
+    author = html.escape(book_catalog["author"])
+    haiku_count = book_catalog["haiku_count"]
+    cover_url = book_catalog.get("cover_url", "")
+    pdf_url = book_catalog.get("pdf_url", "")
+    epub_url = book_catalog.get("epub_url", "")
+
+    intro = html.escape(extract_intro(book_index_entry))
+    samples = extract_sample_haiku(book_index_entry)
+
+    # Build sample haiku HTML
+    samples_html = ""
+    for h in samples:
+        lines_html = ''.join(f'<p>{html.escape(line)}</p>' for line in h.split('\n'))
+        samples_html += f'<div class="haiku">{lines_html}</div>\n'
+
+    # Cover image HTML
+    cover_html = f'<img src="{cover_url}" alt="{title}">' if cover_url else ''
+
+    # Download buttons
+    dl_html = ""
+    if pdf_url:
+        dl_html += f'<a href="{pdf_url}" class="btn-pdf" type="application/pdf">Download PDF</a>\n'
+    if epub_url:
+        dl_html += f'<a href="{epub_url}" class="btn-epub" type="application/epub+zip">Download EPUB</a>\n'
+
+    # Schema.org structured data
+    schema = {
+        "@context": "https://schema.org",
+        "@type": "Book",
+        "name": book_catalog["title"],
+        "author": {"@type": "Person", "name": book_catalog["author"]},
+        "bookFormat": "EBook",
+        "url": f"https://shmindle.com/books/{slug}.html",
+        "numberOfPages": haiku_count,
+        "genre": "Poetry",
+        "inLanguage": "en",
+        "isAccessibleForFree": True,
+    }
+    if cover_url:
+        schema["image"] = cover_url
+
+    page_html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title} by {author} — Shmindle</title>
+    <meta name="description" content="{title} — a collection of {haiku_count} haiku by {author}. Free to download as PDF or EPUB.">
+    <link rel="canonical" href="https://shmindle.com/books/{slug}.html">
+
+    <meta property="og:title" content="{title} by {author}">
+    <meta property="og:description" content="A collection of {haiku_count} haiku. Free to download.">
+    <meta property="og:type" content="book">
+    <meta property="og:url" content="https://shmindle.com/books/{slug}.html">
+    {"<meta property='og:image' content='" + cover_url + "'>" if cover_url else ""}
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{title} by {author}">
+    <meta name="twitter:description" content="A collection of {haiku_count} haiku. Free to download.">
+
+    <link rel="stylesheet" href="../style.css">
+
+    <script type="application/ld+json">
+    {json.dumps(schema, ensure_ascii=False)}
+    </script>
+</head>
+<body>
+    <header>
+        <h1><a href="../" style="text-decoration:none;color:inherit">Shmindle</a></h1>
+    </header>
+
+    <div class="book-detail">
+        <a href="../" class="back-link">&larr; All books</a>
+
+        <div class="book-hero">
+            {cover_html}
+            <div class="book-info">
+                <h1>{title}</h1>
+                <div class="author">{author}</div>
+                <div class="meta">{haiku_count} haiku</div>
+                <div class="download-btns">
+                    {dl_html}
+                </div>
+            </div>
+        </div>
+
+        {"<div class='book-intro'>" + intro + "</div>" if intro else ""}
+
+        {"<div class='sample-haiku'><h2>Sample Haiku</h2>" + samples_html + "</div>" if samples_html else ""}
+    </div>
+
+    <footer>
+        <p>Each book is a unique collection of haiku, formatted as a print-ready volume. Free to download as PDF or EPUB.</p>
+    </footer>
+</body>
+</html>"""
+
+    books_dir = SITE_DIR / "books"
+    books_dir.mkdir(exist_ok=True)
+    out_path = books_dir / f"{slug}.html"
+    out_path.write_text(page_html, encoding='utf-8')
+
+
+def generate_book_pages(catalog: List[Dict], index: List[Dict]) -> None:
+    """Generate individual pages for all books."""
+    print("\nGenerating book pages...")
+
+    # Build lookup from title to index entry
+    index_by_title = {b["title"]: b for b in index}
+
+    for book in catalog:
+        idx_entry = index_by_title.get(book["title"], {})
+        generate_book_page(book, idx_entry)
+
+    print(f"  Generated {len(catalog)} book pages in books/")
+
+
+def generate_sitemap(catalog: List[Dict]) -> None:
+    """Generate sitemap.xml for search engines."""
+    urls = ['  <url><loc>https://shmindle.com/</loc><priority>1.0</priority></url>']
+    for book in catalog:
+        slug = slugify(book["title"])
+        urls.append(f'  <url><loc>https://shmindle.com/books/{slug}.html</loc><priority>0.8</priority></url>')
+
+    sitemap = f"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{chr(10).join(urls)}
+</urlset>"""
+
+    (SITE_DIR / "sitemap.xml").write_text(sitemap, encoding='utf-8')
+    print(f"  Generated sitemap.xml ({len(urls)} URLs)")
+
+
+def generate_robots() -> None:
+    """Generate robots.txt."""
+    robots = """User-agent: *
+Allow: /
+Sitemap: https://shmindle.com/sitemap.xml
+"""
+    (SITE_DIR / "robots.txt").write_text(robots, encoding='utf-8')
+    print("  Generated robots.txt")
 
 
 if __name__ == "__main__":

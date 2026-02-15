@@ -3,13 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haiku Books</title>
+    <title>Shmindle — Free Haiku Poetry Books</title>
+    <meta name="description" content="Browse and download free haiku poetry collections. Over 30 books of original haiku, available as PDF and EPUB.">
+    <meta name="keywords" content="haiku, poetry, free books, haiku collections, Japanese poetry, PDF, EPUB, download">
+    <link rel="canonical" href="https://shmindle.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Shmindle — Free Haiku Poetry Books">
+    <meta property="og:description" content="Browse and download free haiku poetry collections. Over 30 books of original haiku, available as PDF and EPUB.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shmindle.com/">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Shmindle — Free Haiku Poetry Books">
+    <meta name="twitter:description" content="Browse and download free haiku poetry collections. Over 30 books of original haiku.">
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Shmindle — Free Haiku Poetry Books",
+        "description": "Browse and download free haiku poetry collections. Over 30 books of original haiku, available as PDF and EPUB.",
+        "url": "https://shmindle.com/",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Shmindle"
+        }
+    }
+    </script>
 </head>
 <body>
     <header>
-        <h1>Haiku Books</h1>
-        <p class="subtitle">AI-generated haiku poetry collections, free to download</p>
+        <h1>Shmindle</h1>
+        <p class="subtitle">Free haiku poetry books — browse, download, enjoy</p>
     </header>
 
     <div class="controls">
@@ -26,7 +56,7 @@
     <div id="pagination" class="pagination"></div>
 
     <footer>
-        <p>Each book is a unique collection of haiku, written by AI personas and formatted as print-ready volumes.</p>
+        <p>Each book is a unique collection of haiku, formatted as a print-ready volume. Free to download as PDF or EPUB.</p>
     </footer>
 
     <script src="app.js"></script>
