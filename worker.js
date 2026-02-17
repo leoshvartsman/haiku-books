@@ -21,6 +21,13 @@ export default {
     headers.set('Content-Disposition', 'inline');
     headers.set('Access-Control-Allow-Origin', '*');
 
+    // Set correct Content-Type so Safari/iOS knows how to handle the file
+    if (path.endsWith('.epub')) {
+      headers.set('Content-Type', 'application/epub+zip');
+    } else if (path.endsWith('.pdf')) {
+      headers.set('Content-Type', 'application/pdf');
+    }
+
     return new Response(resp.body, {
       status: resp.status,
       headers,
