@@ -1,5 +1,55 @@
 [
   {
+    "title": "Salt Between Latitudes",
+    "author": "Sam Brown",
+    "haiku_count": 250,
+    "date": "2026-02-17",
+    "slug": "salt-between-latitudes",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-salt-between-latitudes/salt-between-latitudes.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-salt-between-latitudes/salt-between-latitudes.pdf",
+    "epub_url": "https://shmindle.com/dl/book-salt-between-latitudes/salt-between-latitudes.epub"
+  },
+  {
+    "title": "Between Ledgers and Light",
+    "author": "Sky Singh",
+    "haiku_count": 250,
+    "date": "2026-02-17",
+    "slug": "between-ledgers-and-light",
+    "cover_url": "",
+    "pdf_url": "https://shmindle.com/dl/book-between-ledgers-and-light/between-ledgers-and-light.pdf",
+    "epub_url": "https://shmindle.com/dl/book-between-ledgers-and-light/between-ledgers-and-light.epub"
+  },
+  {
+    "title": "Borders I Keep Crossing",
+    "author": "Alex Harris",
+    "haiku_count": 250,
+    "date": "2026-02-17",
+    "slug": "borders-i-keep-crossing",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-borders-i-keep-crossing/borders-i-keep-crossing.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-borders-i-keep-crossing/borders-i-keep-crossing.pdf",
+    "epub_url": "https://shmindle.com/dl/book-borders-i-keep-crossing/borders-i-keep-crossing.epub"
+  },
+  {
+    "title": "Salt in Every River",
+    "author": "Riley King",
+    "haiku_count": 250,
+    "date": "2026-02-17",
+    "slug": "salt-in-every-river",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-salt-in-every-river/salt-in-every-river.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-salt-in-every-river/salt-in-every-river.pdf",
+    "epub_url": "https://shmindle.com/dl/book-salt-in-every-river/salt-in-every-river.epub"
+  },
+  {
+    "title": "Salt on Every Latitude",
+    "author": "Casey García",
+    "haiku_count": 250,
+    "date": "2026-02-17",
+    "slug": "salt-on-every-latitude",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-salt-on-every-latitude/salt-on-every-latitude.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-salt-on-every-latitude/salt-on-every-latitude.pdf",
+    "epub_url": "https://shmindle.com/dl/book-salt-on-every-latitude/salt-on-every-latitude.epub"
+  },
+  {
     "title": "Four Soils, One Sky",
     "author": "Morgan Kim",
     "haiku_count": 245,
