@@ -10,6 +10,36 @@
     "epub_url": "https://shmindle.com/dl/book-what-the-soil-remembers/what-the-soil-remembers.epub"
   },
   {
+    "title": "Sand Keeps Its Shape",
+    "author": "Jordan Kowalski",
+    "haiku_count": 250,
+    "date": "2026-02-19",
+    "slug": "sand-keeps-its-shape",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-sand-keeps-its-shape/sand-keeps-its-shape.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-sand-keeps-its-shape/sand-keeps-its-shape.pdf",
+    "epub_url": "https://shmindle.com/dl/book-sand-keeps-its-shape/sand-keeps-its-shape.epub"
+  },
+  {
+    "title": "Salt on Every Windowsill",
+    "author": "Charlie Wilson",
+    "haiku_count": 250,
+    "date": "2026-02-19",
+    "slug": "salt-on-every-windowsill",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-salt-on-every-windowsill/salt-on-every-windowsill.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-salt-on-every-windowsill/salt-on-every-windowsill.pdf",
+    "epub_url": "https://shmindle.com/dl/book-salt-on-every-windowsill/salt-on-every-windowsill.epub"
+  },
+  {
+    "title": "Where the Light Arrives First",
+    "author": "Sage Patel",
+    "haiku_count": 250,
+    "date": "2026-02-19",
+    "slug": "where-the-light-arrives-first",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-where-the-light-arrives-first/where-the-light-arrives-first.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-where-the-light-arrives-first/where-the-light-arrives-first.pdf",
+    "epub_url": "https://shmindle.com/dl/book-where-the-light-arrives-first/where-the-light-arrives-first.epub"
+  },
+  {
     "title": "Salt Between Latitudes",
     "author": "Sam Brown",
     "haiku_count": 250,
