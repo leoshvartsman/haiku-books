@@ -199,11 +199,15 @@ def build_catalog(dry_run=False):
         epub_path = OUTPUT_DIR / f"{slug}.epub"
         cover_path = find_cover(title)
 
-        if not pdf_path.exists() and not epub_path.exists():
-            print(f"  Skipping: no PDF or EPUB found ({slug})")
+        # Check if release already exists on GitHub
+        has_release = release_exists(tag)
+        has_local_files = pdf_path.exists() or epub_path.exists()
+
+        if not has_release and not has_local_files:
+            print(f"  Skipping: no release and no local files ({slug})")
             continue
 
-        # Convert cover to JPG
+        # Convert cover to JPG if available locally
         cover_jpg = None
         if cover_path:
             cover_jpg = tmp_dir / f"{slug}.jpg"
@@ -211,7 +215,7 @@ def build_catalog(dry_run=False):
                 cover_jpg = None
 
         if dry_run:
-            print(f"  Would upload: PDF={pdf_path.exists()}, EPUB={epub_path.exists()}, Cover={cover_jpg is not None}")
+            print(f"  Would upload: PDF={pdf_path.exists()}, EPUB={epub_path.exists()}, Cover={cover_jpg is not None}, Release={has_release}")
             catalog.append({
                 "title": title,
                 "author": author,
@@ -223,8 +227,7 @@ def build_catalog(dry_run=False):
             })
             continue
 
-        # Check if release already exists
-        if release_exists(tag):
+        if has_release:
             print(f"  Release exists, fetching URLs...")
             urls = get_existing_release_urls(tag)
         else:
