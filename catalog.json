@@ -40,6 +40,16 @@
     "epub_url": "https://shmindle.com/dl/book-where-the-light-arrives-first/where-the-light-arrives-first.epub"
   },
   {
+    "title": "What the Body Remembers",
+    "author": "Parker Sato",
+    "haiku_count": 250,
+    "date": "2026-02-19",
+    "slug": "what-the-body-remembers",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-what-the-body-remembers/what-the-body-remembers.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.epub"
+  },
+  {
     "title": "Salt Between Latitudes",
     "author": "Sam Brown",
     "haiku_count": 250,
