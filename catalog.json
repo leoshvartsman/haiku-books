@@ -50,6 +50,16 @@
     "epub_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.epub"
   },
   {
+    "title": "Longitude of Light",
+    "author": "Parker Wilson",
+    "haiku_count": 250,
+    "date": "2026-02-19",
+    "slug": "longitude-of-light",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-longitude-of-light/longitude-of-light.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-longitude-of-light/longitude-of-light.pdf",
+    "epub_url": "https://shmindle.com/dl/book-longitude-of-light/longitude-of-light.epub"
+  },
+  {
     "title": "Salt Between Latitudes",
     "author": "Sam Brown",
     "haiku_count": 250,
