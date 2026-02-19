@@ -60,6 +60,16 @@
     "epub_url": "https://shmindle.com/dl/book-longitude-of-light/longitude-of-light.epub"
   },
   {
+    "title": "Grain and Altitude",
+    "author": "Robin Ali",
+    "haiku_count": 250,
+    "date": "2026-02-19",
+    "slug": "grain-and-altitude",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-grain-and-altitude/grain-and-altitude.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-grain-and-altitude/grain-and-altitude.pdf",
+    "epub_url": "https://shmindle.com/dl/book-grain-and-altitude/grain-and-altitude.epub"
+  },
+  {
     "title": "Salt Between Latitudes",
     "author": "Sam Brown",
     "haiku_count": 250,
