@@ -277,7 +277,13 @@ def build_catalog(dry_run=False):
 
 
 def extract_sample_haiku(book_index_entry: Dict, count: int = 6) -> List[str]:
-    """Extract sample haiku from a book's text file."""
+    """Extract sample haiku from book_index.json or fall back to text file."""
+    # Prefer stored samples in book_index.json
+    stored = book_index_entry.get("sample_haiku", [])
+    if stored:
+        return stored[:count]
+
+    # Fall back to reading from text file
     book_txt = book_index_entry.get("files", {}).get("book_txt", "")
     if not book_txt:
         return []
@@ -321,7 +327,16 @@ def extract_sample_haiku(book_index_entry: Dict, count: int = 6) -> List[str]:
 
 
 def extract_intro(book_index_entry: Dict) -> str:
-    """Extract the book introduction from the text file."""
+    """Extract the book introduction from book_index.json or fall back to text file."""
+    # Prefer stored intro in book_index.json
+    stored = book_index_entry.get("collection_intro", "")
+    if stored:
+        intro = stored.strip()
+        if len(intro) > 400:
+            intro = intro[:397] + '...'
+        return intro
+
+    # Fall back to reading from text file
     book_txt = book_index_entry.get("files", {}).get("book_txt", "")
     if not book_txt:
         return ""
