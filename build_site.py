@@ -331,10 +331,7 @@ def extract_intro(book_index_entry: Dict) -> str:
     # Prefer stored intro in book_index.json
     stored = book_index_entry.get("collection_intro", "")
     if stored:
-        intro = stored.strip()
-        if len(intro) > 400:
-            intro = intro[:397] + '...'
-        return intro
+        return stored.strip()
 
     # Fall back to reading from text file
     book_txt = book_index_entry.get("files", {}).get("book_txt", "")
@@ -372,11 +369,7 @@ def extract_intro(book_index_entry: Dict) -> str:
                 continue
             intro_lines.append(stripped)
 
-    intro = ' '.join(intro_lines).strip()
-    # Limit to ~300 chars for the page
-    if len(intro) > 400:
-        intro = intro[:397] + '...'
-    return intro
+    return ' '.join(intro_lines).strip()
 
 
 def generate_book_page(book_catalog: Dict, book_index_entry: Dict) -> None:
