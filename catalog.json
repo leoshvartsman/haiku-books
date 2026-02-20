@@ -1,5 +1,15 @@
 [
   {
+    "title": "Concrete and Snow",
+    "author": "Harper Smith",
+    "haiku_count": 250,
+    "date": "2026-02-20",
+    "slug": "concrete-and-snow",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-concrete-and-snow/concrete-and-snow.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-concrete-and-snow/concrete-and-snow.pdf",
+    "epub_url": "https://shmindle.com/dl/book-concrete-and-snow/concrete-and-snow.epub"
+  },
+  {
     "title": "What the Soil Remembers",
     "author": "Simone Marino",
     "haiku_count": 250,
