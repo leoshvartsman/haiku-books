@@ -10,6 +10,16 @@
     "epub_url": "https://shmindle.com/dl/book-concrete-and-snow/concrete-and-snow.epub"
   },
   {
+    "title": "Salt on Three Shores",
+    "author": "Young Lee",
+    "haiku_count": 250,
+    "date": "2026-02-20",
+    "slug": "salt-on-three-shores",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-salt-on-three-shores/salt-on-three-shores.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-salt-on-three-shores/salt-on-three-shores.pdf",
+    "epub_url": "https://shmindle.com/dl/book-salt-on-three-shores/salt-on-three-shores.epub"
+  },
+  {
     "title": "What the Soil Remembers",
     "author": "Simone Marino",
     "haiku_count": 250,
