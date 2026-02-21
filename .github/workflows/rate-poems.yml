@@ -42,8 +42,8 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
-          PAIRS=${{ github.event.inputs.pairs || '100' }}
-          MODEL=${{ github.event.inputs.model || 'claude-sonnet-4-6' }}
+          PAIRS=${{ github.event.inputs.pairs || '500' }}
+          MODEL=${{ github.event.inputs.model || 'claude-haiku-4-5-20251001' }}
           python3 rate_poems.py --pairs $PAIRS --model $MODEL
 
       - name: Commit updated ratings

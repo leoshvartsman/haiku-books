@@ -159,9 +159,12 @@ def select_pairs(poems: list[dict], n: int) -> list[tuple[dict, dict]]:
 
 def parse_judge_response(text: str):
     """Extract JSON from Claude's response, tolerating minor formatting issues."""
+    # Strip markdown code fences (some models wrap in ```json ... ```)
+    text = re.sub(r'```(?:json)?\s*', '', text).strip()
+
     # Try direct parse
     try:
-        return json.loads(text.strip())
+        return json.loads(text)
     except json.JSONDecodeError:
         pass
 
