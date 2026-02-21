@@ -1,0 +1,55 @@
+name: Rate Haiku Poems
+
+on:
+  schedule:
+    # Run twice daily: 06:00 and 18:00 UTC
+    - cron: '0 6 * * *'
+    - cron: '0 18 * * *'
+  workflow_dispatch:
+    inputs:
+      pairs:
+        description: 'Number of pairs to compare'
+        default: '100'
+        required: false
+      model:
+        description: 'Claude model to use'
+        default: 'claude-sonnet-4-6'
+        required: false
+
+jobs:
+  rate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout haiku-books
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.HAIKU_BOOKS_PAT }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install anthropic
+
+      - name: Build corpus (extract AI haiku from book HTML)
+        run: python3 build_corpus.py
+
+      - name: Run ELO rating comparisons
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          PAIRS=${{ github.event.inputs.pairs || '100' }}
+          MODEL=${{ github.event.inputs.model || 'claude-sonnet-4-6' }}
+          python3 rate_poems.py --pairs $PAIRS --model $MODEL
+
+      - name: Commit updated ratings
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add ratings/corpus.json ratings/ratings.json
+          git diff --staged --quiet || git commit -m "chore: update ELO ratings [skip ci]"
+          git push
