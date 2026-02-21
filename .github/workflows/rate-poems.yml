@@ -20,12 +20,12 @@ jobs:
   rate:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout haiku-books
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.HAIKU_BOOKS_PAT }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
