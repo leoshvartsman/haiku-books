@@ -327,21 +327,17 @@ function buildChartLegend(poems) {
     const toggleAllBtn = (source, label) =>
         `<button class="legend-toggle-all" data-source="${source}">${label}</button>`;
 
-    document.getElementById("chart-legend").innerHTML = `
-        <div class="legend-group">
-            <div class="legend-group-header">
-                <span class="legend-group-title">◆ Human Poets</span>
-                ${toggleAllBtn("human", "all")} / ${toggleAllBtn("human-off", "none")}
-            </div>
-            <div class="legend-chips">${humanAuthors.map(a => chip(a, "human")).join("")}</div>
+    document.getElementById("chart-legend-human").innerHTML = `
+        <div class="legend-group-title">◆ Human Poets
+            <span>${toggleAllBtn("human", "all")} / ${toggleAllBtn("human-off", "none")}</span>
         </div>
-        <div class="legend-group">
-            <div class="legend-group-header">
-                <span class="legend-group-title">● AI Poets</span>
-                ${toggleAllBtn("ai", "all")} / ${toggleAllBtn("ai-off", "none")}
-            </div>
-            <div class="legend-ai-wrap"><div class="legend-chips">${aiAuthors.map(a => chip(a, "ai")).join("")}</div></div>
-        </div>`;
+        <div class="legend-chips">${humanAuthors.map(a => chip(a, "human")).join("")}</div>`;
+
+    document.getElementById("chart-legend-ai").innerHTML = `
+        <div class="legend-group-title">● AI Poets
+            <span>${toggleAllBtn("ai", "all")} / ${toggleAllBtn("ai-off", "none")}</span>
+        </div>
+        <div class="legend-chips">${aiAuthors.map(a => chip(a, "ai")).join("")}</div>`;
 
     document.querySelectorAll(".legend-chip").forEach(el => {
         el.addEventListener("click", function() {
