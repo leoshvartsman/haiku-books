@@ -30,6 +30,16 @@
     "epub_url": "https://shmindle.com/dl/book-the-long-way-around/the-long-way-around.epub"
   },
   {
+    "title": "What the Roots Remember",
+    "author": "Casey García",
+    "haiku_count": 250,
+    "date": "2026-02-22",
+    "slug": "what-the-roots-remember",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-what-the-roots-remember/what-the-roots-remember.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-roots-remember/what-the-roots-remember.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-roots-remember/what-the-roots-remember.epub"
+  },
+  {
     "title": "What the Body Carries",
     "author": "Kaori Kato",
     "haiku_count": 250,
