@@ -322,6 +322,7 @@ function positionTooltip(e) {
 
 function buildChartLegend(poems) {
     const rated = poems.filter(p => p.matches > 0);
+
     const poetAvgElo = {};
     [...new Set(poems.map(p => p.author))].forEach(a => {
         const pp = rated.filter(x => x.author === a);
@@ -341,20 +342,21 @@ function buildChartLegend(poems) {
     const toggleAllBtn = (source, label) =>
         `<button class="legend-toggle-all" data-source="${source}">${label}</button>`;
 
-    const humanEl = document.getElementById("chart-legend-human");
-    const aiEl    = document.getElementById("chart-legend-ai");
-
-    if (humanEl) humanEl.innerHTML = `
-        <div class="legend-group-title">◆ Human Poets
-            <span>${toggleAllBtn("human", "all")} / ${toggleAllBtn("human-off", "none")}</span>
+    document.getElementById("chart-legend").innerHTML = `
+        <div class="legend-group">
+            <div class="legend-group-header">
+                <span class="legend-group-title">◆ Human Poets</span>
+                ${toggleAllBtn("human", "all")} / ${toggleAllBtn("human-off", "none")}
+            </div>
+            <div class="legend-chips">${humanAuthors.map(a => chip(a, "human")).join("")}</div>
         </div>
-        <div class="legend-chips">${humanAuthors.map(a => chip(a, "human")).join("")}</div>`;
-
-    if (aiEl) aiEl.innerHTML = `
-        <div class="legend-group-title">● AI Poets
-            <span>${toggleAllBtn("ai", "all")} / ${toggleAllBtn("ai-off", "none")}</span>
-        </div>
-        <div class="legend-chips">${aiAuthors.map(a => chip(a, "ai")).join("")}</div>`;
+        <div class="legend-group">
+            <div class="legend-group-header">
+                <span class="legend-group-title">● AI Poets</span>
+                ${toggleAllBtn("ai", "all")} / ${toggleAllBtn("ai-off", "none")}
+            </div>
+            <div class="legend-ai-wrap"><div class="legend-chips">${aiAuthors.map(a => chip(a, "ai")).join("")}</div></div>
+        </div>`;
 
     document.querySelectorAll(".legend-chip").forEach(el => {
         el.addEventListener("click", function() {
