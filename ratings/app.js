@@ -7,6 +7,11 @@ let currentFilter = "all";
 let currentPage = 1;
 let totalMatches = 0;
 
+// Chart state
+const authorColors = {};
+const authorVis    = {};
+const poemById     = {};
+
 async function init() {
     try {
         const res = await fetch("ratings.json");
@@ -19,6 +24,8 @@ async function init() {
         renderSummary(data.summary);
         setupFilters();
         applyFilter("all");
+        buildAuthorColors(allPoems);
+        renderScatterChart(allPoems);
     } catch (e) {
         document.getElementById("leaderboard").innerHTML = `
             <div class="no-ratings">
@@ -183,6 +190,176 @@ function renderPagination() {
             currentPage = parseInt(btn.dataset.page);
             render();
             window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    });
+}
+
+// ── Scatter chart ─────────────────────────────────────────────────────────────
+
+function buildAuthorColors(poems) {
+    poems.forEach(p => { poemById[p.id] = p; });
+    const allAuthors = [...new Set(poems.map(p => p.author))].sort();
+    allAuthors.forEach((author, i) => {
+        const hue = Math.round((i * 137.508) % 360);
+        const sat = 58 + (i % 3) * 8;
+        const lit = 40 + (i % 2) * 10;
+        if (!authorColors[author]) authorColors[author] = `hsl(${hue},${sat}%,${lit}%)`;
+        if (!(author in authorVis)) authorVis[author] = true;
+    });
+}
+
+function renderScatterChart(poems) {
+    const rated = poems.filter(p => p.matches > 0);
+    if (rated.length < 2) return;
+    document.getElementById("chart-section").style.display = "block";
+    drawScatter(rated);
+    buildChartLegend(poems);
+}
+
+function drawScatter(poems) {
+    const vis = poems.filter(p => authorVis[p.author] !== false);
+
+    const VW = 760, VH = 310;
+    const P = { l: 48, r: 16, t: 18, b: 38 };
+    const W = VW - P.l - P.r, H = VH - P.t - P.b;
+
+    const elos = poems.map(p => p.elo);
+    const minE = Math.min(...elos), maxE = Math.max(...elos);
+    const ep = (maxE - minE) * 0.06 || 50;
+
+    const xp = elo => P.l + (elo - (minE - ep)) / ((maxE + ep) - (minE - ep)) * W;
+    const yp = p   => P.t + (1 - p.wins / p.matches) * H;
+
+    let s = `<svg viewBox="0 0 ${VW} ${VH}" style="width:100%;height:auto;display:block" xmlns="http://www.w3.org/2000/svg">`;
+
+    // Y grid
+    [0, 25, 50, 75, 100].forEach(pct => {
+        const yy = P.t + (1 - pct / 100) * H;
+        s += `<line x1="${P.l}" y1="${yy}" x2="${VW - P.r}" y2="${yy}" stroke="#f0ede8" stroke-width="${pct === 50 ? 1.5 : 1}"/>`;
+        s += `<text x="${P.l - 5}" y="${yy + 4}" text-anchor="end" font-size="10" fill="#ccc">${pct}%</text>`;
+    });
+
+    // X grid + ticks
+    const span = maxE - minE || 200;
+    const step = span < 300 ? 50 : span < 600 ? 100 : 200;
+    const first = Math.ceil((minE - ep) / step) * step;
+    for (let t = first; t <= maxE + ep; t += step) {
+        const xx = xp(t);
+        s += `<line x1="${xx}" y1="${P.t}" x2="${xx}" y2="${P.t + H}" stroke="#f5f2ee" stroke-width="1"/>`;
+        s += `<text x="${xx}" y="${P.t + H + 14}" text-anchor="middle" font-size="10" fill="#ccc">${t}</text>`;
+    }
+
+    // Axis labels
+    s += `<text x="${P.l + W / 2}" y="${VH - 1}" text-anchor="middle" font-size="11" fill="#bbb">ELO Rating</text>`;
+    s += `<text x="10" y="${P.t + H / 2}" text-anchor="middle" font-size="11" fill="#bbb" transform="rotate(-90 10 ${P.t + H / 2})">Win Rate</text>`;
+
+    // Shape legend (top-right corner of chart)
+    const lx = VW - P.r - 4;
+    s += `<circle cx="${lx - 68}" cy="12" r="4.5" fill="#aaa" fill-opacity="0.6"/>`;
+    s += `<text x="${lx - 60}" y="16" font-size="10" fill="#aaa">AI</text>`;
+    s += `<polygon points="${lx - 41},7 ${lx - 35},12 ${lx - 41},17 ${lx - 47},12" fill="#aaa" fill-opacity="0.6"/>`;
+    s += `<text x="${lx - 33}" y="16" font-size="10" fill="#aaa">Human</text>`;
+
+    // Points (dimmed first, visible on top)
+    const dimmed = poems.filter(p => authorVis[p.author] === false);
+    const drawPoint = (p, opacity) => {
+        const cx = xp(p.elo), cy = yp(p);
+        const col = authorColors[p.author] || "#999";
+        const attr = `fill="${col}" fill-opacity="${opacity}" stroke="none" class="cp" data-pid="${escHtml(p.id)}" style="cursor:pointer"`;
+        if (p.source === "ai") {
+            return `<circle cx="${cx}" cy="${cy}" r="5" ${attr}/>`;
+        } else {
+            const r = 6;
+            return `<polygon points="${cx},${cy - r} ${cx + r},${cy} ${cx},${cy + r} ${cx - r},${cy}" ${attr}/>`;
+        }
+    };
+    s += `<g>`;
+    dimmed.forEach(p => { s += drawPoint(p, 0.12); });
+    vis.forEach(p  => { s += drawPoint(p, 0.82); });
+    s += `</g>`;
+
+    // Axes
+    s += `<line x1="${P.l}" y1="${P.t}" x2="${P.l}" y2="${P.t + H + 1}" stroke="#ddd" stroke-width="1.5"/>`;
+    s += `<line x1="${P.l - 1}" y1="${P.t + H}" x2="${VW - P.r}" y2="${P.t + H}" stroke="#ddd" stroke-width="1.5"/>`;
+
+    s += `</svg>`;
+
+    document.getElementById("chart-inner").innerHTML = s;
+
+    // Tooltip
+    const tooltip = document.getElementById("chart-tooltip");
+    document.querySelectorAll(".cp").forEach(el => {
+        el.addEventListener("mouseenter", function(e) {
+            const p = poemById[this.dataset.pid];
+            if (!p) return;
+            const lines = (p.lines || []).map(l => escHtml(l)).join("<br>");
+            const pct = p.matches > 0 ? Math.round(p.wins / p.matches * 100) : 0;
+            tooltip.innerHTML = `<div style="font-style:italic;margin-bottom:0.25rem">${lines}</div>`
+                + `<div style="color:#ccc;font-size:0.76rem">${escHtml(p.author)}</div>`
+                + `<div style="color:#999;font-size:0.74rem;margin-top:0.15rem">ELO ${Math.round(p.elo)} &nbsp;·&nbsp; ${p.wins}W ${p.losses}L &nbsp;·&nbsp; ${pct}% wins</div>`;
+            tooltip.style.display = "block";
+            positionTooltip(e);
+        });
+        el.addEventListener("mousemove", positionTooltip);
+        el.addEventListener("mouseleave", () => { tooltip.style.display = "none"; });
+    });
+}
+
+function positionTooltip(e) {
+    const t = document.getElementById("chart-tooltip");
+    const tw = t.offsetWidth || 220;
+    const left = e.clientX + 14 + tw > window.innerWidth ? e.clientX - tw - 14 : e.clientX + 14;
+    t.style.left = left + "px";
+    t.style.top  = (e.clientY - 10) + "px";
+}
+
+function buildChartLegend(poems) {
+    const humanAuthors = [...new Set(poems.filter(p => p.source === "human").map(p => p.author))].sort();
+    const aiAuthors    = [...new Set(poems.filter(p => p.source === "ai").map(p => p.author))].sort();
+    const rated = poems.filter(p => p.matches > 0);
+
+    const chip = (author, cls) => {
+        const col = authorColors[author] || "#999";
+        const on  = authorVis[author] !== false;
+        return `<div class="legend-chip ${cls}${on ? "" : " off"}" data-author="${escHtml(author)}" title="${escHtml(author)}"><span class="cdot" style="background:${col}"></span><span>${escHtml(author)}</span></div>`;
+    };
+
+    const toggleAllBtn = (source, label) =>
+        `<button class="legend-toggle-all" data-source="${source}">${label}</button>`;
+
+    document.getElementById("chart-legend").innerHTML = `
+        <div class="legend-group">
+            <div class="legend-group-header">
+                <span class="legend-group-title">◆ Human Poets</span>
+                ${toggleAllBtn("human", "all")} / ${toggleAllBtn("human-off", "none")}
+            </div>
+            <div class="legend-chips">${humanAuthors.map(a => chip(a, "human")).join("")}</div>
+        </div>
+        <div class="legend-group">
+            <div class="legend-group-header">
+                <span class="legend-group-title">● AI Poets</span>
+                ${toggleAllBtn("ai", "all")} / ${toggleAllBtn("ai-off", "none")}
+            </div>
+            <div class="legend-ai-wrap"><div class="legend-chips">${aiAuthors.map(a => chip(a, "ai")).join("")}</div></div>
+        </div>`;
+
+    document.querySelectorAll(".legend-chip").forEach(el => {
+        el.addEventListener("click", function() {
+            const author = this.dataset.author;
+            authorVis[author] = !authorVis[author];
+            this.classList.toggle("off", !authorVis[author]);
+            drawScatter(rated);
+        });
+    });
+
+    document.querySelectorAll(".legend-toggle-all").forEach(btn => {
+        btn.addEventListener("click", function() {
+            const src = this.dataset.source;
+            const source = src.replace("-off", "");
+            const on = !src.includes("-off");
+            poems.filter(p => p.source === source && p.matches > 0).forEach(p => { authorVis[p.author] = on; });
+            document.querySelectorAll(`.legend-chip.${source}`).forEach(c => c.classList.toggle("off", !on));
+            drawScatter(rated);
         });
     });
 }

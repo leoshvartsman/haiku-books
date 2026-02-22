@@ -284,6 +284,99 @@
             .dim-bars { display: none; }
             .poem-row { gap: 0.6rem; }
         }
+
+        /* Scatter chart */
+        .chart-section {
+            max-width: 860px;
+            margin: 0 auto 2rem;
+            padding: 0 1.5rem;
+        }
+        .chart-heading {
+            font-size: 0.82rem;
+            color: #aaa;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            font-weight: 500;
+            margin-bottom: 0.6rem;
+        }
+        .chart-wrap {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+            padding: 1rem 1rem 0.5rem;
+        }
+        #chart-tooltip {
+            position: fixed;
+            background: rgba(28,28,28,0.93);
+            color: #eee;
+            padding: 0.55rem 0.8rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            line-height: 1.55;
+            pointer-events: none;
+            z-index: 200;
+            max-width: 220px;
+        }
+        .chart-legend {
+            margin-top: 0.75rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+            padding: 1rem 1.25rem;
+        }
+        .legend-group { margin-bottom: 0.85rem; }
+        .legend-group:last-child { margin-bottom: 0; }
+        .legend-group-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.45rem;
+        }
+        .legend-group-title {
+            font-size: 0.75rem;
+            color: #aaa;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+        .legend-toggle-all {
+            font-size: 0.72rem;
+            color: #bbb;
+            cursor: pointer;
+            text-decoration: underline;
+            background: none;
+            border: none;
+            padding: 0;
+        }
+        .legend-toggle-all:hover { color: #666; }
+        .legend-chips { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+        .legend-ai-wrap { max-height: 120px; overflow-y: auto; }
+        .legend-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.28rem;
+            padding: 0.2rem 0.55rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            background: #f5f2ee;
+            border: 1.5px solid transparent;
+            transition: opacity 0.15s;
+            user-select: none;
+            white-space: nowrap;
+        }
+        .legend-chip:hover { border-color: #ccc; }
+        .legend-chip.off { opacity: 0.3; }
+        .legend-chip .cdot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        .legend-chip.human .cdot {
+            border-radius: 0;
+            transform: rotate(45deg);
+        }
+        @media (max-width: 600px) { .legend-ai-wrap { max-height: 90px; } }
     </style>
 </head>
 <body>
@@ -330,6 +423,15 @@
             </div>
             <span class="elo-bar-score" id="score-human">1500</span>
         </div>
+    </div>
+
+    <div class="chart-section" id="chart-section" style="display:none">
+        <div class="chart-heading">ELO Rating vs. Win Rate — All Rated Poems</div>
+        <div class="chart-wrap">
+            <div id="chart-inner"></div>
+            <div id="chart-tooltip" style="display:none"></div>
+        </div>
+        <div class="chart-legend" id="chart-legend"></div>
     </div>
 
     <div class="method-note">
