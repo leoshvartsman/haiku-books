@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-02-22T02:54:18.673656+00:00",
-  "total_matches": 3993,
+  "generated_at": "2026-02-22T03:01:21.137162+00:00",
+  "total_matches": 4000,
   "summary": {
     "ai_count": 306,
     "human_count": 105,
     "ai_avg_elo": 1492.2,
-    "human_avg_elo": 1522.8,
-    "ai_wins": 2881,
-    "human_wins": 1112,
+    "human_avg_elo": 1523.0,
+    "ai_wins": 2886,
+    "human_wins": 1114,
     "draws": 0
   },
   "top_ai": [
@@ -111,9 +111,9 @@
       ],
       "author": "Parker Wilson",
       "collection": "Longitude of Light",
-      "elo": 1718.9,
-      "matches": 29,
-      "wins": 27
+      "elo": 1720.2,
+      "matches": 30,
+      "wins": 28
     },
     {
       "id": "ai-salt-on-every-windowsill-2",
@@ -468,20 +468,20 @@
       "author": "Parker Wilson",
       "collection": "Longitude of Light",
       "translator": null,
-      "elo": 1718.9,
-      "matches": 29,
-      "wins": 27,
+      "elo": 1720.2,
+      "matches": 30,
+      "wins": 28,
       "losses": 2,
       "draws": 0,
       "dim_averages": {
         "image_precision": 5.0,
         "cut": 4.13,
         "economy": 4.91,
-        "resonance": 4.31,
-        "originality": 4.25,
+        "resonance": 4.3,
+        "originality": 4.24,
         "musicality": 4.92
       },
-      "last_reasoning": "While both poems execute the haiku form competently with productive cuts, Poem B achieves superior sensory precision through concrete detail (jacaranda stains, hot bitumen, bare feet), flawless economy with zero padding, and musicality where the fricatives and vowels create auditory meaning inseparable from the physical sensation of learning through the body."
+      "last_reasoning": "Poem A creates a vivid sensory moment with precise diction and internal resonance (staining/learning as parallel acts of impression), while Poem B describes a mundane action in literal, explanatory terms with no meaningful juxtaposition or deeper significance."
     },
     {
       "id": "human-yosa-buson-5",
@@ -1862,6 +1862,32 @@
       "last_reasoning": "Poem B achieves a sharper, more surprising juxtaposition between meteorological naming and personal anonymity, with each word doing essential conceptual work, while Poem A relies on more familiar melancholy imagery despite its visual beauty."
     },
     {
+      "id": "ai-what-the-soil-remembers-6",
+      "lines": [
+        "spider web at dawn:",
+        "six points of contact with the world—",
+        "I count mine, fewer"
+      ],
+      "source": "ai",
+      "author": "Simone Marino",
+      "collection": "What the Soil Remembers",
+      "translator": null,
+      "elo": 1642.6,
+      "matches": 19,
+      "wins": 17,
+      "losses": 2,
+      "draws": 0,
+      "dim_averages": {
+        "image_precision": 4.31,
+        "cut": 4.84,
+        "economy": 4.79,
+        "resonance": 4.9,
+        "originality": 4.01,
+        "musicality": 3.94
+      },
+      "last_reasoning": "Poem B executes a profound cut between the spider's embodied connection to the world and the speaker's existential isolation, with every word essential, while Poem A uses conventional imagery and lacks meaningful tension between its elements."
+    },
+    {
       "id": "ai-between-ledgers-and-light-1",
       "lines": [
         "fog lifts from the Vltava—",
@@ -1938,32 +1964,6 @@
         "musicality": 3.83
       },
       "last_reasoning": "Poem B achieves superior resonance through its deeply integrated metaphor about linguistic displacement, where every word (fog/ridges/bleeds/borrowed) creates meaning on multiple registers simultaneously, while Poem A's barista-anchor simile, though vivid, remains more decorative and less emotionally or philosophically expansive."
-    },
-    {
-      "id": "ai-what-the-soil-remembers-6",
-      "lines": [
-        "spider web at dawn:",
-        "six points of contact with the world—",
-        "I count mine, fewer"
-      ],
-      "source": "ai",
-      "author": "Simone Marino",
-      "collection": "What the Soil Remembers",
-      "translator": null,
-      "elo": 1637.0,
-      "matches": 18,
-      "wins": 16,
-      "losses": 2,
-      "draws": 0,
-      "dim_averages": {
-        "image_precision": 4.33,
-        "cut": 4.83,
-        "economy": 4.78,
-        "resonance": 4.89,
-        "originality": 4.01,
-        "musicality": 3.94
-      },
-      "last_reasoning": "Poem A executes a profound existential cut (spider's eight legs versus human isolation) with elegant economy, while Poem B, though visually precise and musically smooth, relies on a familiar romantic image (microcosm in nature's eye) without genuine tension or surprise."
     },
     {
       "id": "ai-salt-on-every-latitude-3",
@@ -2226,6 +2226,32 @@
       "last_reasoning": "Poem A achieves the haiku's essential gesture through a devastating philosophical cut (samsara's inevitable messiness paired with transcendence), while Poem B, though vividly imagined, relies on the familiar romantic trope of creative interruption and lacks the transformative insight that distinguishes haiku from mere vignette."
     },
     {
+      "id": "ai-four-dawns-rising-3",
+      "lines": [
+        "Kneading becomes prayer—",
+        "push fold turn push fold turn push",
+        "until muscles know"
+      ],
+      "source": "ai",
+      "author": "Quinn Smith",
+      "collection": "Four Dawns Rising",
+      "translator": null,
+      "elo": 1624.4,
+      "matches": 16,
+      "wins": 14,
+      "losses": 2,
+      "draws": 0,
+      "dim_averages": {
+        "image_precision": 4.13,
+        "cut": 3.8,
+        "economy": 4.8,
+        "resonance": 3.93,
+        "originality": 3.63,
+        "musicality": 5.0
+      },
+      "last_reasoning": "Poem A achieves superior integration of form and content through its repetitive musicality that enacts the bodily knowledge it describes, while Poem B, though vivid and geographically specific, lacks the productive tension between its descriptive elements that defines strong haiku."
+    },
+    {
       "id": "ai-borders-i-keep-crossing-4",
       "lines": [
         "the fluorescent buzz",
@@ -2432,32 +2458,6 @@
         "musicality": 3.7
       },
       "last_reasoning": "Poem A achieves superior resonance through the cut between visual memory and embodied muscle memory, while Poem B's more original geological observation lacks the emotional depth that allows a reader to inhabit the poem's aftermath."
-    },
-    {
-      "id": "ai-four-dawns-rising-3",
-      "lines": [
-        "Kneading becomes prayer—",
-        "push fold turn push fold turn push",
-        "until muscles know"
-      ],
-      "source": "ai",
-      "author": "Quinn Smith",
-      "collection": "Four Dawns Rising",
-      "translator": null,
-      "elo": 1614.8,
-      "matches": 15,
-      "wins": 13,
-      "losses": 2,
-      "draws": 0,
-      "dim_averages": {
-        "image_precision": 4.14,
-        "cut": 3.79,
-        "economy": 4.79,
-        "resonance": 3.93,
-        "originality": 3.67,
-        "musicality": 5.0
-      },
-      "last_reasoning": "Poem A achieves superior economy through the anaphoric repetition of 'push fold turn' which becomes both sonic and kinesthetic, while Poem B relies on the somewhat predictable equation of prayer with a bridge, and its explicative language ('like a prayer') undermines rather than enacts the haiku's traditional mode of showing."
     },
     {
       "id": "ai-salt-keeps-its-shape-5",
@@ -3396,6 +3396,32 @@
       "last_reasoning": "While both are accomplished, Poem B achieves a sharper cut (the productive gap between sensory abundance and existential withdrawal) and fresher originality through its specific Australian vernacular and the tension between external vitality and internal pause, whereas Poem A's turn is more conventional and its metaphoric statement about transience feels slightly anticipated."
     },
     {
+      "id": "human-yosa-buson-6",
+      "lines": [
+        "the short night—",
+        "on the hairy caterpillar",
+        "small beads of dew"
+      ],
+      "source": "human",
+      "author": "Yosa Buson",
+      "collection": "The Master-Singers of Japan",
+      "translator": "Walsh",
+      "elo": 1584.6,
+      "matches": 26,
+      "wins": 18,
+      "losses": 8,
+      "draws": 0,
+      "dim_averages": {
+        "image_precision": 4.85,
+        "cut": 3.55,
+        "economy": 4.76,
+        "resonance": 3.73,
+        "originality": 3.46,
+        "musicality": 4.14
+      },
+      "last_reasoning": "Poem A excels in concrete sensory precision and economy while maintaining strong cut and musicality, whereas Poem B's ambitious originality and resonance are undermined by abstraction and grammatical ambiguity that obscures rather than clarifies meaning."
+    },
+    {
       "id": "ai-salt-in-every-soil-1",
       "lines": [
         "lotus root in mud—",
@@ -3550,32 +3576,6 @@
         "musicality": 4.04
       },
       "last_reasoning": "While Poem A excels in economy and has a sharper cut, Poem B's vivid animal observation, superior musicality (the playful sound of 'monkey' and 'coat'), and fresh originality create a more memorable and emotionally resonant experience that lingers with quiet anthropomorphic tenderness."
-    },
-    {
-      "id": "human-yosa-buson-6",
-      "lines": [
-        "the short night—",
-        "on the hairy caterpillar",
-        "small beads of dew"
-      ],
-      "source": "human",
-      "author": "Yosa Buson",
-      "collection": "The Master-Singers of Japan",
-      "translator": "Walsh",
-      "elo": 1578.0,
-      "matches": 25,
-      "wins": 17,
-      "losses": 8,
-      "draws": 0,
-      "dim_averages": {
-        "image_precision": 4.84,
-        "cut": 3.53,
-        "economy": 4.75,
-        "resonance": 3.72,
-        "originality": 3.48,
-        "musicality": 4.15
-      },
-      "last_reasoning": "Poem A achieves classical haiku excellence through precise sensory detail, an organic seasonal cut between night and morning dew, and complete economy of language, while Poem B relies on a familiar metaphor of transience and contains redundancy ('before I can praise' states what 'melts' already implies)."
     },
     {
       "id": "ai-grain-and-altitude-3",
@@ -4228,6 +4228,32 @@
       "last_reasoning": "Poem B achieves superior execution across nearly every dimension through its crystalline image, profound structural cut between solitude and natural motion, flawless economy of language, and the rare quality of lingering expansion—while Poem A, though competent, dilutes its images with explanatory abstraction ('already recorded') and lacks the transformative gap that makes haiku memorable."
     },
     {
+      "id": "human-kobayashi-issa-4",
+      "lines": [
+        "everything I touch",
+        "with tenderness, alas,",
+        "pricks like a bramble"
+      ],
+      "source": "human",
+      "author": "Kobayashi Issa",
+      "collection": "The Master-Singers of Japan",
+      "translator": "Walsh",
+      "elo": 1551.3,
+      "matches": 15,
+      "wins": 9,
+      "losses": 6,
+      "draws": 0,
+      "dim_averages": {
+        "image_precision": 3.53,
+        "cut": 3.74,
+        "economy": 3.87,
+        "resonance": 4.01,
+        "originality": 3.07,
+        "musicality": 3.93
+      },
+      "last_reasoning": "Poem A creates genuine tension between tenderness and pain through a paradoxical cut, while Poem B simply juxtaposes three pleasant images without productive friction or deeper meaning."
+    },
+    {
       "id": "ai-between-departures-3",
       "lines": [
         "Minaret calls out",
@@ -4358,6 +4384,32 @@
       "last_reasoning": "While both poems are accomplished, B achieves greater originality through its precisely calibrated metaphor (linguistic/travel luggage), superior economy with each word doing multiple conceptual work, and a cut that becomes the entire meaning—the speaker's identity fractured across languages—whereas A relies on the familiar spring/rebirth/umbrellas conflation that feels more expected despite its technical skill."
     },
     {
+      "id": "ai-spine-cracked-at-hope-2",
+      "lines": [
+        "Seminar table",
+        "scarred with decades of debate,",
+        "coffee rings like trees"
+      ],
+      "source": "ai",
+      "author": "Emerson Miller",
+      "collection": "Spine Cracked at Hope",
+      "translator": null,
+      "elo": 1547.5,
+      "matches": 21,
+      "wins": 14,
+      "losses": 7,
+      "draws": 0,
+      "dim_averages": {
+        "image_precision": 4.39,
+        "cut": 3.57,
+        "economy": 4.29,
+        "resonance": 3.57,
+        "originality": 3.56,
+        "musicality": 3.67
+      },
+      "last_reasoning": "Poem B achieves specificity through concrete, material detail (scarred table, coffee rings), creates a productive gap between academic debate and natural erosion, and every word counts—while Poem A relies on generic butterfly clichés and interpolated speculation that dilutes rather than sharpens the image."
+    },
+    {
       "id": "human-masaoka-shiki-6",
       "lines": [
         "autumn wind:",
@@ -4462,32 +4514,6 @@
       "last_reasoning": "Poem B achieves excellence across all dimensions through its precise, devastating image of fog dismantling cranes, a perfect cut between active destruction and failed reconstruction, with every word essential and reverberating with existential weight, while Poem A, though competent, relies on a familiar sick-bed-sees-beauty scenario that resonates more gently and predictably."
     },
     {
-      "id": "ai-spine-cracked-at-hope-2",
-      "lines": [
-        "Seminar table",
-        "scarred with decades of debate,",
-        "coffee rings like trees"
-      ],
-      "source": "ai",
-      "author": "Emerson Miller",
-      "collection": "Spine Cracked at Hope",
-      "translator": null,
-      "elo": 1544.4,
-      "matches": 20,
-      "wins": 13,
-      "losses": 7,
-      "draws": 0,
-      "dim_averages": {
-        "image_precision": 4.36,
-        "cut": 3.55,
-        "economy": 4.25,
-        "resonance": 3.55,
-        "originality": 3.54,
-        "musicality": 3.65
-      },
-      "last_reasoning": "Poem A achieves superior resonance through its unexpected metaphor (coffee rings as trees) that transforms the table into a living archive of intellectual labor, while Poem B relies on more conventional predator-prey imagery that, despite strong musicality, feels predictable and closes rather than expands."
-    },
-    {
       "id": "ai-salt-on-every-latitude-4",
       "lines": [
         "children in the street",
@@ -4538,32 +4564,6 @@
         "musicality": 4.91
       },
       "last_reasoning": "Poem A achieves profound emotional resonance through its philosophical cut but relies on a well-known Buddhist concept (impermanence of dew), while Poem B grounds its meditation in specific place and sensory restraint, making the familiar act of observing a river genuinely new through its refusal of gesture and its crystalline economy."
-    },
-    {
-      "id": "human-kobayashi-issa-4",
-      "lines": [
-        "everything I touch",
-        "with tenderness, alas,",
-        "pricks like a bramble"
-      ],
-      "source": "human",
-      "author": "Kobayashi Issa",
-      "collection": "The Master-Singers of Japan",
-      "translator": "Walsh",
-      "elo": 1541.5,
-      "matches": 14,
-      "wins": 8,
-      "losses": 6,
-      "draws": 0,
-      "dim_averages": {
-        "image_precision": 3.5,
-        "cut": 3.72,
-        "economy": 3.86,
-        "resonance": 4.01,
-        "originality": 3.0,
-        "musicality": 3.93
-      },
-      "last_reasoning": "Poem B executes a more radical and original cut—the juxtaposition of cosmic spring renewal against intimate mediocrity is genuinely surprising—while maintaining superior economy and resonance through its subversion of New Year's haiku tradition."
     },
     {
       "id": "human-kobayashi-issa-13",
@@ -5190,32 +5190,6 @@
       "last_reasoning": "While Poem A executes classical haiku beautifully with vivid natural imagery, Poem B achieves superior literary depth through a sharper cut that transforms a mundane moment into a meditation on identity and self-construction, with each word doing essential philosophical work."
     },
     {
-      "id": "ai-salt-in-every-mouth-4",
-      "lines": [
-        "column after column—",
-        "each human year a vessel",
-        "I&#x27;m filling with what"
-      ],
-      "source": "ai",
-      "author": "Robin Andersson",
-      "collection": "Salt in Every Mouth",
-      "translator": null,
-      "elo": 1516.0,
-      "matches": 30,
-      "wins": 16,
-      "losses": 14,
-      "draws": 0,
-      "dim_averages": {
-        "image_precision": 3.03,
-        "cut": 4.17,
-        "economy": 3.54,
-        "resonance": 4.35,
-        "originality": 3.99,
-        "musicality": 3.16
-      },
-      "last_reasoning": "While Poem A offers intriguing philosophical inquiry and originality, Poem B achieves the classical haiku ideal through flawless economy, crystalline imagery, profound resonance, and musicality that makes the wind-clearing metaphor feel inevitable rather than constructed."
-    },
-    {
       "id": "human-matsuo-basho-15",
       "lines": [
         "the snowy morning—",
@@ -5500,6 +5474,32 @@
         "musicality": 4.89
       },
       "last_reasoning": "Poem A achieves superior specificity through its vivid domestic detail (mother's cotton sari), creates a more productive juxtaposition between quotidian object and cosmic metaphor (sail/stars), and reaches genuine originality by transforming laundry into wonder, while Poem B relies on familiar storm imagery and the clichéd heron-cry-as-sound-in-darkness trope."
+    },
+    {
+      "id": "ai-salt-in-every-mouth-4",
+      "lines": [
+        "column after column—",
+        "each human year a vessel",
+        "I&#x27;m filling with what"
+      ],
+      "source": "ai",
+      "author": "Robin Andersson",
+      "collection": "Salt in Every Mouth",
+      "translator": null,
+      "elo": 1509.4,
+      "matches": 31,
+      "wins": 16,
+      "losses": 15,
+      "draws": 0,
+      "dim_averages": {
+        "image_precision": 3.0,
+        "cut": 4.2,
+        "economy": 3.52,
+        "resonance": 4.37,
+        "originality": 4.02,
+        "musicality": 3.15
+      },
+      "last_reasoning": "Poem A excels in concrete sensory precision and economy while maintaining strong cut and musicality, whereas Poem B's ambitious originality and resonance are undermined by abstraction and grammatical ambiguity that obscures rather than clarifies meaning."
     },
     {
       "id": "ai-ink-between-borders-5",
@@ -6412,32 +6412,6 @@
       "last_reasoning": "Poem A achieves greater originality and a sharper cut through its unexpected cognitive turn (finding function in repetition, then the meta-observation of the engineer), while Poem B, though beautifully precise in image, relies on the well-worn romantic fusion of blossoms with stars that has saturated contemporary haiku tradition."
     },
     {
-      "id": "ai-tuk-tuk-saints-3",
-      "lines": [
-        "Dhaka street food smoke",
-        "rises from oil drums cut in",
-        "half and filled with fire"
-      ],
-      "source": "ai",
-      "author": "Riley Chen",
-      "collection": "Tuk-Tuk Saints",
-      "translator": null,
-      "elo": 1468.1,
-      "matches": 21,
-      "wins": 10,
-      "losses": 11,
-      "draws": 0,
-      "dim_averages": {
-        "image_precision": 5.0,
-        "cut": 2.72,
-        "economy": 3.47,
-        "resonance": 3.38,
-        "originality": 3.9,
-        "musicality": 3.26
-      },
-      "last_reasoning": "Poem B achieves superior originality through its specific geographic and sensory detail (Dhaka street food, oil drums as makeshift cookware), creates a more meaningful cut between the humble apparatus and the nourishing result, and sustains greater resonance through cultural specificity, while Poem A, though musically graceful, relies on familiar domestic imagery (golden hour, kitchen windowsill) with minimal juxtaposition."
-    },
-    {
       "id": "ai-pulse-points-3",
       "lines": [
         "Blood pressure normal",
@@ -6540,6 +6514,32 @@
         "musicality": 3.27
       },
       "last_reasoning": "Poem B achieves greater originality and resonance through its metaphysical turn—the altitude as both physical and linguistic container—while Poem A, though musically superior and more imagistically concrete, relies on a more conventional nature observation that closes rather than opens."
+    },
+    {
+      "id": "ai-tuk-tuk-saints-3",
+      "lines": [
+        "Dhaka street food smoke",
+        "rises from oil drums cut in",
+        "half and filled with fire"
+      ],
+      "source": "ai",
+      "author": "Riley Chen",
+      "collection": "Tuk-Tuk Saints",
+      "translator": null,
+      "elo": 1463.3,
+      "matches": 22,
+      "wins": 10,
+      "losses": 12,
+      "draws": 0,
+      "dim_averages": {
+        "image_precision": 5.0,
+        "cut": 2.69,
+        "economy": 3.49,
+        "resonance": 3.36,
+        "originality": 3.9,
+        "musicality": 3.25
+      },
+      "last_reasoning": "Poem A achieves superior integration of form and content through its repetitive musicality that enacts the bodily knowledge it describes, while Poem B, though vivid and geographically specific, lacks the productive tension between its descriptive elements that defines strong haiku."
     },
     {
       "id": "ai-spine-cracked-at-hope-5",
@@ -8388,6 +8388,32 @@
       "last_reasoning": "Poem A delivers a precise, sensory image with a genuine cut (mechanical action versus bodily relief) and surprising language ('portions'), while Poem B relies on familiar tropes ('urban oasis,' 'shared laughter') without juxtaposition or concrete specificity."
     },
     {
+      "id": "ai-grease-and-grace-notes-4",
+      "lines": [
+        "Corner store lottery",
+        "tickets promise what paychecks",
+        "never seem to bring"
+      ],
+      "source": "ai",
+      "author": "Blake Lee",
+      "collection": "Grease and Grace Notes",
+      "translator": null,
+      "elo": 1402.2,
+      "matches": 21,
+      "wins": 6,
+      "losses": 15,
+      "draws": 0,
+      "dim_averages": {
+        "image_precision": 3.33,
+        "cut": 3.24,
+        "economy": 3.56,
+        "resonance": 3.3,
+        "originality": 2.43,
+        "musicality": 2.96
+      },
+      "last_reasoning": "Poem A creates a sharp socioeconomic cut between hope and disappointment that deepens with reflection, while Poem B, despite precise imagery and pleasant sound, lacks meaningful tension and relies on familiar nature-domestic juxtaposition."
+    },
+    {
       "id": "ai-pulse-points-4",
       "lines": [
         "Checkpoint scanner beeps",
@@ -8412,32 +8438,6 @@
         "musicality": 3.0
       },
       "last_reasoning": "Poem B achieves superior integration across all dimensions—its concrete sensory details (grounds, rumbling bus, unfinished verse) create natural interplay between human creativity and temporal interruption, while its sound structure is genuinely inseparable from meaning, whereas Poem A's clever conceit of 'technology suspects' feels slightly forced and self-aware, limiting its resonance."
-    },
-    {
-      "id": "ai-dust-motes-dancing-2",
-      "lines": [
-        "Ice crystals form stars",
-        "on my kitchen window pane",
-        "tea kettle whistles"
-      ],
-      "source": "ai",
-      "author": "Jing Li",
-      "collection": "Dust Motes Dancing",
-      "translator": null,
-      "elo": 1398.9,
-      "matches": 14,
-      "wins": 3,
-      "losses": 11,
-      "draws": 0,
-      "dim_averages": {
-        "image_precision": 4.07,
-        "cut": 2.57,
-        "economy": 3.42,
-        "resonance": 2.5,
-        "originality": 2.29,
-        "musicality": 3.36
-      },
-      "last_reasoning": "Poem B excels through precise domestic imagery with a meaningful juxtaposition (crystalline beauty versus mundane domestic sound), flawless economy where each word intensifies the contrast, and superior musicality that mirrors the poem's movement from visual stillness to auditory interruption, while Poem A relies on familiar crow-and-fog imagery with a weaker structural turn."
     },
     {
       "id": "ai-between-departures-6",
@@ -8542,32 +8542,6 @@
         "musicality": 3.34
       },
       "last_reasoning": "Poem A achieves superior originality through its metaphorical leap (hunger as mathematical fluency) and maintains stronger economy by eliminating the explanatory final line's redundancy, while Poem B relies on more conventional symbolism (neon decay = death) and its final line tells rather than shows."
-    },
-    {
-      "id": "ai-grease-and-grace-notes-4",
-      "lines": [
-        "Corner store lottery",
-        "tickets promise what paychecks",
-        "never seem to bring"
-      ],
-      "source": "ai",
-      "author": "Blake Lee",
-      "collection": "Grease and Grace Notes",
-      "translator": null,
-      "elo": 1394.3,
-      "matches": 20,
-      "wins": 5,
-      "losses": 15,
-      "draws": 0,
-      "dim_averages": {
-        "image_precision": 3.35,
-        "cut": 3.2,
-        "economy": 3.54,
-        "resonance": 3.26,
-        "originality": 2.45,
-        "musicality": 2.96
-      },
-      "last_reasoning": "Poem A executes flawlessly across all dimensions with an unexpected metaphorical leap (interior/spreadsheet) that feels genuinely revelatory, while Poem B relies on familiar social commentary (poverty/aspiration cliché) with looser construction and padding ('never seem to')."
     },
     {
       "id": "ai-between-pulse-and-breath-5",
@@ -8908,6 +8882,32 @@
       "last_reasoning": "Poem A achieves superior execution across most dimensions with a sharp, meaningful cut between sensory grooming detail and mortality, while Poem B's atmospheric observation, though original, lacks structural clarity and the cut between moonlight and the wisteria's distanced qualities feels diffuse rather than incisive."
     },
     {
+      "id": "ai-dust-motes-dancing-2",
+      "lines": [
+        "Ice crystals form stars",
+        "on my kitchen window pane",
+        "tea kettle whistles"
+      ],
+      "source": "ai",
+      "author": "Jing Li",
+      "collection": "Dust Motes Dancing",
+      "translator": null,
+      "elo": 1373.3,
+      "matches": 16,
+      "wins": 3,
+      "losses": 13,
+      "draws": 0,
+      "dim_averages": {
+        "image_precision": 4.13,
+        "cut": 2.5,
+        "economy": 3.43,
+        "resonance": 2.44,
+        "originality": 2.25,
+        "musicality": 3.38
+      },
+      "last_reasoning": "Poem A creates a sharp socioeconomic cut between hope and disappointment that deepens with reflection, while Poem B, despite precise imagery and pleasant sound, lacks meaningful tension and relies on familiar nature-domestic juxtaposition."
+    },
+    {
       "id": "ai-threading-the-monsoon-1",
       "lines": [
         "Sparrow builds her nest",
@@ -9012,32 +9012,6 @@
       "last_reasoning": "Poem B achieves the essential haiku virtues—precise, economical language with a resonant emotional cut (the implied grief of sitting on the floor)—while Poem A relies on a decorative simile that flattens tension rather than creating it."
     },
     {
-      "id": "ai-between-altitudes-3",
-      "lines": [
-        "Temple steps gleam wet",
-        "with morning rain—I climb",
-        "toward evening prayers"
-      ],
-      "source": "ai",
-      "author": "Robin Novak",
-      "collection": "Between Altitudes",
-      "translator": null,
-      "elo": 1368.0,
-      "matches": 26,
-      "wins": 5,
-      "losses": 21,
-      "draws": 0,
-      "dim_averages": {
-        "image_precision": 3.92,
-        "cut": 2.77,
-        "economy": 3.53,
-        "resonance": 2.85,
-        "originality": 2.12,
-        "musicality": 3.83
-      },
-      "last_reasoning": "Poem A achieves classical haiku power through a genuine metaphorical cut (effort vs. resistant nature) where every word serves structural and emotional purpose, while Poem B relies on conventional temple/spiritual imagery with weak juxtaposition between wet steps and evening prayers that feels decorative rather than generative."
-    },
-    {
       "id": "ai-small-resurrections-3",
       "lines": [
         "Bank teller counts money",
@@ -9114,6 +9088,32 @@
         "musicality": 2.35
       },
       "last_reasoning": "Poem A excels in concrete sensory detail and emotional resonance through its physical object, while Poem B's abstract intellectual framework and awkward syntax undermine its originality of concept."
+    },
+    {
+      "id": "ai-between-altitudes-3",
+      "lines": [
+        "Temple steps gleam wet",
+        "with morning rain—I climb",
+        "toward evening prayers"
+      ],
+      "source": "ai",
+      "author": "Robin Novak",
+      "collection": "Between Altitudes",
+      "translator": null,
+      "elo": 1365.2,
+      "matches": 27,
+      "wins": 5,
+      "losses": 22,
+      "draws": 0,
+      "dim_averages": {
+        "image_precision": 3.89,
+        "cut": 2.74,
+        "economy": 3.51,
+        "resonance": 2.82,
+        "originality": 2.12,
+        "musicality": 3.8
+      },
+      "last_reasoning": "Poem B executes a profound cut between the spider's embodied connection to the world and the speaker's existential isolation, with every word essential, while Poem A uses conventional imagery and lacks meaningful tension between its elements."
     },
     {
       "id": "ai-four-seasons-four-tongues-5",
@@ -10390,32 +10390,6 @@
       "last_reasoning": "Poem A presents a vivid, concrete scene with a meaningful cut between human urgency and natural forces, while Poem B relies on abstract philosophical language about haiku itself—meta-commentary rather than embodied perception—and employs familiar clichés (essence, grace, fleeting moments) that undermine its execution."
     },
     {
-      "id": "human-matsuo-basho-16",
-      "lines": [
-        "the butterfly—",
-        "dreaming, perhaps,",
-        "of fields and flowers"
-      ],
-      "source": "human",
-      "author": "Matsuo Basho",
-      "collection": "Japanese Lyrics",
-      "translator": "Hearn",
-      "elo": 1300.0,
-      "matches": 20,
-      "wins": 1,
-      "losses": 19,
-      "draws": 0,
-      "dim_averages": {
-        "image_precision": 2.35,
-        "cut": 1.65,
-        "economy": 2.15,
-        "resonance": 2.05,
-        "originality": 1.12,
-        "musicality": 2.96
-      },
-      "last_reasoning": "Poem A succeeds through concrete sensory observation and musical flow despite its familiar theme, while Poem B relies on abstract emotional language and therapeutic platitudes that haiku traditionally avoids."
-    },
-    {
       "id": "ai-tracks-in-fresh-snow-2",
       "lines": [
         "Snowflakes swirl and drift,",
@@ -10440,6 +10414,32 @@
         "musicality": 2.87
       },
       "last_reasoning": "Poem B achieves haiku excellence through precise, irreplaceable imagery (the warm cobblestone), a powerful cut between physical sensation and temporal absence, flawless economy where each word earns its place, and genuine originality in the metaphor of reading the street like a palm—while Poem A relies on familiar winter imagery and weak connections between its elements."
+    },
+    {
+      "id": "human-matsuo-basho-16",
+      "lines": [
+        "the butterfly—",
+        "dreaming, perhaps,",
+        "of fields and flowers"
+      ],
+      "source": "human",
+      "author": "Matsuo Basho",
+      "collection": "Japanese Lyrics",
+      "translator": "Hearn",
+      "elo": 1296.9,
+      "matches": 21,
+      "wins": 1,
+      "losses": 20,
+      "draws": 0,
+      "dim_averages": {
+        "image_precision": 2.33,
+        "cut": 1.62,
+        "economy": 2.14,
+        "resonance": 2.05,
+        "originality": 1.11,
+        "musicality": 2.96
+      },
+      "last_reasoning": "Poem B achieves specificity through concrete, material detail (scarred table, coffee rings), creates a productive gap between academic debate and natural erosion, and every word counts—while Poem A relies on generic butterfly clichés and interpolated speculation that dilutes rather than sharpens the image."
     },
     {
       "id": "ai-stone-lanterns-and-whispers-3",
@@ -10494,32 +10494,6 @@
       "last_reasoning": "Poem A achieves the haiku ideal through concrete sensory detail, a meaningful cut between the moon's eternal cycle and the speaker's nocturnal journey, and remarkable musicality, while Poem B relies on abstraction and explanation rather than image, padding its lines with interpretive language that diminishes rather than deepens the moment."
     },
     {
-      "id": "ai-mechanisms-in-motion-6",
-      "lines": [
-        "Bandage sticks to skin",
-        "adhesive holding gauze tight",
-        "covering the cut"
-      ],
-      "source": "ai",
-      "author": "Casey Singh",
-      "collection": "Mechanisms in Motion",
-      "translator": null,
-      "elo": 1293.4,
-      "matches": 18,
-      "wins": 0,
-      "losses": 18,
-      "draws": 0,
-      "dim_averages": {
-        "image_precision": 3.89,
-        "cut": 1.77,
-        "economy": 2.28,
-        "resonance": 1.89,
-        "originality": 1.6,
-        "musicality": 2.34
-      },
-      "last_reasoning": "Poem A uses the cut between intimate domestic detail and seasonal abstraction to create metaphorical depth, while Poem B describes its literal subject so explicitly that it leaves no gap for the reader's imagination and reads more like explanation than haiku."
-    },
-    {
       "id": "ai-steam-and-morning-light-4",
       "lines": [
         "Trembling, I step forth",
@@ -10544,6 +10518,32 @@
         "musicality": 2.84
       },
       "last_reasoning": "Poem A embodies haiku mastery through its precise cut (physical/emotional weather), every word serving meaning, and genuine philosophical resonance, while Poem B relies on explicit metaphor and emotional telling rather than the imagistic restraint and discovery that defines the form."
+    },
+    {
+      "id": "ai-mechanisms-in-motion-6",
+      "lines": [
+        "Bandage sticks to skin",
+        "adhesive holding gauze tight",
+        "covering the cut"
+      ],
+      "source": "ai",
+      "author": "Casey Singh",
+      "collection": "Mechanisms in Motion",
+      "translator": null,
+      "elo": 1290.9,
+      "matches": 19,
+      "wins": 0,
+      "losses": 19,
+      "draws": 0,
+      "dim_averages": {
+        "image_precision": 3.84,
+        "cut": 1.73,
+        "economy": 2.27,
+        "resonance": 1.84,
+        "originality": 1.57,
+        "musicality": 2.32
+      },
+      "last_reasoning": "Poem A creates a vivid sensory moment with precise diction and internal resonance (staining/learning as parallel acts of impression), while Poem B describes a mundane action in literal, explanatory terms with no meaningful juxtaposition or deeper significance."
     },
     {
       "id": "ai-tracks-in-fresh-snow-1",
