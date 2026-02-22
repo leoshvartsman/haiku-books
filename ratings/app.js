@@ -314,9 +314,16 @@ function positionTooltip(e) {
 }
 
 function buildChartLegend(poems) {
-    const humanAuthors = [...new Set(poems.filter(p => p.source === "human").map(p => p.author))].sort();
-    const aiAuthors    = [...new Set(poems.filter(p => p.source === "ai").map(p => p.author))].sort();
     const rated = poems.filter(p => p.matches > 0);
+    const poetAvgElo = {};
+    [...new Set(poems.map(p => p.author))].forEach(a => {
+        const pp = rated.filter(x => x.author === a);
+        poetAvgElo[a] = pp.length ? pp.reduce((s, x) => s + x.elo, 0) / pp.length : 1500;
+    });
+    const byEloDesc = (a, b) => poetAvgElo[b] - poetAvgElo[a];
+
+    const humanAuthors = [...new Set(poems.filter(p => p.source === "human").map(p => p.author))].sort(byEloDesc);
+    const aiAuthors    = [...new Set(poems.filter(p => p.source === "ai").map(p => p.author))].sort(byEloDesc);
 
     const chip = (author, cls) => {
         const col = authorColors[author] || "#999";
