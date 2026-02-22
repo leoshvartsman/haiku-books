@@ -24,14 +24,21 @@ async function init() {
         renderSummary(data.summary);
         setupFilters();
         applyFilter("all");
-        buildAuthorColors(allPoems);
-        renderScatterChart(allPoems);
     } catch (e) {
         document.getElementById("leaderboard").innerHTML = `
             <div class="no-ratings">
                 <p>No ratings yet.</p>
                 <p style="font-size:0.85rem">Run <code>python rate_poems.py</code> to start rating.</p>
             </div>`;
+        return;
+    }
+
+    // Chart rendering is isolated so any failure here doesn't wipe the leaderboard
+    try {
+        buildAuthorColors(allPoems);
+        renderScatterChart(allPoems);
+    } catch (e) {
+        console.error("Chart rendering error:", e);
     }
 }
 
@@ -334,13 +341,16 @@ function buildChartLegend(poems) {
     const toggleAllBtn = (source, label) =>
         `<button class="legend-toggle-all" data-source="${source}">${label}</button>`;
 
-    document.getElementById("chart-legend-human").innerHTML = `
+    const humanEl = document.getElementById("chart-legend-human");
+    const aiEl    = document.getElementById("chart-legend-ai");
+
+    if (humanEl) humanEl.innerHTML = `
         <div class="legend-group-title">◆ Human Poets
             <span>${toggleAllBtn("human", "all")} / ${toggleAllBtn("human-off", "none")}</span>
         </div>
         <div class="legend-chips">${humanAuthors.map(a => chip(a, "human")).join("")}</div>`;
 
-    document.getElementById("chart-legend-ai").innerHTML = `
+    if (aiEl) aiEl.innerHTML = `
         <div class="legend-group-title">● AI Poets
             <span>${toggleAllBtn("ai", "all")} / ${toggleAllBtn("ai-off", "none")}</span>
         </div>
