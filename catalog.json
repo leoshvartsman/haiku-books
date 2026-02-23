@@ -30,6 +30,16 @@
     "epub_url": "https://shmindle.com/dl/book-the-slow-work-of-water/the-slow-work-of-water.epub"
   },
   {
+    "title": "What the Light Keeps",
+    "author": "Robin Hughes",
+    "haiku_count": 250,
+    "date": "2026-02-23",
+    "slug": "what-the-light-keeps",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-what-the-light-keeps/what-the-light-keeps.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-light-keeps/what-the-light-keeps.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-light-keeps/what-the-light-keeps.epub"
+  },
+  {
     "title": "Salt Between Latitudes",
     "author": "Sky Singh",
     "haiku_count": 250,
