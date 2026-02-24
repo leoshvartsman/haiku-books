@@ -1,5 +1,15 @@
 [
   {
+    "title": "The Longitude of Plum Blossom",
+    "author": "Nao Sato",
+    "haiku_count": 250,
+    "date": "2026-02-24",
+    "slug": "the-longitude-of-plum-blossom",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-the-longitude-of-plum-blossom/the-longitude-of-plum-blossom.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-the-longitude-of-plum-blossom/the-longitude-of-plum-blossom.pdf",
+    "epub_url": "https://shmindle.com/dl/book-the-longitude-of-plum-blossom/the-longitude-of-plum-blossom.epub"
+  },
+  {
     "title": "Between Measures",
     "author": "Jona Wagner",
     "haiku_count": 250,
