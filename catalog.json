@@ -20,6 +20,16 @@
     "epub_url": "https://shmindle.com/dl/book-concrete-and-lava/concrete-and-lava.epub"
   },
   {
+    "title": "Concrete Blossoms",
+    "author": "Xia Wu",
+    "haiku_count": 250,
+    "date": "2026-02-24",
+    "slug": "concrete-blossoms",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-concrete-blossoms/concrete-blossoms.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-concrete-blossoms/concrete-blossoms.pdf",
+    "epub_url": "https://shmindle.com/dl/book-concrete-blossoms/concrete-blossoms.epub"
+  },
+  {
     "title": "Between Measures",
     "author": "Jona Wagner",
     "haiku_count": 250,
