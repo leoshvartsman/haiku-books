@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 """
-rate_poems.py — Run Claude ELO rating comparisons on the haiku corpus.
+rate_poems.py — Run ELO rating comparisons on the haiku corpus via Ollama.
 
-Reads ratings/corpus.json, selects pairs of poems, asks Claude to score
-each on 6 literary dimensions, updates ELO ratings, and writes:
+Reads ratings/corpus.json, selects pairs of poems, asks a local Ollama model
+to score each on 6 literary dimensions, updates ELO ratings, and writes:
   - ratings/corpus.json  (updated ELO state)
   - ratings/ratings.json (summary for the website)
 
 Usage:
   python rate_poems.py                  # 50 pairs (default)
-  python rate_poems.py --pairs 200      # 200 pairs
-  python rate_poems.py --pairs 100 --model claude-haiku-4-5-20251001
+  python rate_poems.py --pairs 500      # 500 pairs
+  python rate_poems.py --pairs 100 --model llama3.1
 """
 
 import argparse
@@ -20,17 +20,18 @@ import os
 import random
 import re
 import time
+import urllib.request
+import urllib.error
 from datetime import datetime, timezone
 from pathlib import Path
-
-import anthropic
 
 RATINGS_DIR = Path(__file__).parent / "ratings"
 CORPUS_PATH = RATINGS_DIR / "corpus.json"
 OUTPUT_PATH = RATINGS_DIR / "ratings.json"
 
 DEFAULT_PAIRS = 50
-DEFAULT_MODEL = "claude-sonnet-4-6"
+DEFAULT_MODEL = "llama3.1"
+OLLAMA_URL = "http://localhost:11434/api/chat"
 K_FACTOR_NEW = 32   # for poems with < 20 matches
 K_FACTOR_OLD = 16   # for poems with >= 20 matches
 RECENT_OPPONENT_MEMORY = 10  # avoid re-pairing within last N opponents
@@ -130,16 +131,24 @@ def update_dim_averages(poem: dict, scores: dict) -> None:
 
 def select_pairs(poems: list[dict], n: int) -> list[tuple[dict, dict]]:
     """
-    Select N pairs weighted toward poems with similar ELO scores.
-    Avoids recently matched opponents.
+    Select N pairs weighted inversely by match count so under-rated poems
+    catch up to the rest of the corpus faster. Avoids recently matched opponents.
     """
     pairs = []
     attempts = 0
     max_attempts = n * 20
 
+    # Weight: poems with fewer matches are chosen more often.
+    # A poem with 0 matches gets weight (max_matches + 1); one at max gets weight 1.
+    max_matches = max(p["matches"] for p in poems) if poems else 0
+    weights = [max_matches - p["matches"] + 1 for p in poems]
+
     while len(pairs) < n and attempts < max_attempts:
         attempts += 1
-        a, b = random.sample(poems, 2)
+        idx_a, idx_b = random.choices(range(len(poems)), weights=weights, k=2)
+        if idx_a == idx_b:
+            continue
+        a, b = poems[idx_a], poems[idx_b]
 
         # Skip recently matched opponents
         if b["id"] in a.get("recent_opponents", []):
@@ -154,7 +163,7 @@ def select_pairs(poems: list[dict], n: int) -> list[tuple[dict, dict]]:
 
 
 # ---------------------------------------------------------------------------
-# Claude API
+# Ollama API
 # ---------------------------------------------------------------------------
 
 def parse_judge_response(text: str):
@@ -193,8 +202,8 @@ def validate_scores(data: dict) -> bool:
     return True
 
 
-def judge_pair(client: anthropic.Anthropic, poem_a: dict, poem_b: dict, model: str):
-    """Ask Claude to compare two haiku. Returns parsed result or None on failure."""
+def judge_pair(poem_a: dict, poem_b: dict, model: str):
+    """Ask Ollama to compare two haiku. Returns parsed result or None on failure."""
     def pad(lines, idx):
         return lines[idx] if idx < len(lines) else ""
 
@@ -207,18 +216,29 @@ def judge_pair(client: anthropic.Anthropic, poem_a: dict, poem_b: dict, model: s
         line3_b=pad(poem_b["lines"], 2),
     )
 
+    payload = json.dumps({
+        "model": model,
+        "messages": [
+            {"role": "system", "content": JUDGE_SYSTEM},
+            {"role": "user", "content": prompt},
+        ],
+        "stream": False,
+        "format": "json",
+    }).encode()
+
     for attempt in range(3):
         try:
-            response = client.messages.create(
-                model=model,
-                max_tokens=512,
-                system=JUDGE_SYSTEM,
-                messages=[{"role": "user", "content": prompt}],
+            req = urllib.request.Request(
+                OLLAMA_URL,
+                data=payload,
+                headers={"Content-Type": "application/json"},
+                method="POST",
             )
-            text = response.content[0].text
+            with urllib.request.urlopen(req, timeout=120) as resp:
+                data = json.loads(resp.read())
+            text = data["message"]["content"]
             result = parse_judge_response(text)
             if result and validate_scores(result):
-                # Compute totals
                 for side in ["a", "b"]:
                     result[side]["total"] = sum(
                         result[side][d]
@@ -227,12 +247,12 @@ def judge_pair(client: anthropic.Anthropic, poem_a: dict, poem_b: dict, model: s
                 return result
             else:
                 print(f"    Invalid response (attempt {attempt+1}): {text[:200]}")
-        except anthropic.RateLimitError:
-            wait = 2 ** attempt * 5
-            print(f"    Rate limit — waiting {wait}s")
-            time.sleep(wait)
+        except urllib.error.URLError as e:
+            print(f"    Ollama connection error (attempt {attempt+1}): {e}")
+            print(f"    Is Ollama running? Try: ollama serve &")
+            time.sleep(2)
         except Exception as e:
-            print(f"    API error (attempt {attempt+1}): {e}")
+            print(f"    Error (attempt {attempt+1}): {e}")
             time.sleep(2)
 
     return None
@@ -313,26 +333,20 @@ def build_ratings_json(poems: list[dict]) -> dict:
 # ---------------------------------------------------------------------------
 
 def main():
-    parser = argparse.ArgumentParser(description="Run haiku ELO rating comparisons via Claude")
+    parser = argparse.ArgumentParser(description="Run haiku ELO rating comparisons via Ollama")
     parser.add_argument("--pairs", type=int, default=DEFAULT_PAIRS, help="Number of pairs to compare")
-    parser.add_argument("--model", default=DEFAULT_MODEL, help="Claude model to use")
+    parser.add_argument("--model", default=DEFAULT_MODEL, help="Ollama model to use")
     args = parser.parse_args()
-
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not api_key:
-        raise SystemExit("ANTHROPIC_API_KEY not set")
 
     if not CORPUS_PATH.exists():
         raise SystemExit(f"Corpus not found: {CORPUS_PATH}\nRun: python build_corpus.py")
 
     poems = json.loads(CORPUS_PATH.read_text())
-    poem_index = {p["id"]: p for p in poems}
 
     print(f"Corpus: {len(poems)} poems ({sum(1 for p in poems if p['source']=='human')} human, "
           f"{sum(1 for p in poems if p['source']=='ai')} AI)")
-    print(f"Running {args.pairs} comparisons with {args.model}...\n")
+    print(f"Running {args.pairs} comparisons with {args.model} (local Ollama)...\n")
 
-    client = anthropic.Anthropic(api_key=api_key, max_retries=5)
     pairs = select_pairs(poems, args.pairs)
 
     wins_a = wins_b = draws = errors = 0
@@ -340,7 +354,7 @@ def main():
     for i, (poem_a, poem_b) in enumerate(pairs, 1):
         print(f"[{i}/{len(pairs)}] {poem_a['id'][:40]} vs {poem_b['id'][:40]}")
 
-        result = judge_pair(client, poem_a, poem_b, args.model)
+        result = judge_pair(poem_a, poem_b, args.model)
 
         if result is None:
             print("  SKIP (no valid response)")
@@ -371,9 +385,6 @@ def main():
         print(f"  {label} | A:{result['a']['total']}/30  B:{result['b']['total']}/30")
         print(f"  ELO: {poem_a['id'][:25]} → {poem_a['elo']}  |  {poem_b['id'][:25]} → {poem_b['elo']}")
         print(f"  \"{reasoning}\"")
-
-        # Small delay to avoid hammering the API
-        time.sleep(0.3)
 
     print(f"\nDone: {len(pairs)-errors} matches, {errors} errors")
     print(f"A wins: {wins_a}  B wins: {wins_b}  Draws: {draws}")
