@@ -10,6 +10,16 @@
     "epub_url": "https://shmindle.com/dl/book-mud-on-three-continents/mud-on-three-continents.epub"
   },
   {
+    "title": "Where the River Learns Its Name",
+    "author": "Sacha Michel",
+    "haiku_count": 250,
+    "date": "2026-02-25",
+    "slug": "where-the-river-learns-its-name",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-where-the-river-learns-its-name/where-the-river-learns-its-name.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-where-the-river-learns-its-name/where-the-river-learns-its-name.pdf",
+    "epub_url": "https://shmindle.com/dl/book-where-the-river-learns-its-name/where-the-river-learns-its-name.epub"
+  },
+  {
     "title": "The Longitude of Plum Blossom",
     "author": "Nao Sato",
     "haiku_count": 250,
