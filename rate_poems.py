@@ -25,6 +25,19 @@ import urllib.error
 from datetime import datetime, timezone
 from pathlib import Path
 
+# Claude API support (only imported when needed)
+def _judge_claude(prompt: str, system: str, model: str) -> str:
+    """Call Anthropic Claude API and return response text."""
+    import anthropic
+    client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
+    msg = client.messages.create(
+        model=model,
+        max_tokens=512,
+        system=system,
+        messages=[{"role": "user", "content": prompt}],
+    )
+    return msg.content[0].text
+
 RATINGS_DIR = Path(__file__).parent / "ratings"
 CORPUS_PATH = RATINGS_DIR / "corpus.json"
 OUTPUT_PATH = RATINGS_DIR / "ratings.json"
@@ -203,7 +216,7 @@ def validate_scores(data: dict) -> bool:
 
 
 def judge_pair(poem_a: dict, poem_b: dict, model: str):
-    """Ask Ollama to compare two haiku. Returns parsed result or None on failure."""
+    """Compare two haiku via Claude API or Ollama. Returns parsed result or None on failure."""
     def pad(lines, idx):
         return lines[idx] if idx < len(lines) else ""
 
@@ -216,27 +229,32 @@ def judge_pair(poem_a: dict, poem_b: dict, model: str):
         line3_b=pad(poem_b["lines"], 2),
     )
 
-    payload = json.dumps({
-        "model": model,
-        "messages": [
-            {"role": "system", "content": JUDGE_SYSTEM},
-            {"role": "user", "content": prompt},
-        ],
-        "stream": False,
-        "format": "json",
-    }).encode()
+    use_claude = model.startswith("claude-")
 
     for attempt in range(3):
         try:
-            req = urllib.request.Request(
-                OLLAMA_URL,
-                data=payload,
-                headers={"Content-Type": "application/json"},
-                method="POST",
-            )
-            with urllib.request.urlopen(req, timeout=120) as resp:
-                data = json.loads(resp.read())
-            text = data["message"]["content"]
+            if use_claude:
+                text = _judge_claude(prompt, JUDGE_SYSTEM, model)
+            else:
+                payload = json.dumps({
+                    "model": model,
+                    "messages": [
+                        {"role": "system", "content": JUDGE_SYSTEM},
+                        {"role": "user", "content": prompt},
+                    ],
+                    "stream": False,
+                    "format": "json",
+                }).encode()
+                req = urllib.request.Request(
+                    OLLAMA_URL,
+                    data=payload,
+                    headers={"Content-Type": "application/json"},
+                    method="POST",
+                )
+                with urllib.request.urlopen(req, timeout=120) as resp:
+                    data = json.loads(resp.read())
+                text = data["message"]["content"]
+
             result = parse_judge_response(text)
             if result and validate_scores(result):
                 for side in ["a", "b"]:
