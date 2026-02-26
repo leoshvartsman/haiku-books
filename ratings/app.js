@@ -314,8 +314,13 @@ function positionTooltip(e) {
 }
 
 function buildChartLegend(poems) {
-    const humanAuthors = [...new Set(poems.filter(p => p.source === "human").map(p => p.author))].sort();
-    const aiAuthors    = [...new Set(poems.filter(p => p.source === "ai").map(p => p.author))].sort();
+    const avgElo = (author) => {
+        const ps = poems.filter(p => p.author === author && p.matches > 0);
+        return ps.length ? ps.reduce((s, p) => s + p.elo, 0) / ps.length : 1500;
+    };
+    const byEloDesc = (a, b) => avgElo(b) - avgElo(a);
+    const humanAuthors = [...new Set(poems.filter(p => p.source === "human").map(p => p.author))].sort(byEloDesc);
+    const aiAuthors    = [...new Set(poems.filter(p => p.source === "ai").map(p => p.author))].sort(byEloDesc);
     const rated = poems.filter(p => p.matches > 0);
 
     const chip = (author, cls) => {
