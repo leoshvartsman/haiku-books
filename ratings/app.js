@@ -14,7 +14,7 @@ const poemById     = {};
 
 async function init() {
     try {
-        const res = await fetch("ratings.json");
+        const res = await fetch("ratings.json?v=" + Date.now());
         if (!res.ok) throw new Error("ratings.json not found");
         const data = await res.json();
 
