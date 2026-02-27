@@ -30,6 +30,16 @@
     "epub_url": "https://shmindle.com/dl/book-the-light-changes-everywhere/the-light-changes-everywhere.epub"
   },
   {
+    "title": "Before the City Wakes",
+    "author": "Jamie Rodriguez",
+    "haiku_count": 250,
+    "date": "2026-02-27",
+    "slug": "before-the-city-wakes",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-before-the-city-wakes/before-the-city-wakes.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.pdf",
+    "epub_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.epub"
+  },
+  {
     "title": "The Patience of Thresholds",
     "author": "Sky Singh",
     "haiku_count": 250,
@@ -505,9 +515,9 @@
     "haiku_count": 250,
     "date": "2026-02-14",
     "slug": "pulse-points",
-    "cover_url": "",
-    "pdf_url": "",
-    "epub_url": ""
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-pulse-points/pulse-points.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-pulse-points/pulse-points.pdf",
+    "epub_url": "https://shmindle.com/dl/book-pulse-points/pulse-points.epub"
   },
   {
     "title": "Borrowed Ground",
