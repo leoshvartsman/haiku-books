@@ -20,6 +20,16 @@
     "epub_url": "https://shmindle.com/dl/book-where-the-river-learns-its-name/where-the-river-learns-its-name.epub"
   },
   {
+    "title": "What the Meridian Keeps",
+    "author": "Valentín García",
+    "haiku_count": 250,
+    "date": "2026-02-28",
+    "slug": "what-the-meridian-keeps",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-what-the-meridian-keeps/what-the-meridian-keeps.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-meridian-keeps/what-the-meridian-keeps.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-meridian-keeps/what-the-meridian-keeps.epub"
+  },
+  {
     "title": "What the Unemployed Know",
     "author": "Morgan Moore",
     "haiku_count": 250,
