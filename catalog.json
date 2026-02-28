@@ -1,5 +1,15 @@
 [
   {
+    "title": "Stone, Water, Smoke",
+    "author": "Alex Andersson",
+    "haiku_count": 250,
+    "date": "2026-02-28",
+    "slug": "stone-water-smoke",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-stone-water-smoke/stone-water-smoke.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-stone-water-smoke/stone-water-smoke.pdf",
+    "epub_url": "https://shmindle.com/dl/book-stone-water-smoke/stone-water-smoke.epub"
+  },
+  {
     "title": "What the Unemployed Know",
     "author": "Morgan Moore",
     "haiku_count": 250,
