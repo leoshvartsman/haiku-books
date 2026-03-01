@@ -10,6 +10,16 @@
     "epub_url": "https://shmindle.com/dl/book-stone-soil-and-monsoon/stone-soil-and-monsoon.epub"
   },
   {
+    "title": "What the Light Remembers",
+    "author": "Sage Lee",
+    "haiku_count": 250,
+    "date": "2026-03-01",
+    "slug": "what-the-light-remembers",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-what-the-light-remembers/what-the-light-remembers.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-light-remembers/what-the-light-remembers.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-light-remembers/what-the-light-remembers.epub"
+  },
+  {
     "title": "Stone, Water, Smoke",
     "author": "Alex Andersson",
     "haiku_count": 250,
