@@ -20,6 +20,16 @@
     "epub_url": "https://shmindle.com/dl/book-the-longitude-of-smoke/the-longitude-of-smoke.epub"
   },
   {
+    "title": "Meridians of Grass",
+    "author": "Alex Simon",
+    "haiku_count": 250,
+    "date": "2026-03-02",
+    "slug": "meridians-of-grass",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-meridians-of-grass/meridians-of-grass.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-meridians-of-grass/meridians-of-grass.pdf",
+    "epub_url": "https://shmindle.com/dl/book-meridians-of-grass/meridians-of-grass.epub"
+  },
+  {
     "title": "Stone, Soil, and Monsoon",
     "author": "Alex Colombo",
     "haiku_count": 250,
