@@ -270,6 +270,7 @@ def build_catalog(dry_run=False):
     if not dry_run:
         generate_book_pages(catalog, index)
         generate_sitemap(catalog)
+        generate_feed(catalog)
         generate_robots()
 
     # Cleanup tmp
@@ -446,6 +447,7 @@ def generate_book_page(book_catalog: Dict, book_index_entry: Dict) -> None:
     {"<meta name='twitter:image' content='" + cover_url + "'>" if cover_url else ""}
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate" type="application/rss+xml" title="Shmindle — New Haiku Books" href="/feed.xml">
     <link rel="stylesheet" href="../style.css">
 
     <script type="application/ld+json">
@@ -520,6 +522,70 @@ def generate_sitemap(catalog: List[Dict]) -> None:
 
     (SITE_DIR / "sitemap.xml").write_text(sitemap, encoding='utf-8')
     print(f"  Generated sitemap.xml ({len(urls)} URLs)")
+
+
+def generate_feed(catalog: List[Dict]) -> None:
+    """Generate RSS feed (feed.xml) for new book notifications."""
+    from datetime import datetime, timezone
+    from email.utils import format_datetime
+
+    def to_rfc2822(date_str: str) -> str:
+        """Convert YYYY-MM-DD to RFC 2822 format required by RSS."""
+        try:
+            dt = datetime.strptime(date_str, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+        except Exception:
+            dt = datetime.now(timezone.utc)
+        return format_datetime(dt)
+
+    build_date = format_datetime(datetime.now(timezone.utc))
+
+    items = []
+    for book in catalog[:50]:  # most recent 50
+        slug = slugify(book["title"])
+        title = book["title"].replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        author = book["author"].replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        cover_url = book.get("cover_url", "")
+        pdf_url = book.get("pdf_url", "")
+        epub_url = book.get("epub_url", "")
+        pub_date = to_rfc2822(book.get("date", ""))
+        page_url = f"https://shmindle.com/books/{slug}.html"
+        count = book.get("haiku_count", 0)
+
+        desc_parts = [f"<p>A new collection of {count} haiku by {author}.</p>"]
+        if cover_url:
+            desc_parts.append(f'<p><img src="{cover_url}" alt="{title}" style="max-width:300px"/></p>')
+        if pdf_url:
+            desc_parts.append(f'<p><a href="{pdf_url}">Download PDF</a></p>')
+        if epub_url:
+            desc_parts.append(f'<p><a href="{epub_url}">Download EPUB</a></p>')
+        description = "<![CDATA[" + "".join(desc_parts) + "]]>"
+
+        enclosure = f'<enclosure url="{cover_url}" type="image/jpeg"/>' if cover_url else ""
+
+        items.append(f"""  <item>
+    <title>{title} by {author}</title>
+    <link>{page_url}</link>
+    <guid isPermaLink="true">{page_url}</guid>
+    <pubDate>{pub_date}</pubDate>
+    <description>{description}</description>
+    {enclosure}
+  </item>""")
+
+    feed = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shmindle — Free Haiku Poetry Books</title>
+    <link>https://shmindle.com/</link>
+    <description>New haiku poetry collections, free to download as PDF and EPUB.</description>
+    <language>en</language>
+    <lastBuildDate>{build_date}</lastBuildDate>
+    <atom:link href="https://shmindle.com/feed.xml" rel="self" type="application/rss+xml"/>
+{chr(10).join(items)}
+  </channel>
+</rss>"""
+
+    (SITE_DIR / "feed.xml").write_text(feed, encoding="utf-8")
+    print(f"  Generated feed.xml ({len(items)} items)")
 
 
 def generate_robots() -> None:
