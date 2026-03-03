@@ -445,6 +445,7 @@ def generate_book_page(book_catalog: Dict, book_index_entry: Dict) -> None:
     <meta name="twitter:description" content="A collection of {haiku_count} haiku. Free to download.">
     {"<meta name='twitter:image' content='" + cover_url + "'>" if cover_url else ""}
 
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="stylesheet" href="../style.css">
 
     <script type="application/ld+json">
@@ -504,10 +505,13 @@ def generate_book_pages(catalog: List[Dict], index: List[Dict]) -> None:
 
 def generate_sitemap(catalog: List[Dict]) -> None:
     """Generate sitemap.xml for search engines."""
-    urls = ['  <url><loc>https://shmindle.com/</loc><priority>1.0</priority></url>']
+    today = __import__('datetime').date.today().isoformat()
+    most_recent = catalog[0]["date"] if catalog else today
+    urls = [f'  <url><loc>https://shmindle.com/</loc><lastmod>{most_recent}</lastmod><priority>1.0</priority></url>']
     for book in catalog:
         slug = slugify(book["title"])
-        urls.append(f'  <url><loc>https://shmindle.com/books/{slug}.html</loc><priority>0.8</priority></url>')
+        lastmod = book.get("date", today)
+        urls.append(f'  <url><loc>https://shmindle.com/books/{slug}.html</loc><lastmod>{lastmod}</lastmod><priority>0.8</priority></url>')
 
     sitemap = f"""<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
