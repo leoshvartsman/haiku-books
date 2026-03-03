@@ -1,5 +1,15 @@
 [
   {
+    "title": "Borrowed Weather",
+    "author": "Jun Seo",
+    "haiku_count": 250,
+    "date": "2026-03-03",
+    "slug": "borrowed-weather",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-borrowed-weather/borrowed-weather.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-borrowed-weather/borrowed-weather.pdf",
+    "epub_url": "https://shmindle.com/dl/book-borrowed-weather/borrowed-weather.epub"
+  },
+  {
     "title": "Dough Before the Light",
     "author": "Ananya Gupta",
     "haiku_count": 250,
