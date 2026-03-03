@@ -1,7 +1,12 @@
 export default {
-  async fetch(request) {
+  async fetch(request, env) {
     const url = new URL(request.url);
     const path = url.pathname;
+
+    // Handle /subscribe POST (Buttondown signup proxy)
+    if (path === '/subscribe') {
+      return handleSubscribe(request, env);
+    }
 
     // Only handle /dl/* routes
     if (!path.startsWith('/dl/')) {
@@ -34,3 +39,62 @@ export default {
     });
   },
 };
+
+async function handleSubscribe(request, env) {
+  const corsHeaders = {
+    'Access-Control-Allow-Origin': 'https://shmindle.com',
+    'Access-Control-Allow-Methods': 'POST, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type',
+  };
+
+  // CORS preflight
+  if (request.method === 'OPTIONS') {
+    return new Response(null, { headers: corsHeaders });
+  }
+
+  if (request.method !== 'POST') {
+    return new Response('Method not allowed', { status: 405 });
+  }
+
+  let email;
+  try {
+    const body = await request.json();
+    email = body.email;
+  } catch {
+    return new Response(JSON.stringify({ error: 'Invalid request body' }), {
+      status: 400,
+      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+    });
+  }
+
+  if (!email || !email.includes('@')) {
+    return new Response(JSON.stringify({ error: 'Valid email required' }), {
+      status: 400,
+      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+    });
+  }
+
+  const resp = await fetch('https://api.buttondown.com/v1/subscribers', {
+    method: 'POST',
+    headers: {
+      'Authorization': `Token ${env.BUTTONDOWN_API_KEY}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ email }),
+  });
+
+  if (resp.status === 201) {
+    return new Response(JSON.stringify({ success: true }), {
+      status: 200,
+      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+    });
+  }
+
+  // Already subscribed (409) or validation error
+  const data = await resp.json().catch(() => ({}));
+  const errMsg = data.email?.[0] || data.detail || 'Subscription failed';
+  return new Response(JSON.stringify({ error: errMsg }), {
+    status: resp.status === 409 ? 409 : 400,
+    headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+  });
+}
