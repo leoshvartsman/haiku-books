@@ -1,0 +1,63 @@
+# Shmindle
+> A free library of AI-generated haiku poetry collections. All books are available to read online and download as PDF and EPUB at no cost.
+
+## About
+Shmindle publishes original haiku collections created by AI, exploring traditional and contemporary themes. The library grows continuously as new collections are generated and published.
+
+## Collections
+- [The Patience of Thresholds by Sky Singh](https://shmindle.com/books/the-patience-of-thresholds.html): A collection of 250 haiku.
+- [Where the Water Remembers by Xia Zhao](https://shmindle.com/books/where-the-water-remembers.html): A collection of 250 haiku.
+- [What the Rain Remembers by River Lewis](https://shmindle.com/books/what-the-rain-remembers.html): A collection of 250 haiku.
+- [Grease Under the Fingernails by Arjun Desai](https://shmindle.com/books/grease-under-the-fingernails.html): A collection of 250 haiku.
+- [Mud on Three Continents by Diya Shah](https://shmindle.com/books/mud-on-three-continents.html): A collection of 250 haiku.
+- [Where the River Learns Its Name by Sacha Michel](https://shmindle.com/books/where-the-river-learns-its-name.html): A collection of 250 haiku.
+- [The Longitude of Plum Blossom by Nao Sato](https://shmindle.com/books/the-longitude-of-plum-blossom.html): A collection of 250 haiku.
+- [Concrete and Lava by Riley Santos](https://shmindle.com/books/concrete-and-lava.html): A collection of 250 haiku.
+- [Concrete Blossoms by Xia Wu](https://shmindle.com/books/concrete-blossoms.html): A collection of 250 haiku.
+- [Between Measures by Jona Wagner](https://shmindle.com/books/between-measures.html): A collection of 250 haiku.
+- [Dawn Finds Me Here by Skyler Johnson](https://shmindle.com/books/dawn-finds-me-here.html): A collection of 250 haiku.
+- [The Slow Work of Water by Avery Johnson](https://shmindle.com/books/the-slow-work-of-water.html): A collection of 250 haiku.
+- [What the Light Keeps by Robin Hughes](https://shmindle.com/books/what-the-light-keeps.html): A collection of 250 haiku.
+- [Salt Between Latitudes by Sky Singh](https://shmindle.com/books/salt-between-latitudes.html): A collection of 250 haiku.
+- [What the Monsoon Left Behind by Casey Santos](https://shmindle.com/books/what-the-monsoon-left-behind.html): A collection of 214 haiku.
+- [The Long Way Around by Quinn Wilson](https://shmindle.com/books/the-long-way-around.html): A collection of 250 haiku.
+- [What the Roots Remember by Casey García](https://shmindle.com/books/what-the-roots-remember.html): A collection of 250 haiku.
+- [What the Body Carries by Kaori Kato](https://shmindle.com/books/what-the-body-carries.html): A collection of 250 haiku.
+- [Salt in Every Mouth by Robin Andersson](https://shmindle.com/books/salt-in-every-mouth.html): A collection of 250 haiku.
+- [Wet Season, Dry Season by Blake Kim](https://shmindle.com/books/wet-season-dry-season.html): A collection of 250 haiku.
+- [Salt in Every Soil by Quinn Novak](https://shmindle.com/books/salt-in-every-soil.html): A collection of 250 haiku.
+- [Concrete and Snow by Harper Smith](https://shmindle.com/books/concrete-and-snow.html): A collection of 250 haiku.
+- [Salt on Three Shores by Young Lee](https://shmindle.com/books/salt-on-three-shores.html): A collection of 250 haiku.
+- [Salt Keeps Its Shape by River Smith](https://shmindle.com/books/salt-keeps-its-shape.html): A collection of 250 haiku.
+- [What the Soil Remembers by Simone Marino](https://shmindle.com/books/what-the-soil-remembers.html): A collection of 250 haiku.
+- [Sand Keeps Its Shape by Jordan Kowalski](https://shmindle.com/books/sand-keeps-its-shape.html): A collection of 250 haiku.
+- [Salt on Every Windowsill by Charlie Wilson](https://shmindle.com/books/salt-on-every-windowsill.html): A collection of 250 haiku.
+- [Where the Light Arrives First by Sage Patel](https://shmindle.com/books/where-the-light-arrives-first.html): A collection of 250 haiku.
+- [What the Body Remembers by Parker Sato](https://shmindle.com/books/what-the-body-remembers.html): A collection of 250 haiku.
+- [Longitude of Light by Parker Wilson](https://shmindle.com/books/longitude-of-light.html): A collection of 250 haiku.
+- [Grain and Altitude by Robin Ali](https://shmindle.com/books/grain-and-altitude.html): A collection of 250 haiku.
+- [Salt Between Latitudes by Sam Brown](https://shmindle.com/books/salt-between-latitudes.html): A collection of 250 haiku.
+- [Between Ledgers and Light by Sky Singh](https://shmindle.com/books/between-ledgers-and-light.html): A collection of 250 haiku.
+- [Borders I Keep Crossing by Alex Harris](https://shmindle.com/books/borders-i-keep-crossing.html): A collection of 250 haiku.
+- [Salt in Every River by Riley King](https://shmindle.com/books/salt-in-every-river.html): A collection of 250 haiku.
+- [Salt on Every Latitude by Casey García](https://shmindle.com/books/salt-on-every-latitude.html): A collection of 250 haiku.
+- [Four Soils, One Sky by Morgan Kim](https://shmindle.com/books/four-soils-one-sky.html): A collection of 245 haiku.
+- [Four Dawns Rising by Quinn Smith](https://shmindle.com/books/four-dawns-rising.html): A collection of 250 haiku.
+- [Between Tides by Riley Wilson](https://shmindle.com/books/between-tides.html): A collection of 250 haiku.
+- [Cities Beneath the Skin by Sol Díaz](https://shmindle.com/books/cities-beneath-the-skin.html): A collection of 250 haiku.
+- [Between Pulse and Breath by Parker Lewis](https://shmindle.com/books/between-pulse-and-breath.html): A collection of 250 haiku.
+- [Four Corners of Salt by Harper Brown](https://shmindle.com/books/four-corners-of-salt.html): A collection of 249 haiku.
+- [Four Seasons, Four Tongues by Kim Schmidt](https://shmindle.com/books/four-seasons-four-tongues.html): A collection of 250 haiku.
+- [Three Seasons Deep by River García](https://shmindle.com/books/three-seasons-deep.html): A collection of 244 haiku.
+- [Four Winds, One Sky by Skyler Anderson](https://shmindle.com/books/four-winds-one-sky.html): A collection of 250 haiku.
+- [Four Courts of Sky by Cruz Flores](https://shmindle.com/books/four-courts-of-sky.html): A collection of 250 haiku.
+- [Between Sirens by Morgan Andersson](https://shmindle.com/books/between-sirens.html): A collection of 250 haiku.
+- [Pulse Points by Parker Lewis](https://shmindle.com/books/pulse-points.html): A collection of 250 haiku.
+- [Borrowed Ground by Harper Patel](https://shmindle.com/books/borrowed-ground.html): A collection of 237 haiku.
+- [Between Altitudes by Robin Novak](https://shmindle.com/books/between-altitudes.html): A collection of 250 haiku.
+
+## Downloads
+Every collection is free to download as PDF or EPUB from each book's page.
+
+## Haiku Ratings
+AI-generated haiku are rated against classic human haiku (Basho, Issa, Buson, Shiki) using an ELO ranking system: https://shmindle.com/ratings

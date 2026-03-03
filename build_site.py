@@ -443,6 +443,7 @@ def generate_book_page(book_catalog: Dict, book_index_entry: Dict) -> None:
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{title} by {author}">
     <meta name="twitter:description" content="A collection of {haiku_count} haiku. Free to download.">
+    {"<meta name='twitter:image' content='" + cover_url + "'>" if cover_url else ""}
 
     <link rel="stylesheet" href="../style.css">
 
