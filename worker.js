@@ -80,7 +80,7 @@ async function handleSubscribe(request, env) {
       'Authorization': `Token ${env.BUTTONDOWN_API_KEY}`,
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ email }),
+    body: JSON.stringify({ email_address: email }),
   });
 
   if (resp.status === 201) {
