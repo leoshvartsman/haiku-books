@@ -610,6 +610,96 @@
     "epub_url": "https://shmindle.com/dl/book-dust-of-the-ancients/dust-of-the-ancients.epub"
   },
   {
+    "title": "Fading Light, Istanbul",
+    "author": "Robin Andersson",
+    "haiku_count": 144,
+    "date": "2026-03-05",
+    "slug": "fading-light-istanbul",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-fading-light-istanbul/fading-light-istanbul.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-fading-light-istanbul/fading-light-istanbul.pdf",
+    "epub_url": "https://shmindle.com/dl/book-fading-light-istanbul/fading-light-istanbul.epub"
+  },
+  {
+    "title": "Whispers In The Wind",
+    "author": "Blake Novak",
+    "haiku_count": 175,
+    "date": "2026-03-05",
+    "slug": "whispers-in-the-wind",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-whispers-in-the-wind/whispers-in-the-wind.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-whispers-in-the-wind/whispers-in-the-wind.pdf",
+    "epub_url": "https://shmindle.com/dl/book-whispers-in-the-wind/whispers-in-the-wind.epub"
+  },
+  {
+    "title": "Cities I'Ve Called Home",
+    "author": "Sage Singh",
+    "haiku_count": 222,
+    "date": "2026-03-05",
+    "slug": "cities-i-ve-called-home",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-cities-i-ve-called-home/cities-i-ve-called-home.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-cities-i-ve-called-home/cities-i-ve-called-home.pdf",
+    "epub_url": "https://shmindle.com/dl/book-cities-i-ve-called-home/cities-i-ve-called-home.epub"
+  },
+  {
+    "title": "Dusk'S Whispers",
+    "author": "Sage Sato",
+    "haiku_count": 195,
+    "date": "2026-03-05",
+    "slug": "dusk-s-whispers",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-dusk-s-whispers/dusk-s-whispers.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-dusk-s-whispers/dusk-s-whispers.pdf",
+    "epub_url": "https://shmindle.com/dl/book-dusk-s-whispers/dusk-s-whispers.epub"
+  },
+  {
+    "title": "Desert Bloom",
+    "author": "Robin Kowalski",
+    "haiku_count": 169,
+    "date": "2026-03-05",
+    "slug": "desert-bloom",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-desert-bloom/desert-bloom.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-desert-bloom/desert-bloom.pdf",
+    "epub_url": "https://shmindle.com/dl/book-desert-bloom/desert-bloom.epub"
+  },
+  {
+    "title": "Whispers In Exile",
+    "author": "Haruki Saito",
+    "haiku_count": 125,
+    "date": "2026-03-05",
+    "slug": "whispers-in-exile",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-whispers-in-exile/whispers-in-exile.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-whispers-in-exile/whispers-in-exile.pdf",
+    "epub_url": "https://shmindle.com/dl/book-whispers-in-exile/whispers-in-exile.epub"
+  },
+  {
+    "title": "Shadows On The Wall",
+    "author": "Ryan Walsh",
+    "haiku_count": 196,
+    "date": "2026-03-05",
+    "slug": "shadows-on-the-wall",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-shadows-on-the-wall/shadows-on-the-wall.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-shadows-on-the-wall/shadows-on-the-wall.pdf",
+    "epub_url": "https://shmindle.com/dl/book-shadows-on-the-wall/shadows-on-the-wall.epub"
+  },
+  {
+    "title": "Rhythms Of Place",
+    "author": "Sage Clark",
+    "haiku_count": 185,
+    "date": "2026-03-05",
+    "slug": "rhythms-of-place",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-rhythms-of-place/rhythms-of-place.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-rhythms-of-place/rhythms-of-place.pdf",
+    "epub_url": "https://shmindle.com/dl/book-rhythms-of-place/rhythms-of-place.epub"
+  },
+  {
+    "title": "Urban Oasis Fragments",
+    "author": "Dakota Young",
+    "haiku_count": 167,
+    "date": "2026-03-05",
+    "slug": "urban-oasis-fragments",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-urban-oasis-fragments/urban-oasis-fragments.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-urban-oasis-fragments/urban-oasis-fragments.pdf",
+    "epub_url": "https://shmindle.com/dl/book-urban-oasis-fragments/urban-oasis-fragments.epub"
+  },
+  {
     "title": "Smoke Between Latitudes",
     "author": "Harper Martin",
     "haiku_count": 250,
