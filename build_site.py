@@ -373,7 +373,7 @@ def extract_intro(book_index_entry: Dict) -> str:
     return ' '.join(intro_lines).strip()
 
 
-def generate_book_page(book_catalog: Dict, book_index_entry: Dict) -> None:
+def generate_book_page(book_catalog: Dict, book_index_entry: Dict, full_catalog: List[Dict] = None) -> None:
     """Generate an individual HTML page for a book."""
     slug = slugify(book_catalog["title"])
     title = html.escape(book_catalog["title"])
@@ -400,8 +400,11 @@ def generate_book_page(book_catalog: Dict, book_index_entry: Dict) -> None:
         lines_html = ''.join(f'<p>{html.escape(line)}</p>' for line in h.split('\n'))
         samples_html += f'<div class="haiku">{lines_html}</div>\n'
 
-    # Cover image HTML
-    cover_html = f'<img src="{cover_url}" alt="{title}">' if cover_url else ''
+    # Cover image HTML — descriptive alt text for image search (#9)
+    cover_html = (
+        f'<img src="{cover_url}" alt="Cover of {title} by {author} — free haiku poetry ebook">'
+        if cover_url else '<div class="no-cover">📖</div>'
+    )
 
     # Download buttons
     dl_html = ""
@@ -446,6 +449,37 @@ def generate_book_page(book_catalog: Dict, book_index_entry: Dict) -> None:
     if potential_actions:
         schema["potentialAction"] = potential_actions
 
+    # Related books: pick 3 others spread across the catalog (#7)
+    related_html = ""
+    if full_catalog and len(full_catalog) > 3:
+        others = [b for b in full_catalog if b["title"] != book_catalog["title"]]
+        n = len(others)
+        picks = [others[0], others[n // 2], others[-1]]
+        # If current book is near an edge, shift picks to avoid duplicates
+        picks = list({b["slug"]: b for b in picks}.values())[:3]
+        cards = ""
+        for rel in picks:
+            rel_slug = rel["slug"]
+            rel_title = html.escape(rel["title"])
+            rel_author = html.escape(rel["author"])
+            rel_cover = rel.get("cover_url", "")
+            rel_img = (
+                f'<img src="{rel_cover}" alt="Cover of {rel_title}" style="width:80px;height:80px;object-fit:cover;border-radius:4px;flex-shrink:0;">'
+                if rel_cover else
+                '<div style="width:80px;height:80px;background:#e8e4df;border-radius:4px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:1.5rem;">📖</div>'
+            )
+            cards += f"""<a href="{rel_slug}.html" style="display:flex;gap:1rem;align-items:center;text-decoration:none;color:inherit;background:#fff;border-radius:8px;padding:0.75rem;box-shadow:0 1px 4px rgba(0,0,0,0.08);flex:1;min-width:200px;">
+              {rel_img}
+              <div>
+                <div style="font-size:0.95rem;font-weight:600;color:#2c2c2c;margin-bottom:0.2rem;">{rel_title}</div>
+                <div style="font-size:0.82rem;color:#888;">{rel_author}</div>
+              </div>
+            </a>"""
+        related_html = f"""<div style="max-width:720px;margin:0 auto;padding:0 1.5rem 2rem;">
+      <h2 style="font-size:0.85rem;font-weight:400;color:#999;letter-spacing:0.05em;text-transform:uppercase;margin-bottom:1rem;">You might also like</h2>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;">{cards}</div>
+    </div>"""
+
     page_html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -459,7 +493,7 @@ def generate_book_page(book_catalog: Dict, book_index_entry: Dict) -> None:
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{title} by {author} — Shmindle</title>
+    <title>{title} by {author} — Free Haiku Poetry Book | Shmindle</title>
     <meta name="description" content="{meta_desc}">
     <link rel="canonical" href="https://shmindle.com/books/{slug}.html">
 
@@ -506,6 +540,8 @@ def generate_book_page(book_catalog: Dict, book_index_entry: Dict) -> None:
 
         {"<div class='sample-haiku'><h2>Sample Haiku</h2>" + samples_html + "</div>" if samples_html else ""}
     </div>
+
+    {related_html}
 
     <section class="subscribe-section">
         <p class="subscribe-heading">Get notified when new books arrive</p>
@@ -572,7 +608,7 @@ def generate_book_pages(catalog: List[Dict], index: List[Dict]) -> None:
 
     for book in catalog:
         idx_entry = index_by_title.get(book["title"], {})
-        generate_book_page(book, idx_entry)
+        generate_book_page(book, idx_entry, full_catalog=catalog)
 
     print(f"  Generated {len(catalog)} book pages in books/")
 
