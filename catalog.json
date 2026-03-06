@@ -1,5 +1,95 @@
 [
   {
+    "title": "Dust on Every Threshold",
+    "author": "Morgan Durand",
+    "haiku_count": 250,
+    "date": "2026-03-05",
+    "slug": "dust-on-every-threshold",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-dust-on-every-threshold/dust-on-every-threshold.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-dust-on-every-threshold/dust-on-every-threshold.pdf",
+    "epub_url": "https://shmindle.com/dl/book-dust-on-every-threshold/dust-on-every-threshold.epub"
+  },
+  {
+    "title": "The Body Keeps the Latitude",
+    "author": "Harper Martin",
+    "haiku_count": 250,
+    "date": "2026-03-05",
+    "slug": "the-body-keeps-the-latitude",
+    "cover_url": "",
+    "pdf_url": "https://shmindle.com/dl/book-the-body-keeps-the-latitude/the-body-keeps-the-latitude.pdf",
+    "epub_url": "https://shmindle.com/dl/book-the-body-keeps-the-latitude/the-body-keeps-the-latitude.epub"
+  },
+  {
+    "title": "Wherever the Light Lands",
+    "author": "Charlie Koch",
+    "haiku_count": 250,
+    "date": "2026-03-05",
+    "slug": "wherever-the-light-lands",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-wherever-the-light-lands/wherever-the-light-lands.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-wherever-the-light-lands/wherever-the-light-lands.pdf",
+    "epub_url": "https://shmindle.com/dl/book-wherever-the-light-lands/wherever-the-light-lands.epub"
+  },
+  {
+    "title": "Stone Light, Moving Water",
+    "author": "Taylor Roberts",
+    "haiku_count": 250,
+    "date": "2026-03-05",
+    "slug": "stone-light-moving-water",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-stone-light-moving-water/stone-light-moving-water.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-stone-light-moving-water/stone-light-moving-water.pdf",
+    "epub_url": "https://shmindle.com/dl/book-stone-light-moving-water/stone-light-moving-water.epub"
+  },
+  {
+    "title": "Monsoon Whispers",
+    "author": "Arnav Singh",
+    "haiku_count": 169,
+    "date": "2026-03-05",
+    "slug": "monsoon-whispers",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-monsoon-whispers/monsoon-whispers.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-monsoon-whispers/monsoon-whispers.pdf",
+    "epub_url": "https://shmindle.com/dl/book-monsoon-whispers/monsoon-whispers.epub"
+  },
+  {
+    "title": "Smoke Between Latitudes",
+    "author": "Harper Martin",
+    "haiku_count": 250,
+    "date": "2026-03-04",
+    "slug": "smoke-between-latitudes",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-smoke-between-latitudes/smoke-between-latitudes.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-smoke-between-latitudes/smoke-between-latitudes.pdf",
+    "epub_url": "https://shmindle.com/dl/book-smoke-between-latitudes/smoke-between-latitudes.epub"
+  },
+  {
+    "title": "Before the Harbor Lights",
+    "author": "Jordan Brown",
+    "haiku_count": 250,
+    "date": "2026-03-04",
+    "slug": "before-the-harbor-lights",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-before-the-harbor-lights/before-the-harbor-lights.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-before-the-harbor-lights/before-the-harbor-lights.pdf",
+    "epub_url": "https://shmindle.com/dl/book-before-the-harbor-lights/before-the-harbor-lights.epub"
+  },
+  {
+    "title": "Every Address I Have Left",
+    "author": "Logan Jackson",
+    "haiku_count": 250,
+    "date": "2026-03-04",
+    "slug": "every-address-i-have-left",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-every-address-i-have-left/every-address-i-have-left.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-every-address-i-have-left/every-address-i-have-left.pdf",
+    "epub_url": "https://shmindle.com/dl/book-every-address-i-have-left/every-address-i-have-left.epub"
+  },
+  {
+    "title": "Papers in the Rain",
+    "author": "Sky Ali",
+    "haiku_count": 250,
+    "date": "2026-03-04",
+    "slug": "papers-in-the-rain",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-papers-in-the-rain/papers-in-the-rain.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-papers-in-the-rain/papers-in-the-rain.pdf",
+    "epub_url": "https://shmindle.com/dl/book-papers-in-the-rain/papers-in-the-rain.epub"
+  },
+  {
     "title": "Borrowed Weather",
     "author": "Jun Seo",
     "haiku_count": 250,
