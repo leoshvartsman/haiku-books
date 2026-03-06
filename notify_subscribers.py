@@ -131,7 +131,7 @@ def send_email(subject, html_body, api_key):
     payload = json.dumps({
         "subject": subject,
         "body": html_body,
-        "status": "sent",
+        "status": "about_to_send",
     }).encode()
 
     req = urllib.request.Request(
