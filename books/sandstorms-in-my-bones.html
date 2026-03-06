@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BPD55QWY65"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-BPD55QWY65');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandstorms In My Bones by Quinn Martin — Shmindle</title>
+    <meta name="description" content="Sandstorms In My Bones — a collection of 159 haiku by Quinn Martin. Free to download as PDF or EPUB.">
+    <link rel="canonical" href="https://shmindle.com/books/sandstorms-in-my-bones.html">
+
+    <meta property="og:title" content="Sandstorms In My Bones by Quinn Martin">
+    <meta property="og:description" content="A collection of 159 haiku. Free to download.">
+    <meta property="og:type" content="book">
+    <meta property="og:url" content="https://shmindle.com/books/sandstorms-in-my-bones.html">
+    
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sandstorms In My Bones by Quinn Martin">
+    <meta name="twitter:description" content="A collection of 159 haiku. Free to download.">
+    
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate" type="application/rss+xml" title="Shmindle — New Haiku Books" href="/feed.xml">
+    <link rel="stylesheet" href="../style.css">
+
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "Book", "name": "Sandstorms In My Bones", "author": {"@type": "Person", "name": "Quinn Martin"}, "bookFormat": "EBook", "url": "https://shmindle.com/books/sandstorms-in-my-bones.html", "numberOfPages": 159, "genre": "Poetry", "inLanguage": "en", "isAccessibleForFree": true}
+    </script>
+</head>
+<body>
+    <header>
+        <h1><a href="../" style="text-decoration:none;color:inherit">Shmindle</a></h1>
+    </header>
+
+    <div class="book-detail">
+        <a href="../" class="back-link">&larr; All books</a>
+
+        <div class="book-hero">
+            
+            <div class="book-info">
+                <h1>Sandstorms In My Bones</h1>
+                <div class="author">Quinn Martin</div>
+                <div class="meta">159 haiku</div>
+                <div class="download-btns">
+                    <a href="https://shmindle.com/dl/book-sandstorms-in-my-bones/sandstorms-in-my-bones.pdf" class="btn-pdf" type="application/pdf">Download PDF</a>
+<a href="https://shmindle.com/dl/book-sandstorms-in-my-bones/sandstorms-in-my-bones.epub" class="btn-epub" type="application/epub+zip">Download EPUB</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class='book-intro'>As I look back on my life&#x27;s journey, I see a trail of sandstorms etched into my bones – remnants of the places I&#x27;ve wandered to, and the people who&#x27;ve shared their stories with me along the way. From the arid expanses of North America to the snow-covered vastness of Europe, and from the scorching cities of South America to the ancient mystique of Africa, each step has left its mark on my soul.
+
+In this collection, I invite you to join me on that migratory path, to breathe in the desert hues of a Tucson sunrise, to feel the first snowflakes of a European winter, and to sway with the rhythm of tango nights in Buenos Aires. We&#x27;ll wander through the gardens of Alhambra, where Moorish whispers still linger in the air, and pause by the Nile&#x27;s banks, where pharaohs once reigned.
+
+These haiku are not mere snapshots; they&#x27;re fragments of my own story, woven with the tales of those I&#x27;ve met and loved along the way. They capture moments of wonder, loss, and belonging – fleeting glimpses into a life lived in transit, yet somehow anchored by the people, landscapes, and experiences that have become an integral part of me.</div>
+
+        <div class='sample-haiku'><h2>Sample Haiku</h2><div class="haiku"><p>Ripples on the Nile</p><p>Golden light dances, fading fast</p><p>Sandswept, peaceful hush</p></div>
+<div class="haiku"><p>Sahara&#x27;s endless skies</p><p>Deep blue above, vast below</p><p>Cosmic silence reigns</p></div>
+<div class="haiku"><p>Gray skies weep with rain</p><p>Prairie fields, soft green carpet</p><p>Nature&#x27;s soothing melody</p></div>
+<div class="haiku"><p>Guitarra&#x27;s melancholy</p><p>Echoes through tapas bars</p><p>Whispers of the past</p></div>
+<div class="haiku"><p>Garden paths unfold</p><p>Twilight shadows dancing softly</p><p>Whispers of nature</p></div>
+<div class="haiku"><p>Sunrise over Nile</p><p>Golden light on rippling waters</p><p>Morning&#x27;s promise made</p></div>
+</div>
+    </div>
+
+    <section class="subscribe-section">
+        <p class="subscribe-heading">Get notified when new books arrive</p>
+        <form id="subscribe-form" class="subscribe-form">
+            <input type="email" id="subscribe-email" placeholder="your@email.com" required aria-label="Email address">
+            <button type="submit">Subscribe</button>
+        </form>
+        <p id="subscribe-msg" class="subscribe-msg" aria-live="polite"></p>
+    </section>
+
+    <footer>
+        <p>Your home for books generated by AI. Free to download anytime. &nbsp;|&nbsp; <a href="/feed.xml" style="color:#bbb;text-decoration:none;">RSS feed</a></p>
+    </footer>
+
+    <script>
+      (function () {
+        const form = document.getElementById('subscribe-form');
+        const msg  = document.getElementById('subscribe-msg');
+        form.addEventListener('submit', async function (e) {
+          e.preventDefault();
+          const email = document.getElementById('subscribe-email').value.trim();
+          msg.textContent = '';
+          msg.className = 'subscribe-msg';
+          try {
+            const resp = await fetch('/subscribe', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ email }),
+            });
+            const data = await resp.json();
+            if (data.success) {
+              msg.textContent = "Subscribed! You'll hear from us when new books arrive.";
+              msg.className = 'subscribe-msg subscribe-ok';
+              form.reset();
+            } else if (resp.status === 409) {
+              msg.textContent = "You're already subscribed.";
+              msg.className = 'subscribe-msg subscribe-ok';
+            } else {
+              msg.textContent = data.error || 'Something went wrong. Please try again.';
+              msg.className = 'subscribe-msg subscribe-err';
+            }
+          } catch {
+            msg.textContent = 'Network error. Please try again.';
+            msg.className = 'subscribe-msg subscribe-err';
+          }
+        });
+      })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BPD55QWY65"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-BPD55QWY65');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liminal Landscapes by Morgan Kim — Shmindle</title>
+    <meta name="description" content="Liminal Landscapes — a collection of 175 haiku by Morgan Kim. Free to download as PDF or EPUB.">
+    <link rel="canonical" href="https://shmindle.com/books/liminal-landscapes.html">
+
+    <meta property="og:title" content="Liminal Landscapes by Morgan Kim">
+    <meta property="og:description" content="A collection of 175 haiku. Free to download.">
+    <meta property="og:type" content="book">
+    <meta property="og:url" content="https://shmindle.com/books/liminal-landscapes.html">
+    <meta property='og:image' content='https://github.com/leoshvartsman/haiku-books/releases/download/book-liminal-landscapes/liminal-landscapes.jpg'>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Liminal Landscapes by Morgan Kim">
+    <meta name="twitter:description" content="A collection of 175 haiku. Free to download.">
+    <meta name='twitter:image' content='https://github.com/leoshvartsman/haiku-books/releases/download/book-liminal-landscapes/liminal-landscapes.jpg'>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate" type="application/rss+xml" title="Shmindle — New Haiku Books" href="/feed.xml">
+    <link rel="stylesheet" href="../style.css">
+
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "Book", "name": "Liminal Landscapes", "author": {"@type": "Person", "name": "Morgan Kim"}, "bookFormat": "EBook", "url": "https://shmindle.com/books/liminal-landscapes.html", "numberOfPages": 175, "genre": "Poetry", "inLanguage": "en", "isAccessibleForFree": true, "image": "https://github.com/leoshvartsman/haiku-books/releases/download/book-liminal-landscapes/liminal-landscapes.jpg"}
+    </script>
+</head>
+<body>
+    <header>
+        <h1><a href="../" style="text-decoration:none;color:inherit">Shmindle</a></h1>
+    </header>
+
+    <div class="book-detail">
+        <a href="../" class="back-link">&larr; All books</a>
+
+        <div class="book-hero">
+            <img src="https://github.com/leoshvartsman/haiku-books/releases/download/book-liminal-landscapes/liminal-landscapes.jpg" alt="Liminal Landscapes">
+            <div class="book-info">
+                <h1>Liminal Landscapes</h1>
+                <div class="author">Morgan Kim</div>
+                <div class="meta">175 haiku</div>
+                <div class="download-btns">
+                    <a href="https://shmindle.com/dl/book-liminal-landscapes/liminal-landscapes.pdf" class="btn-pdf" type="application/pdf">Download PDF</a>
+<a href="https://shmindle.com/dl/book-liminal-landscapes/liminal-landscapes.epub" class="btn-epub" type="application/epub+zip">Download EPUB</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class='book-intro'>As I wander through cities, observing the intersections of culture and history, I find myself drawn to the liminal spaces where old meets new, where tradition blends with innovation. These landscapes, often overlooked in favor of grand monuments or scenic vistas, hold a depth and complexity that speaks directly to my own experiences as an urban dweller.
+
+In this collection, Liminal Landscapes, I&#x27;ve sought to capture the essence of these threshold areas – where streets become stages for human drama, and buildings stand as witnesses to generations past. Through haiku, a traditional form born of natural observation and distilled emotion, I aim to distill the intricate textures and rhythms of city life.
+
+As I weave together fragments of personal memory and urban narrative, I invite readers to join me in navigating these liminal landscapes – from wheat fields to rooftops, rainy nights to dusty storms. Here, where cultures converge and histories entwine, lies a world of beauty, tension, and transformation waiting to be explored.</div>
+
+        <div class='sample-haiku'><h2>Sample Haiku</h2><div class="haiku"><p>Golden wheat sways slow</p><p>Dancing in the sun&#x27;s warm breeze</p><p>Summer&#x27;s gentle hush</p></div>
+<div class="haiku"><p>Small town Canada&#x27;s</p><p>Childhood memories of wheat</p><p>Summer&#x27;s warmth remains</p></div>
+<div class="haiku"><p>Wet streets, a storybook</p><p>Painted with vibrant colours</p><p>Life in all its glory</p></div>
+<div class="haiku"><p>Johannesburg&#x27;s concrete</p><p>Gray skyscrapers pierce the sky</p><p>Urban jungle reigns</p></div>
+<div class="haiku"><p>Night air&#x27;s crisp caress</p><p>Stars above, a twinkling sea</p><p>World at peaceful rest</p></div>
+<div class="haiku"><p>Amharic whispers</p><p>Moonlit nights, bougainvillea</p><p>Fills my heart with love</p></div>
+</div>
+    </div>
+
+    <section class="subscribe-section">
+        <p class="subscribe-heading">Get notified when new books arrive</p>
+        <form id="subscribe-form" class="subscribe-form">
+            <input type="email" id="subscribe-email" placeholder="your@email.com" required aria-label="Email address">
+            <button type="submit">Subscribe</button>
+        </form>
+        <p id="subscribe-msg" class="subscribe-msg" aria-live="polite"></p>
+    </section>
+
+    <footer>
+        <p>Your home for books generated by AI. Free to download anytime. &nbsp;|&nbsp; <a href="/feed.xml" style="color:#bbb;text-decoration:none;">RSS feed</a></p>
+    </footer>
+
+    <script>
+      (function () {
+        const form = document.getElementById('subscribe-form');
+        const msg  = document.getElementById('subscribe-msg');
+        form.addEventListener('submit', async function (e) {
+          e.preventDefault();
+          const email = document.getElementById('subscribe-email').value.trim();
+          msg.textContent = '';
+          msg.className = 'subscribe-msg';
+          try {
+            const resp = await fetch('/subscribe', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ email }),
+            });
+            const data = await resp.json();
+            if (data.success) {
+              msg.textContent = "Subscribed! You'll hear from us when new books arrive.";
+              msg.className = 'subscribe-msg subscribe-ok';
+              form.reset();
+            } else if (resp.status === 409) {
+              msg.textContent = "You're already subscribed.";
+              msg.className = 'subscribe-msg subscribe-ok';
+            } else {
+              msg.textContent = data.error || 'Something went wrong. Please try again.';
+              msg.className = 'subscribe-msg subscribe-err';
+            }
+          } catch {
+            msg.textContent = 'Network error. Please try again.';
+            msg.className = 'subscribe-msg subscribe-err';
+          }
+        });
+      })();
+    </script>
+</body>
+</html>
