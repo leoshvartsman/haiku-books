@@ -383,8 +383,16 @@ def generate_book_page(book_catalog: Dict, book_index_entry: Dict) -> None:
     pdf_url = book_catalog.get("pdf_url", "")
     epub_url = book_catalog.get("epub_url", "")
 
-    intro = html.escape(extract_intro(book_index_entry))
+    intro_raw = extract_intro(book_index_entry)
+    intro = html.escape(intro_raw)
     samples = extract_sample_haiku(book_index_entry)
+
+    # Meta description: first ~155 chars of intro, or generic fallback
+    if intro_raw:
+        meta_desc_raw = intro_raw[:155].rsplit(' ', 1)[0] + '…'
+    else:
+        meta_desc_raw = f"{book_catalog['title']} — a collection of {haiku_count} haiku by {book_catalog['author']}. Free to download as PDF or EPUB."
+    meta_desc = html.escape(meta_desc_raw)
 
     # Build sample haiku HTML
     samples_html = ""
@@ -402,7 +410,7 @@ def generate_book_page(book_catalog: Dict, book_index_entry: Dict) -> None:
     if epub_url:
         dl_html += f'<a href="{epub_url}" class="btn-epub" type="application/epub+zip">Download EPUB</a>\n'
 
-    # Schema.org structured data
+    # Schema.org structured data — Book type with download actions
     schema = {
         "@context": "https://schema.org",
         "@type": "Book",
@@ -414,9 +422,29 @@ def generate_book_page(book_catalog: Dict, book_index_entry: Dict) -> None:
         "genre": "Poetry",
         "inLanguage": "en",
         "isAccessibleForFree": True,
+        "description": intro_raw[:300] if intro_raw else f"A collection of {haiku_count} haiku by {book_catalog['author']}.",
+        "datePublished": book_catalog.get("date", ""),
+        "publisher": {
+            "@type": "Organization",
+            "name": "Shmindle",
+            "url": "https://shmindle.com"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+        },
     }
     if cover_url:
         schema["image"] = cover_url
+    potential_actions = []
+    if pdf_url:
+        potential_actions.append({"@type": "ReadAction", "target": pdf_url})
+    if epub_url:
+        potential_actions.append({"@type": "ReadAction", "target": epub_url})
+    if potential_actions:
+        schema["potentialAction"] = potential_actions
 
     page_html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -432,7 +460,7 @@ def generate_book_page(book_catalog: Dict, book_index_entry: Dict) -> None:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{title} by {author} — Shmindle</title>
-    <meta name="description" content="{title} — a collection of {haiku_count} haiku by {author}. Free to download as PDF or EPUB.">
+    <meta name="description" content="{meta_desc}">
     <link rel="canonical" href="https://shmindle.com/books/{slug}.html">
 
     <meta property="og:title" content="{title} by {author}">
