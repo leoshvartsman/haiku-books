@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BPD55QWY65"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-BPD55QWY65');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>River Of Memories by Sacha Michel — Shmindle</title>
+    <meta name="description" content="River Of Memories — a collection of 155 haiku by Sacha Michel. Free to download as PDF or EPUB.">
+    <link rel="canonical" href="https://shmindle.com/books/river-of-memories.html">
+
+    <meta property="og:title" content="River Of Memories by Sacha Michel">
+    <meta property="og:description" content="A collection of 155 haiku. Free to download.">
+    <meta property="og:type" content="book">
+    <meta property="og:url" content="https://shmindle.com/books/river-of-memories.html">
+    <meta property='og:image' content='https://github.com/leoshvartsman/haiku-books/releases/download/book-river-of-memories/river-of-memories.jpg'>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="River Of Memories by Sacha Michel">
+    <meta name="twitter:description" content="A collection of 155 haiku. Free to download.">
+    <meta name='twitter:image' content='https://github.com/leoshvartsman/haiku-books/releases/download/book-river-of-memories/river-of-memories.jpg'>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate" type="application/rss+xml" title="Shmindle — New Haiku Books" href="/feed.xml">
+    <link rel="stylesheet" href="../style.css">
+
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "Book", "name": "River Of Memories", "author": {"@type": "Person", "name": "Sacha Michel"}, "bookFormat": "EBook", "url": "https://shmindle.com/books/river-of-memories.html", "numberOfPages": 155, "genre": "Poetry", "inLanguage": "en", "isAccessibleForFree": true, "image": "https://github.com/leoshvartsman/haiku-books/releases/download/book-river-of-memories/river-of-memories.jpg"}
+    </script>
+</head>
+<body>
+    <header>
+        <h1><a href="../" style="text-decoration:none;color:inherit">Shmindle</a></h1>
+    </header>
+
+    <div class="book-detail">
+        <a href="../" class="back-link">&larr; All books</a>
+
+        <div class="book-hero">
+            <img src="https://github.com/leoshvartsman/haiku-books/releases/download/book-river-of-memories/river-of-memories.jpg" alt="River Of Memories">
+            <div class="book-info">
+                <h1>River Of Memories</h1>
+                <div class="author">Sacha Michel</div>
+                <div class="meta">155 haiku</div>
+                <div class="download-btns">
+                    <a href="https://shmindle.com/dl/book-river-of-memories/river-of-memories.pdf" class="btn-pdf" type="application/pdf">Download PDF</a>
+<a href="https://shmindle.com/dl/book-river-of-memories/river-of-memories.epub" class="btn-epub" type="application/epub+zip">Download EPUB</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class='book-intro'>As I wander through the seasons, memories accumulate like fallen leaves on a forest floor. Fragments of experience, emotions, and encounters intertwine with the natural world, forming an ever-changing tapestry of impressions. In these haiku, I attempt to capture the essence of moments that have left an indelible mark on my soul.
+
+Traveling through cities and landscapes has become a form of spiritual pilgrimage for me – a way to connect with the mysteries that lie beyond human constructs. I find solace in the rhythms of nature: the gentle lapping of waves against the shore, the soft chirping of birds at dawn, or the majestic sweep of mountains under starry skies.
+
+In this collection, &quot;River of Memories,&quot; I invite you to join me on a journey through various corners of the world – Lyon&#x27;s morning mist, Tokyo&#x27;s neon dreams, Montreal&#x27;s autumn breeze, and Dhaka&#x27;s urban jungle. Here, cultures intersect, stories unfold, and whispers of the past carry us forward into the unknown.</div>
+
+        <div class='sample-haiku'><h2>Sample Haiku</h2><div class="haiku"><p>River mist unfurls</p><p>Golden light on rippling waves</p><p>Morning&#x27;s gentle kiss</p></div>
+<div class="haiku"><p>Night market scents rise</p><p>Streets filled with food, music, joy</p><p>Senses come alive</p></div>
+<div class="haiku"><p>Autumn leaves ignite</p><p>Golden hues on city streets</p><p>Memories linger</p></div>
+<div class="haiku"><p>Dust devils dance strong</p><p>Motorcycles speed through chaos</p><p>Fleeting moment&#x27;s peace</p></div>
+<div class="haiku"><p>Journey of the self</p><p>Crossing borders, discovering</p><p>Spiritual landscapes</p></div>
+<div class="haiku"><p>Bengali women weave</p><p>Vibrant colors on looms move</p><p>Tradition alive still</p></div>
+</div>
+    </div>
+
+    <section class="subscribe-section">
+        <p class="subscribe-heading">Get notified when new books arrive</p>
+        <form id="subscribe-form" class="subscribe-form">
+            <input type="email" id="subscribe-email" placeholder="your@email.com" required aria-label="Email address">
+            <button type="submit">Subscribe</button>
+        </form>
+        <p id="subscribe-msg" class="subscribe-msg" aria-live="polite"></p>
+    </section>
+
+    <footer>
+        <p>Your home for books generated by AI. Free to download anytime. &nbsp;|&nbsp; <a href="/feed.xml" style="color:#bbb;text-decoration:none;">RSS feed</a></p>
+    </footer>
+
+    <script>
+      (function () {
+        const form = document.getElementById('subscribe-form');
+        const msg  = document.getElementById('subscribe-msg');
+        form.addEventListener('submit', async function (e) {
+          e.preventDefault();
+          const email = document.getElementById('subscribe-email').value.trim();
+          msg.textContent = '';
+          msg.className = 'subscribe-msg';
+          try {
+            const resp = await fetch('/subscribe', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ email }),
+            });
+            const data = await resp.json();
+            if (data.success) {
+              msg.textContent = "Subscribed! You'll hear from us when new books arrive.";
+              msg.className = 'subscribe-msg subscribe-ok';
+              form.reset();
+            } else if (resp.status === 409) {
+              msg.textContent = "You're already subscribed.";
+              msg.className = 'subscribe-msg subscribe-ok';
+            } else {
+              msg.textContent = data.error || 'Something went wrong. Please try again.';
+              msg.className = 'subscribe-msg subscribe-err';
+            }
+          } catch {
+            msg.textContent = 'Network error. Please try again.';
+            msg.className = 'subscribe-msg subscribe-err';
+          }
+        });
+      })();
+    </script>
+</body>
+</html>
