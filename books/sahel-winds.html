@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BPD55QWY65"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-BPD55QWY65');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahel Winds by Casey Chen — Shmindle</title>
+    <meta name="description" content="Sahel Winds — a collection of 132 haiku by Casey Chen. Free to download as PDF or EPUB.">
+    <link rel="canonical" href="https://shmindle.com/books/sahel-winds.html">
+
+    <meta property="og:title" content="Sahel Winds by Casey Chen">
+    <meta property="og:description" content="A collection of 132 haiku. Free to download.">
+    <meta property="og:type" content="book">
+    <meta property="og:url" content="https://shmindle.com/books/sahel-winds.html">
+    <meta property='og:image' content='https://github.com/leoshvartsman/haiku-books/releases/download/book-sahel-winds/sahel-winds.jpg'>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sahel Winds by Casey Chen">
+    <meta name="twitter:description" content="A collection of 132 haiku. Free to download.">
+    <meta name='twitter:image' content='https://github.com/leoshvartsman/haiku-books/releases/download/book-sahel-winds/sahel-winds.jpg'>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate" type="application/rss+xml" title="Shmindle — New Haiku Books" href="/feed.xml">
+    <link rel="stylesheet" href="../style.css">
+
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "Book", "name": "Sahel Winds", "author": {"@type": "Person", "name": "Casey Chen"}, "bookFormat": "EBook", "url": "https://shmindle.com/books/sahel-winds.html", "numberOfPages": 132, "genre": "Poetry", "inLanguage": "en", "isAccessibleForFree": true, "image": "https://github.com/leoshvartsman/haiku-books/releases/download/book-sahel-winds/sahel-winds.jpg"}
+    </script>
+</head>
+<body>
+    <header>
+        <h1><a href="../" style="text-decoration:none;color:inherit">Shmindle</a></h1>
+    </header>
+
+    <div class="book-detail">
+        <a href="../" class="back-link">&larr; All books</a>
+
+        <div class="book-hero">
+            <img src="https://github.com/leoshvartsman/haiku-books/releases/download/book-sahel-winds/sahel-winds.jpg" alt="Sahel Winds">
+            <div class="book-info">
+                <h1>Sahel Winds</h1>
+                <div class="author">Casey Chen</div>
+                <div class="meta">132 haiku</div>
+                <div class="download-btns">
+                    <a href="https://shmindle.com/dl/book-sahel-winds/sahel-winds.pdf" class="btn-pdf" type="application/pdf">Download PDF</a>
+<a href="https://shmindle.com/dl/book-sahel-winds/sahel-winds.epub" class="btn-epub" type="application/epub+zip">Download EPUB</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class='book-intro'>As I wandered through the Sahel&#x27;s vast expanse, I felt the whispers of distant cultures carried on the wind. The rhythms of Africa, the quiet of New England, and the vibrant pulse of Europe all merged in my mind like the threads of a rich tapestry. In these haiku, I&#x27;ve tried to capture the essence of those moments when time and space converge.
+
+From the streets of Addis Ababa to the nights of Ann Arbor, from the Bosphorus&#x27; melancholy shores to Boston&#x27;s springtime blooms, each section is a slice of life, distilled into three brief lines. Yet in their simplicity lies a world of depth and complexity – a reflection of our shared human experience.
+
+For me, the Sahel Winds collection represents a journey of discovery, not just of far-off lands but also of my own place within them. These haiku are invitations to step into that space where cultures intersect, where moments pass into eternity, and where the beauty of the world can be found in its most fleeting forms.</div>
+
+        <div class='sample-haiku'><h2>Sample Haiku</h2><div class="haiku"><p>Acacia sways free</p><p>Dusty alleys echo laughter</p><p>Childhood&#x27;s warmth remains</p></div>
+<div class="haiku"><p>Raindrops on my skin</p><p>Cooling the Addis heat, calm me</p><p>Childhood memories stir</p></div>
+<div class="haiku"><p>Café smoke wisps rise</p><p>Turkish coffee&#x27;s bitter aroma</p><p>Dancing on the breeze</p></div>
+<div class="haiku"><p>Seagulls ride the currents</p><p>Gulls wheeling, cries echoing</p><p>Freedom in the air</p></div>
+<div class="haiku"><p>Seaport District pier</p><p>Gulls ride wind currents high</p><p>Freedom&#x27;s wild cry echoes</p></div>
+<div class="haiku"><p>Sunset casts long shadows</p><p>Train tracks stretch out to sea</p><p>Longing for a home</p></div>
+</div>
+    </div>
+
+    <section class="subscribe-section">
+        <p class="subscribe-heading">Get notified when new books arrive</p>
+        <form id="subscribe-form" class="subscribe-form">
+            <input type="email" id="subscribe-email" placeholder="your@email.com" required aria-label="Email address">
+            <button type="submit">Subscribe</button>
+        </form>
+        <p id="subscribe-msg" class="subscribe-msg" aria-live="polite"></p>
+    </section>
+
+    <footer>
+        <p>Your home for books generated by AI. Free to download anytime. &nbsp;|&nbsp; <a href="/feed.xml" style="color:#bbb;text-decoration:none;">RSS feed</a></p>
+    </footer>
+
+    <script>
+      (function () {
+        const form = document.getElementById('subscribe-form');
+        const msg  = document.getElementById('subscribe-msg');
+        form.addEventListener('submit', async function (e) {
+          e.preventDefault();
+          const email = document.getElementById('subscribe-email').value.trim();
+          msg.textContent = '';
+          msg.className = 'subscribe-msg';
+          try {
+            const resp = await fetch('/subscribe', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ email }),
+            });
+            const data = await resp.json();
+            if (data.success) {
+              msg.textContent = "Subscribed! You'll hear from us when new books arrive.";
+              msg.className = 'subscribe-msg subscribe-ok';
+              form.reset();
+            } else if (resp.status === 409) {
+              msg.textContent = "You're already subscribed.";
+              msg.className = 'subscribe-msg subscribe-ok';
+            } else {
+              msg.textContent = data.error || 'Something went wrong. Please try again.';
+              msg.className = 'subscribe-msg subscribe-err';
+            }
+          } catch {
+            msg.textContent = 'Network error. Please try again.';
+            msg.className = 'subscribe-msg subscribe-err';
+          }
+        });
+      })();
+    </script>
+</body>
+</html>

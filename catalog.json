@@ -700,6 +700,96 @@
     "epub_url": "https://shmindle.com/dl/book-urban-oasis-fragments/urban-oasis-fragments.epub"
   },
   {
+    "title": "Red Earth, Snowflakes",
+    "author": "Casey Walker",
+    "haiku_count": 144,
+    "date": "2026-03-05",
+    "slug": "red-earth-snowflakes",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-red-earth-snowflakes/red-earth-snowflakes.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-red-earth-snowflakes/red-earth-snowflakes.pdf",
+    "epub_url": "https://shmindle.com/dl/book-red-earth-snowflakes/red-earth-snowflakes.epub"
+  },
+  {
+    "title": "Desert Blooms In Fog",
+    "author": "Robin Lee",
+    "haiku_count": 206,
+    "date": "2026-03-05",
+    "slug": "desert-blooms-in-fog",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-desert-blooms-in-fog/desert-blooms-in-fog.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-desert-blooms-in-fog/desert-blooms-in-fog.pdf",
+    "epub_url": "https://shmindle.com/dl/book-desert-blooms-in-fog/desert-blooms-in-fog.epub"
+  },
+  {
+    "title": "Windswept Memories",
+    "author": "Alex Ali",
+    "haiku_count": 133,
+    "date": "2026-03-05",
+    "slug": "windswept-memories",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-windswept-memories/windswept-memories.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-windswept-memories/windswept-memories.pdf",
+    "epub_url": "https://shmindle.com/dl/book-windswept-memories/windswept-memories.epub"
+  },
+  {
+    "title": "Rainy Season Reflections",
+    "author": "Jamie Martinez",
+    "haiku_count": 141,
+    "date": "2026-03-05",
+    "slug": "rainy-season-reflections",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-rainy-season-reflections/rainy-season-reflections.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-rainy-season-reflections/rainy-season-reflections.pdf",
+    "epub_url": "https://shmindle.com/dl/book-rainy-season-reflections/rainy-season-reflections.epub"
+  },
+  {
+    "title": "Nordic Winds In Shanghai Skies",
+    "author": "River Kim",
+    "haiku_count": 183,
+    "date": "2026-03-05",
+    "slug": "nordic-winds-in-shanghai-skies",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-nordic-winds-in-shanghai-skies/nordic-winds-in-shanghai-skies.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-nordic-winds-in-shanghai-skies/nordic-winds-in-shanghai-skies.pdf",
+    "epub_url": "https://shmindle.com/dl/book-nordic-winds-in-shanghai-skies/nordic-winds-in-shanghai-skies.epub"
+  },
+  {
+    "title": "Dust In My Pockets",
+    "author": "Quinn Sato",
+    "haiku_count": 169,
+    "date": "2026-03-05",
+    "slug": "dust-in-my-pockets",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-dust-in-my-pockets/dust-in-my-pockets.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-dust-in-my-pockets/dust-in-my-pockets.pdf",
+    "epub_url": "https://shmindle.com/dl/book-dust-in-my-pockets/dust-in-my-pockets.epub"
+  },
+  {
+    "title": "Northern Light, Southern Winds",
+    "author": "Alex Chen",
+    "haiku_count": 121,
+    "date": "2026-03-05",
+    "slug": "northern-light-southern-winds",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-northern-light-southern-winds/northern-light-southern-winds.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-northern-light-southern-winds/northern-light-southern-winds.pdf",
+    "epub_url": "https://shmindle.com/dl/book-northern-light-southern-winds/northern-light-southern-winds.epub"
+  },
+  {
+    "title": "Fractured Seasons",
+    "author": "Taylor Hall",
+    "haiku_count": 180,
+    "date": "2026-03-05",
+    "slug": "fractured-seasons",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-fractured-seasons/fractured-seasons.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-fractured-seasons/fractured-seasons.pdf",
+    "epub_url": "https://shmindle.com/dl/book-fractured-seasons/fractured-seasons.epub"
+  },
+  {
+    "title": "Sahel Winds",
+    "author": "Casey Chen",
+    "haiku_count": 132,
+    "date": "2026-03-05",
+    "slug": "sahel-winds",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-sahel-winds/sahel-winds.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-sahel-winds/sahel-winds.pdf",
+    "epub_url": "https://shmindle.com/dl/book-sahel-winds/sahel-winds.epub"
+  },
+  {
     "title": "Smoke Between Latitudes",
     "author": "Harper Martin",
     "haiku_count": 250,
