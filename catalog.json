@@ -10,6 +10,16 @@
     "epub_url": "https://shmindle.com/dl/book-what-the-light-carries/what-the-light-carries.epub"
   },
   {
+    "title": "Ledger of Small Hours",
+    "author": "Robin Novak",
+    "haiku_count": 250,
+    "date": "2026-03-06",
+    "slug": "ledger-of-small-hours",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-ledger-of-small-hours/ledger-of-small-hours.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-ledger-of-small-hours/ledger-of-small-hours.pdf",
+    "epub_url": "https://shmindle.com/dl/book-ledger-of-small-hours/ledger-of-small-hours.epub"
+  },
+  {
     "title": "Dust on Every Threshold",
     "author": "Morgan Durand",
     "haiku_count": 250,
