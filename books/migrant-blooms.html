@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BPD55QWY65"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-BPD55QWY65');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migrant Blooms by Sky Novak — Shmindle</title>
+    <meta name="description" content="Migrant Blooms — a collection of 170 haiku by Sky Novak. Free to download as PDF or EPUB.">
+    <link rel="canonical" href="https://shmindle.com/books/migrant-blooms.html">
+
+    <meta property="og:title" content="Migrant Blooms by Sky Novak">
+    <meta property="og:description" content="A collection of 170 haiku. Free to download.">
+    <meta property="og:type" content="book">
+    <meta property="og:url" content="https://shmindle.com/books/migrant-blooms.html">
+    <meta property='og:image' content='https://github.com/leoshvartsman/haiku-books/releases/download/book-migrant-blooms/migrant-blooms.jpg'>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Migrant Blooms by Sky Novak">
+    <meta name="twitter:description" content="A collection of 170 haiku. Free to download.">
+    <meta name='twitter:image' content='https://github.com/leoshvartsman/haiku-books/releases/download/book-migrant-blooms/migrant-blooms.jpg'>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate" type="application/rss+xml" title="Shmindle — New Haiku Books" href="/feed.xml">
+    <link rel="stylesheet" href="../style.css">
+
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "Book", "name": "Migrant Blooms", "author": {"@type": "Person", "name": "Sky Novak"}, "bookFormat": "EBook", "url": "https://shmindle.com/books/migrant-blooms.html", "numberOfPages": 170, "genre": "Poetry", "inLanguage": "en", "isAccessibleForFree": true, "image": "https://github.com/leoshvartsman/haiku-books/releases/download/book-migrant-blooms/migrant-blooms.jpg"}
+    </script>
+</head>
+<body>
+    <header>
+        <h1><a href="../" style="text-decoration:none;color:inherit">Shmindle</a></h1>
+    </header>
+
+    <div class="book-detail">
+        <a href="../" class="back-link">&larr; All books</a>
+
+        <div class="book-hero">
+            <img src="https://github.com/leoshvartsman/haiku-books/releases/download/book-migrant-blooms/migrant-blooms.jpg" alt="Migrant Blooms">
+            <div class="book-info">
+                <h1>Migrant Blooms</h1>
+                <div class="author">Sky Novak</div>
+                <div class="meta">170 haiku</div>
+                <div class="download-btns">
+                    <a href="https://shmindle.com/dl/book-migrant-blooms/migrant-blooms.pdf" class="btn-pdf" type="application/pdf">Download PDF</a>
+<a href="https://shmindle.com/dl/book-migrant-blooms/migrant-blooms.epub" class="btn-epub" type="application/epub+zip">Download EPUB</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class='book-intro'>As I wander through the winding streets of my adopted home, Istanbul, I find myself drawn to the fleeting moments that reveal the intricate tapestry of identity and place. Haiku, with its traditional emphasis on simplicity and natural imagery, has become a fitting language for me to explore these themes.
+
+My own story – one of migration from the Netherlands to Turkey, of navigating the complexities of belonging in a foreign land – has influenced my perspective as a writer. I&#x27;ve tried to capture the essence of these experiences in Migrant Blooms, this collection of haiku that traverses the boundaries between cultures and cities.
+
+From the canals of Amsterdam, where my childhood memories still linger, to the bustling streets of Brussels and the enchanting beauty of Istanbul&#x27;s Bosphorus, each section represents a thread in the rich weave of my story.</div>
+
+        <div class='sample-haiku'><h2>Sample Haiku</h2><div class="haiku"><p>Snowflakes dance upon</p><p>Canal waters, frozen scene</p><p>Childhood&#x27;s pure delight</p></div>
+<div class="haiku"><p>Café door swings open</p><p>Steamy air of coffee wafts</p><p>Winter&#x27;s warm escape</p></div>
+<div class="haiku"><p>Rustic gate creaks softly</p><p>Misty dawn in woodland depths</p><p>Nature&#x27;s slumber deep</p></div>
+<div class="haiku"><p>Morning sun rises</p><p>European flags flutter free</p><p>City&#x27;s vibrant heart</p></div>
+<div class="haiku"><p>Whirling dervishes</p><p>Dance of surrender, whirling</p><p>Freedom in its motion</p></div>
+<div class="haiku"><p>Cycling past the Seine</p><p>River&#x27;s dark waters rush by fast</p><p>City life abounds</p></div>
+</div>
+    </div>
+
+    <section class="subscribe-section">
+        <p class="subscribe-heading">Get notified when new books arrive</p>
+        <form id="subscribe-form" class="subscribe-form">
+            <input type="email" id="subscribe-email" placeholder="your@email.com" required aria-label="Email address">
+            <button type="submit">Subscribe</button>
+        </form>
+        <p id="subscribe-msg" class="subscribe-msg" aria-live="polite"></p>
+    </section>
+
+    <footer>
+        <p>Your home for books generated by AI. Free to download anytime. &nbsp;|&nbsp; <a href="/feed.xml" style="color:#bbb;text-decoration:none;">RSS feed</a></p>
+    </footer>
+
+    <script>
+      (function () {
+        const form = document.getElementById('subscribe-form');
+        const msg  = document.getElementById('subscribe-msg');
+        form.addEventListener('submit', async function (e) {
+          e.preventDefault();
+          const email = document.getElementById('subscribe-email').value.trim();
+          msg.textContent = '';
+          msg.className = 'subscribe-msg';
+          try {
+            const resp = await fetch('/subscribe', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ email }),
+            });
+            const data = await resp.json();
+            if (data.success) {
+              msg.textContent = "Subscribed! You'll hear from us when new books arrive.";
+              msg.className = 'subscribe-msg subscribe-ok';
+              form.reset();
+            } else if (resp.status === 409) {
+              msg.textContent = "You're already subscribed.";
+              msg.className = 'subscribe-msg subscribe-ok';
+            } else {
+              msg.textContent = data.error || 'Something went wrong. Please try again.';
+              msg.className = 'subscribe-msg subscribe-err';
+            }
+          } catch {
+            msg.textContent = 'Network error. Please try again.';
+            msg.className = 'subscribe-msg subscribe-err';
+          }
+        });
+      })();
+    </script>
+</body>
+</html>
