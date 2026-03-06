@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BPD55QWY65"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-BPD55QWY65');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wings Over Waters by Sky Novak — Shmindle</title>
+    <meta name="description" content="Wings Over Waters — a collection of 142 haiku by Sky Novak. Free to download as PDF or EPUB.">
+    <link rel="canonical" href="https://shmindle.com/books/wings-over-waters.html">
+
+    <meta property="og:title" content="Wings Over Waters by Sky Novak">
+    <meta property="og:description" content="A collection of 142 haiku. Free to download.">
+    <meta property="og:type" content="book">
+    <meta property="og:url" content="https://shmindle.com/books/wings-over-waters.html">
+    <meta property='og:image' content='https://github.com/leoshvartsman/haiku-books/releases/download/book-wings-over-waters/wings-over-waters.jpg'>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wings Over Waters by Sky Novak">
+    <meta name="twitter:description" content="A collection of 142 haiku. Free to download.">
+    <meta name='twitter:image' content='https://github.com/leoshvartsman/haiku-books/releases/download/book-wings-over-waters/wings-over-waters.jpg'>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate" type="application/rss+xml" title="Shmindle — New Haiku Books" href="/feed.xml">
+    <link rel="stylesheet" href="../style.css">
+
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "Book", "name": "Wings Over Waters", "author": {"@type": "Person", "name": "Sky Novak"}, "bookFormat": "EBook", "url": "https://shmindle.com/books/wings-over-waters.html", "numberOfPages": 142, "genre": "Poetry", "inLanguage": "en", "isAccessibleForFree": true, "image": "https://github.com/leoshvartsman/haiku-books/releases/download/book-wings-over-waters/wings-over-waters.jpg"}
+    </script>
+</head>
+<body>
+    <header>
+        <h1><a href="../" style="text-decoration:none;color:inherit">Shmindle</a></h1>
+    </header>
+
+    <div class="book-detail">
+        <a href="../" class="back-link">&larr; All books</a>
+
+        <div class="book-hero">
+            <img src="https://github.com/leoshvartsman/haiku-books/releases/download/book-wings-over-waters/wings-over-waters.jpg" alt="Wings Over Waters">
+            <div class="book-info">
+                <h1>Wings Over Waters</h1>
+                <div class="author">Sky Novak</div>
+                <div class="meta">142 haiku</div>
+                <div class="download-btns">
+                    <a href="https://shmindle.com/dl/book-wings-over-waters/wings-over-waters.pdf" class="btn-pdf" type="application/pdf">Download PDF</a>
+<a href="https://shmindle.com/dl/book-wings-over-waters/wings-over-waters.epub" class="btn-epub" type="application/epub+zip">Download EPUB</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class='book-intro'>As I look back on my journey from one continent to another, I am reminded of the words that carried me across borders: poetry, language, and the memories of waters left behind. This collection, Wings Over Waters, is a reflection on my experiences as an immigrant, navigating multiple cultures and landscapes.
+
+From childhood explorations along Amsterdam&#x27;s canals to the bustling streets of Istanbul, each place has left its mark on me. I wrote these haiku as a way to hold onto those moments, to remember the feel of wind in my hair, the taste of new foods, and the scent of unfamiliar spices. They are whispers from one world to another.
+
+In these pages, you will find fragments of stories told in three lines – glimpses into what it means to be caught between two worlds, searching for a place to call home. The haiku here are not just poetry, but memories frozen in time, reminders of the journey that has led me to where I stand today.</div>
+
+        <div class='sample-haiku'><h2>Sample Haiku</h2><div class="haiku"><p>Tulip fields ablaze</p><p>Dancing in the summer breeze</p><p>Golden petals fall</p></div>
+<div class="haiku"><p>Summer breeze stirs dust</p><p>Old wooden clogs, creaking floorboards</p><p>Amsterdam&#x27;s heartbeat</p></div>
+<div class="haiku"><p>Foggy London streets</p><p>Puddles reflect the sky above</p><p>Grey and blue collide</p></div>
+<div class="haiku"><p>Graffiti adorns walls</p><p>Urban art, a desperate cry</p><p>Rebellion in paint</p></div>
+<div class="haiku"><p>Steam rises high</p><p>Brussels waffles, a fleeting</p><p>Comfort in the cold</p></div>
+<div class="haiku"><p>Spices blend with love shared</p><p>Grand Bazaar&#x27;s vibrant chaos</p><p>Colors in delight</p></div>
+</div>
+    </div>
+
+    <section class="subscribe-section">
+        <p class="subscribe-heading">Get notified when new books arrive</p>
+        <form id="subscribe-form" class="subscribe-form">
+            <input type="email" id="subscribe-email" placeholder="your@email.com" required aria-label="Email address">
+            <button type="submit">Subscribe</button>
+        </form>
+        <p id="subscribe-msg" class="subscribe-msg" aria-live="polite"></p>
+    </section>
+
+    <footer>
+        <p>Your home for books generated by AI. Free to download anytime. &nbsp;|&nbsp; <a href="/feed.xml" style="color:#bbb;text-decoration:none;">RSS feed</a></p>
+    </footer>
+
+    <script>
+      (function () {
+        const form = document.getElementById('subscribe-form');
+        const msg  = document.getElementById('subscribe-msg');
+        form.addEventListener('submit', async function (e) {
+          e.preventDefault();
+          const email = document.getElementById('subscribe-email').value.trim();
+          msg.textContent = '';
+          msg.className = 'subscribe-msg';
+          try {
+            const resp = await fetch('/subscribe', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ email }),
+            });
+            const data = await resp.json();
+            if (data.success) {
+              msg.textContent = "Subscribed! You'll hear from us when new books arrive.";
+              msg.className = 'subscribe-msg subscribe-ok';
+              form.reset();
+            } else if (resp.status === 409) {
+              msg.textContent = "You're already subscribed.";
+              msg.className = 'subscribe-msg subscribe-ok';
+            } else {
+              msg.textContent = data.error || 'Something went wrong. Please try again.';
+              msg.className = 'subscribe-msg subscribe-err';
+            }
+          } catch {
+            msg.textContent = 'Network error. Please try again.';
+            msg.className = 'subscribe-msg subscribe-err';
+          }
+        });
+      })();
+    </script>
+</body>
+</html>

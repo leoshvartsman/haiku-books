@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BPD55QWY65"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-BPD55QWY65');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whispers Of Memory by Harper García — Shmindle</title>
+    <meta name="description" content="Whispers Of Memory — a collection of 143 haiku by Harper García. Free to download as PDF or EPUB.">
+    <link rel="canonical" href="https://shmindle.com/books/whispers-of-memory.html">
+
+    <meta property="og:title" content="Whispers Of Memory by Harper García">
+    <meta property="og:description" content="A collection of 143 haiku. Free to download.">
+    <meta property="og:type" content="book">
+    <meta property="og:url" content="https://shmindle.com/books/whispers-of-memory.html">
+    <meta property='og:image' content='https://github.com/leoshvartsman/haiku-books/releases/download/book-whispers-of-memory/whispers-of-memory.jpg'>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Whispers Of Memory by Harper García">
+    <meta name="twitter:description" content="A collection of 143 haiku. Free to download.">
+    <meta name='twitter:image' content='https://github.com/leoshvartsman/haiku-books/releases/download/book-whispers-of-memory/whispers-of-memory.jpg'>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate" type="application/rss+xml" title="Shmindle — New Haiku Books" href="/feed.xml">
+    <link rel="stylesheet" href="../style.css">
+
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "Book", "name": "Whispers Of Memory", "author": {"@type": "Person", "name": "Harper García"}, "bookFormat": "EBook", "url": "https://shmindle.com/books/whispers-of-memory.html", "numberOfPages": 143, "genre": "Poetry", "inLanguage": "en", "isAccessibleForFree": true, "image": "https://github.com/leoshvartsman/haiku-books/releases/download/book-whispers-of-memory/whispers-of-memory.jpg"}
+    </script>
+</head>
+<body>
+    <header>
+        <h1><a href="../" style="text-decoration:none;color:inherit">Shmindle</a></h1>
+    </header>
+
+    <div class="book-detail">
+        <a href="../" class="back-link">&larr; All books</a>
+
+        <div class="book-hero">
+            <img src="https://github.com/leoshvartsman/haiku-books/releases/download/book-whispers-of-memory/whispers-of-memory.jpg" alt="Whispers Of Memory">
+            <div class="book-info">
+                <h1>Whispers Of Memory</h1>
+                <div class="author">Harper García</div>
+                <div class="meta">143 haiku</div>
+                <div class="download-btns">
+                    <a href="https://shmindle.com/dl/book-whispers-of-memory/whispers-of-memory.pdf" class="btn-pdf" type="application/pdf">Download PDF</a>
+<a href="https://shmindle.com/dl/book-whispers-of-memory/whispers-of-memory.epub" class="btn-epub" type="application/epub+zip">Download EPUB</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class='book-intro'>As I sit with these haiku, scattered like leaves on a forgotten path, I&#x27;m reminded of the countless moments that have shaped me – moments that whisper their secrets in the stillness. Memories that refuse to be tamed, they seep into my writing like water into the earth.
+
+In these pages, you&#x27;ll find fragments of my life, intertwined with the landscapes that have cradled them. Taipei&#x27;s dawn mist, a Norwegian winter&#x27;s darkness, and the urban canyons of home – each place has etched its own story upon me. I&#x27;ve tried to capture the essence of these experiences in haiku, those delicate snapshots of time.
+
+This collection is not just about memories; it&#x27;s also an exploration of our relationship with the world around us. As we navigate the intersections of identity and environmental consciousness, I&#x27;m drawn to the quiet moments that reveal our place within the larger tapestry.</div>
+
+        <div class='sample-haiku'><h2>Sample Haiku</h2><div class="haiku"><p>Morning mist ascends</p><p>Bamboo forests sway gently</p><p>Summer&#x27;s lingering heat</p></div>
+<div class="haiku"><p>Misty streets unfold</p><p>Foggy dawn lights on bamboo</p><p>Swaying in silence</p></div>
+<div class="haiku"><p>Gavel slams, verdict done</p><p>River Tagus whispers peace</p><p>Justice&#x27; gentle whisper</p></div>
+<div class="haiku"><p>Fjord waters reflect</p><p>Stars above, a mirrored sky</p><p>Twinkling, infinite</p></div>
+<div class="haiku"><p>Old temples stand tall</p><p>Columns worn by time and rain</p><p>Stories in their stones</p></div>
+<div class="haiku"><p>Raindrops pitter-pat</p><p>Gutters flowing, rhythm steady</p><p>Norwegian calmness</p></div>
+</div>
+    </div>
+
+    <section class="subscribe-section">
+        <p class="subscribe-heading">Get notified when new books arrive</p>
+        <form id="subscribe-form" class="subscribe-form">
+            <input type="email" id="subscribe-email" placeholder="your@email.com" required aria-label="Email address">
+            <button type="submit">Subscribe</button>
+        </form>
+        <p id="subscribe-msg" class="subscribe-msg" aria-live="polite"></p>
+    </section>
+
+    <footer>
+        <p>Your home for books generated by AI. Free to download anytime. &nbsp;|&nbsp; <a href="/feed.xml" style="color:#bbb;text-decoration:none;">RSS feed</a></p>
+    </footer>
+
+    <script>
+      (function () {
+        const form = document.getElementById('subscribe-form');
+        const msg  = document.getElementById('subscribe-msg');
+        form.addEventListener('submit', async function (e) {
+          e.preventDefault();
+          const email = document.getElementById('subscribe-email').value.trim();
+          msg.textContent = '';
+          msg.className = 'subscribe-msg';
+          try {
+            const resp = await fetch('/subscribe', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ email }),
+            });
+            const data = await resp.json();
+            if (data.success) {
+              msg.textContent = "Subscribed! You'll hear from us when new books arrive.";
+              msg.className = 'subscribe-msg subscribe-ok';
+              form.reset();
+            } else if (resp.status === 409) {
+              msg.textContent = "You're already subscribed.";
+              msg.className = 'subscribe-msg subscribe-ok';
+            } else {
+              msg.textContent = data.error || 'Something went wrong. Please try again.';
+              msg.className = 'subscribe-msg subscribe-err';
+            }
+          } catch {
+            msg.textContent = 'Network error. Please try again.';
+            msg.className = 'subscribe-msg subscribe-err';
+          }
+        });
+      })();
+    </script>
+</body>
+</html>
