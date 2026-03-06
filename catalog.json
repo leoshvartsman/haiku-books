@@ -15,7 +15,7 @@
     "haiku_count": 250,
     "date": "2026-03-05",
     "slug": "the-body-keeps-the-latitude",
-    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-the-body-keeps-the-latitude/the-body-keeps-the-latitude.jpg",
+    "cover_url": "",
     "pdf_url": "https://shmindle.com/dl/book-the-body-keeps-the-latitude/the-body-keeps-the-latitude.pdf",
     "epub_url": "https://shmindle.com/dl/book-the-body-keeps-the-latitude/the-body-keeps-the-latitude.epub"
   },
@@ -48,6 +48,106 @@
     "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-monsoon-whispers/monsoon-whispers.jpg",
     "pdf_url": "https://shmindle.com/dl/book-monsoon-whispers/monsoon-whispers.pdf",
     "epub_url": "https://shmindle.com/dl/book-monsoon-whispers/monsoon-whispers.epub"
+  },
+  {
+    "title": "Luminous Exile",
+    "author": "Morgan Gomes",
+    "haiku_count": 175,
+    "date": "2026-03-05",
+    "slug": "luminous-exile",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-luminous-exile/luminous-exile.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-luminous-exile/luminous-exile.pdf",
+    "epub_url": "https://shmindle.com/dl/book-luminous-exile/luminous-exile.epub"
+  },
+  {
+    "title": "Dawn'S Gentle Echoes",
+    "author": "Sage Anderson",
+    "haiku_count": 147,
+    "date": "2026-03-05",
+    "slug": "dawn-s-gentle-echoes",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-dawn-s-gentle-echoes/dawn-s-gentle-echoes.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-dawn-s-gentle-echoes/dawn-s-gentle-echoes.pdf",
+    "epub_url": "https://shmindle.com/dl/book-dawn-s-gentle-echoes/dawn-s-gentle-echoes.epub"
+  },
+  {
+    "title": "Mosaic Memories",
+    "author": "Blake Martin",
+    "haiku_count": 133,
+    "date": "2026-03-05",
+    "slug": "mosaic-memories",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-mosaic-memories/mosaic-memories.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-mosaic-memories/mosaic-memories.pdf",
+    "epub_url": "https://shmindle.com/dl/book-mosaic-memories/mosaic-memories.epub"
+  },
+  {
+    "title": "Luminous Migrations",
+    "author": "Sol Gómez",
+    "haiku_count": 138,
+    "date": "2026-03-05",
+    "slug": "luminous-migrations",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-luminous-migrations/luminous-migrations.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-luminous-migrations/luminous-migrations.pdf",
+    "epub_url": "https://shmindle.com/dl/book-luminous-migrations/luminous-migrations.epub"
+  },
+  {
+    "title": "Fractured Luminance",
+    "author": "Parker Novak",
+    "haiku_count": 178,
+    "date": "2026-03-05",
+    "slug": "fractured-luminance",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-fractured-luminance/fractured-luminance.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-fractured-luminance/fractured-luminance.pdf",
+    "epub_url": "https://shmindle.com/dl/book-fractured-luminance/fractured-luminance.epub"
+  },
+  {
+    "title": "Midnight Sun Whispers",
+    "author": "Cameron Andersson",
+    "haiku_count": 153,
+    "date": "2026-03-05",
+    "slug": "midnight-sun-whispers",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-midnight-sun-whispers/midnight-sun-whispers.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-midnight-sun-whispers/midnight-sun-whispers.pdf",
+    "epub_url": "https://shmindle.com/dl/book-midnight-sun-whispers/midnight-sun-whispers.epub"
+  },
+  {
+    "title": "Dawn'S Crossing Paths",
+    "author": "Sora Nakamura",
+    "haiku_count": 170,
+    "date": "2026-03-05",
+    "slug": "dawn-s-crossing-paths",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-dawn-s-crossing-paths/dawn-s-crossing-paths.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-dawn-s-crossing-paths/dawn-s-crossing-paths.pdf",
+    "epub_url": "https://shmindle.com/dl/book-dawn-s-crossing-paths/dawn-s-crossing-paths.epub"
+  },
+  {
+    "title": "River Of Sutras",
+    "author": "Camille Robert",
+    "haiku_count": 153,
+    "date": "2026-03-05",
+    "slug": "river-of-sutras",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-river-of-sutras/river-of-sutras.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-river-of-sutras/river-of-sutras.pdf",
+    "epub_url": "https://shmindle.com/dl/book-river-of-sutras/river-of-sutras.epub"
+  },
+  {
+    "title": "Monsoon Memories Unfold",
+    "author": "Parker Andersson",
+    "haiku_count": 209,
+    "date": "2026-03-05",
+    "slug": "monsoon-memories-unfold",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-monsoon-memories-unfold/monsoon-memories-unfold.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-monsoon-memories-unfold/monsoon-memories-unfold.pdf",
+    "epub_url": "https://shmindle.com/dl/book-monsoon-memories-unfold/monsoon-memories-unfold.epub"
+  },
+  {
+    "title": "Fleeting Horizons",
+    "author": "Sol Gómez",
+    "haiku_count": 155,
+    "date": "2026-03-05",
+    "slug": "fleeting-horizons",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-fleeting-horizons/fleeting-horizons.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-fleeting-horizons/fleeting-horizons.pdf",
+    "epub_url": "https://shmindle.com/dl/book-fleeting-horizons/fleeting-horizons.epub"
   },
   {
     "title": "Smoke Between Latitudes",
