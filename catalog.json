@@ -30,6 +30,16 @@
     "epub_url": "https://shmindle.com/dl/book-the-long-way-round/the-long-way-round.epub"
   },
   {
+    "title": "The Frequency of Red Dust",
+    "author": "Harper Sato",
+    "haiku_count": 250,
+    "date": "2026-03-07",
+    "slug": "the-frequency-of-red-dust",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-the-frequency-of-red-dust/the-frequency-of-red-dust.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-the-frequency-of-red-dust/the-frequency-of-red-dust.pdf",
+    "epub_url": "https://shmindle.com/dl/book-the-frequency-of-red-dust/the-frequency-of-red-dust.epub"
+  },
+  {
     "title": "What the Light Carries",
     "author": "Quinn Kim",
     "haiku_count": 250,
@@ -218,16 +228,6 @@
     "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-fractured-light/fractured-light.jpg",
     "pdf_url": "https://shmindle.com/dl/book-fractured-light/fractured-light.pdf",
     "epub_url": "https://shmindle.com/dl/book-fractured-light/fractured-light.epub"
-  },
-  {
-    "title": "Whispers Of Exile",
-    "author": "Ash Green",
-    "haiku_count": 141,
-    "date": "2026-03-05",
-    "slug": "whispers-of-exile",
-    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-whispers-of-exile/whispers-of-exile.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-whispers-of-exile/whispers-of-exile.pdf",
-    "epub_url": "https://shmindle.com/dl/book-whispers-of-exile/whispers-of-exile.epub"
   },
   {
     "title": "Whispers Across Waters",
