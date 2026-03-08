@@ -36,6 +36,8 @@ DOWNLOAD_PROXY = "https://shmindle.com/dl"
 # Output
 SITE_DIR = Path(__file__).parent
 CATALOG_FILE = SITE_DIR / "catalog.json"
+AUTHOR_DIR = SITE_DIR / "authors"
+AUTHOR_BIOS_FILE = AUTHOR_DIR / "bios.json"
 
 
 def to_proxy_url(github_url: str) -> str:
@@ -266,9 +268,10 @@ def build_catalog(dry_run=False):
     print(f"Catalog written: {CATALOG_FILE}")
     print(f"Books in catalog: {len(catalog)}")
 
-    # Generate individual book pages
+    # Generate individual book pages and author pages
     if not dry_run:
         generate_book_pages(catalog, index)
+        generate_author_pages(catalog, index)
         generate_sitemap(catalog)
         generate_feed(catalog)
         generate_robots()
@@ -615,6 +618,7 @@ def generate_book_pages(catalog: List[Dict], index: List[Dict]) -> None:
 
 def generate_sitemap(catalog: List[Dict]) -> None:
     """Generate sitemap.xml for search engines."""
+    from collections import OrderedDict
     today = __import__('datetime').date.today().isoformat()
     most_recent = catalog[0]["date"] if catalog else today
     urls = [f'  <url><loc>https://shmindle.com/</loc><lastmod>{most_recent}</lastmod><priority>1.0</priority></url>']
@@ -622,6 +626,15 @@ def generate_sitemap(catalog: List[Dict]) -> None:
         slug = slugify(book["title"])
         lastmod = book.get("date", today)
         urls.append(f'  <url><loc>https://shmindle.com/books/{slug}.html</loc><lastmod>{lastmod}</lastmod><priority>0.8</priority></url>')
+    # Add author pages
+    seen_authors: dict = OrderedDict()
+    for book in catalog:
+        a = book['author']
+        if a not in seen_authors:
+            seen_authors[a] = book.get('date', today)
+    for author_name, date in seen_authors.items():
+        author_slug = slugify(author_name)
+        urls.append(f'  <url><loc>https://shmindle.com/authors/{author_slug}.html</loc><lastmod>{date}</lastmod><priority>0.7</priority></url>')
 
     sitemap = f"""<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -704,6 +717,307 @@ Sitemap: https://shmindle.com/sitemap.xml
 """
     (SITE_DIR / "robots.txt").write_text(robots, encoding='utf-8')
     print("  Generated robots.txt")
+
+
+def load_author_bios() -> Dict:
+    if AUTHOR_BIOS_FILE.exists():
+        return json.loads(AUTHOR_BIOS_FILE.read_text(encoding='utf-8'))
+    return {}
+
+
+def save_author_bios(bios: Dict) -> None:
+    AUTHOR_DIR.mkdir(exist_ok=True)
+    AUTHOR_BIOS_FILE.write_text(json.dumps(bios, indent=2, ensure_ascii=False), encoding='utf-8')
+
+
+def _palette_for_persona(characteristic: str, location: str) -> str:
+    text = (characteristic + " " + location).lower()
+    if any(w in text for w in ['japan', 'tokyo', 'kyoto', 'zen', 'cherry', 'blossom']):
+        return "ink black, moss green, paper white"
+    if any(w in text for w in ['india', 'mumbai', 'monsoon', 'ganges', 'spice']):
+        return "deep indigo, warm ochre, storm grey"
+    if any(w in text for w in ['africa', 'ethiopia', 'prairie', 'soil', 'farm', 'savanna']):
+        return "warm prairie gold, deep ochre, red clay"
+    if any(w in text for w in ['trauma', 'grief', 'loss', 'portland', 'elegy', 'memory']):
+        return "slate blue, pale ash, muted rose"
+    if any(w in text for w in ['urban', 'city', 'metro', 'street', 'concrete', 'subway']):
+        return "steel grey, amber, deep charcoal"
+    if any(w in text for w in ['ocean', 'sea', 'coast', 'island', 'wave', 'tide']):
+        return "deep teal, pale sand, horizon grey"
+    return "deep ink, warm paper, muted ochre"
+
+
+def generate_author_bio_text(author_name: str, index_entries: List[Dict]) -> str:
+    """Generate a 2-sentence bio using Claude Haiku. Falls back to template on failure."""
+    best_persona: Dict = {}
+    for entry in index_entries:
+        p = entry.get('persona', {})
+        if len(p.get('characteristic', '')) > len(best_persona.get('characteristic', '')):
+            best_persona = p
+
+    characteristic = best_persona.get('characteristic', 'finds poetry in everyday moments')
+    location = best_persona.get('location', '')
+
+    intros = [
+        f"From '{e['title']}':\n{e['collection_intro'][:250]}"
+        for e in index_entries if e.get('collection_intro', '').strip()
+    ]
+
+    def _fallback() -> str:
+        loc = f" Based in {location}." if location else ""
+        return f"{author_name}'s poems arrive from a specific territory: {characteristic}.{loc}"
+
+    if not intros:
+        return _fallback()
+
+    try:
+        import anthropic as _anthropic
+        api_key = os.getenv('ANTHROPIC_API_KEY')
+        if not api_key:
+            return _fallback()
+        c = _anthropic.Anthropic(api_key=api_key)
+        prompt = (
+            f'Write a short author note (2 sentences, under 60 words) for "{author_name}".\n\n'
+            f'Their work: {characteristic}.' + (f' Based in {location}.' if location else '') + '\n\n'
+            'Opening passages from their collections:\n' + '\n\n'.join(intros[:3]) + '\n\n'
+            'Rules: third person; never use the words "poet" or "poetry"; '
+            'do not identify them as human or AI; '
+            'speak only to the coordinates and concerns of the work; '
+            'plain language, no evaluative adjectives.'
+        )
+        resp = c.messages.create(
+            model='claude-haiku-4-5-20251001',
+            max_tokens=150,
+            messages=[{'role': 'user', 'content': prompt}]
+        )
+        return resp.content[0].text.strip()
+    except Exception:
+        return _fallback()
+
+
+def generate_author_portrait_file(author_name: str, author_slug: str, index_entries: List[Dict]) -> bool:
+    """Generate a DALL-E portrait if one doesn't exist. Returns True if portrait is available."""
+    portrait_path = AUTHOR_DIR / f"{author_slug}.png"
+    if portrait_path.exists():
+        return True
+
+    best_persona: Dict = {}
+    for entry in index_entries:
+        p = entry.get('persona', {})
+        if len(p.get('characteristic', '')) > len(best_persona.get('characteristic', '')):
+            best_persona = p
+
+    characteristic = best_persona.get('characteristic', 'finds poetry in everyday moments')
+    location = best_persona.get('location', '')
+    palette = _palette_for_persona(characteristic, location)
+
+    try:
+        import requests as _req
+        from openai import OpenAI as _OpenAI
+        api_key = os.getenv('OPENAI_API_KEY')
+        if not api_key:
+            print(f"    No OPENAI_API_KEY — skipping portrait for {author_name}")
+            return False
+        oc = _OpenAI(api_key=api_key, timeout=120.0)
+        prompt = (
+            f"Abstract generative mark portrait for an AI poet named {author_name}, "
+            f"who {characteristic}." + (f" Based in {location}." if location else "") + "\n\n"
+            "Style: a circular organic form made of fine interference patterns — "
+            "like a fingerprint, magnetic field lines, or growth rings — "
+            "radiating outward from a dense center into open space. "
+            f"Monochromatic with subtle color: {palette}. "
+            "Clean white background. Square format. "
+            "No faces, no text, no recognizable objects. "
+            "The mark feels like a unique identity — machine-generated but organic, "
+            "precise but alive. Think: the soul of a language model made visible."
+        )
+        resp = oc.images.generate(model='dall-e-3', prompt=prompt, size='1024x1024', quality='hd', n=1)
+        img_data = _req.get(resp.data[0].url, timeout=30).content
+        AUTHOR_DIR.mkdir(exist_ok=True)
+        portrait_path.write_bytes(img_data)
+        print(f"    Portrait: {author_slug}.png")
+        return True
+    except Exception as e:
+        print(f"    Portrait skipped for {author_name}: {e}")
+        return False
+
+
+def generate_author_page_html(
+    author_name: str, author_slug: str, books: List[Dict],
+    bio: str, has_portrait: bool, index_entries: List[Dict]
+) -> str:
+    """Generate HTML for an author page."""
+    esc_author = html.escape(author_name)
+    book_count = len(books)
+    s = "s" if book_count != 1 else ""
+
+    best_persona: Dict = {}
+    for e in index_entries:
+        p = e.get('persona', {})
+        if len(p.get('characteristic', '')) > len(best_persona.get('characteristic', '')):
+            best_persona = p
+    location = best_persona.get('location', '')
+    location_part = f"&middot; {html.escape(location)}" if location else ""
+
+    portrait_url = f"https://shmindle.com/authors/{author_slug}.png"
+    if has_portrait:
+        portrait_html = (
+            f'<img src="{portrait_url}" '
+            f'alt="Identity mark for {esc_author}" '
+            f'class="author-portrait">'
+        )
+    else:
+        portrait_html = '<div class="author-portrait" style="display:flex;align-items:center;justify-content:center;font-size:2.5rem;color:#c8c2ba;">◎</div>'
+
+    bio_paras = "".join(
+        f"<p>{html.escape(p.strip())}</p>"
+        for p in bio.split('\n\n') if p.strip()
+    ) or f"<p>{html.escape(bio)}</p>"
+
+    index_by_title = {e['title']: e for e in index_entries}
+    cards_html = ""
+    for b in books:
+        b_slug = slugify(b['title'])
+        b_title = html.escape(b['title'])
+        b_cover = b.get('cover_url', '')
+        b_count = b.get('haiku_count', 0)
+        idx = index_by_title.get(b['title'], {})
+        intro = idx.get('collection_intro', '').strip()
+        snippet = html.escape(intro[:160] + '…') if len(intro) > 160 else html.escape(intro)
+        cover_img = (
+            f'<img src="{b_cover}" alt="Cover of {b_title}">'
+            if b_cover else
+            '<div style="width:80px;height:110px;background:#e8e4df;border-radius:4px;flex-shrink:0;"></div>'
+        )
+        meta = f"{b_count} haiku" if b_count else ""
+        cards_html += (
+            f'<a href="../books/{b_slug}.html" class="author-book-card">\n'
+            f'  {cover_img}\n'
+            f'  <div class="author-book-info">\n'
+            f'    <h3>{b_title}</h3>\n'
+            + (f'    <div class="author-book-meta">{meta}</div>\n' if meta else '')
+            + (f'    <div class="author-book-snippet">{snippet}</div>\n' if snippet else '')
+            + '  </div>\n</a>\n'
+        )
+
+    best_entry = max(index_entries, key=lambda e: len(e.get('collection_intro', '')), default={})
+    samples = extract_sample_haiku(best_entry, count=3) if best_entry else []
+    haiku_section = ""
+    if samples:
+        haiku_items = "".join(
+            f'<div class="haiku">{"".join(f"<p>{html.escape(l)}</p>" for l in h.split(chr(10)))}</div>\n'
+            for h in samples
+        )
+        haiku_section = f'<div class="section-label" style="margin-top:2.5rem;">Selected Haiku</div>\n{haiku_items}'
+
+    first_cover = next((b.get('cover_url', '') for b in books if b.get('cover_url')), '')
+    og_img = first_cover or (portrait_url if has_portrait else '')
+    og_tags = f'<meta property="og:image" content="{og_img}">\n    <meta name="twitter:image" content="{og_img}">' if og_img else ''
+
+    bio_first = bio.split('\n')[0].strip()
+    meta_desc = html.escape(bio_first[:155])
+
+    schema = {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": author_name,
+        "url": f"https://shmindle.com/authors/{author_slug}.html",
+        "description": bio_first[:300],
+    }
+    if has_portrait:
+        schema["image"] = portrait_url
+
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BPD55QWY65"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){{dataLayer.push(arguments);}}
+      gtag('js', new Date());
+      gtag('config', 'G-BPD55QWY65');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{esc_author} — {book_count} Collection{s} | Shmindle</title>
+    <meta name="description" content="{meta_desc}">
+    <link rel="canonical" href="https://shmindle.com/authors/{author_slug}.html">
+    <meta property="og:title" content="{esc_author} | Shmindle">
+    <meta property="og:description" content="{meta_desc}">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://shmindle.com/authors/{author_slug}.html">
+    {og_tags}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{esc_author} | Shmindle">
+    <meta name="twitter:description" content="{meta_desc}">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate" type="application/rss+xml" title="Shmindle — New Haiku Books" href="/feed.xml">
+    <link rel="stylesheet" href="../style.css">
+    <script type="application/ld+json">
+    {json.dumps(schema, ensure_ascii=False)}
+    </script>
+</head>
+<body>
+    <header>
+        <h1><a href="../" style="text-decoration:none;color:inherit">Shmindle</a></h1>
+    </header>
+    <div class="author-page">
+        <a href="../" class="back-link">&larr; All books</a>
+        <div class="author-hero">
+            {portrait_html}
+            <div class="author-info">
+                <h1>{esc_author}</h1>
+                <div class="author-meta">{book_count} collection{s} {location_part}</div>
+                <div class="author-bio">{bio_paras}</div>
+            </div>
+        </div>
+        <div class="section-label">Collections</div>
+        {cards_html}
+        {haiku_section}
+    </div>
+    <footer>
+        <p><a href="../" style="color:#aaa;text-decoration:none;">Shmindle</a> &mdash; Free AI-generated haiku poetry</p>
+    </footer>
+</body>
+</html>"""
+
+
+def generate_author_pages(catalog: List[Dict], index: List[Dict]) -> None:
+    """Generate or update an author page for every author in the catalog."""
+    from collections import defaultdict
+    print("\nGenerating author pages...")
+    AUTHOR_DIR.mkdir(exist_ok=True)
+
+    bios = load_author_bios()
+    index_by_title = {e['title']: e for e in index}
+
+    author_books: Dict = defaultdict(list)
+    for book in catalog:
+        author_books[book['author']].append(book)
+
+    new_bios = False
+    for author_name, books in author_books.items():
+        author_slug = slugify(author_name)
+        idx_entries = [index_by_title[b['title']] for b in books if b['title'] in index_by_title]
+
+        has_portrait = generate_author_portrait_file(author_name, author_slug, idx_entries)
+
+        if author_slug not in bios:
+            print(f"  Bio: {author_name}...")
+            bios[author_slug] = generate_author_bio_text(author_name, idx_entries)
+            new_bios = True
+
+        page_html = generate_author_page_html(
+            author_name, author_slug, books,
+            bios[author_slug], has_portrait, idx_entries
+        )
+        (AUTHOR_DIR / f"{author_slug}.html").write_text(page_html, encoding='utf-8')
+
+    if new_bios:
+        save_author_bios(bios)
+
+    print(f"  {len(author_books)} author pages in authors/")
 
 
 if __name__ == "__main__":

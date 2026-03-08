@@ -392,3 +392,114 @@ footer {
     .book-hero img { width: 200px; }
     .book-info .download-btns { justify-content: center; }
 }
+
+/* Author pages */
+.author-page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+}
+
+.author-hero {
+    display: flex;
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+    align-items: flex-start;
+}
+
+.author-portrait {
+    width: 180px;
+    height: 180px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.1);
+    background: #f0ece6;
+}
+
+.author-info h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    color: #2c2c2c;
+    margin-bottom: 0.3rem;
+}
+
+.author-meta {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 1.25rem;
+}
+
+.author-bio {
+    font-size: 0.95rem;
+    line-height: 1.85;
+    color: #555;
+}
+
+.author-bio p + p {
+    margin-top: 1em;
+}
+
+.section-label {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #bbb;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ede9e4;
+}
+
+.author-book-card {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.25rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow 0.2s;
+}
+
+.author-book-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.author-book-card img {
+    width: 80px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
+
+.author-book-info h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #2c2c2c;
+    margin-bottom: 0.2rem;
+}
+
+.author-book-meta {
+    font-size: 0.82rem;
+    color: #aaa;
+    margin-bottom: 0.6rem;
+}
+
+.author-book-snippet {
+    font-size: 0.88rem;
+    color: #777;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+@media (max-width: 600px) {
+    .author-hero { flex-direction: column; align-items: center; text-align: center; }
+    .author-portrait { width: 140px; height: 140px; }
+}
