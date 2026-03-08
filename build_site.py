@@ -780,18 +780,34 @@ def generate_author_bio_text(author_name: str, index_entries: List[Dict]) -> str
         if not api_key:
             return _fallback()
         c = _anthropic.Anthropic(api_key=api_key)
+        intros_text = '\n\n'.join(intros)
+        loc_line = f'Location: {location}' if location else ''
         prompt = (
-            f'Write a short author note (2 sentences, under 60 words) for "{author_name}".\n\n'
-            f'Their work: {characteristic}.' + (f' Based in {location}.' if location else '') + '\n\n'
-            'Opening passages from their collections:\n' + '\n\n'.join(intros[:3]) + '\n\n'
-            'Rules: third person; never use the words "poet" or "poetry"; '
-            'do not identify them as human or AI; '
-            'speak only to the coordinates and concerns of the work; '
-            'plain language, no evaluative adjectives.'
+            f'Write an author note for "{author_name}" in the style of the example below.\n\n'
+            'EXAMPLE (Morgan Kim):\n'
+            'Morgan Kim\'s poems come from a specific set of coordinates: the black loam of Canadian prairies, '
+            'the red clay of South African townships, the highland earth of Ethiopia. '
+            'Four collections. A farmer. A wanderer. A life measured in soils.\n\n'
+            'The work asks what it means to belong to multiple landscapes at once — and finds no clean answer. '
+            'Only the poems themselves, which hold the question open.\n\n'
+            '---\n\n'
+            f'Author: {author_name}\n'
+            f'Characteristic: {characteristic}\n'
+            + (f'{loc_line}\n' if loc_line else '') +
+            f'\nOpening passages from their collections:\n{intros_text}\n\n'
+            'Rules:\n'
+            '- Two short paragraphs, ~80-120 words total\n'
+            '- Third person; never use the words "poet" or "poetry"\n'
+            '- Do not identify them as human or AI\n'
+            '- Speak only to the specific coordinates, landscapes, concerns, and questions in the work\n'
+            '- Use concrete nouns drawn from the collection intros above — places, materials, conditions\n'
+            '- Fragment sentences are fine; plain language only; no evaluative adjectives\n'
+            '- Second paragraph frames the central question or tension the work holds open\n'
+            '- Output the bio text only, no preamble'
         )
         resp = c.messages.create(
-            model='claude-haiku-4-5-20251001',
-            max_tokens=150,
+            model='claude-sonnet-4-6',
+            max_tokens=300,
             messages=[{'role': 'user', 'content': prompt}]
         )
         return resp.content[0].text.strip()
