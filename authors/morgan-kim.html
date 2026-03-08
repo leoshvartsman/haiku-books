@@ -11,266 +11,81 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Morgan Kim — Poet | Shmindle</title>
-    <meta name="description" content="Morgan Kim is an AI-generated persona — a voice built from a farmer's coordinates across Canada, South Africa, and Ethiopia. Four haiku collections on Shmindle.">
+    <title>Morgan Kim — 4 Collections | Shmindle</title>
+    <meta name="description" content="Morgan Kim&#x27;s poems come from a specific set of coordinates: the black loam of Canadian prairies, the red clay of South African townships, the highland eart">
     <link rel="canonical" href="https://shmindle.com/authors/morgan-kim.html">
-
-    <meta property="og:title" content="Morgan Kim — Poet | Shmindle">
-    <meta property="og:description" content="Four haiku collections tracing a geography of belonging across three continents.">
+    <meta property="og:title" content="Morgan Kim | Shmindle">
+    <meta property="og:description" content="Morgan Kim&#x27;s poems come from a specific set of coordinates: the black loam of Canadian prairies, the red clay of South African townships, the highland eart">
     <meta property="og:type" content="profile">
     <meta property="og:url" content="https://shmindle.com/authors/morgan-kim.html">
-    <meta property="og:image" content="https://shmindle.com/authors/morgan-kim.png">
-
+    <meta property="og:image" content="https://github.com/leoshvartsman/haiku-books/releases/download/book-rainfall-in-memory/rainfall-in-memory.jpg">
+    <meta name="twitter:image" content="https://github.com/leoshvartsman/haiku-books/releases/download/book-rainfall-in-memory/rainfall-in-memory.jpg">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Morgan Kim — Poet | Shmindle">
-    <meta name="twitter:description" content="Four haiku collections tracing a geography of belonging across three continents.">
-    <meta name="twitter:image" content="https://shmindle.com/authors/morgan-kim.png">
-
+    <meta name="twitter:title" content="Morgan Kim | Shmindle">
+    <meta name="twitter:description" content="Morgan Kim&#x27;s poems come from a specific set of coordinates: the black loam of Canadian prairies, the red clay of South African townships, the highland eart">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="alternate" type="application/rss+xml" title="Shmindle — New Haiku Books" href="/feed.xml">
     <link rel="stylesheet" href="../style.css">
-
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Morgan Kim",
-      "url": "https://shmindle.com/authors/morgan-kim.html",
-      "image": "https://shmindle.com/authors/morgan-kim.png",
-      "description": "Poet whose work spans Canadian prairies, South African townships, and Ethiopian highlands.",
-      "publisher": {"@type": "Organization", "name": "Shmindle", "url": "https://shmindle.com"}
-    }
+    {"@context": "https://schema.org", "@type": "Person", "name": "Morgan Kim", "url": "https://shmindle.com/authors/morgan-kim.html", "description": "Morgan Kim's poems come from a specific set of coordinates: the black loam of Canadian prairies, the red clay of South African townships, the highland earth of Ethiopia. Four collections. A farmer. A wanderer. A life measured in soils.", "image": "https://shmindle.com/authors/morgan-kim.png"}
     </script>
-
-    <style>
-        .author-page {
-            max-width: 720px;
-            margin: 0 auto;
-            padding: 2rem 1.5rem 4rem;
-        }
-
-        .author-hero {
-            display: flex;
-            gap: 2.5rem;
-            margin-bottom: 3rem;
-            align-items: flex-start;
-        }
-
-        .author-portrait {
-            width: 180px;
-            height: 180px;
-            border-radius: 8px;
-            object-fit: cover;
-            flex-shrink: 0;
-            box-shadow: 0 2px 16px rgba(0,0,0,0.1);
-            background: #f0ece6;
-        }
-
-        .author-hero-info h1 {
-            font-size: 2rem;
-            font-weight: 300;
-            letter-spacing: 0.04em;
-            color: #2c2c2c;
-            margin-bottom: 0.3rem;
-        }
-
-        .author-meta {
-            font-size: 0.9rem;
-            color: #aaa;
-            margin-bottom: 1.25rem;
-        }
-
-        .author-bio {
-            font-size: 0.95rem;
-            line-height: 1.85;
-            color: #555;
-        }
-
-        .author-bio p + p {
-            margin-top: 1em;
-        }
-
-        .section-label {
-            font-size: 0.8rem;
-            font-weight: 400;
-            color: #bbb;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid #ede9e4;
-        }
-
-        .books-section {
-            margin-bottom: 3rem;
-        }
-
-        .author-book-card {
-            display: flex;
-            gap: 1.5rem;
-            align-items: flex-start;
-            background: #fff;
-            border-radius: 8px;
-            padding: 1.25rem;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-            margin-bottom: 1rem;
-            text-decoration: none;
-            color: inherit;
-            transition: box-shadow 0.2s;
-        }
-
-        .author-book-card:hover {
-            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
-        }
-
-        .author-book-card img {
-            width: 80px;
-            height: 110px;
-            object-fit: cover;
-            border-radius: 4px;
-            flex-shrink: 0;
-            box-shadow: 0 1px 6px rgba(0,0,0,0.1);
-        }
-
-        .author-book-info h3 {
-            font-size: 1.05rem;
-            font-weight: 600;
-            color: #2c2c2c;
-            margin-bottom: 0.2rem;
-        }
-
-        .author-book-info .book-meta {
-            font-size: 0.82rem;
-            color: #aaa;
-            margin-bottom: 0.6rem;
-        }
-
-        .author-book-info .book-intro-snippet {
-            font-size: 0.88rem;
-            color: #777;
-            line-height: 1.6;
-            font-style: italic;
-        }
-
-        .selected-haiku-section {
-            margin-bottom: 3rem;
-        }
-
-        .portrait-note {
-            font-size: 0.78rem;
-            color: #ccc;
-            text-align: center;
-            margin-top: 0.5rem;
-            font-style: italic;
-        }
-
-        @media (max-width: 600px) {
-            .author-hero { flex-direction: column; align-items: center; text-align: center; }
-            .author-portrait { width: 140px; height: 140px; }
-        }
-    </style>
 </head>
 <body>
     <header>
         <h1><a href="../" style="text-decoration:none;color:inherit">Shmindle</a></h1>
     </header>
-
     <div class="author-page">
         <a href="../" class="back-link">&larr; All books</a>
-
         <div class="author-hero">
-            <div style="flex-shrink:0;text-align:center;">
-                <img
-                    src="../authors/morgan-kim.png"
-                    alt="Generative mark portrait for Morgan Kim — a unique abstract identity pattern"
-                    class="author-portrait"
-                >
-            </div>
-            <div class="author-hero-info">
+            <img src="https://shmindle.com/authors/morgan-kim.png" alt="Identity mark for Morgan Kim" class="author-portrait">
+            <div class="author-info">
                 <h1>Morgan Kim</h1>
-                <div class="author-meta">4 collections &middot; Addis Ababa, Ethiopia</div>
-                <div class="author-bio">
-                    <p>Morgan Kim's poems come from a specific set of coordinates: the black loam of Canadian prairies, the red clay of South African townships, the highland earth of Ethiopia. Four collections. A farmer. A wanderer. A life measured in soils.</p>
-                    <p>The work asks what it means to belong to multiple landscapes at once — and finds no clean answer. Only the poems themselves, which hold the question open.</p>
-                </div>
+                <div class="author-meta">4 collections </div>
+                <div class="author-bio"><p>Morgan Kim&#x27;s poems come from a specific set of coordinates: the black loam of Canadian prairies, the red clay of South African townships, the highland earth of Ethiopia. Four collections. A farmer. A wanderer. A life measured in soils.</p><p>The work asks what it means to belong to multiple landscapes at once — and finds no clean answer. Only the poems themselves, which hold the question open.</p></div>
             </div>
         </div>
+        <div class="section-label">Collections</div>
+        <a href="../books/rainfall-in-memory.html" class="author-book-card">
+  <img src="https://github.com/leoshvartsman/haiku-books/releases/download/book-rainfall-in-memory/rainfall-in-memory.jpg" alt="Cover of Rainfall In Memory">
+  <div class="author-book-info">
+    <h3>Rainfall In Memory</h3>
+    <div class="author-book-meta">132 haiku</div>
+    <div class="author-book-snippet">As I sit here, surrounded by the familiar sounds of Sydney&#x27;s rain-soaked streets, my mind wanders back to the places that have shaped me – Jakarta&#x27;s balmy eveni…</div>
+  </div>
+</a>
+<a href="../books/liminal-landscapes.html" class="author-book-card">
+  <img src="https://github.com/leoshvartsman/haiku-books/releases/download/book-liminal-landscapes/liminal-landscapes.jpg" alt="Cover of Liminal Landscapes">
+  <div class="author-book-info">
+    <h3>Liminal Landscapes</h3>
+    <div class="author-book-meta">175 haiku</div>
+    <div class="author-book-snippet">As I wander through cities, observing the intersections of culture and history, I find myself drawn to the liminal spaces where old meets new, where tradition b…</div>
+  </div>
+</a>
+<a href="../books/dust-of-the-ancients.html" class="author-book-card">
+  <img src="https://github.com/leoshvartsman/haiku-books/releases/download/book-dust-of-the-ancients/dust-of-the-ancients.jpg" alt="Cover of Dust Of The Ancients">
+  <div class="author-book-info">
+    <h3>Dust Of The Ancients</h3>
+    <div class="author-book-meta">143 haiku</div>
+    <div class="author-book-snippet">As I sit amidst the whispers of dust and memory, I am reminded of the countless days spent chasing sunsets in small-town Canada. The wide open skies of my child…</div>
+  </div>
+</a>
+<a href="../books/four-soils-one-sky.html" class="author-book-card">
+  <img src="https://github.com/leoshvartsman/haiku-books/releases/download/book-four-soils-one-sky/four-soils-one-sky.jpg" alt="Cover of Four Soils, One Sky">
+  <div class="author-book-info">
+    <h3>Four Soils, One Sky</h3>
+    <div class="author-book-meta">245 haiku</div>
+    <div class="author-book-snippet">A life measured in soils—the black loam of Canadian prairies, the red clay of South African townships, the highland earth of Ethiopia where eucalyptus roots run…</div>
+  </div>
+</a>
 
-        <div class="books-section">
-            <div class="section-label">Collections</div>
-
-            <a href="../books/four-soils-one-sky.html" class="author-book-card">
-                <img src="https://github.com/leoshvartsman/haiku-books/releases/download/book-four-soils-one-sky/four-soils-one-sky.jpg" alt="Cover of Four Soils, One Sky">
-                <div class="author-book-info">
-                    <h3>Four Soils, One Sky</h3>
-                    <div class="book-meta">245 haiku</div>
-                    <div class="book-intro-snippet">A life measured in soils — the black loam of Canadian prairies, the red clay of South African townships, the highland earth of Ethiopia where eucalyptus roots run deep.</div>
-                </div>
-            </a>
-
-            <a href="../books/liminal-landscapes.html" class="author-book-card">
-                <img src="https://github.com/leoshvartsman/haiku-books/releases/download/book-liminal-landscapes/liminal-landscapes.jpg" alt="Cover of Liminal Landscapes">
-                <div class="author-book-info">
-                    <h3>Liminal Landscapes</h3>
-                    <div class="book-meta">Haiku collection</div>
-                    <div class="book-intro-snippet">Wandering through cities, observing the intersections of culture and history — drawn to the liminal spaces where old meets new, where tradition blends with innovation.</div>
-                </div>
-            </a>
-
-            <a href="../books/rainfall-in-memory.html" class="author-book-card">
-                <img src="https://github.com/leoshvartsman/haiku-books/releases/download/book-rainfall-in-memory/rainfall-in-memory.jpg" alt="Cover of Rainfall in Memory">
-                <div class="author-book-info">
-                    <h3>Rainfall in Memory</h3>
-                    <div class="book-meta">Haiku collection</div>
-                    <div class="book-intro-snippet">From Sydney's rain-soaked streets to Jakarta's balmy evenings, Manchester's grey skies, and rural Ireland — poems of weather and displacement.</div>
-                </div>
-            </a>
-
-            <a href="../books/dust-of-the-ancients.html" class="author-book-card">
-                <img src="https://github.com/leoshvartsman/haiku-books/releases/download/book-dust-of-the-ancients/dust-of-the-ancients.jpg" alt="Cover of Dust of the Ancients">
-                <div class="author-book-info">
-                    <h3>Dust of the Ancients</h3>
-                    <div class="book-meta">Haiku collection</div>
-                    <div class="book-intro-snippet">Chasing sunsets in small-town Canada — wide open skies that still echo, a symphony of memory composed in dust and light.</div>
-                </div>
-            </a>
-        </div>
-
-        <div class="selected-haiku-section">
-            <div class="section-label">Selected Haiku</div>
-
-            <div class="haiku">
-                <p>Morning breath fogs up</p>
-                <p>the school bus window while wheat</p>
-                <p>fields blur into gold</p>
-            </div>
-
-            <div class="haiku">
-                <p>Storm clouds build mountains</p>
-                <p>above the flat Witwatersrand</p>
-                <p>sky mining for rain</p>
-            </div>
-
-            <div class="haiku">
-                <p>Injera cooling</p>
-                <p>wraps around tomorrow's meal—</p>
-                <p>planning one day ahead</p>
-            </div>
-
-            <div class="haiku">
-                <p>Snow melts on thick books</p>
-                <p>carried close against my chest</p>
-                <p>through Ann Arbor dusk</p>
-            </div>
-        </div>
+        <div class="section-label" style="margin-top:2.5rem;">Selected Haiku</div>
+<div class="haiku"><p>Golden light descends</p><p>Wheat fields sway, rustle softly</p><p>Summer&#x27;s gentle hush</p></div>
+<div class="haiku"><p>Thunder rumbles loud</p><p>Stormy skies unleash their power</p><p>Nature&#x27;s wild display</p></div>
+<div class="haiku"><p>Marching feet resound</p><p>Passersby join in the cry</p><p>Collective strength rises</p></div>
 
     </div>
-
     <footer>
-        <p>
-            <a href="../" style="color:#aaa;text-decoration:none;">Shmindle</a>
-            &mdash; Free AI-generated haiku poetry
-        </p>
+        <p><a href="../" style="color:#aaa;text-decoration:none;">Shmindle</a> &mdash; Free AI-generated haiku poetry</p>
     </footer>
 </body>
 </html>
