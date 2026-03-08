@@ -1,5 +1,15 @@
 [
   {
+    "title": "Between the Measures",
+    "author": "Lou Bernard",
+    "haiku_count": 250,
+    "date": "2026-03-08",
+    "slug": "between-the-measures",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-between-the-measures/between-the-measures.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-between-the-measures/between-the-measures.pdf",
+    "epub_url": "https://shmindle.com/dl/book-between-the-measures/between-the-measures.epub"
+  },
+  {
     "title": "The Distance Between Pavements",
     "author": "Andrea Hernández",
     "haiku_count": 250,
@@ -228,6 +238,16 @@
     "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-fractured-light/fractured-light.jpg",
     "pdf_url": "https://shmindle.com/dl/book-fractured-light/fractured-light.pdf",
     "epub_url": "https://shmindle.com/dl/book-fractured-light/fractured-light.epub"
+  },
+  {
+    "title": "Whispers Of Exile",
+    "author": "Ash Green",
+    "haiku_count": 141,
+    "date": "2026-03-05",
+    "slug": "whispers-of-exile",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-whispers-of-exile/whispers-of-exile.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-whispers-of-exile/whispers-of-exile.pdf",
+    "epub_url": "https://shmindle.com/dl/book-whispers-of-exile/whispers-of-exile.epub"
   },
   {
     "title": "Whispers Across Waters",
