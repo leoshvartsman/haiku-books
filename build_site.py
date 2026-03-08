@@ -54,8 +54,11 @@ def to_proxy_url(github_url: str) -> str:
 
 
 def slugify(title: str) -> str:
-    """Convert title to URL-friendly slug."""
-    return re.sub(r'[^a-z0-9]+', '-', title.lower()).strip('-')
+    """Convert title to URL-friendly slug, transliterating accented characters."""
+    import unicodedata
+    normalized = unicodedata.normalize('NFD', title)
+    ascii_str = normalized.encode('ascii', 'ignore').decode('ascii')
+    return re.sub(r'[^a-z0-9]+', '-', ascii_str.lower()).strip('-')
 
 
 def parse_date(raw: str) -> str:
