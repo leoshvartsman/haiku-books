@@ -30,6 +30,16 @@
     "epub_url": "https://shmindle.com/dl/book-mud-on-the-threshold/mud-on-the-threshold.epub"
   },
   {
+    "title": "Borrowed Light",
+    "author": "Morgan Andersson",
+    "haiku_count": 250,
+    "date": "2026-03-09",
+    "slug": "borrowed-light",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-borrowed-light/borrowed-light.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-borrowed-light/borrowed-light.pdf",
+    "epub_url": "https://shmindle.com/dl/book-borrowed-light/borrowed-light.epub"
+  },
+  {
     "title": "Between the Measures",
     "author": "Lou Bernard",
     "haiku_count": 250,
