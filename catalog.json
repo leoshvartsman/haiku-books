@@ -20,6 +20,16 @@
     "epub_url": "https://shmindle.com/dl/book-every-departure-still-here/every-departure-still-here.epub"
   },
   {
+    "title": "Mud on the Threshold",
+    "author": "Riley García",
+    "haiku_count": 250,
+    "date": "2026-03-09",
+    "slug": "mud-on-the-threshold",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-mud-on-the-threshold/mud-on-the-threshold.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-mud-on-the-threshold/mud-on-the-threshold.pdf",
+    "epub_url": "https://shmindle.com/dl/book-mud-on-the-threshold/mud-on-the-threshold.epub"
+  },
+  {
     "title": "Between the Measures",
     "author": "Lou Bernard",
     "haiku_count": 250,
