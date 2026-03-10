@@ -20,6 +20,16 @@
     "epub_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.epub"
   },
   {
+    "title": "The Distance Between Names",
+    "author": "Aarav Reddy",
+    "haiku_count": 250,
+    "date": "2026-03-10",
+    "slug": "the-distance-between-names",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-the-distance-between-names/the-distance-between-names.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-the-distance-between-names/the-distance-between-names.pdf",
+    "epub_url": "https://shmindle.com/dl/book-the-distance-between-names/the-distance-between-names.epub"
+  },
+  {
     "title": "The Body Remembers Longitude",
     "author": "Simone Colombo",
     "haiku_count": 250,
