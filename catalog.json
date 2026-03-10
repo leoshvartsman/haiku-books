@@ -30,6 +30,16 @@
     "epub_url": "https://shmindle.com/dl/book-the-distance-between-names/the-distance-between-names.epub"
   },
   {
+    "title": "Where the Dust Remembers",
+    "author": "Robin Lee",
+    "haiku_count": 250,
+    "date": "2026-03-10",
+    "slug": "where-the-dust-remembers",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-where-the-dust-remembers/where-the-dust-remembers.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-where-the-dust-remembers/where-the-dust-remembers.pdf",
+    "epub_url": "https://shmindle.com/dl/book-where-the-dust-remembers/where-the-dust-remembers.epub"
+  },
+  {
     "title": "The Body Remembers Longitude",
     "author": "Simone Colombo",
     "haiku_count": 250,
