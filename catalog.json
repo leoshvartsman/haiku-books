@@ -265,9 +265,9 @@
     "haiku_count": 133,
     "date": "2026-03-05",
     "slug": "mosaic-memories",
-    "cover_url": "",
-    "pdf_url": "",
-    "epub_url": ""
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-mosaic-memories/mosaic-memories.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-mosaic-memories/mosaic-memories.pdf",
+    "epub_url": "https://shmindle.com/dl/book-mosaic-memories/mosaic-memories.epub"
   },
   {
     "title": "Luminous Migrations",
@@ -340,6 +340,26 @@
     "epub_url": "https://shmindle.com/dl/book-fleeting-horizons/fleeting-horizons.epub"
   },
   {
+    "title": "Fractured Light",
+    "author": "Riley García",
+    "haiku_count": 164,
+    "date": "2026-03-05",
+    "slug": "fractured-light",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-fractured-light/fractured-light.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-fractured-light/fractured-light.pdf",
+    "epub_url": "https://shmindle.com/dl/book-fractured-light/fractured-light.epub"
+  },
+  {
+    "title": "Whispers Of Exile",
+    "author": "Ash Green",
+    "haiku_count": 141,
+    "date": "2026-03-05",
+    "slug": "whispers-of-exile",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-whispers-of-exile/whispers-of-exile.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-whispers-of-exile/whispers-of-exile.pdf",
+    "epub_url": "https://shmindle.com/dl/book-whispers-of-exile/whispers-of-exile.epub"
+  },
+  {
     "title": "Whispers Across Waters",
     "author": "Harper Brown",
     "haiku_count": 125,
@@ -355,9 +375,19 @@
     "haiku_count": 132,
     "date": "2026-03-05",
     "slug": "rainfall-in-memory",
-    "cover_url": "",
-    "pdf_url": "",
-    "epub_url": ""
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-rainfall-in-memory/rainfall-in-memory.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-rainfall-in-memory/rainfall-in-memory.pdf",
+    "epub_url": "https://shmindle.com/dl/book-rainfall-in-memory/rainfall-in-memory.epub"
+  },
+  {
+    "title": "Snowy Fragmentations",
+    "author": "Ji Seo",
+    "haiku_count": 147,
+    "date": "2026-03-05",
+    "slug": "snowy-fragmentations",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-snowy-fragmentations/snowy-fragmentations.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-snowy-fragmentations/snowy-fragmentations.pdf",
+    "epub_url": "https://shmindle.com/dl/book-snowy-fragmentations/snowy-fragmentations.epub"
   },
   {
     "title": "Echoes Of Exile",
@@ -378,6 +408,16 @@
     "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-whispers-of-abaya/whispers-of-abaya.jpg",
     "pdf_url": "https://shmindle.com/dl/book-whispers-of-abaya/whispers-of-abaya.pdf",
     "epub_url": "https://shmindle.com/dl/book-whispers-of-abaya/whispers-of-abaya.epub"
+  },
+  {
+    "title": "Whispers Of Place",
+    "author": "River Brown",
+    "haiku_count": 161,
+    "date": "2026-03-05",
+    "slug": "whispers-of-place",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-whispers-of-place/whispers-of-place.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-whispers-of-place/whispers-of-place.pdf",
+    "epub_url": "https://shmindle.com/dl/book-whispers-of-place/whispers-of-place.epub"
   },
   {
     "title": "Migrant Blooms",
@@ -915,9 +955,9 @@
     "haiku_count": 121,
     "date": "2026-03-05",
     "slug": "northern-light-southern-winds",
-    "cover_url": "",
-    "pdf_url": "",
-    "epub_url": ""
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-northern-light-southern-winds/northern-light-southern-winds.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-northern-light-southern-winds/northern-light-southern-winds.pdf",
+    "epub_url": "https://shmindle.com/dl/book-northern-light-southern-winds/northern-light-southern-winds.epub"
   },
   {
     "title": "Fractured Seasons",
