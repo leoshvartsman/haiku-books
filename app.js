@@ -3,6 +3,14 @@ let allBooks = [];
 let filteredBooks = [];
 let currentPage = 1;
 
+function slugify(str) {
+    return str.normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-|-$/g, '');
+}
+
 async function init() {
     const res = await fetch('catalog.json');
     allBooks = await res.json();
@@ -57,15 +65,19 @@ function render() {
         const slug = book.slug || book.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
         const pageUrl = `books/${slug}.html`;
 
+        const authorSlug = slugify(book.author);
+        const authorUrl = `authors/${authorSlug}.html`;
+        const authorHtml = `<a href="${authorUrl}" class="card-author-link">${book.author}</a>`;
+
         return `<div class="card">
             <a href="${pageUrl}" class="card-link">
                 ${coverHtml}
                 <div class="card-body">
                     <div class="card-title">${book.title}</div>
-                    <div class="card-author">${book.author}</div>
                     <div class="card-meta">${book.haiku_count} haiku</div>
                 </div>
             </a>
+            <div class="card-author">${authorHtml}</div>
             <div class="card-downloads">
                 ${book.pdf_url ? `<a href="${book.pdf_url}" class="btn-pdf" type="application/pdf">PDF</a>` : ''}
                 ${book.epub_url ? `<a href="${book.epub_url}" class="btn-epub" type="application/epub+zip">EPUB</a>` : ''}

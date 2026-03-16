@@ -121,13 +121,22 @@ header h1 {
 .card-author {
     font-size: 0.9rem;
     color: #777;
-    margin-bottom: 0.5rem;
+    padding: 0 1.25rem 0.6rem;
+}
+
+.card-author-link {
+    color: #777;
+    text-decoration: none;
+}
+
+.card-author-link:hover {
+    color: #444;
+    text-decoration: underline;
 }
 
 .card-meta {
     font-size: 0.8rem;
     color: #aaa;
-    margin-bottom: 0.75rem;
 }
 
 .card-link {
