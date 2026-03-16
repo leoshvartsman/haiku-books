@@ -383,6 +383,7 @@ def extract_intro(book_index_entry: Dict) -> str:
 def generate_book_page(book_catalog: Dict, book_index_entry: Dict, full_catalog: List[Dict] = None) -> None:
     """Generate an individual HTML page for a book."""
     slug = slugify(book_catalog["title"])
+    author_slug = slugify(book_catalog["author"])
     title = html.escape(book_catalog["title"])
     author = html.escape(book_catalog["author"])
     haiku_count = book_catalog["haiku_count"]
@@ -535,7 +536,7 @@ def generate_book_page(book_catalog: Dict, book_index_entry: Dict, full_catalog:
             {cover_html}
             <div class="book-info">
                 <h1>{title}</h1>
-                <div class="author">{author}</div>
+                <div class="author"><a href="../authors/{author_slug}.html" class="author-page-link">{author}</a></div>
                 <div class="meta">{haiku_count} haiku</div>
                 <div class="download-btns">
                     {dl_html}

@@ -335,6 +335,18 @@ footer {
     margin-bottom: 0.5rem;
 }
 
+.author-page-link {
+    color: #777;
+    text-decoration: underline;
+    text-decoration-color: #ccc;
+    text-underline-offset: 2px;
+}
+
+.author-page-link:hover {
+    color: #444;
+    text-decoration-color: #999;
+}
+
 .book-info .meta {
     font-size: 0.9rem;
     color: #aaa;
