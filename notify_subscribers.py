@@ -41,11 +41,10 @@ def save_notified(slugs):
 
 def slugify(title):
     import re
-    slug = title.lower()
-    slug = re.sub(r"[^\w\s-]", "", slug)
-    slug = re.sub(r"[\s_]+", "-", slug)
-    slug = slug.strip("-")
-    return slug
+    import unicodedata
+    normalized = unicodedata.normalize('NFD', title)
+    ascii_str = normalized.encode('ascii', 'ignore').decode('ascii')
+    return re.sub(r'[^a-z0-9]+', '-', ascii_str.lower()).strip('-')
 
 
 def build_email(new_books):
