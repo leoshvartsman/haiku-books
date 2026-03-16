@@ -180,6 +180,16 @@
     "epub_url": "https://shmindle.com/dl/book-the-light-moves-differently-here/the-light-moves-differently-here.epub"
   },
   {
+    "title": "Between Harvests",
+    "author": "Diya Shah",
+    "slug": "between-harvests",
+    "haiku_count": 250,
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-between-harvests/between-harvests.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-between-harvests/between-harvests.pdf",
+    "epub_url": "https://shmindle.com/dl/book-between-harvests/between-harvests.epub",
+    "date": "2026-03-06"
+  },
+  {
     "title": "Dust on Every Threshold",
     "author": "Morgan Durand",
     "haiku_count": 250,
@@ -1608,6 +1618,16 @@
     "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-grain-and-altitude/grain-and-altitude.jpg",
     "pdf_url": "https://shmindle.com/dl/book-grain-and-altitude/grain-and-altitude.pdf",
     "epub_url": "https://shmindle.com/dl/book-grain-and-altitude/grain-and-altitude.epub"
+  },
+  {
+    "title": "Wood, Water, and the Long Way Home",
+    "author": "Sam Kowalski",
+    "slug": "wood-water-and-the-long-way-home",
+    "haiku_count": 250,
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-wood-water-and-the-long-way-home/wood-water-and-the-long-way-home.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-wood-water-and-the-long-way-home/wood-water-and-the-long-way-home.pdf",
+    "epub_url": "https://shmindle.com/dl/book-wood-water-and-the-long-way-home/wood-water-and-the-long-way-home.epub",
+    "date": "2026-02-19"
   },
   {
     "title": "Salt Between Latitudes",
