@@ -1,73 +1,113 @@
 [
   {
-    "title": "Pulse at the Wrist of the World",
-    "author": "Alex P\u00e9rez",
+    "title": "The Distance Between Rains",
+    "author": "Ying Hu",
     "haiku_count": 250,
+    "date": "2026-03-17",
+    "slug": "the-distance-between-rains",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-the-distance-between-rains/the-distance-between-rains.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-the-distance-between-rains/the-distance-between-rains.pdf",
+    "epub_url": "https://shmindle.com/dl/book-the-distance-between-rains/the-distance-between-rains.epub"
+  },
+  {
+    "title": "Pulse at the Wrist of the World",
+    "author": "Alex Pérez",
+    "haiku_count": 250,
+    "date": "2026-03-16",
+    "slug": "pulse-at-the-wrist-of-the-world",
     "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-pulse-at-the-wrist-of-the-world/pulse-at-the-wrist-of-the-world.jpg",
     "pdf_url": "https://shmindle.com/dl/book-pulse-at-the-wrist-of-the-world/pulse-at-the-wrist-of-the-world.pdf",
-    "epub_url": "https://shmindle.com/dl/book-pulse-at-the-wrist-of-the-world/pulse-at-the-wrist-of-the-world.epub",
-    "date": "2026-03-16",
-    "slug": "pulse-at-the-wrist-of-the-world"
+    "epub_url": "https://shmindle.com/dl/book-pulse-at-the-wrist-of-the-world/pulse-at-the-wrist-of-the-world.epub"
   },
   {
     "title": "Dust Between Latitudes",
     "author": "Blake Lee",
     "haiku_count": 250,
+    "date": "2026-03-16",
+    "slug": "dust-between-latitudes",
     "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-dust-between-latitudes/dust-between-latitudes.jpg",
     "pdf_url": "https://shmindle.com/dl/book-dust-between-latitudes/dust-between-latitudes.pdf",
-    "epub_url": "https://shmindle.com/dl/book-dust-between-latitudes/dust-between-latitudes.epub",
-    "date": "2026-03-16",
-    "slug": "dust-between-latitudes"
+    "epub_url": "https://shmindle.com/dl/book-dust-between-latitudes/dust-between-latitudes.epub"
+  },
+  {
+    "title": "Before the City Wakes",
+    "author": "Saanvi Singh",
+    "haiku_count": 250,
+    "date": "2026-03-10",
+    "slug": "before-the-city-wakes",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-before-the-city-wakes/before-the-city-wakes.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.pdf",
+    "epub_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.epub"
+  },
+  {
+    "title": "What the Body Remembers",
+    "author": "Jamie Martinez",
+    "haiku_count": 250,
+    "date": "2026-03-10",
+    "slug": "what-the-body-remembers",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-what-the-body-remembers/what-the-body-remembers.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.epub"
   },
   {
     "title": "The Distance Between Names",
     "author": "Aarav Reddy",
     "haiku_count": 250,
+    "date": "2026-03-10",
+    "slug": "the-distance-between-names",
     "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-the-distance-between-names/the-distance-between-names.jpg",
     "pdf_url": "https://shmindle.com/dl/book-the-distance-between-names/the-distance-between-names.pdf",
-    "epub_url": "https://shmindle.com/dl/book-the-distance-between-names/the-distance-between-names.epub",
-    "date": "2026-03-10",
-    "slug": "the-distance-between-names"
+    "epub_url": "https://shmindle.com/dl/book-the-distance-between-names/the-distance-between-names.epub"
   },
   {
     "title": "Where the Dust Remembers",
     "author": "Robin Lee",
     "haiku_count": 250,
+    "date": "2026-03-10",
+    "slug": "where-the-dust-remembers",
     "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-where-the-dust-remembers/where-the-dust-remembers.jpg",
     "pdf_url": "https://shmindle.com/dl/book-where-the-dust-remembers/where-the-dust-remembers.pdf",
-    "epub_url": "https://shmindle.com/dl/book-where-the-dust-remembers/where-the-dust-remembers.epub",
-    "date": "2026-03-10",
-    "slug": "where-the-dust-remembers"
+    "epub_url": "https://shmindle.com/dl/book-where-the-dust-remembers/where-the-dust-remembers.epub"
+  },
+  {
+    "title": "The Body Remembers Longitude",
+    "author": "Simone Colombo",
+    "haiku_count": 250,
+    "date": "2026-03-09",
+    "slug": "the-body-remembers-longitude",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-the-body-remembers-longitude/the-body-remembers-longitude.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-the-body-remembers-longitude/the-body-remembers-longitude.pdf",
+    "epub_url": "https://shmindle.com/dl/book-the-body-remembers-longitude/the-body-remembers-longitude.epub"
   },
   {
     "title": "Every Departure Still Here",
     "author": "Robin Harris",
     "haiku_count": 250,
+    "date": "2026-03-09",
+    "slug": "every-departure-still-here",
     "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-every-departure-still-here/every-departure-still-here.jpg",
     "pdf_url": "https://shmindle.com/dl/book-every-departure-still-here/every-departure-still-here.pdf",
-    "epub_url": "https://shmindle.com/dl/book-every-departure-still-here/every-departure-still-here.epub",
-    "date": "2026-03-09",
-    "slug": "every-departure-still-here"
+    "epub_url": "https://shmindle.com/dl/book-every-departure-still-here/every-departure-still-here.epub"
   },
   {
     "title": "Mud on the Threshold",
-    "author": "Riley Garc\u00eda",
+    "author": "Riley García",
     "haiku_count": 250,
+    "date": "2026-03-09",
+    "slug": "mud-on-the-threshold",
     "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-mud-on-the-threshold/mud-on-the-threshold.jpg",
     "pdf_url": "https://shmindle.com/dl/book-mud-on-the-threshold/mud-on-the-threshold.pdf",
-    "epub_url": "https://shmindle.com/dl/book-mud-on-the-threshold/mud-on-the-threshold.epub",
-    "date": "2026-03-09",
-    "slug": "mud-on-the-threshold"
+    "epub_url": "https://shmindle.com/dl/book-mud-on-the-threshold/mud-on-the-threshold.epub"
   },
   {
     "title": "Borrowed Light",
     "author": "Morgan Andersson",
     "haiku_count": 250,
+    "date": "2026-03-09",
+    "slug": "borrowed-light",
     "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-borrowed-light/borrowed-light.jpg",
     "pdf_url": "https://shmindle.com/dl/book-borrowed-light/borrowed-light.pdf",
-    "epub_url": "https://shmindle.com/dl/book-borrowed-light/borrowed-light.epub",
-    "date": "2026-03-09",
-    "slug": "borrowed-light"
+    "epub_url": "https://shmindle.com/dl/book-borrowed-light/borrowed-light.epub"
   },
   {
     "title": "Between the Measures",
@@ -93,25 +133,15 @@
     "title": "Between Addresses",
     "author": "Harper Smith",
     "haiku_count": 250,
+    "date": "2026-03-08",
+    "slug": "between-addresses",
     "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-between-addresses/between-addresses.jpg",
     "pdf_url": "https://shmindle.com/dl/book-between-addresses/between-addresses.pdf",
-    "epub_url": "https://shmindle.com/dl/book-between-addresses/between-addresses.epub",
-    "date": "2026-03-08",
-    "slug": "between-addresses"
-  },
-  {
-    "title": "The Body Remembers Longitude",
-    "author": "Simone Colombo",
-    "haiku_count": 250,
-    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-the-body-remembers-longitude/the-body-remembers-longitude.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-the-body-remembers-longitude/the-body-remembers-longitude.pdf",
-    "epub_url": "https://shmindle.com/dl/book-the-body-remembers-longitude/the-body-remembers-longitude.epub",
-    "date": "2026-03-08",
-    "slug": "the-body-remembers-longitude"
+    "epub_url": "https://shmindle.com/dl/book-between-addresses/between-addresses.epub"
   },
   {
     "title": "The Distance Between Pavements",
-    "author": "Andrea Hern\u00e1ndez",
+    "author": "Andrea Hernández",
     "haiku_count": 250,
     "date": "2026-03-07",
     "slug": "the-distance-between-pavements",
@@ -178,16 +208,6 @@
     "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-the-light-moves-differently-here/the-light-moves-differently-here.jpg",
     "pdf_url": "https://shmindle.com/dl/book-the-light-moves-differently-here/the-light-moves-differently-here.pdf",
     "epub_url": "https://shmindle.com/dl/book-the-light-moves-differently-here/the-light-moves-differently-here.epub"
-  },
-  {
-    "title": "Between Harvests",
-    "author": "Diya Shah",
-    "slug": "between-harvests",
-    "haiku_count": 250,
-    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-between-harvests/between-harvests.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-between-harvests/between-harvests.pdf",
-    "epub_url": "https://shmindle.com/dl/book-between-harvests/between-harvests.epub",
-    "date": "2026-03-06"
   },
   {
     "title": "Dust on Every Threshold",
@@ -271,7 +291,7 @@
   },
   {
     "title": "Luminous Migrations",
-    "author": "Sol G\u00f3mez",
+    "author": "Sol Gómez",
     "haiku_count": 138,
     "date": "2026-03-05",
     "slug": "luminous-migrations",
@@ -331,7 +351,7 @@
   },
   {
     "title": "Fleeting Horizons",
-    "author": "Sol G\u00f3mez",
+    "author": "Sol Gómez",
     "haiku_count": 155,
     "date": "2026-03-05",
     "slug": "fleeting-horizons",
@@ -341,7 +361,7 @@
   },
   {
     "title": "Fractured Light",
-    "author": "Riley Garc\u00eda",
+    "author": "Riley García",
     "haiku_count": 164,
     "date": "2026-03-05",
     "slug": "fractured-light",
@@ -501,7 +521,7 @@
   },
   {
     "title": "Whispers Of Memory",
-    "author": "Harper Garc\u00eda",
+    "author": "Harper García",
     "haiku_count": 143,
     "date": "2026-03-05",
     "slug": "whispers-of-memory",
@@ -571,7 +591,7 @@
   },
   {
     "title": "Riverine Echoes",
-    "author": "Ariel S\u00e1nchez",
+    "author": "Ariel Sánchez",
     "haiku_count": 133,
     "date": "2026-03-05",
     "slug": "riverine-echoes",
@@ -631,7 +651,7 @@
   },
   {
     "title": "Buenos Aires Breeze",
-    "author": "Valent\u00edn Garc\u00eda",
+    "author": "Valentín García",
     "haiku_count": 184,
     "date": "2026-03-05",
     "slug": "buenos-aires-breeze",
@@ -741,7 +761,7 @@
   },
   {
     "title": "El Viento De Las Palabras",
-    "author": "Alex P\u00e9rez",
+    "author": "Alex Pérez",
     "haiku_count": 188,
     "date": "2026-03-05",
     "slug": "el-viento-de-las-palabras",
@@ -751,7 +771,7 @@
   },
   {
     "title": "Wistful Wanderings",
-    "author": "Riley M\u00fcller",
+    "author": "Riley Müller",
     "haiku_count": 120,
     "date": "2026-03-05",
     "slug": "wistful-wanderings",
@@ -1271,7 +1291,7 @@
   },
   {
     "title": "What the Meridian Keeps",
-    "author": "Valent\u00edn Garc\u00eda",
+    "author": "Valentín García",
     "haiku_count": 250,
     "date": "2026-02-28",
     "slug": "what-the-meridian-keeps",
@@ -1471,7 +1491,7 @@
   },
   {
     "title": "What the Roots Remember",
-    "author": "Casey Garc\u00eda",
+    "author": "Casey García",
     "haiku_count": 250,
     "date": "2026-02-22",
     "slug": "what-the-roots-remember",
@@ -1620,16 +1640,6 @@
     "epub_url": "https://shmindle.com/dl/book-grain-and-altitude/grain-and-altitude.epub"
   },
   {
-    "title": "Wood, Water, and the Long Way Home",
-    "author": "Sam Kowalski",
-    "slug": "wood-water-and-the-long-way-home",
-    "haiku_count": 250,
-    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-wood-water-and-the-long-way-home/wood-water-and-the-long-way-home.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-wood-water-and-the-long-way-home/wood-water-and-the-long-way-home.pdf",
-    "epub_url": "https://shmindle.com/dl/book-wood-water-and-the-long-way-home/wood-water-and-the-long-way-home.epub",
-    "date": "2026-02-19"
-  },
-  {
     "title": "Salt Between Latitudes",
     "author": "Sam Brown",
     "haiku_count": 250,
@@ -1671,7 +1681,7 @@
   },
   {
     "title": "Salt on Every Latitude",
-    "author": "Casey Garc\u00eda",
+    "author": "Casey García",
     "haiku_count": 250,
     "date": "2026-02-17",
     "slug": "salt-on-every-latitude",
@@ -1711,7 +1721,7 @@
   },
   {
     "title": "Cities Beneath the Skin",
-    "author": "Sol D\u00edaz",
+    "author": "Sol Díaz",
     "haiku_count": 250,
     "date": "2026-02-14",
     "slug": "cities-beneath-the-skin",
@@ -1751,7 +1761,7 @@
   },
   {
     "title": "Three Seasons Deep",
-    "author": "River Garc\u00eda",
+    "author": "River García",
     "haiku_count": 244,
     "date": "2026-02-14",
     "slug": "three-seasons-deep",
