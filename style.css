@@ -32,6 +32,13 @@ header h1 {
     font-size: 0.95rem;
 }
 
+.site-description {
+    margin-top: 0.5rem;
+    color: #aaa;
+    font-size: 0.85rem;
+    max-width: 480px;
+}
+
 .controls {
     display: flex;
     gap: 0.75rem;
