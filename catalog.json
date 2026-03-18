@@ -10,6 +10,16 @@
     "epub_url": "https://shmindle.com/dl/book-what-the-light-forgets/what-the-light-forgets.epub"
   },
   {
+    "title": "The Distance Between Mangoes",
+    "author": "Ishaan Chopra",
+    "haiku_count": 250,
+    "date": "2026-03-18",
+    "slug": "the-distance-between-mangoes",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-the-distance-between-mangoes/the-distance-between-mangoes.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-the-distance-between-mangoes/the-distance-between-mangoes.pdf",
+    "epub_url": "https://shmindle.com/dl/book-the-distance-between-mangoes/the-distance-between-mangoes.epub"
+  },
+  {
     "title": "The Distance Between Rains",
     "author": "Ying Hu",
     "haiku_count": 250,
