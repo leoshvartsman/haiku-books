@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://shmindle.com/</loc><lastmod>2026-03-17</lastmod><priority>1.0</priority></url>
+  <url><loc>https://shmindle.com/</loc><lastmod>2026-03-18</lastmod><priority>1.0</priority></url>
+  <url><loc>https://shmindle.com/books/what-the-light-forgets.html</loc><lastmod>2026-03-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/the-distance-between-rains.html</loc><lastmod>2026-03-17</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/grease-and-monsoon.html</loc><lastmod>2026-03-17</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/every-threshold-holds.html</loc><lastmod>2026-03-17</lastmod><priority>0.8</priority></url>
@@ -205,13 +206,13 @@
   <url><loc>https://shmindle.com/books/neon-script-and-sparrows.html</loc><lastmod>2026-02-05</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/tracks-in-fresh-snow.html</loc><lastmod>2026-02-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/stone-lanterns-and-whispers.html</loc><lastmod>2026-02-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://shmindle.com/authors/saanvi-singh.html</loc><lastmod>2026-03-18</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/ying-hu.html</loc><lastmod>2026-03-17</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/krishna-patel.html</loc><lastmod>2026-03-17</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/casey-smith.html</loc><lastmod>2026-03-17</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/sky-cohen.html</loc><lastmod>2026-03-17</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/alex-perez.html</loc><lastmod>2026-03-16</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/blake-lee.html</loc><lastmod>2026-03-16</lastmod><priority>0.7</priority></url>
-  <url><loc>https://shmindle.com/authors/saanvi-singh.html</loc><lastmod>2026-03-10</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/jamie-martinez.html</loc><lastmod>2026-03-10</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/aarav-reddy.html</loc><lastmod>2026-03-10</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/robin-lee.html</loc><lastmod>2026-03-10</lastmod><priority>0.7</priority></url>
