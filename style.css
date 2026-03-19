@@ -289,6 +289,40 @@ header h1 {
 .subscribe-ok  { color: #4a7a4a; }
 .subscribe-err { color: #a04040; }
 
+.subscribe-subheading {
+    color: #aaa;
+    font-size: 0.85rem;
+    margin: -0.5rem 0 1rem;
+}
+
+.submit-form {
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 360px;
+}
+
+.submit-form input[type="text"] {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-family: inherit;
+    background: #fff;
+    outline: none;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+}
+
+.submit-form input[type="text"]:focus {
+    border-color: #999;
+}
+
+.submit-form button[type="submit"]:disabled {
+    background: #999;
+    cursor: not-allowed;
+}
+
 footer {
     text-align: center;
     padding: 2rem 1.5rem;
