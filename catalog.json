@@ -10,6 +10,16 @@
     "epub_url": "https://shmindle.com/dl/book-between-meridians/between-meridians.epub"
   },
   {
+    "title": "Test Book",
+    "author": "Test Author",
+    "haiku_count": 386,
+    "date": "2026-03-19",
+    "slug": "test-book",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-test-book/test-book.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-test-book/test-book.pdf",
+    "epub_url": "https://shmindle.com/dl/book-test-book/test-book.epub"
+  },
+  {
     "title": "What the Light Forgets",
     "author": "Saanvi Singh",
     "haiku_count": 250,
