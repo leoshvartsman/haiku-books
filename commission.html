@@ -45,7 +45,7 @@
                         <input type="checkbox" id="submit-cc0" required>
                         I understand this book will be published under <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0</a> — no copyright claimed by me or Shmindle.com.
                     </label>
-                    <button type="submit">Generate my book</button>
+                    <button type="submit" id="submit-btn" disabled>Generate my book</button>
                 </form>
                 <p id="submit-msg" class="subscribe-msg" aria-live="polite"></p>
             </div>
@@ -84,6 +84,9 @@
       (function () {
         const form = document.getElementById('submit-form');
         const msg  = document.getElementById('submit-msg');
+        const cc0  = document.getElementById('submit-cc0');
+        const btn  = document.getElementById('submit-btn');
+        cc0.addEventListener('change', () => { btn.disabled = !cc0.checked; });
         form.addEventListener('submit', async function (e) {
           e.preventDefault();
           const author = document.getElementById('submit-author').value.trim();
