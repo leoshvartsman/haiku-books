@@ -394,6 +394,19 @@ header h1 {
     margin: 0;
 }
 
+.commission-notice {
+    margin-top: 2.5rem;
+    font-size: 0.8rem;
+    color: #bbb;
+    text-align: center;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.commission-notice a { color: #bbb; }
+.commission-notice a:hover { color: #888; }
+
 @media (max-width: 640px) {
     .commission-layout { flex-direction: column; gap: 2.5rem; }
     .commission-form-wrap { flex: none; width: 100%; }
