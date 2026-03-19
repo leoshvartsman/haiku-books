@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin — Shmindle</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #faf8f5;
+            color: #2c2c2c;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 0.85rem 2rem;
+            border-bottom: 1px solid #ede9e4;
+        }
+        header h1 { font-size: 1.4rem; font-weight: 400; letter-spacing: 0.06em; color: #3a3a3a; }
+        header .badge { font-size: 0.75rem; background: #e8e4df; color: #888; padding: 0.2rem 0.5rem; border-radius: 4px; }
+        header a { margin-left: auto; font-size: 0.85rem; color: #888; text-decoration: none; }
+        header a:hover { color: #3a3a3a; }
+
+        main { max-width: 900px; margin: 0 auto; padding: 2.5rem 2rem; }
+
+        /* Auth gate */
+        #auth-gate {
+            max-width: 340px;
+            margin: 4rem auto;
+            text-align: center;
+        }
+        #auth-gate h2 { font-size: 1.1rem; font-weight: 400; color: #3a3a3a; margin-bottom: 1.25rem; }
+        #auth-gate input {
+            width: 100%;
+            padding: 0.6rem 1rem;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-family: inherit;
+            background: #fff;
+            margin-bottom: 0.75rem;
+            outline: none;
+        }
+        #auth-gate input:focus { border-color: #999; }
+        #auth-gate button {
+            width: 100%;
+            padding: 0.6rem 1rem;
+            background: #3a3a3a;
+            color: #faf8f5;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-family: inherit;
+            cursor: pointer;
+        }
+        #auth-gate button:hover { background: #555; }
+        #auth-err { color: #a04040; font-size: 0.85rem; margin-top: 0.5rem; }
+
+        /* Book list */
+        #book-list { display: none; }
+        #book-list h2 { font-size: 1rem; font-weight: 400; color: #888; margin-bottom: 1.25rem; }
+
+        .book-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+        .book-table th {
+            text-align: left;
+            padding: 0.5rem 0.75rem;
+            border-bottom: 2px solid #ede9e4;
+            color: #aaa;
+            font-weight: 400;
+            font-size: 0.8rem;
+        }
+        .book-table td {
+            padding: 0.65rem 0.75rem;
+            border-bottom: 1px solid #ede9e4;
+            vertical-align: middle;
+        }
+        .book-table tr:hover td { background: #f5f3f0; }
+        .book-table tr.hidden-row td { opacity: 0.45; }
+        .book-table tr.hidden-row:hover td { opacity: 0.65; }
+
+        .toggle-btn {
+            padding: 0.3rem 0.75rem;
+            border-radius: 4px;
+            border: 1px solid;
+            font-size: 0.8rem;
+            font-family: inherit;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: opacity 0.15s;
+        }
+        .toggle-btn.show { background: #fff; border-color: #ccc; color: #555; }
+        .toggle-btn.hide { background: #3a3a3a; border-color: #3a3a3a; color: #faf8f5; }
+        .toggle-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+        .status-dot {
+            display: inline-block;
+            width: 7px; height: 7px;
+            border-radius: 50%;
+            margin-right: 0.4rem;
+        }
+        .dot-visible { background: #4a7a4a; }
+        .dot-hidden { background: #ccc; }
+
+        #loading { color: #aaa; font-size: 0.9rem; padding: 2rem 0; }
+        #global-err { color: #a04040; font-size: 0.875rem; margin-bottom: 1rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shmindle</h1>
+        <span class="badge">Admin</span>
+        <a href="/">← Back to site</a>
+    </header>
+
+    <main>
+        <div id="auth-gate">
+            <h2>Enter admin password</h2>
+            <input type="password" id="password" placeholder="Password" autocomplete="current-password">
+            <button id="auth-btn">Sign in</button>
+            <p id="auth-err"></p>
+        </div>
+
+        <div id="book-list">
+            <h2 id="book-count"></h2>
+            <p id="global-err"></p>
+            <table class="book-table">
+                <thead>
+                    <tr>
+                        <th>Status</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Date</th>
+                        <th>Haiku</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="book-tbody"></tbody>
+            </table>
+        </div>
+        <p id="loading">Loading…</p>
+    </main>
+
+    <script>
+    (function () {
+        let password = '';
+        const authGate  = document.getElementById('auth-gate');
+        const bookList  = document.getElementById('book-list');
+        const loading   = document.getElementById('loading');
+        const authErr   = document.getElementById('auth-err');
+        const globalErr = document.getElementById('global-err');
+        const tbody     = document.getElementById('book-tbody');
+
+        loading.style.display = 'none';
+
+        // ── Auth ──────────────────────────────────────────────────────────────
+        document.getElementById('password').addEventListener('keydown', e => {
+            if (e.key === 'Enter') document.getElementById('auth-btn').click();
+        });
+
+        document.getElementById('auth-btn').addEventListener('click', async () => {
+            const input = document.getElementById('password').value.trim();
+            if (!input) return;
+            authErr.textContent = '';
+            loading.style.display = 'block';
+            authGate.style.display = 'none';
+
+            const resp = await fetch('/admin/books', {
+                headers: { 'X-Admin-Password': input },
+            });
+
+            if (resp.status === 401) {
+                authGate.style.display = 'block';
+                loading.style.display = 'none';
+                authErr.textContent = 'Incorrect password.';
+                return;
+            }
+
+            if (!resp.ok) {
+                authGate.style.display = 'block';
+                loading.style.display = 'none';
+                authErr.textContent = 'Error loading books. Try again.';
+                return;
+            }
+
+            password = input;
+            const books = await resp.json();
+            loading.style.display = 'none';
+            renderBooks(books);
+        });
+
+        // ── Render ────────────────────────────────────────────────────────────
+        function renderBooks(books) {
+            const visible = books.filter(b => !b.hidden).length;
+            document.getElementById('book-count').textContent =
+                `${books.length} books — ${visible} visible, ${books.length - visible} hidden`;
+
+            tbody.innerHTML = '';
+            books.forEach(book => {
+                const tr = document.createElement('tr');
+                if (book.hidden) tr.classList.add('hidden-row');
+                tr.dataset.slug = book.slug;
+
+                tr.innerHTML = `
+                    <td>
+                        <span class="status-dot ${book.hidden ? 'dot-hidden' : 'dot-visible'}"></span>
+                        ${book.hidden ? 'Hidden' : 'Visible'}
+                    </td>
+                    <td>${esc(book.title)}</td>
+                    <td>${esc(book.author)}</td>
+                    <td>${book.date}</td>
+                    <td>${book.haiku_count}</td>
+                    <td>
+                        <button class="toggle-btn ${book.hidden ? 'show' : 'hide'}"
+                                data-slug="${esc(book.slug)}"
+                                data-hidden="${book.hidden}">
+                            ${book.hidden ? 'Make visible' : 'Hide'}
+                        </button>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+
+            tbody.querySelectorAll('.toggle-btn').forEach(btn => {
+                btn.addEventListener('click', () => toggleBook(btn));
+            });
+
+            bookList.style.display = 'block';
+        }
+
+        // ── Toggle ────────────────────────────────────────────────────────────
+        async function toggleBook(btn) {
+            const slug = btn.dataset.slug;
+            const currentlyHidden = btn.dataset.hidden === 'true';
+            const hide = !currentlyHidden;
+
+            btn.disabled = true;
+            btn.textContent = 'Saving…';
+            globalErr.textContent = '';
+
+            const resp = await fetch('/admin/toggle', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-Admin-Password': password,
+                },
+                body: JSON.stringify({ slug, hide }),
+            });
+
+            const data = await resp.json().catch(() => ({}));
+
+            if (!resp.ok || !data.success) {
+                globalErr.textContent = data.error || 'Toggle failed. Try again.';
+                btn.disabled = false;
+                btn.textContent = currentlyHidden ? 'Make visible' : 'Hide';
+                return;
+            }
+
+            // Update row in place
+            const tr = tbody.querySelector(`tr[data-slug="${slug}"]`);
+            const dot = tr.querySelector('.status-dot');
+
+            if (hide) {
+                tr.classList.add('hidden-row');
+                dot.className = 'status-dot dot-hidden';
+                tr.cells[0].innerHTML = '<span class="status-dot dot-hidden"></span>Hidden';
+                btn.className = 'toggle-btn show';
+                btn.textContent = 'Make visible';
+                btn.dataset.hidden = 'true';
+            } else {
+                tr.classList.remove('hidden-row');
+                tr.cells[0].innerHTML = '<span class="status-dot dot-visible"></span>Visible';
+                btn.className = 'toggle-btn hide';
+                btn.textContent = 'Hide';
+                btn.dataset.hidden = 'false';
+            }
+            btn.disabled = false;
+
+            // Update summary count
+            const total = tbody.querySelectorAll('tr').length;
+            const hidden = tbody.querySelectorAll('tr.hidden-row').length;
+            document.getElementById('book-count').textContent =
+                `${total} books — ${total - hidden} visible, ${hidden} hidden`;
+        }
+
+        function esc(str) {
+            return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+        }
+    })();
+    </script>
+</body>
+</html>
