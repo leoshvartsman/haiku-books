@@ -304,6 +304,102 @@ header h1 {
 .subscribe-ok  { color: #4a7a4a; }
 .subscribe-err { color: #a04040; }
 
+/* Nav extras */
+.nav-spacer { flex: 1; }
+
+.nav-back {
+    flex-shrink: 0;
+    font-size: 0.85rem;
+    color: #888;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.nav-back:hover { color: #3a3a3a; }
+
+/* Commission page */
+.commission-page {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.commission-hero {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.commission-hero h2 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #3a3a3a;
+    margin-bottom: 0.75rem;
+}
+
+.commission-hero p {
+    color: #888;
+    font-size: 1rem;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.commission-layout {
+    display: flex;
+    gap: 4rem;
+    align-items: flex-start;
+}
+
+.commission-form-wrap {
+    flex: 0 0 360px;
+}
+
+.commission-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.commission-step {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.step-num {
+    flex-shrink: 0;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-top: 0.1rem;
+}
+
+.commission-step strong {
+    display: block;
+    font-size: 0.95rem;
+    color: #3a3a3a;
+    margin-bottom: 0.3rem;
+}
+
+.commission-step p {
+    font-size: 0.875rem;
+    color: #888;
+    line-height: 1.55;
+    margin: 0;
+}
+
+@media (max-width: 640px) {
+    .commission-layout { flex-direction: column; gap: 2.5rem; }
+    .commission-form-wrap { flex: none; width: 100%; }
+    .commission-page { padding: 2rem 1.25rem; }
+}
+
 .subscribe-subheading {
     color: #aaa;
     font-size: 0.85rem;
