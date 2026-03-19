@@ -10,6 +10,16 @@
     "epub_url": "https://shmindle.com/dl/book-between-meridians/between-meridians.epub"
   },
   {
+    "title": "Soccer 101",
+    "author": "Timothy Henry",
+    "haiku_count": 363,
+    "date": "2026-03-19",
+    "slug": "soccer-101",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-soccer-101/soccer-101.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-soccer-101/soccer-101.pdf",
+    "epub_url": "https://shmindle.com/dl/book-soccer-101/soccer-101.epub"
+  },
+  {
     "title": "What the Light Forgets",
     "author": "Saanvi Singh",
     "haiku_count": 250,
@@ -101,7 +111,7 @@
   },
   {
     "title": "Pulse at the Wrist of the World",
-    "author": "Alex P\u00e9rez",
+    "author": "Alex Pérez",
     "haiku_count": 250,
     "date": "2026-03-16",
     "slug": "pulse-at-the-wrist-of-the-world",
@@ -181,7 +191,7 @@
   },
   {
     "title": "Mud on the Threshold",
-    "author": "Riley Garc\u00eda",
+    "author": "Riley García",
     "haiku_count": 250,
     "date": "2026-03-09",
     "slug": "mud-on-the-threshold",
@@ -231,7 +241,7 @@
   },
   {
     "title": "The Distance Between Pavements",
-    "author": "Andrea Hern\u00e1ndez",
+    "author": "Andrea Hernández",
     "haiku_count": 250,
     "date": "2026-03-07",
     "slug": "the-distance-between-pavements",
@@ -381,7 +391,7 @@
   },
   {
     "title": "Luminous Migrations",
-    "author": "Sol G\u00f3mez",
+    "author": "Sol Gómez",
     "haiku_count": 138,
     "date": "2026-03-05",
     "slug": "luminous-migrations",
@@ -441,7 +451,7 @@
   },
   {
     "title": "Fleeting Horizons",
-    "author": "Sol G\u00f3mez",
+    "author": "Sol Gómez",
     "haiku_count": 155,
     "date": "2026-03-05",
     "slug": "fleeting-horizons",
@@ -451,7 +461,7 @@
   },
   {
     "title": "Fractured Light",
-    "author": "Riley Garc\u00eda",
+    "author": "Riley García",
     "haiku_count": 164,
     "date": "2026-03-05",
     "slug": "fractured-light",
@@ -611,7 +621,7 @@
   },
   {
     "title": "Whispers Of Memory",
-    "author": "Harper Garc\u00eda",
+    "author": "Harper García",
     "haiku_count": 143,
     "date": "2026-03-05",
     "slug": "whispers-of-memory",
@@ -681,7 +691,7 @@
   },
   {
     "title": "Riverine Echoes",
-    "author": "Ariel S\u00e1nchez",
+    "author": "Ariel Sánchez",
     "haiku_count": 133,
     "date": "2026-03-05",
     "slug": "riverine-echoes",
@@ -741,7 +751,7 @@
   },
   {
     "title": "Buenos Aires Breeze",
-    "author": "Valent\u00edn Garc\u00eda",
+    "author": "Valentín García",
     "haiku_count": 184,
     "date": "2026-03-05",
     "slug": "buenos-aires-breeze",
@@ -851,7 +861,7 @@
   },
   {
     "title": "El Viento De Las Palabras",
-    "author": "Alex P\u00e9rez",
+    "author": "Alex Pérez",
     "haiku_count": 188,
     "date": "2026-03-05",
     "slug": "el-viento-de-las-palabras",
@@ -861,7 +871,7 @@
   },
   {
     "title": "Wistful Wanderings",
-    "author": "Riley M\u00fcller",
+    "author": "Riley Müller",
     "haiku_count": 120,
     "date": "2026-03-05",
     "slug": "wistful-wanderings",
@@ -1381,7 +1391,7 @@
   },
   {
     "title": "What the Meridian Keeps",
-    "author": "Valent\u00edn Garc\u00eda",
+    "author": "Valentín García",
     "haiku_count": 250,
     "date": "2026-02-28",
     "slug": "what-the-meridian-keeps",
@@ -1581,7 +1591,7 @@
   },
   {
     "title": "What the Roots Remember",
-    "author": "Casey Garc\u00eda",
+    "author": "Casey García",
     "haiku_count": 250,
     "date": "2026-02-22",
     "slug": "what-the-roots-remember",
@@ -1771,7 +1781,7 @@
   },
   {
     "title": "Salt on Every Latitude",
-    "author": "Casey Garc\u00eda",
+    "author": "Casey García",
     "haiku_count": 250,
     "date": "2026-02-17",
     "slug": "salt-on-every-latitude",
@@ -1811,7 +1821,7 @@
   },
   {
     "title": "Cities Beneath the Skin",
-    "author": "Sol D\u00edaz",
+    "author": "Sol Díaz",
     "haiku_count": 250,
     "date": "2026-02-14",
     "slug": "cities-beneath-the-skin",
@@ -1851,7 +1861,7 @@
   },
   {
     "title": "Three Seasons Deep",
-    "author": "River Garc\u00eda",
+    "author": "River García",
     "haiku_count": 244,
     "date": "2026-02-14",
     "slug": "three-seasons-deep",
