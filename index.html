@@ -65,25 +65,26 @@
 </head>
 <body>
     <header>
-        <h1>Shmindle</h1>
-        <p class="subtitle">Free haiku poetry books — browse, download, enjoy</p>
-        <p class="site-description">200 free haiku poetry ebooks by contemporary poets. Download as PDF or EPUB — no account, no cost, no catch. New collections added every day.</p>
+        <div class="nav-brand">
+            <h1>Shmindle</h1>
+            <p class="subtitle">Free haiku poetry books</p>
+        </div>
+        <div class="controls">
+            <input type="text" id="search" placeholder="Search titles or authors..." aria-label="Search books">
+            <select id="sort" aria-label="Sort books">
+                <option value="newest">Newest first</option>
+                <option value="title">Title A-Z</option>
+                <option value="author">Author A-Z</option>
+            </select>
+        </div>
+        <a href="#commission" class="nav-cta">Commission a book</a>
     </header>
-
-    <div class="controls">
-        <input type="text" id="search" placeholder="Search titles or authors..." aria-label="Search books">
-        <select id="sort" aria-label="Sort books">
-            <option value="newest">Newest first</option>
-            <option value="title">Title A-Z</option>
-            <option value="author">Author A-Z</option>
-        </select>
-    </div>
 
     <div id="book-count" class="book-count"></div>
     <div id="grid" class="grid"></div>
     <div id="pagination" class="pagination"></div>
 
-    <section class="subscribe-section">
+    <section class="subscribe-section" id="commission">
         <p class="subscribe-heading">Commission your own haiku collection</p>
         <p class="subscribe-subheading">Give us a title, your name, and an optional theme — we'll generate a full book and publish it here.</p>
         <form id="submit-form" class="subscribe-form submit-form">
