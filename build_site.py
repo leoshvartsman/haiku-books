@@ -191,6 +191,8 @@ def build_catalog(dry_run=False):
     tmp_dir.mkdir(exist_ok=True)
 
     for book in index:
+        if book.get("hidden"):
+            continue
         title = book["title"]
         author = book["author"]
         slug = slugify(title)
