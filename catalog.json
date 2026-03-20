@@ -1,5 +1,15 @@
 [
   {
+    "title": "What the Borders Remember",
+    "author": "Jordan Brown",
+    "haiku_count": 250,
+    "date": "2026-03-20",
+    "slug": "what-the-borders-remember",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-what-the-borders-remember/what-the-borders-remember.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-borders-remember/what-the-borders-remember.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-borders-remember/what-the-borders-remember.epub"
+  },
+  {
     "title": "Between Meridians",
     "author": "Harper Patel",
     "haiku_count": 250,
