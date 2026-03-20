@@ -40,6 +40,16 @@
     "epub_url": "https://shmindle.com/dl/book-smoke-follows-the-careful-eye/smoke-follows-the-careful-eye.epub"
   },
   {
+    "title": "What the Pigeons Know",
+    "author": "Sol Vázquez",
+    "haiku_count": 250,
+    "date": "2026-03-20",
+    "slug": "what-the-pigeons-know",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-what-the-pigeons-know/what-the-pigeons-know.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-pigeons-know/what-the-pigeons-know.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-pigeons-know/what-the-pigeons-know.epub"
+  },
+  {
     "title": "Between Meridians",
     "author": "Harper Patel",
     "haiku_count": 250,
