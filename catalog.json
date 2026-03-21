@@ -30,6 +30,16 @@
     "epub_url": "https://shmindle.com/dl/book-all-types-of-dance/all-types-of-dance.epub"
   },
   {
+    "title": "Every Border a River",
+    "author": "Riley Ali",
+    "haiku_count": 250,
+    "date": "2026-03-21",
+    "slug": "every-border-a-river",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-every-border-a-river/every-border-a-river.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-every-border-a-river/every-border-a-river.pdf",
+    "epub_url": "https://shmindle.com/dl/book-every-border-a-river/every-border-a-river.epub"
+  },
+  {
     "title": "What the Borders Remember",
     "author": "Jordan Brown",
     "haiku_count": 250,
