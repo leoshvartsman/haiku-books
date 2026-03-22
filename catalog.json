@@ -10,6 +10,16 @@
     "epub_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.epub"
   },
   {
+    "title": "Dirt Knows My Name",
+    "author": "Quinn Jones",
+    "haiku_count": 250,
+    "date": "2026-03-22",
+    "slug": "dirt-knows-my-name",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-dirt-knows-my-name/dirt-knows-my-name.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-dirt-knows-my-name/dirt-knows-my-name.pdf",
+    "epub_url": "https://shmindle.com/dl/book-dirt-knows-my-name/dirt-knows-my-name.epub"
+  },
+  {
     "title": "What the Centrifuge Kept",
     "author": "Seo Lim",
     "haiku_count": 250,
