@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://shmindle.com/</loc><lastmod>2026-03-21</lastmod><priority>1.0</priority></url>
+  <url><loc>https://shmindle.com/</loc><lastmod>2026-03-22</lastmod><priority>1.0</priority></url>
+  <url><loc>https://shmindle.com/books/what-the-body-remembers.html</loc><lastmod>2026-03-22</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/what-the-centrifuge-kept.html</loc><lastmod>2026-03-21</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/grease-under-the-fingernails.html</loc><lastmod>2026-03-21</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/all-types-of-dance.html</loc><lastmod>2026-03-21</lastmod><priority>0.8</priority></url>
@@ -225,8 +226,8 @@
   <url><loc>https://shmindle.com/books/neon-script-and-sparrows.html</loc><lastmod>2026-02-05</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/tracks-in-fresh-snow.html</loc><lastmod>2026-02-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/stone-lanterns-and-whispers.html</loc><lastmod>2026-02-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://shmindle.com/authors/riley-muller.html</loc><lastmod>2026-03-22</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/seo-lim.html</loc><lastmod>2026-03-21</lastmod><priority>0.7</priority></url>
-  <url><loc>https://shmindle.com/authors/riley-muller.html</loc><lastmod>2026-03-21</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/frank-smith.html</loc><lastmod>2026-03-21</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/riley-ali.html</loc><lastmod>2026-03-21</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/jordan-brown.html</loc><lastmod>2026-03-20</lastmod><priority>0.7</priority></url>
