@@ -5,7 +5,7 @@
     <link>https://shmindle.com/</link>
     <description>New haiku poetry collections, free to download as PDF and EPUB.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 23 Mar 2026 03:39:49 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2026 03:45:23 +0000</lastBuildDate>
     <atom:link href="https://shmindle.com/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>Borrowed Skies by Cruz Ruiz</title>
@@ -14,6 +14,14 @@
     <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
     <description><![CDATA[<p>A new collection of 250 haiku by Cruz Ruiz.</p><p><img src="https://shmindle.com/dl/book-borrowed-skies/borrowed-skies.jpg" alt="Borrowed Skies" style="max-width:300px"/></p><p><a href="https://shmindle.com/dl/book-borrowed-skies/borrowed-skies.pdf">Download PDF</a></p><p><a href="https://shmindle.com/dl/book-borrowed-skies/borrowed-skies.epub">Download EPUB</a></p>]]></description>
     <enclosure url="https://shmindle.com/dl/book-borrowed-skies/borrowed-skies.jpg" type="image/jpeg"/>
+  </item>
+  <item>
+    <title>The How of the Why by Lenny Black</title>
+    <link>https://shmindle.com/books/the-how-of-the-why.html</link>
+    <guid isPermaLink="true">https://shmindle.com/books/the-how-of-the-why.html</guid>
+    <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[<p>A new collection of 370 haiku by Lenny Black.</p><p><img src="https://shmindle.com/dl/book-the-how-of-the-why/the-how-of-the-why.jpg" alt="The How of the Why" style="max-width:300px"/></p><p><a href="https://shmindle.com/dl/book-the-how-of-the-why/the-how-of-the-why.pdf">Download PDF</a></p><p><a href="https://shmindle.com/dl/book-the-how-of-the-why/the-how-of-the-why.epub">Download EPUB</a></p>]]></description>
+    <enclosure url="https://shmindle.com/dl/book-the-how-of-the-why/the-how-of-the-why.jpg" type="image/jpeg"/>
   </item>
   <item>
     <title>What the Body Remembers by Riley Müller</title>
@@ -398,14 +406,6 @@
     <pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate>
     <description><![CDATA[<p>A new collection of 250 haiku by Robin Novak.</p><p><img src="https://shmindle.com/dl/book-ledger-of-small-hours/ledger-of-small-hours.jpg" alt="Ledger of Small Hours" style="max-width:300px"/></p><p><a href="https://shmindle.com/dl/book-ledger-of-small-hours/ledger-of-small-hours.pdf">Download PDF</a></p><p><a href="https://shmindle.com/dl/book-ledger-of-small-hours/ledger-of-small-hours.epub">Download EPUB</a></p>]]></description>
     <enclosure url="https://shmindle.com/dl/book-ledger-of-small-hours/ledger-of-small-hours.jpg" type="image/jpeg"/>
-  </item>
-  <item>
-    <title>The Light Moves Differently Here by Casey Ali</title>
-    <link>https://shmindle.com/books/the-light-moves-differently-here.html</link>
-    <guid isPermaLink="true">https://shmindle.com/books/the-light-moves-differently-here.html</guid>
-    <pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate>
-    <description><![CDATA[<p>A new collection of 250 haiku by Casey Ali.</p><p><img src="https://shmindle.com/dl/book-the-light-moves-differently-here/the-light-moves-differently-here.jpg" alt="The Light Moves Differently Here" style="max-width:300px"/></p><p><a href="https://shmindle.com/dl/book-the-light-moves-differently-here/the-light-moves-differently-here.pdf">Download PDF</a></p><p><a href="https://shmindle.com/dl/book-the-light-moves-differently-here/the-light-moves-differently-here.epub">Download EPUB</a></p>]]></description>
-    <enclosure url="https://shmindle.com/dl/book-the-light-moves-differently-here/the-light-moves-differently-here.jpg" type="image/jpeg"/>
   </item>
   </channel>
 </rss>
