@@ -1,5 +1,15 @@
 [
   {
+    "title": "Borrowed Skies",
+    "author": "Cruz Ruiz",
+    "haiku_count": 250,
+    "date": "2026-03-23",
+    "slug": "borrowed-skies",
+    "cover_url": "https://github.com/leoshvartsman/haiku-books/releases/download/book-borrowed-skies/borrowed-skies.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-borrowed-skies/borrowed-skies.pdf",
+    "epub_url": "https://shmindle.com/dl/book-borrowed-skies/borrowed-skies.epub"
+  },
+  {
     "title": "What the Body Remembers",
     "author": "Riley Müller",
     "haiku_count": 250,
