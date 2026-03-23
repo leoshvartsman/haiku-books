@@ -76,17 +76,23 @@ def parse_date(raw: str) -> str:
 
 def find_cover(title: str) -> Optional[Path]:
     """Find the cover image for a book title."""
-    # Cover files use underscores: cover_Title_Words.png
-    cover_name = "cover_" + title.replace(" ", "_").replace("'", "").replace(",", "") + ".png"
-    path = COVERS_DIR / cover_name
+    # Primary: match cover_prompt_generator.py's sanitization exactly
+    safe_title = re.sub(r'[^\w\s-]', '', title).strip().replace(' ', '_')[:50]
+    path = COVERS_DIR / f"cover_{safe_title}.png"
     if path.exists():
         return path
 
-    # Try with hyphens replaced
-    cover_name2 = "cover_" + re.sub(r'[^a-zA-Z0-9]+', '_', title) + ".png"
-    path2 = COVERS_DIR / cover_name2
+    # Fallback 1: simple space→underscore, strip apostrophes/commas
+    cover_name = "cover_" + title.replace(" ", "_").replace("'", "").replace(",", "") + ".png"
+    path2 = COVERS_DIR / cover_name
     if path2.exists():
         return path2
+
+    # Fallback 2: collapse all non-alphanumeric runs to underscore
+    cover_name2 = "cover_" + re.sub(r'[^a-zA-Z0-9]+', '_', title) + ".png"
+    path3 = COVERS_DIR / cover_name2
+    if path3.exists():
+        return path3
 
     return None
 
@@ -258,7 +264,7 @@ def build_catalog(dry_run=False):
             "haiku_count": haiku_count,
             "date": date,
             "slug": slug,
-            "cover_url": urls.get("cover", ""),
+            "cover_url": to_proxy_url(urls.get("cover", "")) if urls.get("cover") else "",
             "pdf_url": to_proxy_url(pdf_url) if pdf_url else "",
             "epub_url": to_proxy_url(epub_url) if epub_url else "",
         })
