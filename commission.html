@@ -16,6 +16,35 @@
     <link rel="canonical" href="https://shmindle.com/commission">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="stylesheet" href="style.css?v=4">
+    <style>
+      .cover-style-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+      }
+      .cover-style-label {
+        font-size: 0.85rem;
+        color: #888;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+      .cover-style-options {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+      .cover-style-option {
+        display: flex;
+        align-items: center;
+        gap: 0.35rem;
+        cursor: pointer;
+        font-size: 0.95rem;
+      }
+      .cover-style-option em {
+        color: #999;
+        font-style: italic;
+      }
+    </style>
 </head>
 <body>
     <header>
@@ -41,6 +70,23 @@
                     <input type="text" id="submit-author" placeholder="Author name (real or pen name)" required aria-label="Author name" maxlength="100">
                     <input type="text" id="submit-title" placeholder="Book title" required aria-label="Book title" maxlength="100">
                     <input type="text" id="submit-theme" placeholder="Theme (optional — e.g. 'loss and winter light')" aria-label="Thematic guidance" maxlength="300">
+                    <div class="cover-style-group">
+                      <label class="cover-style-label">Cover style</label>
+                      <div class="cover-style-options">
+                        <label class="cover-style-option">
+                          <input type="radio" name="cover_style" value="" checked>
+                          <span>Surprise me</span>
+                        </label>
+                        <label class="cover-style-option">
+                          <input type="radio" name="cover_style" value="classic">
+                          <span>Classic <em>(color, painterly)</em></span>
+                        </label>
+                        <label class="cover-style-option">
+                          <input type="radio" name="cover_style" value="modern">
+                          <span>Modern <em>(black &amp; white, geometric)</em></span>
+                        </label>
+                      </div>
+                    </div>
                     <div class="cc0-box">
                     <label class="cc0-label">
                         <input type="checkbox" id="submit-cc0" required>
@@ -94,6 +140,7 @@
           const author = document.getElementById('submit-author').value.trim();
           const title  = document.getElementById('submit-title').value.trim();
           const theme  = document.getElementById('submit-theme').value.trim();
+          const cover_style = form.querySelector('input[name="cover_style"]:checked')?.value || '';
           msg.textContent = '';
           msg.className = 'subscribe-msg';
           const btn = form.querySelector('button');
@@ -103,7 +150,7 @@
             const resp = await fetch('/submit', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ author, title, theme }),
+              body: JSON.stringify({ author, title, theme, cover_style }),
             });
             const data = await resp.json();
             if (data.success) {

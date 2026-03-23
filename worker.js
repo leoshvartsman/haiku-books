@@ -296,12 +296,13 @@ async function handleSubmit(request, env) {
     return new Response('Method not allowed', { status: 405 });
   }
 
-  let title, author, theme;
+  let title, author, theme, cover_style;
   try {
     const body = await request.json();
     title = String(body.title || '').trim().slice(0, 100);
     author = String(body.author || '').trim().slice(0, 100);
     theme = String(body.theme || '').trim().slice(0, 300);
+    cover_style = String(body.cover_style || '').trim().slice(0, 10);
   } catch {
     return new Response(JSON.stringify({ error: 'Invalid request body' }), {
       status: 400,
@@ -340,6 +341,7 @@ async function handleSubmit(request, env) {
           submit_title: title,
           submit_author: author,
           submit_theme: theme,
+          submit_cover_style: cover_style || '',
         },
       }),
     }
