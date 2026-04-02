@@ -118,6 +118,13 @@ header h1 {
     box-shadow: 0 4px 16px rgba(0,0,0,0.12);
 }
 
+.card-cover {
+    padding: 1rem;
+    background: #f0ece6;
+    display: flex;
+    justify-content: center;
+}
+
 .card img {
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -125,6 +132,7 @@ header h1 {
     display: block;
     background: #eee;
     box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    border-radius: 3px;
 }
 
 .card-body {
@@ -476,6 +484,7 @@ footer {
     justify-content: center;
     font-size: 2.5rem;
     color: #b5afa6;
+    border-radius: 3px;
 }
 
 /* Book detail page */

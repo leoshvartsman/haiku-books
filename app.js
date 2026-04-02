@@ -71,7 +71,7 @@ function render() {
 
         return `<div class="card">
             <a href="${pageUrl}" class="card-link">
-                ${coverHtml}
+                <div class="card-cover">${coverHtml}</div>
                 <div class="card-body">
                     <div class="card-title">${book.title}</div>
                     <div class="card-meta">${book.haiku_count} haiku</div>
