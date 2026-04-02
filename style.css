@@ -124,6 +124,7 @@ header h1 {
     object-fit: cover;
     display: block;
     background: #eee;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
 }
 
 .card-body {
