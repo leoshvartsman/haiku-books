@@ -12,11 +12,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create a Book — Shmindle</title>
-    <meta name="description" content="Create your own haiku poetry collection. Give us a title, your name, and an optional theme — we'll generate a full book and publish it on Shmindle.">
+    <meta name="description" content="Name it. Theme it. We'll write it. Generate a full haiku collection — 250 poems, formatted and published — free.">
     <link rel="canonical" href="https://shmindle.com/create">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="stylesheet" href="style.css?v=4">
     <style>
+      .create-hero {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+      .create-hero h2 {
+        font-size: 2rem;
+        font-weight: 300;
+        color: #3a3a3a;
+        margin-bottom: 0.6rem;
+        letter-spacing: 0.02em;
+      }
+      .create-hero p {
+        color: #888;
+        font-size: 1rem;
+        max-width: 480px;
+        margin: 0 auto;
+        line-height: 1.65;
+      }
       .cover-style-group {
         display: flex;
         flex-direction: column;
@@ -59,9 +77,9 @@
     </header>
 
     <main class="commission-page">
-        <div class="commission-hero">
-            <h2>Create your own haiku collection</h2>
-            <p>Tell us an author name (yours, a pen name, anything), a title, and an optional theme. We'll generate a full book of 250 haiku and publish it here — free, no account required.</p>
+        <div class="create-hero">
+            <h2>Name it. Theme it. We'll write it.</h2>
+            <p>Give it a title, an author, and a direction. Shmindle generates a full collection of 250 original haiku — complete with a cover, PDF, and EPUB — and publishes it here. Free. Takes about 15 minutes.</p>
         </div>
 
         <div class="commission-layout">
@@ -70,6 +88,7 @@
                     <input type="text" id="submit-author" placeholder="Author name (real or pen name)" required aria-label="Author name" maxlength="100">
                     <input type="text" id="submit-title" placeholder="Book title" required aria-label="Book title" maxlength="100">
                     <input type="text" id="submit-theme" placeholder="Theme (optional — e.g. 'loss and winter light')" aria-label="Thematic guidance" maxlength="300">
+                    <input type="email" id="submit-email" placeholder="Email (optional — we'll send you a link when it's ready)" aria-label="Email address" maxlength="200">
                     <div class="cover-style-group">
                       <label class="cover-style-label">Cover style</label>
                       <div class="cover-style-options">
@@ -102,22 +121,22 @@
                 <div class="commission-step">
                     <span class="step-num">1</span>
                     <div>
-                        <strong>Submit your details</strong>
-                        <p>The author name becomes the poet — use your real name, a pen name, or anything you like. The title shapes the book's arc. The theme is optional — a phrase like "grief and mountain fog" or "urban loneliness" guides the voice.</p>
+                        <strong>Give it a voice</strong>
+                        <p>The author name becomes the poet — use your real name, a pen name, or anything you like. The title shapes the book's arc. The theme is optional but powerful — a phrase like "grief and mountain fog" or "the feeling of arriving somewhere too late" guides the whole collection.</p>
                     </div>
                 </div>
                 <div class="commission-step">
                     <span class="step-num">2</span>
                     <div>
-                        <strong>We generate the book</strong>
-                        <p>250 original haiku, filtered for quality, arranged into sections with a thematic arc. Takes about 10–15 minutes.</p>
+                        <strong>We write it</strong>
+                        <p>250 original haiku, filtered for quality and arranged into sections with a thematic arc. A cover is generated to match the mood. Takes about 15 minutes.</p>
                     </div>
                 </div>
                 <div class="commission-step">
                     <span class="step-num">3</span>
                     <div>
-                        <strong>It's published here</strong>
-                        <p>Your book gets its own page on Shmindle with a PDF and EPUB download. Search for your name to find it.</p>
+                        <strong>It's yours</strong>
+                        <p>Your book gets its own page on Shmindle with a PDF and EPUB download. Search for your name to find it — or leave your email and we'll send you a direct link.</p>
                     </div>
                 </div>
             </div>
@@ -137,34 +156,35 @@
         cc0.addEventListener('change', () => { btn.disabled = !cc0.checked; });
         form.addEventListener('submit', async function (e) {
           e.preventDefault();
-          const author = document.getElementById('submit-author').value.trim();
-          const title  = document.getElementById('submit-title').value.trim();
-          const theme  = document.getElementById('submit-theme').value.trim();
+          const author      = document.getElementById('submit-author').value.trim();
+          const title       = document.getElementById('submit-title').value.trim();
+          const theme       = document.getElementById('submit-theme').value.trim();
+          const email       = document.getElementById('submit-email').value.trim();
           const cover_style = form.querySelector('input[name="cover_style"]:checked')?.value || '';
           msg.textContent = '';
           msg.className = 'subscribe-msg';
-          const btn = form.querySelector('button');
           btn.disabled = true;
           btn.textContent = 'Submitting…';
           try {
             const resp = await fetch('/submit', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ author, title, theme, cover_style }),
+              body: JSON.stringify({ author, title, theme, email, cover_style }),
             });
             const data = await resp.json();
             if (data.success) {
-              msg.textContent = 'Your book is queued! It takes about 10–15 minutes to generate — come back and search for your name.';
-              msg.className = 'subscribe-msg subscribe-ok';
-              form.reset();
+              const params = new URLSearchParams({ title, author });
+              if (email) params.set('email', email);
+              window.location.href = '/status.html?' + params.toString();
             } else {
               msg.textContent = data.error || 'Something went wrong. Please try again.';
               msg.className = 'subscribe-msg subscribe-err';
+              btn.disabled = false;
+              btn.textContent = 'Generate my book';
             }
           } catch {
             msg.textContent = 'Network error. Please try again.';
             msg.className = 'subscribe-msg subscribe-err';
-          } finally {
             btn.disabled = false;
             btn.textContent = 'Generate my book';
           }
