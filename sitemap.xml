@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://shmindle.com/</loc><lastmod>2026-04-07</lastmod><priority>1.0</priority></url>
   <url><loc>https://shmindle.com/books/what-the-mouth-remembers.html</loc><lastmod>2026-04-07</lastmod><priority>0.8</priority></url>
+  <url><loc>https://shmindle.com/books/where-the-light-stays-warm.html</loc><lastmod>2026-04-07</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/what-the-weaver-bird-knows.html</loc><lastmod>2026-04-06</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/the-distance-between-bells.html</loc><lastmod>2026-04-06</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/elsewhere-still-here.html</loc><lastmod>2026-04-06</lastmod><priority>0.8</priority></url>
@@ -270,6 +271,7 @@
   <url><loc>https://shmindle.com/books/tracks-in-fresh-snow.html</loc><lastmod>2026-02-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/stone-lanterns-and-whispers.html</loc><lastmod>2026-02-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/authors/riya-kapoor.html</loc><lastmod>2026-04-07</lastmod><priority>0.7</priority></url>
+  <url><loc>https://shmindle.com/authors/riley-garcia.html</loc><lastmod>2026-04-07</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/robin-smith.html</loc><lastmod>2026-04-06</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/nicola-esposito.html</loc><lastmod>2026-04-06</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/robin-patel.html</loc><lastmod>2026-04-06</lastmod><priority>0.7</priority></url>
@@ -299,7 +301,6 @@
   <url><loc>https://shmindle.com/authors/jordan-white.html</loc><lastmod>2026-03-25</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/jun-ito.html</loc><lastmod>2026-03-25</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/taylor-anderson.html</loc><lastmod>2026-03-24</lastmod><priority>0.7</priority></url>
-  <url><loc>https://shmindle.com/authors/riley-garcia.html</loc><lastmod>2026-03-24</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/sol-vazquez.html</loc><lastmod>2026-03-24</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/cruz-ruiz.html</loc><lastmod>2026-03-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/lenny-black.html</loc><lastmod>2026-03-23</lastmod><priority>0.7</priority></url>
