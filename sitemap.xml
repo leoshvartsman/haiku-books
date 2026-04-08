@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://shmindle.com/</loc><lastmod>2026-04-08</lastmod><priority>1.0</priority></url>
   <url><loc>https://shmindle.com/books/stone-and-lichen-moving.html</loc><lastmod>2026-04-08</lastmod><priority>0.8</priority></url>
+  <url><loc>https://shmindle.com/books/what-the-dawn-remembers.html</loc><lastmod>2026-04-08</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/what-the-mouth-remembers.html</loc><lastmod>2026-04-07</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/where-the-light-stays-warm.html</loc><lastmod>2026-04-07</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/carrying-the-altitude.html</loc><lastmod>2026-04-07</lastmod><priority>0.8</priority></url>
@@ -273,6 +274,7 @@
   <url><loc>https://shmindle.com/books/tracks-in-fresh-snow.html</loc><lastmod>2026-02-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/stone-lanterns-and-whispers.html</loc><lastmod>2026-02-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/authors/cruz-hernandez.html</loc><lastmod>2026-04-08</lastmod><priority>0.7</priority></url>
+  <url><loc>https://shmindle.com/authors/riley-kowalski.html</loc><lastmod>2026-04-08</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/riya-kapoor.html</loc><lastmod>2026-04-07</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/riley-garcia.html</loc><lastmod>2026-04-07</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/jordan-muller.html</loc><lastmod>2026-04-07</lastmod><priority>0.7</priority></url>
@@ -454,7 +456,6 @@
   <url><loc>https://shmindle.com/authors/skyler-anderson.html</loc><lastmod>2026-02-14</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/cruz-flores.html</loc><lastmod>2026-02-14</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/wen-li.html</loc><lastmod>2026-02-07</lastmod><priority>0.7</priority></url>
-  <url><loc>https://shmindle.com/authors/riley-kowalski.html</loc><lastmod>2026-02-07</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/emerson-miller.html</loc><lastmod>2026-02-07</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/jing-li.html</loc><lastmod>2026-02-06</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/saanvi-nair.html</loc><lastmod>2026-02-06</lastmod><priority>0.7</priority></url>
