@@ -1,3 +1,11 @@
 name = "download-proxy"
 main = "worker.js"
 compatibility_date = "2024-01-01"
+
+[[kv_namespaces]]
+binding = "API_KEYS"
+id = "a20554d3636649efaf9d74363c7c5f86"
+
+[[kv_namespaces]]
+binding = "RATE_LIMITS"
+id = "6a4024e4804b4744893c9de3373f9cb3"

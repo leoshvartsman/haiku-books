@@ -13,6 +13,14 @@ export default {
       return handleSubmit(request, env);
     }
 
+    // Agent API endpoints
+    if (path === '/register') {
+      return handleRegister(request, env);
+    }
+    if (path === '/api/submit') {
+      return handleApiSubmit(request, env);
+    }
+
     // Admin endpoints
     if (path === '/admin/books') {
       return handleAdminBooks(request, env);
@@ -361,6 +369,236 @@ async function handleSubmit(request, env) {
   const errMsg = data.message || 'Failed to queue submission';
   return new Response(JSON.stringify({ error: errMsg }), {
     status: 500,
+    headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+  });
+}
+
+// ── Agent API: POST /register ─────────────────────────────────────────────────
+
+async function handleRegister(request, env) {
+  const corsHeaders = {
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Methods': 'POST, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type',
+  };
+
+  if (request.method === 'OPTIONS') return new Response(null, { headers: corsHeaders });
+  if (request.method !== 'POST') return new Response('Method not allowed', { status: 405 });
+
+  let name, description;
+  try {
+    const body = await request.json();
+    name = String(body.name || '').trim().slice(0, 100);
+    description = String(body.description || '').trim().slice(0, 300);
+  } catch {
+    return new Response(JSON.stringify({ error: 'Invalid request body' }), {
+      status: 400,
+      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+    });
+  }
+
+  if (!name) {
+    return new Response(JSON.stringify({ error: 'name is required' }), {
+      status: 400,
+      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+    });
+  }
+
+  // Generate a random API key
+  const rawKey = crypto.getRandomValues(new Uint8Array(24));
+  const apiKey = 'sk-' + Array.from(rawKey).map(b => b.toString(16).padStart(2, '0')).join('');
+
+  const record = {
+    name,
+    description,
+    created_at: new Date().toISOString(),
+  };
+
+  await env.API_KEYS.put(apiKey, JSON.stringify(record));
+
+  return new Response(JSON.stringify({ api_key: apiKey, name, message: 'Registration successful. Include your API key as X-API-Key header on /api/submit requests.' }), {
+    status: 201,
+    headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+  });
+}
+
+// ── Agent API: POST /api/submit ───────────────────────────────────────────────
+
+async function handleApiSubmit(request, env) {
+  const corsHeaders = {
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Methods': 'POST, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type, X-API-Key',
+  };
+
+  if (request.method === 'OPTIONS') return new Response(null, { headers: corsHeaders });
+  if (request.method !== 'POST') return new Response('Method not allowed', { status: 405 });
+
+  // Validate API key
+  const apiKey = request.headers.get('X-API-Key') || '';
+  if (!apiKey) {
+    return new Response(JSON.stringify({ error: 'X-API-Key header required. Register at POST /register.' }), {
+      status: 401,
+      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+    });
+  }
+
+  const keyRecord = await env.API_KEYS.get(apiKey);
+  if (!keyRecord) {
+    return new Response(JSON.stringify({ error: 'Invalid API key.' }), {
+      status: 401,
+      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+    });
+  }
+
+  // Rate limiting: 3 submissions per day per key
+  const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+  const rateLimitKey = `${apiKey}:${today}`;
+  const countStr = await env.RATE_LIMITS.get(rateLimitKey);
+  const count = countStr ? parseInt(countStr, 10) : 0;
+  const DAILY_LIMIT = 3;
+
+  if (count >= DAILY_LIMIT) {
+    return new Response(JSON.stringify({ error: `Daily limit of ${DAILY_LIMIT} submissions reached. Resets at midnight UTC.` }), {
+      status: 429,
+      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+    });
+  }
+
+  // Parse body
+  let title, author, theme, cover_style, haiku;
+  try {
+    const body = await request.json();
+    title = String(body.title || '').trim().slice(0, 100);
+    author = String(body.author || '').trim().slice(0, 100);
+    theme = String(body.theme || '').trim().slice(0, 300);
+    cover_style = String(body.cover_style || '').trim().slice(0, 10);
+    haiku = body.haiku; // optional array for publishing mode
+  } catch {
+    return new Response(JSON.stringify({ error: 'Invalid request body' }), {
+      status: 400,
+      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+    });
+  }
+
+  if (!title) {
+    return new Response(JSON.stringify({ error: 'title is required' }), {
+      status: 400,
+      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+    });
+  }
+  if (!author) {
+    return new Response(JSON.stringify({ error: 'author is required' }), {
+      status: 400,
+      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+    });
+  }
+
+  // Publishing mode: haiku array provided
+  if (Array.isArray(haiku) && haiku.length > 0) {
+    // Validate haiku array: each item must be a non-empty string
+    const cleaned = haiku
+      .filter(h => typeof h === 'string' && h.trim().length > 0)
+      .map(h => h.trim())
+      .slice(0, 500); // cap at 500
+
+    if (cleaned.length < 10) {
+      return new Response(JSON.stringify({ error: 'haiku array must contain at least 10 valid haiku strings' }), {
+        status: 400,
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+      });
+    }
+
+    // Trigger publish workflow
+    const resp = await fetch(
+      'https://api.github.com/repos/leoshvartsman/haikus/actions/workflows/generate-books.yml/dispatches',
+      {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${env.GITHUB_PAT}`,
+          'Accept': 'application/vnd.github+json',
+          'X-GitHub-Api-Version': '2022-11-28',
+          'Content-Type': 'application/json',
+          'User-Agent': 'shmindle-worker',
+        },
+        body: JSON.stringify({
+          ref: 'main',
+          inputs: {
+            submit_title: title,
+            submit_author: author,
+            submit_theme: theme || '',
+            submit_cover_style: cover_style || '',
+            submit_email: '',
+            submit_haiku: cleaned.join('\n---\n'),
+          },
+        }),
+      }
+    );
+
+    if (resp.status !== 204) {
+      const data = await resp.json().catch(() => ({}));
+      return new Response(JSON.stringify({ error: data.message || 'Failed to queue submission' }), {
+        status: 500,
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+      });
+    }
+
+    await env.RATE_LIMITS.put(rateLimitKey, String(count + 1), { expirationTtl: 86400 });
+
+    return new Response(JSON.stringify({
+      success: true,
+      mode: 'publish',
+      haiku_count: cleaned.length,
+      message: `Publishing ${cleaned.length} haiku as "${title}" by ${author}. Book will appear on shmindle.com in ~15 minutes.`,
+    }), {
+      status: 200,
+      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+    });
+  }
+
+  // Generation mode: Shmindle generates haiku from title + theme
+  const resp = await fetch(
+    'https://api.github.com/repos/leoshvartsman/haikus/actions/workflows/generate-books.yml/dispatches',
+    {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${env.GITHUB_PAT}`,
+        'Accept': 'application/vnd.github+json',
+        'X-GitHub-Api-Version': '2022-11-28',
+        'Content-Type': 'application/json',
+        'User-Agent': 'shmindle-worker',
+      },
+      body: JSON.stringify({
+        ref: 'main',
+        inputs: {
+          submit_title: title,
+          submit_author: author,
+          submit_theme: theme || '',
+          submit_cover_style: cover_style || '',
+          submit_email: '',
+          submit_haiku: '',
+        },
+      }),
+    }
+  );
+
+  if (resp.status !== 204) {
+    const data = await resp.json().catch(() => ({}));
+    return new Response(JSON.stringify({ error: data.message || 'Failed to queue submission' }), {
+      status: 500,
+      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+    });
+  }
+
+  await env.RATE_LIMITS.put(rateLimitKey, String(count + 1), { expirationTtl: 86400 });
+
+  return new Response(JSON.stringify({
+    success: true,
+    mode: 'generate',
+    message: `Generating haiku collection "${title}" by ${author}. Book will appear on shmindle.com in ~15 minutes.`,
+    remaining_today: DAILY_LIMIT - count - 1,
+  }), {
+    status: 200,
     headers: { ...corsHeaders, 'Content-Type': 'application/json' },
   });
 }
