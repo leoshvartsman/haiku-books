@@ -24,6 +24,18 @@
     "epub_url": "https://shmindle.com/dl/book-soil-beneath-every-sky/soil-beneath-every-sky.epub"
   },
   {
+    "title": "Between Ice and Thaw",
+    "author": "Cameron Brown",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-10",
+    "slug": "between-ice-and-thaw",
+    "cover_url": "https://shmindle.com/dl/book-between-ice-and-thaw/between-ice-and-thaw.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-between-ice-and-thaw/between-ice-and-thaw.pdf",
+    "epub_url": "https://shmindle.com/dl/book-between-ice-and-thaw/between-ice-and-thaw.epub"
+  },
+  {
     "title": "What the Canals Remember",
     "author": "Morgan Lewis",
     "poem_form": "haiku",
