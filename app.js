@@ -74,7 +74,7 @@ function render() {
                 <div class="card-cover">${coverHtml}</div>
                 <div class="card-body">
                     <div class="card-title">${book.title}</div>
-                    <div class="card-meta">${book.haiku_count} haiku</div>
+                    <div class="card-meta">${book.poem_count !== undefined ? book.poem_count : book.haiku_count} ${book.poem_form || 'haiku'}${(book.poem_form === 'sonnet') ? 's' : ''}</div>
                 </div>
             </a>
             <div class="card-author">${authorHtml}</div>

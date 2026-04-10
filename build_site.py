@@ -25,7 +25,9 @@ from PIL import Image
 # Paths to the haiku pipeline
 PIPELINE_DIR = Path.home() / "haikus" / "haiku-generator"
 BOOK_INDEX = PIPELINE_DIR / "haiku_output" / "book_index.json"
+SONNET_INDEX = PIPELINE_DIR / "sonnet_output" / "book_index.json"
 COVERS_DIR = PIPELINE_DIR / "haiku_output"
+SONNET_COVERS_DIR = PIPELINE_DIR / "sonnet_output"
 OUTPUT_DIR = Path.home() / "haikus" / "book_formatter" / "output"
 
 # GitHub repo for releases
@@ -74,25 +76,24 @@ def parse_date(raw: str) -> str:
     return raw[:10]
 
 
-def find_cover(title: str) -> Optional[Path]:
+def poem_label(count: int, form: str) -> str:
+    """Return e.g. '25 sonnets' or '250 haiku'."""
+    return f"{count} {form}{'s' if form == 'sonnet' and count != 1 else ''}"
+
+
+def find_cover(title: str, form: str = "haiku") -> Optional[Path]:
     """Find the cover image for a book title."""
-    # Primary: match cover_prompt_generator.py's sanitization exactly
+    search_dirs = [SONNET_COVERS_DIR, COVERS_DIR] if form == "sonnet" else [COVERS_DIR, SONNET_COVERS_DIR]
+
     safe_title = re.sub(r'[^\w\s-]', '', title).strip().replace(' ', '_')[:50]
-    path = COVERS_DIR / f"cover_{safe_title}.png"
-    if path.exists():
-        return path
-
-    # Fallback 1: simple space→underscore, strip apostrophes/commas
-    cover_name = "cover_" + title.replace(" ", "_").replace("'", "").replace(",", "") + ".png"
-    path2 = COVERS_DIR / cover_name
-    if path2.exists():
-        return path2
-
-    # Fallback 2: collapse all non-alphanumeric runs to underscore
+    cover_name1 = "cover_" + title.replace(" ", "_").replace("'", "").replace(",", "") + ".png"
     cover_name2 = "cover_" + re.sub(r'[^a-zA-Z0-9]+', '_', title) + ".png"
-    path3 = COVERS_DIR / cover_name2
-    if path3.exists():
-        return path3
+
+    for d in search_dirs:
+        for name in (f"cover_{safe_title}.png", cover_name1, cover_name2):
+            p = d / name
+            if p.exists():
+                return p
 
     return None
 
@@ -189,9 +190,19 @@ def build_catalog(dry_run=False):
         sys.exit(1)
 
     with open(BOOK_INDEX, 'r') as f:
-        index = json.load(f)
+        haiku_index = json.load(f)
+    for e in haiku_index:
+        e.setdefault('poem_form', 'haiku')
 
-    print(f"Found {len(index)} books in index")
+    sonnet_index = []
+    if SONNET_INDEX.exists():
+        with open(SONNET_INDEX, 'r') as f:
+            sonnet_index = json.load(f)
+        for e in sonnet_index:
+            e['poem_form'] = 'sonnet'
+
+    index = haiku_index + sonnet_index
+    print(f"Found {len(haiku_index)} haiku + {len(sonnet_index)} sonnet books in index")
     catalog = []
     tmp_dir = SITE_DIR / "_tmp_covers"
     tmp_dir.mkdir(exist_ok=True)
@@ -201,17 +212,18 @@ def build_catalog(dry_run=False):
             continue
         title = book["title"]
         author = book["author"]
+        form = book.get("poem_form", "haiku")
         slug = slugify(title)
         tag = f"book-{slug}"
-        haiku_count = book.get("haiku_count", 0)
+        poem_count = book.get("sonnet_count") or book.get("haiku_count", 0)
         date = parse_date(book.get("generated_at", ""))
 
-        print(f"\n[{title}] by {author}")
+        print(f"\n[{title}] by {author} ({form})")
 
         # Find assets on disk
         pdf_path = OUTPUT_DIR / f"{slug}.pdf"
         epub_path = OUTPUT_DIR / f"{slug}.epub"
-        cover_path = find_cover(title)
+        cover_path = find_cover(title, form=form)
 
         # Check if release already exists on GitHub
         has_release = release_exists(tag)
@@ -233,7 +245,9 @@ def build_catalog(dry_run=False):
             catalog.append({
                 "title": title,
                 "author": author,
-                "haiku_count": haiku_count,
+                "poem_form": form,
+                "poem_count": poem_count,
+                "haiku_count": poem_count,
                 "date": date,
                 "cover_url": "",
                 "pdf_url": "",
@@ -261,7 +275,9 @@ def build_catalog(dry_run=False):
         catalog.append({
             "title": title,
             "author": author,
-            "haiku_count": haiku_count,
+            "poem_form": form,
+            "poem_count": poem_count,
+            "haiku_count": poem_count,  # kept for backward compat
             "date": date,
             "slug": slug,
             "cover_url": to_proxy_url(urls.get("cover", "")) if urls.get("cover") else "",
@@ -293,9 +309,9 @@ def build_catalog(dry_run=False):
 
 
 def extract_sample_haiku(book_index_entry: Dict, count: int = 6) -> List[str]:
-    """Extract sample haiku from book_index.json or fall back to text file."""
-    # Prefer stored samples in book_index.json
-    stored = book_index_entry.get("sample_haiku", [])
+    """Extract sample poems from book_index.json or fall back to text file."""
+    # Prefer stored samples (sonnets or haiku)
+    stored = book_index_entry.get("sample_sonnets") or book_index_entry.get("sample_haiku", [])
     if stored:
         return stored[:count]
 
@@ -317,21 +333,28 @@ def extract_sample_haiku(book_index_entry: Dict, count: int = 6) -> List[str]:
     except Exception:
         return []
 
-    # Extract haiku: lines starting with a number followed by a period
+    # Extract poems: lines starting with a number followed by a period
+    # Handles both 3-line haiku and 14-line sonnets
+    is_sonnet = book_index_entry.get("poem_form") == "sonnet"
+    expected_lines = 14 if is_sonnet else 3
     haiku_list = []
     lines = text.split('\n')
     i = 0
     while i < len(lines):
         line = lines[i].strip()
         if re.match(r'^\d+\.\s*$', line):
-            # Next 3 lines are the haiku
             h_lines = []
-            for j in range(1, 4):
-                if i + j < len(lines) and lines[i + j].strip():
-                    h_lines.append(lines[i + j].strip())
-            if len(h_lines) == 3:
-                haiku_list.append('\n'.join(h_lines))
-            i += 4
+            j = 1
+            while len(h_lines) < expected_lines and i + j < len(lines):
+                l = lines[i + j].strip()
+                if l:
+                    h_lines.append(l)
+                elif h_lines:  # blank line signals end of poem block
+                    break
+                j += 1
+            if len(h_lines) >= expected_lines - 1:  # allow one short
+                haiku_list.append('\n'.join(h_lines[:expected_lines]))
+            i += j
         else:
             i += 1
 
@@ -394,7 +417,9 @@ def generate_book_page(book_catalog: Dict, book_index_entry: Dict, full_catalog:
     author_slug = slugify(book_catalog["author"])
     title = html.escape(book_catalog["title"])
     author = html.escape(book_catalog["author"])
-    haiku_count = book_catalog["haiku_count"]
+    form = book_catalog.get("poem_form", "haiku")
+    p_count = book_catalog.get("poem_count") or book_catalog.get("haiku_count", 0)
+    p_label = poem_label(p_count, form)
     cover_url = book_catalog.get("cover_url", "")
     pdf_url = book_catalog.get("pdf_url", "")
     epub_url = book_catalog.get("epub_url", "")
@@ -407,7 +432,7 @@ def generate_book_page(book_catalog: Dict, book_index_entry: Dict, full_catalog:
     if intro_raw:
         meta_desc_raw = intro_raw[:155].rsplit(' ', 1)[0] + '…'
     else:
-        meta_desc_raw = f"{book_catalog['title']} — a collection of {haiku_count} haiku by {book_catalog['author']}. Free to download as PDF or EPUB."
+        meta_desc_raw = f"{book_catalog['title']} — a collection of {p_label} by {book_catalog['author']}. Free to download as PDF or EPUB."
     meta_desc = html.escape(meta_desc_raw)
 
     # Build sample haiku HTML
@@ -418,7 +443,7 @@ def generate_book_page(book_catalog: Dict, book_index_entry: Dict, full_catalog:
 
     # Cover image HTML — descriptive alt text for image search (#9)
     cover_html = (
-        f'<img src="{cover_url}" alt="Cover of {title} by {author} — free haiku poetry ebook">'
+        f'<img src="{cover_url}" alt="Cover of {title} by {author} — free poetry ebook">'
         if cover_url else '<div class="no-cover">📖</div>'
     )
 
@@ -437,11 +462,11 @@ def generate_book_page(book_catalog: Dict, book_index_entry: Dict, full_catalog:
         "author": {"@type": "Person", "name": book_catalog["author"]},
         "bookFormat": "EBook",
         "url": f"https://shmindle.com/books/{slug}.html",
-        "numberOfPages": haiku_count,
+        "numberOfPages": p_count,
         "genre": "Poetry",
         "inLanguage": "en",
         "isAccessibleForFree": True,
-        "description": intro_raw[:300] if intro_raw else f"A collection of {haiku_count} haiku by {book_catalog['author']}.",
+        "description": intro_raw[:300] if intro_raw else f"A collection of {p_label} by {book_catalog['author']}.",
         "datePublished": book_catalog.get("date", ""),
         "publisher": {
             "@type": "Organization",
@@ -509,19 +534,19 @@ def generate_book_page(book_catalog: Dict, book_index_entry: Dict, full_catalog:
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{title} by {author} — Free Haiku Poetry Book | Shmindle</title>
+    <title>{title} by {author} — Free Poetry Book | Shmindle</title>
     <meta name="description" content="{meta_desc}">
     <link rel="canonical" href="https://shmindle.com/books/{slug}.html">
 
     <meta property="og:title" content="{title} by {author}">
-    <meta property="og:description" content="A collection of {haiku_count} haiku. Free to download.">
+    <meta property="og:description" content="A collection of {p_label}. Free to download.">
     <meta property="og:type" content="book">
     <meta property="og:url" content="https://shmindle.com/books/{slug}.html">
     {"<meta property='og:image' content='" + cover_url + "'>" if cover_url else ""}
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{title} by {author}">
-    <meta name="twitter:description" content="A collection of {haiku_count} haiku. Free to download.">
+    <meta name="twitter:description" content="A collection of {p_label}. Free to download.">
     {"<meta name='twitter:image' content='" + cover_url + "'>" if cover_url else ""}
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -545,7 +570,7 @@ def generate_book_page(book_catalog: Dict, book_index_entry: Dict, full_catalog:
             <div class="book-info">
                 <h1>{title}</h1>
                 <div class="author"><a href="../authors/{author_slug}.html" class="author-page-link">{author}</a></div>
-                <div class="meta">{haiku_count} haiku</div>
+                <div class="meta">{p_label}</div>
                 <div class="download-btns">
                     {dl_html}
                 </div>
@@ -554,7 +579,7 @@ def generate_book_page(book_catalog: Dict, book_index_entry: Dict, full_catalog:
 
         {"<div class='book-intro'>" + intro + "</div>" if intro else ""}
 
-        {"<div class='sample-haiku'><h2>Sample Haiku</h2>" + samples_html + "</div>" if samples_html else ""}
+        {"<div class='sample-haiku'><h2>Sample " + form.capitalize() + "s</h2>" + samples_html + "</div>" if samples_html else ""}
     </div>
 
     {related_html}
@@ -683,9 +708,11 @@ def generate_feed(catalog: List[Dict]) -> None:
         epub_url = book.get("epub_url", "")
         pub_date = to_rfc2822(book.get("date", ""))
         page_url = f"https://shmindle.com/books/{slug}.html"
-        count = book.get("haiku_count", 0)
+        b_form = book.get("poem_form", "haiku")
+        count = book.get("poem_count") or book.get("haiku_count", 0)
+        b_label = poem_label(count, b_form)
 
-        desc_parts = [f"<p>A new collection of {count} haiku by {author}.</p>"]
+        desc_parts = [f"<p>A new collection of {b_label} by {author}.</p>"]
         if cover_url:
             desc_parts.append(f'<p><img src="{cover_url}" alt="{title}" style="max-width:300px"/></p>')
         if pdf_url:
@@ -909,7 +936,8 @@ def generate_author_page_html(
         b_slug = slugify(b['title'])
         b_title = html.escape(b['title'])
         b_cover = b.get('cover_url', '')
-        b_count = b.get('haiku_count', 0)
+        b_form = b.get('poem_form', 'haiku')
+        b_count = b.get('poem_count') or b.get('haiku_count', 0)
         idx = index_by_title.get(b['title'], {})
         intro = idx.get('collection_intro', '').strip()
         snippet = html.escape(intro[:160] + '…') if len(intro) > 160 else html.escape(intro)
@@ -918,7 +946,7 @@ def generate_author_page_html(
             if b_cover else
             '<div style="width:80px;height:110px;background:#e8e4df;border-radius:4px;flex-shrink:0;"></div>'
         )
-        meta = f"{b_count} haiku" if b_count else ""
+        meta = poem_label(b_count, b_form) if b_count else ""
         cards_html += (
             f'<a href="../books/{b_slug}.html" class="author-book-card">\n'
             f'  {cover_img}\n'
@@ -937,7 +965,9 @@ def generate_author_page_html(
             f'<div class="haiku">{"".join(f"<p>{html.escape(l)}</p>" for l in h.split(chr(10)))}</div>\n'
             for h in samples
         )
-        haiku_section = f'<div class="section-label" style="margin-top:2.5rem;">Selected Haiku</div>\n{haiku_items}'
+        best_form = best_entry.get('poem_form', 'haiku') if best_entry else 'haiku'
+        sample_label = f"Selected {best_form.capitalize()}s"
+        haiku_section = f'<div class="section-label" style="margin-top:2.5rem;">{sample_label}</div>\n{haiku_items}'
 
     first_cover = next((b.get('cover_url', '') for b in books if b.get('cover_url')), '')
     og_img = first_cover or (portrait_url if has_portrait else '')
