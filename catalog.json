@@ -36,6 +36,18 @@
     "epub_url": "https://shmindle.com/dl/book-between-ice-and-thaw/between-ice-and-thaw.epub"
   },
   {
+    "title": "Border of the Ordinary",
+    "author": "Riley Roy",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-10",
+    "slug": "border-of-the-ordinary",
+    "cover_url": "https://shmindle.com/dl/book-border-of-the-ordinary/border-of-the-ordinary.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-border-of-the-ordinary/border-of-the-ordinary.pdf",
+    "epub_url": "https://shmindle.com/dl/book-border-of-the-ordinary/border-of-the-ordinary.epub"
+  },
+  {
     "title": "What the Canals Remember",
     "author": "Morgan Lewis",
     "poem_form": "haiku",
