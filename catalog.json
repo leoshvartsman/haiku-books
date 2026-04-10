@@ -2,6 +2,8 @@
   {
     "title": "Between Two Monsoons",
     "author": "Riley García",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-10",
     "slug": "between-two-monsoons",
@@ -12,6 +14,8 @@
   {
     "title": "What the Canals Remember",
     "author": "Morgan Lewis",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-09",
     "slug": "what-the-canals-remember",
@@ -22,6 +26,8 @@
   {
     "title": "The Last Peony",
     "author": "Mira Osei",
+    "poem_form": "haiku",
+    "poem_count": 386,
     "haiku_count": 386,
     "date": "2026-04-09",
     "slug": "the-last-peony",
@@ -32,6 +38,8 @@
   {
     "title": "Borrowed Light",
     "author": "Harper Novak",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-09",
     "slug": "borrowed-light",
@@ -42,6 +50,8 @@
   {
     "title": "The Longitude of Smoke",
     "author": "Morgan Kelly",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-09",
     "slug": "the-longitude-of-smoke",
@@ -52,6 +62,8 @@
   {
     "title": "The Long Way Around",
     "author": "Sky Cohen",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-09",
     "slug": "the-long-way-around",
@@ -62,6 +74,8 @@
   {
     "title": "Epoxy Floors",
     "author": "Lenny Black",
+    "poem_form": "haiku",
+    "poem_count": 361,
     "haiku_count": 361,
     "date": "2026-04-09",
     "slug": "epoxy-floors",
@@ -70,8 +84,22 @@
     "epub_url": "https://shmindle.com/dl/book-epoxy-floors/epoxy-floors.epub"
   },
   {
+    "title": "Between Three Clocks",
+    "author": "Jamie Garcia",
+    "poem_form": "sonnet",
+    "poem_count": 25,
+    "haiku_count": 25,
+    "date": "2026-04-09",
+    "slug": "between-three-clocks",
+    "cover_url": "https://shmindle.com/dl/book-between-three-clocks/between-three-clocks.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-between-three-clocks/between-three-clocks.pdf",
+    "epub_url": "https://shmindle.com/dl/book-between-three-clocks/between-three-clocks.epub"
+  },
+  {
     "title": "Stone and Lichen, Moving",
     "author": "Cruz Hernández",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-08",
     "slug": "stone-and-lichen-moving",
@@ -82,6 +110,8 @@
   {
     "title": "What the Dawn Remembers",
     "author": "Riley Kowalski",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-08",
     "slug": "what-the-dawn-remembers",
@@ -92,6 +122,8 @@
   {
     "title": "The Seam Between Weathers",
     "author": "Saanvi Singh",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-08",
     "slug": "the-seam-between-weathers",
@@ -102,6 +134,8 @@
   {
     "title": "What the Mouth Remembers",
     "author": "Riya Kapoor",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-07",
     "slug": "what-the-mouth-remembers",
@@ -112,6 +146,8 @@
   {
     "title": "Where the Light Stays Warm",
     "author": "Riley García",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-07",
     "slug": "where-the-light-stays-warm",
@@ -122,6 +158,8 @@
   {
     "title": "Carrying the Altitude",
     "author": "Jordan Müller",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-07",
     "slug": "carrying-the-altitude",
@@ -132,6 +170,8 @@
   {
     "title": "What the Weaver Bird Knows",
     "author": "Robin Smith",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-06",
     "slug": "what-the-weaver-bird-knows",
@@ -142,6 +182,8 @@
   {
     "title": "The Distance Between Bells",
     "author": "Nicola Esposito",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-06",
     "slug": "the-distance-between-bells",
@@ -152,6 +194,8 @@
   {
     "title": "Elsewhere Still Here",
     "author": "Robin Patel",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-06",
     "slug": "elsewhere-still-here",
@@ -162,6 +206,8 @@
   {
     "title": "The Interval Between Rains",
     "author": "Casey García",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-06",
     "slug": "the-interval-between-rains",
@@ -172,6 +218,8 @@
   {
     "title": "Longitude of the Self",
     "author": "Jamie Garcia",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-05",
     "slug": "longitude-of-the-self",
@@ -182,6 +230,8 @@
   {
     "title": "Borrowed Light",
     "author": "Parker Chen",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-05",
     "slug": "borrowed-light",
@@ -192,6 +242,8 @@
   {
     "title": "What the Weather Remembers",
     "author": "Xia Wu",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-05",
     "slug": "what-the-weather-remembers",
@@ -202,6 +254,8 @@
   {
     "title": "Canal Light, Elsewhere",
     "author": "Sage Andersson",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-05",
     "slug": "canal-light-elsewhere",
@@ -212,6 +266,8 @@
   {
     "title": "Dust on Three Tongues",
     "author": "Aditya Reddy",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-04",
     "slug": "dust-on-three-tongues",
@@ -222,6 +278,8 @@
   {
     "title": "What the Light Remembers",
     "author": "Jordan Rodriguez",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-04",
     "slug": "what-the-light-remembers",
@@ -232,6 +290,8 @@
   {
     "title": "The Body Keeps Time",
     "author": "Jordan Rodriguez",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-04",
     "slug": "the-body-keeps-time",
@@ -242,6 +302,8 @@
   {
     "title": "What the Body Remembers",
     "author": "Peyton Anderson",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-03",
     "slug": "what-the-body-remembers",
@@ -252,6 +314,8 @@
   {
     "title": "Pipe and Flood",
     "author": "Morgan Kim",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-03",
     "slug": "pipe-and-flood",
@@ -262,6 +326,8 @@
   {
     "title": "Where the Roots Find Water",
     "author": "Michi Suzuki",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-03",
     "slug": "where-the-roots-find-water",
@@ -272,6 +338,8 @@
   {
     "title": "What the Mouth Remembers",
     "author": "Cameron Martin",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-03",
     "slug": "what-the-mouth-remembers",
@@ -282,6 +350,8 @@
   {
     "title": "Sitting on The Couch and Reading",
     "author": "Coach Potato",
+    "poem_form": "haiku",
+    "poem_count": 370,
     "haiku_count": 370,
     "date": "2026-04-03",
     "slug": "sitting-on-the-couch-and-reading",
@@ -292,6 +362,8 @@
   {
     "title": "Rebuilding The House",
     "author": "Carpenter Jones",
+    "poem_form": "haiku",
+    "poem_count": 369,
     "haiku_count": 369,
     "date": "2026-04-03",
     "slug": "rebuilding-the-house",
@@ -302,6 +374,8 @@
   {
     "title": "Making Great Cake",
     "author": "Susan Rocklin",
+    "poem_form": "haiku",
+    "poem_count": 360,
     "haiku_count": 360,
     "date": "2026-04-03",
     "slug": "making-great-cake",
@@ -312,6 +386,8 @@
   {
     "title": "Meridians of Forgetting",
     "author": "Aditya Khan",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-02",
     "slug": "meridians-of-forgetting",
@@ -322,6 +398,8 @@
   {
     "title": "What Remains When Water Moves",
     "author": "Quinn Novak",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-02",
     "slug": "what-remains-when-water-moves",
@@ -332,6 +410,8 @@
   {
     "title": "Before the City Wakes",
     "author": "Guadalupe Rodríguez",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-02",
     "slug": "before-the-city-wakes",
@@ -342,6 +422,8 @@
   {
     "title": "Grease and Green Water",
     "author": "Quinn Sato",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-01",
     "slug": "grease-and-green-water",
@@ -352,6 +434,8 @@
   {
     "title": "Where the Ground Remembers",
     "author": "Sol Carvalho",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-04-01",
     "slug": "where-the-ground-remembers",
@@ -362,6 +446,8 @@
   {
     "title": "Light Coming Through",
     "author": "Taylor Smith",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-26",
     "slug": "light-coming-through",
@@ -372,6 +458,8 @@
   {
     "title": "The Slow Work of Light",
     "author": "Harper Smith",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-26",
     "slug": "the-slow-work-of-light",
@@ -382,6 +470,8 @@
   {
     "title": "What the Body Carries",
     "author": "Casey Kim",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-25",
     "slug": "what-the-body-carries",
@@ -392,6 +482,8 @@
   {
     "title": "What Remains After the Thaw",
     "author": "Casey Müller",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-25",
     "slug": "what-remains-after-the-thaw",
@@ -402,6 +494,8 @@
   {
     "title": "The Long Way Home",
     "author": "Jordan White",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-25",
     "slug": "the-long-way-home",
@@ -412,6 +506,8 @@
   {
     "title": "Dust on the Lotus",
     "author": "Jun Ito",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-25",
     "slug": "dust-on-the-lotus",
@@ -422,6 +518,8 @@
   {
     "title": "Stone and Current",
     "author": "Taylor Anderson",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-24",
     "slug": "stone-and-current",
@@ -432,6 +530,8 @@
   {
     "title": "The Longitude of Staying",
     "author": "Riley García",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-24",
     "slug": "the-longitude-of-staying",
@@ -442,6 +542,8 @@
   {
     "title": "The Body Keeps the Latitude",
     "author": "Casey Müller",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-24",
     "slug": "the-body-keeps-the-latitude",
@@ -452,6 +554,8 @@
   {
     "title": "The Ground Beneath the Ground",
     "author": "Sol Vázquez",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-24",
     "slug": "the-ground-beneath-the-ground",
@@ -462,6 +566,8 @@
   {
     "title": "Borrowed Skies",
     "author": "Cruz Ruiz",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-23",
     "slug": "borrowed-skies",
@@ -472,6 +578,8 @@
   {
     "title": "The How of the Why",
     "author": "Lenny Black",
+    "poem_form": "haiku",
+    "poem_count": 370,
     "haiku_count": 370,
     "date": "2026-03-23",
     "slug": "the-how-of-the-why",
@@ -482,6 +590,8 @@
   {
     "title": "Red Dirt, Neon Rain",
     "author": "Casey Walker",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-23",
     "slug": "red-dirt-neon-rain",
@@ -492,6 +602,8 @@
   {
     "title": "The Body Keeps the River",
     "author": "Yuki Kato",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-23",
     "slug": "the-body-keeps-the-river",
@@ -502,6 +614,8 @@
   {
     "title": "What the Soil Remembers",
     "author": "Ariel Sánchez",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-23",
     "slug": "what-the-soil-remembers",
@@ -512,6 +626,8 @@
   {
     "title": "What the Body Remembers",
     "author": "Riley Müller",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-22",
     "slug": "what-the-body-remembers",
@@ -522,6 +638,8 @@
   {
     "title": "Dirt Knows My Name",
     "author": "Quinn Jones",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-22",
     "slug": "dirt-knows-my-name",
@@ -532,6 +650,8 @@
   {
     "title": "The Long Way Around",
     "author": "Parker Sato",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-22",
     "slug": "the-long-way-around",
@@ -542,6 +662,8 @@
   {
     "title": "The Weight of Open Hands",
     "author": "Jordan Brown",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-22",
     "slug": "the-weight-of-open-hands",
@@ -552,6 +674,8 @@
   {
     "title": "But Why?",
     "author": "Upside down Sactown",
+    "poem_form": "haiku",
+    "poem_count": 379,
     "haiku_count": 379,
     "date": "2026-03-22",
     "slug": "but-why",
@@ -562,6 +686,8 @@
   {
     "title": "What the Centrifuge Kept",
     "author": "Seo Lim",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-21",
     "slug": "what-the-centrifuge-kept",
@@ -572,6 +698,8 @@
   {
     "title": "Grease Under the Fingernails",
     "author": "Riley Müller",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-21",
     "slug": "grease-under-the-fingernails",
@@ -582,6 +710,8 @@
   {
     "title": "All Types of Dance",
     "author": "Frank Smith",
+    "poem_form": "haiku",
+    "poem_count": 380,
     "haiku_count": 380,
     "date": "2026-03-21",
     "slug": "all-types-of-dance",
@@ -592,6 +722,8 @@
   {
     "title": "Every Border a River",
     "author": "Riley Ali",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-21",
     "slug": "every-border-a-river",
@@ -602,6 +734,8 @@
   {
     "title": "What the Borders Remember",
     "author": "Jordan Brown",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-20",
     "slug": "what-the-borders-remember",
@@ -612,6 +746,8 @@
   {
     "title": "Soccer Fields at Night",
     "author": "Lenny Black",
+    "poem_form": "haiku",
+    "poem_count": 359,
     "haiku_count": 359,
     "date": "2026-03-20",
     "slug": "soccer-fields-at-night",
@@ -622,6 +758,8 @@
   {
     "title": "The Light Keeps Changing",
     "author": "Casey Smith",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-20",
     "slug": "the-light-keeps-changing",
@@ -632,6 +770,8 @@
   {
     "title": "Smoke Follows the Careful Eye",
     "author": "Quinn Davies",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-20",
     "slug": "smoke-follows-the-careful-eye",
@@ -642,6 +782,8 @@
   {
     "title": "What the Pigeons Know",
     "author": "Sol Vázquez",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-20",
     "slug": "what-the-pigeons-know",
@@ -652,6 +794,8 @@
   {
     "title": "Between Meridians",
     "author": "Harper Patel",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-19",
     "slug": "between-meridians",
@@ -662,6 +806,8 @@
   {
     "title": "Soccer 101",
     "author": "Timothy Henry",
+    "poem_form": "haiku",
+    "poem_count": 363,
     "haiku_count": 363,
     "date": "2026-03-19",
     "slug": "soccer-101",
@@ -672,6 +818,8 @@
   {
     "title": "How soccer brings joy",
     "author": "Number 10",
+    "poem_form": "haiku",
+    "poem_count": 364,
     "haiku_count": 364,
     "date": "2026-03-19",
     "slug": "how-soccer-brings-joy",
@@ -682,6 +830,8 @@
   {
     "title": "Acting Up",
     "author": "William Kaitel",
+    "poem_form": "haiku",
+    "poem_count": 360,
     "haiku_count": 360,
     "date": "2026-03-19",
     "slug": "acting-up",
@@ -692,6 +842,8 @@
   {
     "title": "The Slow Work of Light",
     "author": "Sky García",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-19",
     "slug": "the-slow-work-of-light",
@@ -702,6 +854,8 @@
   {
     "title": "The Long Way Round",
     "author": "Drew Miller",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-19",
     "slug": "the-long-way-round",
@@ -712,6 +866,8 @@
   {
     "title": "What the Light Forgets",
     "author": "Saanvi Singh",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-18",
     "slug": "what-the-light-forgets",
@@ -722,6 +878,8 @@
   {
     "title": "The Distance Between Mangoes",
     "author": "Ishaan Chopra",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-18",
     "slug": "the-distance-between-mangoes",
@@ -732,6 +890,8 @@
   {
     "title": "Words Within Words Within Words",
     "author": "Sunny Fields",
+    "poem_form": "haiku",
+    "poem_count": 375,
     "haiku_count": 375,
     "date": "2026-03-18",
     "slug": "words-within-words-within-words",
@@ -742,6 +902,8 @@
   {
     "title": "Every Border Leaves a Watermark",
     "author": "Sky Novak",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-18",
     "slug": "every-border-leaves-a-watermark",
@@ -752,6 +914,8 @@
   {
     "title": "The Long Way Around",
     "author": "Simone Bruno",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-18",
     "slug": "the-long-way-around",
@@ -762,6 +926,8 @@
   {
     "title": "The Distance Between Rains",
     "author": "Ying Hu",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-17",
     "slug": "the-distance-between-rains",
@@ -772,6 +938,8 @@
   {
     "title": "Grease and Monsoon",
     "author": "Krishna Patel",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-17",
     "slug": "grease-and-monsoon",
@@ -782,6 +950,8 @@
   {
     "title": "Every Threshold Holds",
     "author": "Casey Smith",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-17",
     "slug": "every-threshold-holds",
@@ -792,6 +962,8 @@
   {
     "title": "The Spice Routes Home",
     "author": "Sky Cohen",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-17",
     "slug": "the-spice-routes-home",
@@ -802,6 +974,8 @@
   {
     "title": "Pulse at the Wrist of the World",
     "author": "Alex Pérez",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-16",
     "slug": "pulse-at-the-wrist-of-the-world",
@@ -812,6 +986,8 @@
   {
     "title": "Dust Between Latitudes",
     "author": "Blake Lee",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-16",
     "slug": "dust-between-latitudes",
@@ -822,6 +998,8 @@
   {
     "title": "Before the City Wakes",
     "author": "Saanvi Singh",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-10",
     "slug": "before-the-city-wakes",
@@ -832,6 +1010,8 @@
   {
     "title": "What the Body Remembers",
     "author": "Jamie Martinez",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-10",
     "slug": "what-the-body-remembers",
@@ -842,6 +1022,8 @@
   {
     "title": "The Distance Between Names",
     "author": "Aarav Reddy",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-10",
     "slug": "the-distance-between-names",
@@ -852,6 +1034,8 @@
   {
     "title": "Where the Dust Remembers",
     "author": "Robin Lee",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-10",
     "slug": "where-the-dust-remembers",
@@ -862,6 +1046,8 @@
   {
     "title": "The Body Remembers Longitude",
     "author": "Simone Colombo",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-09",
     "slug": "the-body-remembers-longitude",
@@ -872,6 +1058,8 @@
   {
     "title": "Every Departure Still Here",
     "author": "Robin Harris",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-09",
     "slug": "every-departure-still-here",
@@ -882,6 +1070,8 @@
   {
     "title": "Mud on the Threshold",
     "author": "Riley García",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-09",
     "slug": "mud-on-the-threshold",
@@ -892,6 +1082,8 @@
   {
     "title": "Borrowed Light",
     "author": "Morgan Andersson",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-09",
     "slug": "borrowed-light",
@@ -902,6 +1094,8 @@
   {
     "title": "Between the Measures",
     "author": "Lou Bernard",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-08",
     "slug": "between-the-measures",
@@ -912,6 +1106,8 @@
   {
     "title": "Wind Off the Strait",
     "author": "Sky Novak",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-08",
     "slug": "wind-off-the-strait",
@@ -922,6 +1118,8 @@
   {
     "title": "Between Addresses",
     "author": "Harper Smith",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-08",
     "slug": "between-addresses",
@@ -932,6 +1130,8 @@
   {
     "title": "The Distance Between Pavements",
     "author": "Andrea Hernández",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-07",
     "slug": "the-distance-between-pavements",
@@ -942,6 +1142,8 @@
   {
     "title": "Between Ignition and Arrival",
     "author": "Arjun Desai",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-07",
     "slug": "between-ignition-and-arrival",
@@ -952,6 +1154,8 @@
   {
     "title": "The Long Way Round",
     "author": "Parker Novak",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-07",
     "slug": "the-long-way-round",
@@ -962,6 +1166,8 @@
   {
     "title": "The Frequency of Red Dust",
     "author": "Harper Sato",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-07",
     "slug": "the-frequency-of-red-dust",
@@ -972,6 +1178,8 @@
   {
     "title": "What the Light Carries",
     "author": "Quinn Kim",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-06",
     "slug": "what-the-light-carries",
@@ -982,6 +1190,8 @@
   {
     "title": "Ledger of Small Hours",
     "author": "Robin Novak",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-06",
     "slug": "ledger-of-small-hours",
@@ -992,6 +1202,8 @@
   {
     "title": "The Light Moves Differently Here",
     "author": "Casey Ali",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-06",
     "slug": "the-light-moves-differently-here",
@@ -1002,6 +1214,8 @@
   {
     "title": "Dust on Every Threshold",
     "author": "Morgan Durand",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-05",
     "slug": "dust-on-every-threshold",
@@ -1012,6 +1226,8 @@
   {
     "title": "The Body Keeps the Latitude",
     "author": "Harper Martin",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-05",
     "slug": "the-body-keeps-the-latitude",
@@ -1022,6 +1238,8 @@
   {
     "title": "Wherever the Light Lands",
     "author": "Charlie Koch",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-05",
     "slug": "wherever-the-light-lands",
@@ -1032,6 +1250,8 @@
   {
     "title": "Stone Light, Moving Water",
     "author": "Taylor Roberts",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-05",
     "slug": "stone-light-moving-water",
@@ -1042,6 +1262,8 @@
   {
     "title": "Monsoon Whispers",
     "author": "Arnav Singh",
+    "poem_form": "haiku",
+    "poem_count": 169,
     "haiku_count": 169,
     "date": "2026-03-05",
     "slug": "monsoon-whispers",
@@ -1052,6 +1274,8 @@
   {
     "title": "Luminous Exile",
     "author": "Morgan Gomes",
+    "poem_form": "haiku",
+    "poem_count": 175,
     "haiku_count": 175,
     "date": "2026-03-05",
     "slug": "luminous-exile",
@@ -1062,6 +1286,8 @@
   {
     "title": "Dawn's Gentle Echoes",
     "author": "Sage Anderson",
+    "poem_form": "haiku",
+    "poem_count": 147,
     "haiku_count": 147,
     "date": "2026-03-05",
     "slug": "dawn-s-gentle-echoes",
@@ -1072,6 +1298,8 @@
   {
     "title": "Mosaic Memories",
     "author": "Blake Martin",
+    "poem_form": "haiku",
+    "poem_count": 133,
     "haiku_count": 133,
     "date": "2026-03-05",
     "slug": "mosaic-memories",
@@ -1082,6 +1310,8 @@
   {
     "title": "Luminous Migrations",
     "author": "Sol Gómez",
+    "poem_form": "haiku",
+    "poem_count": 138,
     "haiku_count": 138,
     "date": "2026-03-05",
     "slug": "luminous-migrations",
@@ -1092,6 +1322,8 @@
   {
     "title": "Fractured Luminance",
     "author": "Parker Novak",
+    "poem_form": "haiku",
+    "poem_count": 178,
     "haiku_count": 178,
     "date": "2026-03-05",
     "slug": "fractured-luminance",
@@ -1102,6 +1334,8 @@
   {
     "title": "Midnight Sun Whispers",
     "author": "Cameron Andersson",
+    "poem_form": "haiku",
+    "poem_count": 153,
     "haiku_count": 153,
     "date": "2026-03-05",
     "slug": "midnight-sun-whispers",
@@ -1112,6 +1346,8 @@
   {
     "title": "Dawn's Crossing Paths",
     "author": "Sora Nakamura",
+    "poem_form": "haiku",
+    "poem_count": 170,
     "haiku_count": 170,
     "date": "2026-03-05",
     "slug": "dawn-s-crossing-paths",
@@ -1122,6 +1358,8 @@
   {
     "title": "River Of Sutras",
     "author": "Camille Robert",
+    "poem_form": "haiku",
+    "poem_count": 153,
     "haiku_count": 153,
     "date": "2026-03-05",
     "slug": "river-of-sutras",
@@ -1132,6 +1370,8 @@
   {
     "title": "Monsoon Memories Unfold",
     "author": "Parker Andersson",
+    "poem_form": "haiku",
+    "poem_count": 209,
     "haiku_count": 209,
     "date": "2026-03-05",
     "slug": "monsoon-memories-unfold",
@@ -1142,6 +1382,8 @@
   {
     "title": "Fleeting Horizons",
     "author": "Sol Gómez",
+    "poem_form": "haiku",
+    "poem_count": 155,
     "haiku_count": 155,
     "date": "2026-03-05",
     "slug": "fleeting-horizons",
@@ -1152,6 +1394,8 @@
   {
     "title": "Fractured Light",
     "author": "Riley García",
+    "poem_form": "haiku",
+    "poem_count": 164,
     "haiku_count": 164,
     "date": "2026-03-05",
     "slug": "fractured-light",
@@ -1162,6 +1406,8 @@
   {
     "title": "Whispers Of Exile",
     "author": "Ash Green",
+    "poem_form": "haiku",
+    "poem_count": 141,
     "haiku_count": 141,
     "date": "2026-03-05",
     "slug": "whispers-of-exile",
@@ -1172,6 +1418,8 @@
   {
     "title": "Whispers Across Waters",
     "author": "Harper Brown",
+    "poem_form": "haiku",
+    "poem_count": 125,
     "haiku_count": 125,
     "date": "2026-03-05",
     "slug": "whispers-across-waters",
@@ -1182,6 +1430,8 @@
   {
     "title": "Rainfall In Memory",
     "author": "Morgan Kim",
+    "poem_form": "haiku",
+    "poem_count": 132,
     "haiku_count": 132,
     "date": "2026-03-05",
     "slug": "rainfall-in-memory",
@@ -1192,6 +1442,8 @@
   {
     "title": "Snowy Fragmentations",
     "author": "Ji Seo",
+    "poem_form": "haiku",
+    "poem_count": 147,
     "haiku_count": 147,
     "date": "2026-03-05",
     "slug": "snowy-fragmentations",
@@ -1202,6 +1454,8 @@
   {
     "title": "Echoes Of Exile",
     "author": "Xia Zhao",
+    "poem_form": "haiku",
+    "poem_count": 187,
     "haiku_count": 187,
     "date": "2026-03-05",
     "slug": "echoes-of-exile",
@@ -1212,6 +1466,8 @@
   {
     "title": "Whispers Of Abaya",
     "author": "Riley Chen",
+    "poem_form": "haiku",
+    "poem_count": 195,
     "haiku_count": 195,
     "date": "2026-03-05",
     "slug": "whispers-of-abaya",
@@ -1222,6 +1478,8 @@
   {
     "title": "Whispers Of Place",
     "author": "River Brown",
+    "poem_form": "haiku",
+    "poem_count": 161,
     "haiku_count": 161,
     "date": "2026-03-05",
     "slug": "whispers-of-place",
@@ -1232,6 +1490,8 @@
   {
     "title": "Migrant Blooms",
     "author": "Sky Novak",
+    "poem_form": "haiku",
+    "poem_count": 170,
     "haiku_count": 170,
     "date": "2026-03-05",
     "slug": "migrant-blooms",
@@ -1242,6 +1502,8 @@
   {
     "title": "Whispers Of The Wind",
     "author": "Seo Park",
+    "poem_form": "haiku",
+    "poem_count": 193,
     "haiku_count": 193,
     "date": "2026-03-05",
     "slug": "whispers-of-the-wind",
@@ -1252,6 +1514,8 @@
   {
     "title": "Crescent City To Rio De La Plata",
     "author": "Logan Jackson",
+    "poem_form": "haiku",
+    "poem_count": 156,
     "haiku_count": 156,
     "date": "2026-03-05",
     "slug": "crescent-city-to-rio-de-la-plata",
@@ -1262,6 +1526,8 @@
   {
     "title": "Exile's Twilight Bloom",
     "author": "Wen Huang",
+    "poem_form": "haiku",
+    "poem_count": 121,
     "haiku_count": 121,
     "date": "2026-03-05",
     "slug": "exile-s-twilight-bloom",
@@ -1272,6 +1538,8 @@
   {
     "title": "Whispers From The Winding Water",
     "author": "River Smith",
+    "poem_form": "haiku",
+    "poem_count": 120,
     "haiku_count": 120,
     "date": "2026-03-05",
     "slug": "whispers-from-the-winding-water",
@@ -1282,6 +1550,8 @@
   {
     "title": "Kintsugi Memories",
     "author": "Sam Brown",
+    "poem_form": "haiku",
+    "poem_count": 181,
     "haiku_count": 181,
     "date": "2026-03-05",
     "slug": "kintsugi-memories",
@@ -1292,6 +1562,8 @@
   {
     "title": "Winds Of Memory",
     "author": "Ryo Sasaki",
+    "poem_form": "haiku",
+    "poem_count": 151,
     "haiku_count": 151,
     "date": "2026-03-05",
     "slug": "winds-of-memory",
@@ -1302,6 +1574,8 @@
   {
     "title": "Weathered Horizons",
     "author": "Sam Kim",
+    "poem_form": "haiku",
+    "poem_count": 168,
     "haiku_count": 168,
     "date": "2026-03-05",
     "slug": "weathered-horizons",
@@ -1312,6 +1586,8 @@
   {
     "title": "Whispers Of Memory",
     "author": "Harper García",
+    "poem_form": "haiku",
+    "poem_count": 143,
     "haiku_count": 143,
     "date": "2026-03-05",
     "slug": "whispers-of-memory",
@@ -1322,6 +1598,8 @@
   {
     "title": "Folded Maps",
     "author": "Sam Lewis",
+    "poem_form": "haiku",
+    "poem_count": 191,
     "haiku_count": 191,
     "date": "2026-03-05",
     "slug": "folded-maps",
@@ -1332,6 +1610,8 @@
   {
     "title": "Whispers Of The City",
     "author": "Lou Bernard",
+    "poem_form": "haiku",
+    "poem_count": 194,
     "haiku_count": 194,
     "date": "2026-03-05",
     "slug": "whispers-of-the-city",
@@ -1342,6 +1622,8 @@
   {
     "title": "Bittersweet Landscapes",
     "author": "Andrea Marino",
+    "poem_form": "haiku",
+    "poem_count": 149,
     "haiku_count": 149,
     "date": "2026-03-05",
     "slug": "bittersweet-landscapes",
@@ -1352,6 +1634,8 @@
   {
     "title": "Ephemeral Cartographies",
     "author": "Sam Patel",
+    "poem_form": "haiku",
+    "poem_count": 165,
     "haiku_count": 165,
     "date": "2026-03-05",
     "slug": "ephemeral-cartographies",
@@ -1362,6 +1646,8 @@
   {
     "title": "Aurora's Whisper",
     "author": "Cameron Andersson",
+    "poem_form": "haiku",
+    "poem_count": 165,
     "haiku_count": 165,
     "date": "2026-03-05",
     "slug": "aurora-s-whisper",
@@ -1372,6 +1658,8 @@
   {
     "title": "Borderless Skies",
     "author": "Sky Novak",
+    "poem_form": "haiku",
+    "poem_count": 145,
     "haiku_count": 145,
     "date": "2026-03-05",
     "slug": "borderless-skies",
@@ -1382,6 +1670,8 @@
   {
     "title": "Riverine Echoes",
     "author": "Ariel Sánchez",
+    "poem_form": "haiku",
+    "poem_count": 133,
     "haiku_count": 133,
     "date": "2026-03-05",
     "slug": "riverine-echoes",
@@ -1392,6 +1682,8 @@
   {
     "title": "Wings Over Waters",
     "author": "Sky Novak",
+    "poem_form": "haiku",
+    "poem_count": 142,
     "haiku_count": 142,
     "date": "2026-03-05",
     "slug": "wings-over-waters",
@@ -1402,6 +1694,8 @@
   {
     "title": "Mosaic Of Exile",
     "author": "Morgan Kelly",
+    "poem_form": "haiku",
+    "poem_count": 196,
     "haiku_count": 196,
     "date": "2026-03-05",
     "slug": "mosaic-of-exile",
@@ -1412,6 +1706,8 @@
   {
     "title": "Red Earth Memories",
     "author": "Casey Walker",
+    "poem_form": "haiku",
+    "poem_count": 149,
     "haiku_count": 149,
     "date": "2026-03-05",
     "slug": "red-earth-memories",
@@ -1422,6 +1718,8 @@
   {
     "title": "Blessings In Exile",
     "author": "River Singh",
+    "poem_form": "haiku",
+    "poem_count": 181,
     "haiku_count": 181,
     "date": "2026-03-05",
     "slug": "blessings-in-exile",
@@ -1432,6 +1730,8 @@
   {
     "title": "Beneath The Banyan's Shade",
     "author": "Parker Singh",
+    "poem_form": "haiku",
+    "poem_count": 185,
     "haiku_count": 185,
     "date": "2026-03-05",
     "slug": "beneath-the-banyan-s-shade",
@@ -1442,6 +1742,8 @@
   {
     "title": "Buenos Aires Breeze",
     "author": "Valentín García",
+    "poem_form": "haiku",
+    "poem_count": 184,
     "haiku_count": 184,
     "date": "2026-03-05",
     "slug": "buenos-aires-breeze",
@@ -1452,6 +1754,8 @@
   {
     "title": "Fleeting Landscapes",
     "author": "Skyler Johnson",
+    "poem_form": "haiku",
+    "poem_count": 160,
     "haiku_count": 160,
     "date": "2026-03-05",
     "slug": "fleeting-landscapes",
@@ -1462,6 +1766,8 @@
   {
     "title": "Sydney Sunsets To Tokyo Drift",
     "author": "Sam Brown",
+    "poem_form": "haiku",
+    "poem_count": 149,
     "haiku_count": 149,
     "date": "2026-03-05",
     "slug": "sydney-sunsets-to-tokyo-drift",
@@ -1472,6 +1778,8 @@
   {
     "title": "Fading Light In Foreign Cities",
     "author": "Ming Xu",
+    "poem_form": "haiku",
+    "poem_count": 166,
     "haiku_count": 166,
     "date": "2026-03-05",
     "slug": "fading-light-in-foreign-cities",
@@ -1482,6 +1790,8 @@
   {
     "title": "Dawn's Mosaic",
     "author": "Quinn Smith",
+    "poem_form": "haiku",
+    "poem_count": 178,
     "haiku_count": 178,
     "date": "2026-03-05",
     "slug": "dawn-s-mosaic",
@@ -1492,6 +1802,8 @@
   {
     "title": "Rainy City Sketches",
     "author": "Alex Singh",
+    "poem_form": "haiku",
+    "poem_count": 140,
     "haiku_count": 140,
     "date": "2026-03-05",
     "slug": "rainy-city-sketches",
@@ -1502,6 +1814,8 @@
   {
     "title": "Liminal Landscapes",
     "author": "Morgan Kim",
+    "poem_form": "haiku",
+    "poem_count": 175,
     "haiku_count": 175,
     "date": "2026-03-05",
     "slug": "liminal-landscapes",
@@ -1512,6 +1826,8 @@
   {
     "title": "Tides Of Exile",
     "author": "Cameron Lewis",
+    "poem_form": "haiku",
+    "poem_count": 148,
     "haiku_count": 148,
     "date": "2026-03-05",
     "slug": "tides-of-exile",
@@ -1522,6 +1838,8 @@
   {
     "title": "Beneath Aurora Skies",
     "author": "Casey White",
+    "poem_form": "haiku",
+    "poem_count": 166,
     "haiku_count": 166,
     "date": "2026-03-05",
     "slug": "beneath-aurora-skies",
@@ -1532,6 +1850,8 @@
   {
     "title": "Whispers Of A Foreign Sky",
     "author": "Ming Xu",
+    "poem_form": "haiku",
+    "poem_count": 171,
     "haiku_count": 171,
     "date": "2026-03-05",
     "slug": "whispers-of-a-foreign-sky",
@@ -1542,6 +1862,8 @@
   {
     "title": "Sandstorms In My Bones",
     "author": "Quinn Martin",
+    "poem_form": "haiku",
+    "poem_count": 159,
     "haiku_count": 159,
     "date": "2026-03-05",
     "slug": "sandstorms-in-my-bones",
@@ -1552,6 +1874,8 @@
   {
     "title": "El Viento De Las Palabras",
     "author": "Alex Pérez",
+    "poem_form": "haiku",
+    "poem_count": 188,
     "haiku_count": 188,
     "date": "2026-03-05",
     "slug": "el-viento-de-las-palabras",
@@ -1562,6 +1886,8 @@
   {
     "title": "Wistful Wanderings",
     "author": "Riley Müller",
+    "poem_form": "haiku",
+    "poem_count": 120,
     "haiku_count": 120,
     "date": "2026-03-05",
     "slug": "wistful-wanderings",
@@ -1572,6 +1898,8 @@
   {
     "title": "Morning Dusk Awakening",
     "author": "River Lee",
+    "poem_form": "haiku",
+    "poem_count": 191,
     "haiku_count": 191,
     "date": "2026-03-05",
     "slug": "morning-dusk-awakening",
@@ -1582,6 +1910,8 @@
   {
     "title": "Turbulent Leaves",
     "author": "Avery Johnson",
+    "poem_form": "haiku",
+    "poem_count": 193,
     "haiku_count": 193,
     "date": "2026-03-05",
     "slug": "turbulent-leaves",
@@ -1592,6 +1922,8 @@
   {
     "title": "Jerusalem To Jaguar",
     "author": "Casey Kowalski",
+    "poem_form": "haiku",
+    "poem_count": 138,
     "haiku_count": 138,
     "date": "2026-03-05",
     "slug": "jerusalem-to-jaguar",
@@ -1602,6 +1934,8 @@
   {
     "title": "Dust Of The Ancients",
     "author": "Morgan Kim",
+    "poem_form": "haiku",
+    "poem_count": 143,
     "haiku_count": 143,
     "date": "2026-03-05",
     "slug": "dust-of-the-ancients",
@@ -1612,6 +1946,8 @@
   {
     "title": "Fading Light, Istanbul",
     "author": "Robin Andersson",
+    "poem_form": "haiku",
+    "poem_count": 144,
     "haiku_count": 144,
     "date": "2026-03-05",
     "slug": "fading-light-istanbul",
@@ -1622,6 +1958,8 @@
   {
     "title": "Whispers In The Wind",
     "author": "Blake Novak",
+    "poem_form": "haiku",
+    "poem_count": 175,
     "haiku_count": 175,
     "date": "2026-03-05",
     "slug": "whispers-in-the-wind",
@@ -1632,6 +1970,8 @@
   {
     "title": "Cities I've Called Home",
     "author": "Sage Singh",
+    "poem_form": "haiku",
+    "poem_count": 222,
     "haiku_count": 222,
     "date": "2026-03-05",
     "slug": "cities-i-ve-called-home",
@@ -1642,6 +1982,8 @@
   {
     "title": "Dusk's Whispers",
     "author": "Sage Sato",
+    "poem_form": "haiku",
+    "poem_count": 195,
     "haiku_count": 195,
     "date": "2026-03-05",
     "slug": "dusk-s-whispers",
@@ -1652,6 +1994,8 @@
   {
     "title": "Desert Bloom",
     "author": "Robin Kowalski",
+    "poem_form": "haiku",
+    "poem_count": 169,
     "haiku_count": 169,
     "date": "2026-03-05",
     "slug": "desert-bloom",
@@ -1662,6 +2006,8 @@
   {
     "title": "Whispers In Exile",
     "author": "Haruki Saito",
+    "poem_form": "haiku",
+    "poem_count": 125,
     "haiku_count": 125,
     "date": "2026-03-05",
     "slug": "whispers-in-exile",
@@ -1672,6 +2018,8 @@
   {
     "title": "Shadows On The Wall",
     "author": "Ryan Walsh",
+    "poem_form": "haiku",
+    "poem_count": 196,
     "haiku_count": 196,
     "date": "2026-03-05",
     "slug": "shadows-on-the-wall",
@@ -1682,6 +2030,8 @@
   {
     "title": "Rhythms Of Place",
     "author": "Sage Clark",
+    "poem_form": "haiku",
+    "poem_count": 185,
     "haiku_count": 185,
     "date": "2026-03-05",
     "slug": "rhythms-of-place",
@@ -1692,6 +2042,8 @@
   {
     "title": "Urban Oasis Fragments",
     "author": "Dakota Young",
+    "poem_form": "haiku",
+    "poem_count": 167,
     "haiku_count": 167,
     "date": "2026-03-05",
     "slug": "urban-oasis-fragments",
@@ -1702,6 +2054,8 @@
   {
     "title": "Red Earth, Snowflakes",
     "author": "Casey Walker",
+    "poem_form": "haiku",
+    "poem_count": 144,
     "haiku_count": 144,
     "date": "2026-03-05",
     "slug": "red-earth-snowflakes",
@@ -1712,6 +2066,8 @@
   {
     "title": "Desert Blooms In Fog",
     "author": "Robin Lee",
+    "poem_form": "haiku",
+    "poem_count": 206,
     "haiku_count": 206,
     "date": "2026-03-05",
     "slug": "desert-blooms-in-fog",
@@ -1722,6 +2078,8 @@
   {
     "title": "Windswept Memories",
     "author": "Alex Ali",
+    "poem_form": "haiku",
+    "poem_count": 133,
     "haiku_count": 133,
     "date": "2026-03-05",
     "slug": "windswept-memories",
@@ -1732,6 +2090,8 @@
   {
     "title": "Rainy Season Reflections",
     "author": "Jamie Martinez",
+    "poem_form": "haiku",
+    "poem_count": 141,
     "haiku_count": 141,
     "date": "2026-03-05",
     "slug": "rainy-season-reflections",
@@ -1742,6 +2102,8 @@
   {
     "title": "Nordic Winds In Shanghai Skies",
     "author": "River Kim",
+    "poem_form": "haiku",
+    "poem_count": 183,
     "haiku_count": 183,
     "date": "2026-03-05",
     "slug": "nordic-winds-in-shanghai-skies",
@@ -1752,6 +2114,8 @@
   {
     "title": "Dust In My Pockets",
     "author": "Quinn Sato",
+    "poem_form": "haiku",
+    "poem_count": 169,
     "haiku_count": 169,
     "date": "2026-03-05",
     "slug": "dust-in-my-pockets",
@@ -1762,6 +2126,8 @@
   {
     "title": "Northern Light, Southern Winds",
     "author": "Alex Chen",
+    "poem_form": "haiku",
+    "poem_count": 121,
     "haiku_count": 121,
     "date": "2026-03-05",
     "slug": "northern-light-southern-winds",
@@ -1772,6 +2138,8 @@
   {
     "title": "Fractured Seasons",
     "author": "Taylor Hall",
+    "poem_form": "haiku",
+    "poem_count": 180,
     "haiku_count": 180,
     "date": "2026-03-05",
     "slug": "fractured-seasons",
@@ -1782,6 +2150,8 @@
   {
     "title": "Sahel Winds",
     "author": "Casey Chen",
+    "poem_form": "haiku",
+    "poem_count": 132,
     "haiku_count": 132,
     "date": "2026-03-05",
     "slug": "sahel-winds",
@@ -1792,6 +2162,8 @@
   {
     "title": "Beneath Maple Leaves",
     "author": "Jamie Rodriguez",
+    "poem_form": "haiku",
+    "poem_count": 142,
     "haiku_count": 142,
     "date": "2026-03-05",
     "slug": "beneath-maple-leaves",
@@ -1802,6 +2174,8 @@
   {
     "title": "Terra Verde",
     "author": "Quinn Jones",
+    "poem_form": "haiku",
+    "poem_count": 160,
     "haiku_count": 160,
     "date": "2026-03-05",
     "slug": "terra-verde",
@@ -1812,6 +2186,8 @@
   {
     "title": "Cultural Cartographies",
     "author": "Casey Kim",
+    "poem_form": "haiku",
+    "poem_count": 187,
     "haiku_count": 187,
     "date": "2026-03-05",
     "slug": "cultural-cartographies",
@@ -1822,6 +2198,8 @@
   {
     "title": "Rain On The City",
     "author": "Morgan Durand",
+    "poem_form": "haiku",
+    "poem_count": 125,
     "haiku_count": 125,
     "date": "2026-03-05",
     "slug": "rain-on-the-city",
@@ -1832,6 +2210,8 @@
   {
     "title": "Rainy Afternoon Shadows",
     "author": "Cameron Brown",
+    "poem_form": "haiku",
+    "poem_count": 154,
     "haiku_count": 154,
     "date": "2026-03-05",
     "slug": "rainy-afternoon-shadows",
@@ -1842,6 +2222,8 @@
   {
     "title": "Brisbane Skies, Stockholm Nights",
     "author": "Parker Wilson",
+    "poem_form": "haiku",
+    "poem_count": 182,
     "haiku_count": 182,
     "date": "2026-03-05",
     "slug": "brisbane-skies-stockholm-nights",
@@ -1852,6 +2234,8 @@
   {
     "title": "Islands Of Memory",
     "author": "Casey Kim",
+    "poem_form": "haiku",
+    "poem_count": 128,
     "haiku_count": 128,
     "date": "2026-03-05",
     "slug": "islands-of-memory",
@@ -1862,6 +2246,8 @@
   {
     "title": "Migrating Light",
     "author": "Robin Andersson",
+    "poem_form": "haiku",
+    "poem_count": 160,
     "haiku_count": 160,
     "date": "2026-03-05",
     "slug": "migrating-light",
@@ -1872,6 +2258,8 @@
   {
     "title": "River Of Memories",
     "author": "Sacha Michel",
+    "poem_form": "haiku",
+    "poem_count": 155,
     "haiku_count": 155,
     "date": "2026-03-05",
     "slug": "river-of-memories",
@@ -1882,6 +2270,8 @@
   {
     "title": "Displaced Horizons",
     "author": "Robin Sato",
+    "poem_form": "haiku",
+    "poem_count": 180,
     "haiku_count": 180,
     "date": "2026-03-05",
     "slug": "displaced-horizons",
@@ -1892,6 +2282,8 @@
   {
     "title": "Fractured Horizons",
     "author": "Jamie Johnson",
+    "poem_form": "haiku",
+    "poem_count": 132,
     "haiku_count": 132,
     "date": "2026-03-05",
     "slug": "fractured-horizons",
@@ -1902,6 +2294,8 @@
   {
     "title": "Windborne Echoes",
     "author": "Taylor Patel",
+    "poem_form": "haiku",
+    "poem_count": 164,
     "haiku_count": 164,
     "date": "2026-03-05",
     "slug": "windborne-echoes",
@@ -1912,6 +2306,8 @@
   {
     "title": "Rainy City Skies",
     "author": "Taylor Anderson",
+    "poem_form": "haiku",
+    "poem_count": 167,
     "haiku_count": 167,
     "date": "2026-03-05",
     "slug": "rainy-city-skies",
@@ -1922,6 +2318,8 @@
   {
     "title": "Seabreeze Echoes",
     "author": "Jun Jang",
+    "poem_form": "haiku",
+    "poem_count": 197,
     "haiku_count": 197,
     "date": "2026-03-05",
     "slug": "seabreeze-echoes",
@@ -1932,6 +2330,8 @@
   {
     "title": "Tapestry Of Place",
     "author": "Sage Andersson",
+    "poem_form": "haiku",
+    "poem_count": 163,
     "haiku_count": 163,
     "date": "2026-03-05",
     "slug": "tapestry-of-place",
@@ -1942,6 +2342,8 @@
   {
     "title": "Riverbank Whispers",
     "author": "Morgan Andersson",
+    "poem_form": "haiku",
+    "poem_count": 174,
     "haiku_count": 174,
     "date": "2026-03-05",
     "slug": "riverbank-whispers",
@@ -1952,6 +2354,8 @@
   {
     "title": "Smoke Between Latitudes",
     "author": "Harper Martin",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-04",
     "slug": "smoke-between-latitudes",
@@ -1962,6 +2366,8 @@
   {
     "title": "Before the Harbor Lights",
     "author": "Jordan Brown",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-04",
     "slug": "before-the-harbor-lights",
@@ -1972,6 +2378,8 @@
   {
     "title": "Every Address I Have Left",
     "author": "Logan Jackson",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-04",
     "slug": "every-address-i-have-left",
@@ -1982,6 +2390,8 @@
   {
     "title": "Papers in the Rain",
     "author": "Sky Ali",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-04",
     "slug": "papers-in-the-rain",
@@ -1992,6 +2402,8 @@
   {
     "title": "Borrowed Weather",
     "author": "Jun Seo",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-03",
     "slug": "borrowed-weather",
@@ -2002,6 +2414,8 @@
   {
     "title": "Dough Before the Light",
     "author": "Ananya Gupta",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-02",
     "slug": "dough-before-the-light",
@@ -2012,6 +2426,8 @@
   {
     "title": "The Longitude of Smoke",
     "author": "Ryan Walsh",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-02",
     "slug": "the-longitude-of-smoke",
@@ -2022,6 +2438,8 @@
   {
     "title": "Meridians of Grass",
     "author": "Alex Simon",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-02",
     "slug": "meridians-of-grass",
@@ -2032,6 +2450,8 @@
   {
     "title": "Stone, Soil, and Monsoon",
     "author": "Alex Colombo",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-01",
     "slug": "stone-soil-and-monsoon",
@@ -2042,6 +2462,8 @@
   {
     "title": "What the Light Remembers",
     "author": "Sage Lee",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-01",
     "slug": "what-the-light-remembers",
@@ -2052,6 +2474,8 @@
   {
     "title": "Roads I Have Not Named",
     "author": "Nikhil Khan",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-01",
     "slug": "roads-i-have-not-named",
@@ -2062,6 +2486,8 @@
   {
     "title": "Monsoon in a Minor Key",
     "author": "Parker Chen",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-03-01",
     "slug": "monsoon-in-a-minor-key",
@@ -2072,6 +2498,8 @@
   {
     "title": "Stone, Water, Smoke",
     "author": "Alex Andersson",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-28",
     "slug": "stone-water-smoke",
@@ -2082,6 +2510,8 @@
   {
     "title": "What the Meridian Keeps",
     "author": "Valentín García",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-28",
     "slug": "what-the-meridian-keeps",
@@ -2092,6 +2522,8 @@
   {
     "title": "What the Unemployed Know",
     "author": "Morgan Moore",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-27",
     "slug": "what-the-unemployed-know",
@@ -2102,6 +2534,8 @@
   {
     "title": "Concrete and Cottonwood",
     "author": "Jamie White",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-27",
     "slug": "concrete-and-cottonwood",
@@ -2112,6 +2546,8 @@
   {
     "title": "The Light Changes Everywhere",
     "author": "Dakota Young",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-27",
     "slug": "the-light-changes-everywhere",
@@ -2122,6 +2558,8 @@
   {
     "title": "Before the City Wakes",
     "author": "Jamie Rodriguez",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-27",
     "slug": "before-the-city-wakes",
@@ -2132,6 +2570,8 @@
   {
     "title": "The Patience of Thresholds",
     "author": "Sky Singh",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-26",
     "slug": "the-patience-of-thresholds",
@@ -2142,6 +2582,8 @@
   {
     "title": "Where the Water Remembers",
     "author": "Xia Zhao",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-26",
     "slug": "where-the-water-remembers",
@@ -2152,6 +2594,8 @@
   {
     "title": "What the Rain Remembers",
     "author": "River Lewis",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-26",
     "slug": "what-the-rain-remembers",
@@ -2162,6 +2606,8 @@
   {
     "title": "Grease Under the Fingernails",
     "author": "Arjun Desai",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-26",
     "slug": "grease-under-the-fingernails",
@@ -2172,6 +2618,8 @@
   {
     "title": "Mud on Three Continents",
     "author": "Diya Shah",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-25",
     "slug": "mud-on-three-continents",
@@ -2182,6 +2630,8 @@
   {
     "title": "Where the River Learns Its Name",
     "author": "Sacha Michel",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-25",
     "slug": "where-the-river-learns-its-name",
@@ -2192,6 +2642,8 @@
   {
     "title": "The Longitude of Plum Blossom",
     "author": "Nao Sato",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-24",
     "slug": "the-longitude-of-plum-blossom",
@@ -2202,6 +2654,8 @@
   {
     "title": "Concrete and Lava",
     "author": "Riley Santos",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-24",
     "slug": "concrete-and-lava",
@@ -2212,6 +2666,8 @@
   {
     "title": "Concrete Blossoms",
     "author": "Xia Wu",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-24",
     "slug": "concrete-blossoms",
@@ -2222,6 +2678,8 @@
   {
     "title": "Between Measures",
     "author": "Jona Wagner",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-23",
     "slug": "between-measures",
@@ -2232,6 +2690,8 @@
   {
     "title": "Dawn Finds Me Here",
     "author": "Skyler Johnson",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-23",
     "slug": "dawn-finds-me-here",
@@ -2242,6 +2702,8 @@
   {
     "title": "The Slow Work of Water",
     "author": "Avery Johnson",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-23",
     "slug": "the-slow-work-of-water",
@@ -2252,6 +2714,8 @@
   {
     "title": "What the Light Keeps",
     "author": "Robin Hughes",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-23",
     "slug": "what-the-light-keeps",
@@ -2262,6 +2726,8 @@
   {
     "title": "What the Monsoon Left Behind",
     "author": "Casey Santos",
+    "poem_form": "haiku",
+    "poem_count": 214,
     "haiku_count": 214,
     "date": "2026-02-22",
     "slug": "what-the-monsoon-left-behind",
@@ -2272,6 +2738,8 @@
   {
     "title": "The Long Way Around",
     "author": "Quinn Wilson",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-22",
     "slug": "the-long-way-around",
@@ -2282,6 +2750,8 @@
   {
     "title": "What the Roots Remember",
     "author": "Casey García",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-22",
     "slug": "what-the-roots-remember",
@@ -2292,6 +2762,8 @@
   {
     "title": "What the Body Carries",
     "author": "Kaori Kato",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-21",
     "slug": "what-the-body-carries",
@@ -2302,6 +2774,8 @@
   {
     "title": "Salt in Every Mouth",
     "author": "Robin Andersson",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-21",
     "slug": "salt-in-every-mouth",
@@ -2312,6 +2786,8 @@
   {
     "title": "Wet Season, Dry Season",
     "author": "Blake Kim",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-21",
     "slug": "wet-season-dry-season",
@@ -2322,6 +2798,8 @@
   {
     "title": "Salt in Every Soil",
     "author": "Quinn Novak",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-21",
     "slug": "salt-in-every-soil",
@@ -2332,6 +2810,8 @@
   {
     "title": "Concrete and Snow",
     "author": "Harper Smith",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-20",
     "slug": "concrete-and-snow",
@@ -2342,6 +2822,8 @@
   {
     "title": "Salt on Three Shores",
     "author": "Young Lee",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-20",
     "slug": "salt-on-three-shores",
@@ -2352,6 +2834,8 @@
   {
     "title": "Salt Keeps Its Shape",
     "author": "River Smith",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-20",
     "slug": "salt-keeps-its-shape",
@@ -2362,6 +2846,8 @@
   {
     "title": "What the Soil Remembers",
     "author": "Simone Marino",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-19",
     "slug": "what-the-soil-remembers",
@@ -2372,6 +2858,8 @@
   {
     "title": "Sand Keeps Its Shape",
     "author": "Jordan Kowalski",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-19",
     "slug": "sand-keeps-its-shape",
@@ -2382,6 +2870,8 @@
   {
     "title": "Salt on Every Windowsill",
     "author": "Charlie Wilson",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-19",
     "slug": "salt-on-every-windowsill",
@@ -2392,6 +2882,8 @@
   {
     "title": "Where the Light Arrives First",
     "author": "Sage Patel",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-19",
     "slug": "where-the-light-arrives-first",
@@ -2402,6 +2894,8 @@
   {
     "title": "What the Body Remembers",
     "author": "Parker Sato",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-19",
     "slug": "what-the-body-remembers",
@@ -2412,6 +2906,8 @@
   {
     "title": "Longitude of Light",
     "author": "Parker Wilson",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-19",
     "slug": "longitude-of-light",
@@ -2422,6 +2918,8 @@
   {
     "title": "Grain and Altitude",
     "author": "Robin Ali",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-19",
     "slug": "grain-and-altitude",
@@ -2432,6 +2930,8 @@
   {
     "title": "Salt Between Latitudes",
     "author": "Sam Brown",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-17",
     "slug": "salt-between-latitudes",
@@ -2442,6 +2942,8 @@
   {
     "title": "Between Ledgers and Light",
     "author": "Sky Singh",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-17",
     "slug": "between-ledgers-and-light",
@@ -2452,6 +2954,8 @@
   {
     "title": "Borders I Keep Crossing",
     "author": "Alex Harris",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-17",
     "slug": "borders-i-keep-crossing",
@@ -2462,6 +2966,8 @@
   {
     "title": "Salt in Every River",
     "author": "Riley King",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-17",
     "slug": "salt-in-every-river",
@@ -2472,6 +2978,8 @@
   {
     "title": "Salt on Every Latitude",
     "author": "Casey García",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-17",
     "slug": "salt-on-every-latitude",
@@ -2482,6 +2990,8 @@
   {
     "title": "Four Soils, One Sky",
     "author": "Morgan Kim",
+    "poem_form": "haiku",
+    "poem_count": 245,
     "haiku_count": 245,
     "date": "2026-02-14",
     "slug": "four-soils-one-sky",
@@ -2492,6 +3002,8 @@
   {
     "title": "Four Dawns Rising",
     "author": "Quinn Smith",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-14",
     "slug": "four-dawns-rising",
@@ -2502,6 +3014,8 @@
   {
     "title": "Between Tides",
     "author": "Riley Wilson",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-14",
     "slug": "between-tides",
@@ -2512,6 +3026,8 @@
   {
     "title": "Cities Beneath the Skin",
     "author": "Sol Díaz",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-14",
     "slug": "cities-beneath-the-skin",
@@ -2522,6 +3038,8 @@
   {
     "title": "Between Pulse and Breath",
     "author": "Parker Lewis",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-14",
     "slug": "between-pulse-and-breath",
@@ -2532,6 +3050,8 @@
   {
     "title": "Four Corners of Salt",
     "author": "Harper Brown",
+    "poem_form": "haiku",
+    "poem_count": 249,
     "haiku_count": 249,
     "date": "2026-02-14",
     "slug": "four-corners-of-salt",
@@ -2542,6 +3062,8 @@
   {
     "title": "Four Seasons, Four Tongues",
     "author": "Kim Schmidt",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-14",
     "slug": "four-seasons-four-tongues",
@@ -2552,6 +3074,8 @@
   {
     "title": "Three Seasons Deep",
     "author": "River García",
+    "poem_form": "haiku",
+    "poem_count": 244,
     "haiku_count": 244,
     "date": "2026-02-14",
     "slug": "three-seasons-deep",
@@ -2562,6 +3086,8 @@
   {
     "title": "Four Winds, One Sky",
     "author": "Skyler Anderson",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-14",
     "slug": "four-winds-one-sky",
@@ -2572,6 +3098,8 @@
   {
     "title": "Four Courts of Sky",
     "author": "Cruz Flores",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-14",
     "slug": "four-courts-of-sky",
@@ -2582,6 +3110,8 @@
   {
     "title": "Between Sirens",
     "author": "Morgan Andersson",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-14",
     "slug": "between-sirens",
@@ -2592,6 +3122,8 @@
   {
     "title": "Pulse Points",
     "author": "Parker Lewis",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-14",
     "slug": "pulse-points",
@@ -2602,6 +3134,8 @@
   {
     "title": "Borrowed Ground",
     "author": "Harper Patel",
+    "poem_form": "haiku",
+    "poem_count": 237,
     "haiku_count": 237,
     "date": "2026-02-14",
     "slug": "borrowed-ground",
@@ -2612,6 +3146,8 @@
   {
     "title": "Between Altitudes",
     "author": "Robin Novak",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-14",
     "slug": "between-altitudes",
@@ -2622,6 +3158,8 @@
   {
     "title": "Threading the Monsoon",
     "author": "Wen Li",
+    "poem_form": "haiku",
+    "poem_count": 227,
     "haiku_count": 227,
     "date": "2026-02-07",
     "slug": "threading-the-monsoon",
@@ -2632,6 +3170,8 @@
   {
     "title": "Thimbles and Wehrmacht Boots",
     "author": "Riley Kowalski",
+    "poem_form": "haiku",
+    "poem_count": 226,
     "haiku_count": 226,
     "date": "2026-02-07",
     "slug": "thimbles-and-wehrmacht-boots",
@@ -2642,6 +3182,8 @@
   {
     "title": "Tuk-Tuk Saints",
     "author": "Riley Chen",
+    "poem_form": "haiku",
+    "poem_count": 209,
     "haiku_count": 209,
     "date": "2026-02-07",
     "slug": "tuk-tuk-saints",
@@ -2652,6 +3194,8 @@
   {
     "title": "Spine Cracked at Hope",
     "author": "Emerson Miller",
+    "poem_form": "haiku",
+    "poem_count": 219,
     "haiku_count": 219,
     "date": "2026-02-07",
     "slug": "spine-cracked-at-hope",
@@ -2662,6 +3206,8 @@
   {
     "title": "Salt Stains and Marble Steps",
     "author": "Riley Kowalski",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-06",
     "slug": "salt-stains-and-marble-steps",
@@ -2672,6 +3218,8 @@
   {
     "title": "Between Departures",
     "author": "Sky Novak",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-06",
     "slug": "between-departures",
@@ -2682,6 +3230,8 @@
   {
     "title": "Small Resurrections",
     "author": "Jamie Martinez",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-06",
     "slug": "small-resurrections",
@@ -2692,6 +3242,8 @@
   {
     "title": "Fluorescent Cathedrals",
     "author": "Taylor Smith",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-06",
     "slug": "fluorescent-cathedrals",
@@ -2702,6 +3254,8 @@
   {
     "title": "Dust Motes Dancing",
     "author": "Jing Li",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-06",
     "slug": "dust-motes-dancing",
@@ -2712,6 +3266,8 @@
   {
     "title": "Amber Morse and Cedar",
     "author": "Saanvi Nair",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-06",
     "slug": "amber-morse-and-cedar",
@@ -2722,6 +3278,8 @@
   {
     "title": "Grease and Grace Notes",
     "author": "Blake Lee",
+    "poem_form": "haiku",
+    "poem_count": 218,
     "haiku_count": 218,
     "date": "2026-02-06",
     "slug": "grease-and-grace-notes",
@@ -2732,6 +3290,8 @@
   {
     "title": "Steam and Morning Light",
     "author": "Cameron Brown",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-05",
     "slug": "steam-and-morning-light",
@@ -2742,6 +3302,8 @@
   {
     "title": "Glass and Fingerprints",
     "author": "Sora Nakamura",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-05",
     "slug": "glass-and-fingerprints",
@@ -2752,6 +3314,8 @@
   {
     "title": "Mechanisms in Motion",
     "author": "Casey Singh",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-05",
     "slug": "mechanisms-in-motion",
@@ -2762,6 +3326,8 @@
   {
     "title": "Ink Between Borders",
     "author": "Riley Ali",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-05",
     "slug": "ink-between-borders",
@@ -2772,6 +3338,8 @@
   {
     "title": "Neon Script and Sparrows",
     "author": "Simone Ricci",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-05",
     "slug": "neon-script-and-sparrows",
@@ -2782,6 +3350,8 @@
   {
     "title": "Tracks in Fresh Snow",
     "author": "Andrea Bruno",
+    "poem_form": "haiku",
+    "poem_count": 63,
     "haiku_count": 63,
     "date": "2026-02-04",
     "slug": "tracks-in-fresh-snow",
@@ -2792,6 +3362,8 @@
   {
     "title": "Stone Lanterns and Whispers",
     "author": "Yuki Ito",
+    "poem_form": "haiku",
+    "poem_count": 250,
     "haiku_count": 250,
     "date": "2026-02-04",
     "slug": "stone-lanterns-and-whispers",
