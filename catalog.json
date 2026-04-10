@@ -12,6 +12,18 @@
     "epub_url": "https://shmindle.com/dl/book-between-two-monsoons/between-two-monsoons.epub"
   },
   {
+    "title": "Soil Beneath Every Sky",
+    "author": "Morgan Martinez",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-10",
+    "slug": "soil-beneath-every-sky",
+    "cover_url": "https://shmindle.com/dl/book-soil-beneath-every-sky/soil-beneath-every-sky.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-soil-beneath-every-sky/soil-beneath-every-sky.pdf",
+    "epub_url": "https://shmindle.com/dl/book-soil-beneath-every-sky/soil-beneath-every-sky.epub"
+  },
+  {
     "title": "What the Canals Remember",
     "author": "Morgan Lewis",
     "poem_form": "haiku",
