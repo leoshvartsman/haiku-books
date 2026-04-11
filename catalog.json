@@ -48,6 +48,18 @@
     "epub_url": "https://shmindle.com/dl/book-between-stations-breathing/between-stations-breathing.epub"
   },
   {
+    "title": "Dust Before the Rain",
+    "author": "Sam Sato",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-11",
+    "slug": "dust-before-the-rain",
+    "cover_url": "https://shmindle.com/dl/book-dust-before-the-rain/dust-before-the-rain.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-dust-before-the-rain/dust-before-the-rain.pdf",
+    "epub_url": "https://shmindle.com/dl/book-dust-before-the-rain/dust-before-the-rain.epub"
+  },
+  {
     "title": "Between Two Monsoons",
     "author": "Riley García",
     "poem_form": "haiku",
