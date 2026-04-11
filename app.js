@@ -58,12 +58,6 @@ function bookCard(book) {
         <a href="${pageUrl}" class="card-link">
             <div class="card-cover">${coverHtml}</div>
         </a>
-        <div class="card-footer">
-            <div class="card-downloads">
-                ${book.pdf_url ? `<a href="${book.pdf_url}" class="btn-pdf" type="application/pdf">PDF</a>` : ''}
-                ${book.epub_url ? `<a href="${book.epub_url}" class="btn-epub" type="application/epub+zip">EPUB</a>` : ''}
-            </div>
-        </div>
     </div>`;
 }
 
