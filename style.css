@@ -125,7 +125,8 @@ header h1 {
 
 .card img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 4 / 7;
+    object-fit: cover;
     display: block;
     background: #eee;
     transition: transform 0.3s ease;
