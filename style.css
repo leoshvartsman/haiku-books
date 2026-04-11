@@ -96,8 +96,8 @@ header h1 {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.5rem;
     padding: 1rem 2rem 2rem;
     max-width: 1400px;
     margin: 0 auto;
@@ -119,42 +119,33 @@ header h1 {
 }
 
 .card-cover {
-    padding: 1rem;
     background: #f0ece6;
-    display: flex;
-    justify-content: center;
+    overflow: hidden;
 }
 
 .card img {
     width: 100%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 2 / 3;
     object-fit: cover;
     display: block;
     background: #eee;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
-    border-radius: 3px;
+    transition: transform 0.3s ease;
 }
 
-.card-body {
-    padding: 1rem 1.25rem;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+.card:hover .card img,
+.card-link:hover ~ .card img,
+.card:hover img {
+    transform: scale(1.03);
 }
 
-.card-title {
-    font-size: 1.05rem;
-    font-weight: 600;
-    color: #2c2c2c;
-    margin-bottom: 0.25rem;
+.card-footer {
+    padding: 0.5rem 0.75rem 0.6rem;
 }
 
 .card-author {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #777;
-    padding: 0 1.25rem 0.6rem;
-    position: relative;
-    z-index: 1;
+    margin-bottom: 0.4rem;
 }
 
 .card-author-link {
@@ -169,31 +160,25 @@ header h1 {
     text-decoration-color: #999;
 }
 
-.card-meta {
-    font-size: 0.8rem;
-    color: #aaa;
-}
-
 .card-link {
     text-decoration: none;
     color: inherit;
     display: block;
-    flex: 1;
+    overflow: hidden;
 }
 
 .card-downloads {
     display: flex;
-    gap: 0.5rem;
-    padding: 0 1.25rem 1rem;
+    gap: 0.4rem;
 }
 
 .card-downloads a {
     flex: 1;
     text-align: center;
-    padding: 0.5rem;
-    border-radius: 5px;
+    padding: 0.35rem 0.25rem;
+    border-radius: 4px;
     text-decoration: none;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: 500;
     transition: background 0.2s;
 }
@@ -477,14 +462,13 @@ footer {
 
 .no-cover {
     width: 100%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 2 / 3;
     background: linear-gradient(135deg, #e8e4df, #d4cfc8);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2.5rem;
     color: #b5afa6;
-    border-radius: 3px;
 }
 
 /* Book detail page */
@@ -598,7 +582,7 @@ footer {
     header { flex-wrap: wrap; padding: 0.75rem 1rem; gap: 0.75rem; justify-content: space-between; }
     header h1 { font-size: 1.2rem; }
     .controls { flex: 1 1 100%; order: 3; }
-    .grid { padding: 1rem; gap: 1.5rem; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+    .grid { padding: 0.75rem; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
     .book-hero { flex-direction: column; align-items: center; text-align: center; }
     .book-hero img { width: 200px; }
     .book-info .download-btns { justify-content: center; }

@@ -72,15 +72,13 @@ function render() {
         return `<div class="card">
             <a href="${pageUrl}" class="card-link">
                 <div class="card-cover">${coverHtml}</div>
-                <div class="card-body">
-                    <div class="card-title">${book.title}</div>
-                    <div class="card-meta">${book.poem_count !== undefined ? book.poem_count : book.haiku_count} ${book.poem_form || 'haiku'}${(book.poem_form === 'sonnet') ? 's' : ''}</div>
-                </div>
             </a>
-            <div class="card-author">${authorHtml}</div>
-            <div class="card-downloads">
-                ${book.pdf_url ? `<a href="${book.pdf_url}" class="btn-pdf" type="application/pdf">PDF</a>` : ''}
-                ${book.epub_url ? `<a href="${book.epub_url}" class="btn-epub" type="application/epub+zip">EPUB</a>` : ''}
+            <div class="card-footer">
+                <div class="card-author">${authorHtml}</div>
+                <div class="card-downloads">
+                    ${book.pdf_url ? `<a href="${book.pdf_url}" class="btn-pdf" type="application/pdf">PDF</a>` : ''}
+                    ${book.epub_url ? `<a href="${book.epub_url}" class="btn-epub" type="application/epub+zip">EPUB</a>` : ''}
+                </div>
             </div>
         </div>`;
     }).join('');
