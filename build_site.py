@@ -288,6 +288,14 @@ def build_catalog(dry_run=False):
             "cover_style": cover_style,
         })
 
+    # Deduplicate: keep the most recent entry per title
+    seen_titles: dict = {}
+    for entry in catalog:
+        t = entry["title"]
+        if t not in seen_titles or entry["date"] > seen_titles[t]["date"]:
+            seen_titles[t] = entry
+    catalog = list(seen_titles.values())
+
     # Sort by date descending
     catalog.sort(key=lambda b: b["date"], reverse=True)
 

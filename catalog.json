@@ -351,19 +351,6 @@
     "cover_style": "classic"
   },
   {
-    "title": "Borrowed Light",
-    "author": "Parker Chen",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-04-05",
-    "slug": "borrowed-light",
-    "cover_url": "https://shmindle.com/dl/book-borrowed-light/borrowed-light.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-borrowed-light/borrowed-light.pdf",
-    "epub_url": "https://shmindle.com/dl/book-borrowed-light/borrowed-light.epub",
-    "cover_style": "classic"
-  },
-  {
     "title": "What the Weather Remembers",
     "author": "Xia Wu",
     "poem_form": "haiku",
@@ -466,19 +453,6 @@
     "pdf_url": "https://shmindle.com/dl/book-where-the-roots-find-water/where-the-roots-find-water.pdf",
     "epub_url": "https://shmindle.com/dl/book-where-the-roots-find-water/where-the-roots-find-water.epub",
     "cover_style": "classic"
-  },
-  {
-    "title": "What the Mouth Remembers",
-    "author": "Cameron Martin",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-04-03",
-    "slug": "what-the-mouth-remembers",
-    "cover_url": "https://shmindle.com/dl/book-what-the-mouth-remembers/what-the-mouth-remembers.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-what-the-mouth-remembers/what-the-mouth-remembers.pdf",
-    "epub_url": "https://shmindle.com/dl/book-what-the-mouth-remembers/what-the-mouth-remembers.epub",
-    "cover_style": "modern"
   },
   {
     "title": "Sitting on The Couch and Reading",
@@ -780,19 +754,6 @@
     "cover_style": "classic"
   },
   {
-    "title": "What the Body Remembers",
-    "author": "Riley Müller",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-03-22",
-    "slug": "what-the-body-remembers",
-    "cover_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.pdf",
-    "epub_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.epub",
-    "cover_style": "classic"
-  },
-  {
     "title": "Dirt Knows My Name",
     "author": "Quinn Jones",
     "poem_form": "haiku",
@@ -803,19 +764,6 @@
     "cover_url": "https://shmindle.com/dl/book-dirt-knows-my-name/dirt-knows-my-name.jpg",
     "pdf_url": "https://shmindle.com/dl/book-dirt-knows-my-name/dirt-knows-my-name.pdf",
     "epub_url": "https://shmindle.com/dl/book-dirt-knows-my-name/dirt-knows-my-name.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "The Long Way Around",
-    "author": "Parker Sato",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-03-22",
-    "slug": "the-long-way-around",
-    "cover_url": "https://shmindle.com/dl/book-the-long-way-around/the-long-way-around.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-the-long-way-around/the-long-way-around.pdf",
-    "epub_url": "https://shmindle.com/dl/book-the-long-way-around/the-long-way-around.epub",
     "cover_style": "classic"
   },
   {
@@ -1014,19 +962,6 @@
     "cover_style": "classic"
   },
   {
-    "title": "The Slow Work of Light",
-    "author": "Sky García",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-03-19",
-    "slug": "the-slow-work-of-light",
-    "cover_url": "https://shmindle.com/dl/book-the-slow-work-of-light/the-slow-work-of-light.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-the-slow-work-of-light/the-slow-work-of-light.pdf",
-    "epub_url": "https://shmindle.com/dl/book-the-slow-work-of-light/the-slow-work-of-light.epub",
-    "cover_style": "classic"
-  },
-  {
     "title": "The Long Way Round",
     "author": "Drew Miller",
     "poem_form": "haiku",
@@ -1089,19 +1024,6 @@
     "cover_url": "https://shmindle.com/dl/book-every-border-leaves-a-watermark/every-border-leaves-a-watermark.jpg",
     "pdf_url": "https://shmindle.com/dl/book-every-border-leaves-a-watermark/every-border-leaves-a-watermark.pdf",
     "epub_url": "https://shmindle.com/dl/book-every-border-leaves-a-watermark/every-border-leaves-a-watermark.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "The Long Way Around",
-    "author": "Simone Bruno",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-03-18",
-    "slug": "the-long-way-around",
-    "cover_url": "https://shmindle.com/dl/book-the-long-way-around/the-long-way-around.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-the-long-way-around/the-long-way-around.pdf",
-    "epub_url": "https://shmindle.com/dl/book-the-long-way-around/the-long-way-around.epub",
     "cover_style": "classic"
   },
   {
@@ -1183,32 +1105,6 @@
     "cover_style": "classic"
   },
   {
-    "title": "Before the City Wakes",
-    "author": "Saanvi Singh",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-03-10",
-    "slug": "before-the-city-wakes",
-    "cover_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.pdf",
-    "epub_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "What the Body Remembers",
-    "author": "Jamie Martinez",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-03-10",
-    "slug": "what-the-body-remembers",
-    "cover_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.pdf",
-    "epub_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.epub",
-    "cover_style": "classic"
-  },
-  {
     "title": "The Distance Between Names",
     "author": "Aarav Reddy",
     "poem_form": "haiku",
@@ -1271,19 +1167,6 @@
     "cover_url": "https://shmindle.com/dl/book-mud-on-the-threshold/mud-on-the-threshold.jpg",
     "pdf_url": "https://shmindle.com/dl/book-mud-on-the-threshold/mud-on-the-threshold.pdf",
     "epub_url": "https://shmindle.com/dl/book-mud-on-the-threshold/mud-on-the-threshold.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "Borrowed Light",
-    "author": "Morgan Andersson",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-03-09",
-    "slug": "borrowed-light",
-    "cover_url": "https://shmindle.com/dl/book-borrowed-light/borrowed-light.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-borrowed-light/borrowed-light.pdf",
-    "epub_url": "https://shmindle.com/dl/book-borrowed-light/borrowed-light.epub",
     "cover_style": "classic"
   },
   {
@@ -1352,19 +1235,6 @@
     "cover_style": "classic"
   },
   {
-    "title": "The Long Way Round",
-    "author": "Parker Novak",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-03-07",
-    "slug": "the-long-way-round",
-    "cover_url": "https://shmindle.com/dl/book-the-long-way-round/the-long-way-round.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-the-long-way-round/the-long-way-round.pdf",
-    "epub_url": "https://shmindle.com/dl/book-the-long-way-round/the-long-way-round.epub",
-    "cover_style": "classic"
-  },
-  {
     "title": "The Frequency of Red Dust",
     "author": "Harper Sato",
     "poem_form": "haiku",
@@ -1427,19 +1297,6 @@
     "cover_url": "https://shmindle.com/dl/book-dust-on-every-threshold/dust-on-every-threshold.jpg",
     "pdf_url": "https://shmindle.com/dl/book-dust-on-every-threshold/dust-on-every-threshold.pdf",
     "epub_url": "https://shmindle.com/dl/book-dust-on-every-threshold/dust-on-every-threshold.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "The Body Keeps the Latitude",
-    "author": "Harper Martin",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-03-05",
-    "slug": "the-body-keeps-the-latitude",
-    "cover_url": "https://shmindle.com/dl/book-the-body-keeps-the-latitude/the-body-keeps-the-latitude.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-the-body-keeps-the-latitude/the-body-keeps-the-latitude.pdf",
-    "epub_url": "https://shmindle.com/dl/book-the-body-keeps-the-latitude/the-body-keeps-the-latitude.epub",
     "cover_style": "classic"
   },
   {
@@ -2730,19 +2587,6 @@
     "cover_style": "classic"
   },
   {
-    "title": "The Longitude of Smoke",
-    "author": "Ryan Walsh",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-03-02",
-    "slug": "the-longitude-of-smoke",
-    "cover_url": "https://shmindle.com/dl/book-the-longitude-of-smoke/the-longitude-of-smoke.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-the-longitude-of-smoke/the-longitude-of-smoke.pdf",
-    "epub_url": "https://shmindle.com/dl/book-the-longitude-of-smoke/the-longitude-of-smoke.epub",
-    "cover_style": "classic"
-  },
-  {
     "title": "Meridians of Grass",
     "author": "Alex Simon",
     "poem_form": "haiku",
@@ -2766,19 +2610,6 @@
     "cover_url": "https://shmindle.com/dl/book-stone-soil-and-monsoon/stone-soil-and-monsoon.jpg",
     "pdf_url": "https://shmindle.com/dl/book-stone-soil-and-monsoon/stone-soil-and-monsoon.pdf",
     "epub_url": "https://shmindle.com/dl/book-stone-soil-and-monsoon/stone-soil-and-monsoon.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "What the Light Remembers",
-    "author": "Sage Lee",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-03-01",
-    "slug": "what-the-light-remembers",
-    "cover_url": "https://shmindle.com/dl/book-what-the-light-remembers/what-the-light-remembers.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-what-the-light-remembers/what-the-light-remembers.pdf",
-    "epub_url": "https://shmindle.com/dl/book-what-the-light-remembers/what-the-light-remembers.epub",
     "cover_style": "classic"
   },
   {
@@ -2873,19 +2704,6 @@
     "cover_style": "classic"
   },
   {
-    "title": "Before the City Wakes",
-    "author": "Jamie Rodriguez",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-02-27",
-    "slug": "before-the-city-wakes",
-    "cover_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.pdf",
-    "epub_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.epub",
-    "cover_style": "classic"
-  },
-  {
     "title": "The Patience of Thresholds",
     "author": "Sky Singh",
     "poem_form": "haiku",
@@ -2922,19 +2740,6 @@
     "cover_url": "https://shmindle.com/dl/book-what-the-rain-remembers/what-the-rain-remembers.jpg",
     "pdf_url": "https://shmindle.com/dl/book-what-the-rain-remembers/what-the-rain-remembers.pdf",
     "epub_url": "https://shmindle.com/dl/book-what-the-rain-remembers/what-the-rain-remembers.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "Grease Under the Fingernails",
-    "author": "Arjun Desai",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-02-26",
-    "slug": "grease-under-the-fingernails",
-    "cover_url": "https://shmindle.com/dl/book-grease-under-the-fingernails/grease-under-the-fingernails.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-grease-under-the-fingernails/grease-under-the-fingernails.pdf",
-    "epub_url": "https://shmindle.com/dl/book-grease-under-the-fingernails/grease-under-the-fingernails.epub",
     "cover_style": "classic"
   },
   {
@@ -3068,19 +2873,6 @@
     "cover_style": "classic"
   },
   {
-    "title": "The Long Way Around",
-    "author": "Quinn Wilson",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-02-22",
-    "slug": "the-long-way-around",
-    "cover_url": "https://shmindle.com/dl/book-the-long-way-around/the-long-way-around.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-the-long-way-around/the-long-way-around.pdf",
-    "epub_url": "https://shmindle.com/dl/book-the-long-way-around/the-long-way-around.epub",
-    "cover_style": "classic"
-  },
-  {
     "title": "What the Roots Remember",
     "author": "Casey García",
     "poem_form": "haiku",
@@ -3091,19 +2883,6 @@
     "cover_url": "https://shmindle.com/dl/book-what-the-roots-remember/what-the-roots-remember.jpg",
     "pdf_url": "https://shmindle.com/dl/book-what-the-roots-remember/what-the-roots-remember.pdf",
     "epub_url": "https://shmindle.com/dl/book-what-the-roots-remember/what-the-roots-remember.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "What the Body Carries",
-    "author": "Kaori Kato",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-02-21",
-    "slug": "what-the-body-carries",
-    "cover_url": "https://shmindle.com/dl/book-what-the-body-carries/what-the-body-carries.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-what-the-body-carries/what-the-body-carries.pdf",
-    "epub_url": "https://shmindle.com/dl/book-what-the-body-carries/what-the-body-carries.epub",
     "cover_style": "classic"
   },
   {
@@ -3185,19 +2964,6 @@
     "cover_style": "classic"
   },
   {
-    "title": "What the Soil Remembers",
-    "author": "Simone Marino",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-02-19",
-    "slug": "what-the-soil-remembers",
-    "cover_url": "https://shmindle.com/dl/book-what-the-soil-remembers/what-the-soil-remembers.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-what-the-soil-remembers/what-the-soil-remembers.pdf",
-    "epub_url": "https://shmindle.com/dl/book-what-the-soil-remembers/what-the-soil-remembers.epub",
-    "cover_style": "classic"
-  },
-  {
     "title": "Sand Keeps Its Shape",
     "author": "Jordan Kowalski",
     "poem_form": "haiku",
@@ -3234,19 +3000,6 @@
     "cover_url": "https://shmindle.com/dl/book-where-the-light-arrives-first/where-the-light-arrives-first.jpg",
     "pdf_url": "https://shmindle.com/dl/book-where-the-light-arrives-first/where-the-light-arrives-first.pdf",
     "epub_url": "https://shmindle.com/dl/book-where-the-light-arrives-first/where-the-light-arrives-first.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "What the Body Remembers",
-    "author": "Parker Sato",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-02-19",
-    "slug": "what-the-body-remembers",
-    "cover_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.pdf",
-    "epub_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.epub",
     "cover_style": "classic"
   },
   {
