@@ -125,10 +125,10 @@ header h1 {
 
 .card img {
     width: 100%;
-    aspect-ratio: 4 / 7;
-    object-fit: cover;
+    aspect-ratio: 2 / 3;
+    object-fit: contain;
     display: block;
-    background: #eee;
+    background: #f0ece6;
     transition: transform 0.3s ease;
 }
 
@@ -462,7 +462,7 @@ footer {
 
 .no-cover {
     width: 100%;
-    aspect-ratio: 4 / 7;
+    aspect-ratio: 2 / 3;
     background: linear-gradient(135deg, #e8e4df, #d4cfc8);
     display: flex;
     align-items: center;
