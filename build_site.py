@@ -217,6 +217,7 @@ def build_catalog(dry_run=False):
         tag = f"book-{slug}"
         poem_count = book.get("sonnet_count") or book.get("haiku_count", 0)
         date = parse_date(book.get("generated_at", ""))
+        cover_style = book.get("cost_breakdown", {}).get("cover_style", "classic")
 
         print(f"\n[{title}] by {author} ({form})")
 
@@ -252,6 +253,7 @@ def build_catalog(dry_run=False):
                 "cover_url": "",
                 "pdf_url": "",
                 "epub_url": "",
+                "cover_style": cover_style,
             })
             continue
 
@@ -283,6 +285,7 @@ def build_catalog(dry_run=False):
             "cover_url": to_proxy_url(urls.get("cover", "")) if urls.get("cover") else "",
             "pdf_url": to_proxy_url(pdf_url) if pdf_url else "",
             "epub_url": to_proxy_url(epub_url) if epub_url else "",
+            "cover_style": cover_style,
         })
 
     # Sort by date descending

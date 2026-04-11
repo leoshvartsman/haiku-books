@@ -1,7 +1,5 @@
-const BOOKS_PER_PAGE = 24;
 let allBooks = [];
 let filteredBooks = [];
-let currentPage = 1;
 
 function slugify(str) {
     return str.normalize('NFD')
@@ -19,6 +17,15 @@ async function init() {
     document.getElementById('search').addEventListener('input', onFilter);
     document.getElementById('sort').addEventListener('change', onFilter);
 
+    document.querySelectorAll('.shelf-arrow').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const shelf = btn.dataset.shelf;
+            const grid = document.getElementById(`grid-${shelf}`);
+            const step = grid.clientWidth * 0.8;
+            grid.scrollBy({ left: btn.classList.contains('shelf-arrow-left') ? -step : step, behavior: 'smooth' });
+        });
+    });
+
     onFilter();
 }
 
@@ -35,81 +42,47 @@ function onFilter() {
     filteredBooks.sort((a, b) => {
         if (sortBy === 'title') return a.title.localeCompare(b.title);
         if (sortBy === 'author') return a.author.localeCompare(b.author);
-        return b.date.localeCompare(a.date); // newest
+        return b.date.localeCompare(a.date);
     });
 
-    currentPage = 1;
     render();
 }
 
+function bookCard(book) {
+    const coverHtml = book.cover_url
+        ? `<img src="${book.cover_url}" alt="${book.title}" loading="lazy">`
+        : `<div class="no-cover">&#x2727;</div>`;
+    const slug = book.slug || book.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    const pageUrl = `books/${slug}.html`;
+    return `<div class="card">
+        <a href="${pageUrl}" class="card-link">
+            <div class="card-cover">${coverHtml}</div>
+        </a>
+        <div class="card-footer">
+            <div class="card-downloads">
+                ${book.pdf_url ? `<a href="${book.pdf_url}" class="btn-pdf" type="application/pdf">PDF</a>` : ''}
+                ${book.epub_url ? `<a href="${book.epub_url}" class="btn-epub" type="application/epub+zip">EPUB</a>` : ''}
+            </div>
+        </div>
+    </div>`;
+}
+
 function render() {
-    const totalPages = Math.max(1, Math.ceil(filteredBooks.length / BOOKS_PER_PAGE));
-    if (currentPage > totalPages) currentPage = totalPages;
-
-    const start = (currentPage - 1) * BOOKS_PER_PAGE;
-    const page = filteredBooks.slice(start, start + BOOKS_PER_PAGE);
-
-    // Book count
     const countEl = document.getElementById('book-count');
     countEl.textContent = filteredBooks.length === allBooks.length
         ? `${allBooks.length} books`
         : `${filteredBooks.length} of ${allBooks.length} books`;
 
-    // Grid
-    const grid = document.getElementById('grid');
-    grid.innerHTML = page.map(book => {
-        const coverHtml = book.cover_url
-            ? `<img src="${book.cover_url}" alt="${book.title}" loading="lazy">`
-            : `<div class="no-cover">&#x2727;</div>`;
+    const classic = filteredBooks.filter(b => (b.cover_style || 'classic') !== 'modern');
+    const modern  = filteredBooks.filter(b => b.cover_style === 'modern');
 
-        const slug = book.slug || book.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-        const pageUrl = `books/${slug}.html`;
+    document.getElementById('grid-classic').innerHTML = classic.map(bookCard).join('');
+    document.getElementById('grid-modern').innerHTML  = modern.map(bookCard).join('');
 
-        return `<div class="card">
-            <a href="${pageUrl}" class="card-link">
-                <div class="card-cover">${coverHtml}</div>
-            </a>
-            <div class="card-footer">
-                <div class="card-downloads">
-                    ${book.pdf_url ? `<a href="${book.pdf_url}" class="btn-pdf" type="application/pdf">PDF</a>` : ''}
-                    ${book.epub_url ? `<a href="${book.epub_url}" class="btn-epub" type="application/epub+zip">EPUB</a>` : ''}
-                </div>
-            </div>
-        </div>`;
-    }).join('');
-
-    // Pagination
-    const pag = document.getElementById('pagination');
-    if (totalPages <= 1) {
-        pag.innerHTML = '';
-        return;
-    }
-
-    let buttons = '';
-    if (currentPage > 1) {
-        buttons += `<button data-page="${currentPage - 1}">&laquo; Prev</button>`;
-    }
-
-    // Show at most 7 page buttons around current
-    let startPage = Math.max(1, currentPage - 3);
-    let endPage = Math.min(totalPages, startPage + 6);
-    if (endPage - startPage < 6) startPage = Math.max(1, endPage - 6);
-
-    for (let i = startPage; i <= endPage; i++) {
-        buttons += `<button data-page="${i}" class="${i === currentPage ? 'active' : ''}">${i}</button>`;
-    }
-
-    if (currentPage < totalPages) {
-        buttons += `<button data-page="${currentPage + 1}">Next &raquo;</button>`;
-    }
-
-    pag.innerHTML = buttons;
-    pag.querySelectorAll('button').forEach(btn => {
-        btn.addEventListener('click', () => {
-            currentPage = parseInt(btn.dataset.page);
-            render();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
+    // Hide empty shelves
+    document.querySelectorAll('.shelf-section').forEach(section => {
+        const shelf = section.querySelector('.grid');
+        section.style.display = shelf && shelf.children.length > 0 ? '' : 'none';
     });
 }
 
