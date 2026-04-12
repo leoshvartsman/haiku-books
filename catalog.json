@@ -13,6 +13,19 @@
     "cover_style": "classic"
   },
   {
+    "title": "Every City Holds Rain",
+    "author": "Ming Xu",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-12",
+    "slug": "every-city-holds-rain",
+    "cover_url": "https://shmindle.com/dl/book-every-city-holds-rain/every-city-holds-rain.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-every-city-holds-rain/every-city-holds-rain.pdf",
+    "epub_url": "https://shmindle.com/dl/book-every-city-holds-rain/every-city-holds-rain.epub",
+    "cover_style": "modern"
+  },
+  {
     "title": "Loose Soil, Deep Root",
     "author": "Harper Patel",
     "poem_form": "haiku",

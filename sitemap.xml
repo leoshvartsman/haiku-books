@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://shmindle.com/</loc><lastmod>2026-04-12</lastmod><priority>1.0</priority></url>
   <url><loc>https://shmindle.com/books/stone-remembers-water.html</loc><lastmod>2026-04-12</lastmod><priority>0.8</priority></url>
+  <url><loc>https://shmindle.com/books/every-city-holds-rain.html</loc><lastmod>2026-04-12</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/loose-soil-deep-root.html</loc><lastmod>2026-04-11</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/connecting-souls.html</loc><lastmod>2026-04-11</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/dust-on-the-meridian.html</loc><lastmod>2026-04-11</lastmod><priority>0.8</priority></url>
@@ -273,6 +274,7 @@
   <url><loc>https://shmindle.com/books/tracks-in-fresh-snow.html</loc><lastmod>2026-02-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/stone-lanterns-and-whispers.html</loc><lastmod>2026-02-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/authors/sage-muller.html</loc><lastmod>2026-04-12</lastmod><priority>0.7</priority></url>
+  <url><loc>https://shmindle.com/authors/ming-xu.html</loc><lastmod>2026-04-12</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/harper-patel.html</loc><lastmod>2026-04-11</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/jack-kindle.html</loc><lastmod>2026-04-11</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/morgan-taylor.html</loc><lastmod>2026-04-11</lastmod><priority>0.7</priority></url>
@@ -390,7 +392,6 @@
   <url><loc>https://shmindle.com/authors/parker-singh.html</loc><lastmod>2026-03-05</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/valentin-garcia.html</loc><lastmod>2026-03-05</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/skyler-johnson.html</loc><lastmod>2026-03-05</lastmod><priority>0.7</priority></url>
-  <url><loc>https://shmindle.com/authors/ming-xu.html</loc><lastmod>2026-03-05</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/quinn-smith.html</loc><lastmod>2026-03-05</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/alex-singh.html</loc><lastmod>2026-03-05</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/cameron-lewis.html</loc><lastmod>2026-03-05</lastmod><priority>0.7</priority></url>
