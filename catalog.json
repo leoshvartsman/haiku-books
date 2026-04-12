@@ -1,5 +1,18 @@
 [
   {
+    "title": "Stone Remembers Water",
+    "author": "Sage Müller",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-12",
+    "slug": "stone-remembers-water",
+    "cover_url": "https://shmindle.com/dl/book-stone-remembers-water/stone-remembers-water.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-stone-remembers-water/stone-remembers-water.pdf",
+    "epub_url": "https://shmindle.com/dl/book-stone-remembers-water/stone-remembers-water.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "Loose Soil, Deep Root",
     "author": "Harper Patel",
     "poem_form": "haiku",
@@ -117,6 +130,45 @@
     "cover_style": "modern"
   },
   {
+    "title": "The Long Way Around",
+    "author": "Sky Cohen",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-09",
+    "slug": "the-long-way-around",
+    "cover_url": "https://shmindle.com/dl/book-the-long-way-around/the-long-way-around.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-the-long-way-around/the-long-way-around.pdf",
+    "epub_url": "https://shmindle.com/dl/book-the-long-way-around/the-long-way-around.epub",
+    "cover_style": "classic"
+  },
+  {
+    "title": "The Longitude of Smoke",
+    "author": "Morgan Kelly",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-09",
+    "slug": "the-longitude-of-smoke",
+    "cover_url": "https://shmindle.com/dl/book-the-longitude-of-smoke/the-longitude-of-smoke.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-the-longitude-of-smoke/the-longitude-of-smoke.pdf",
+    "epub_url": "https://shmindle.com/dl/book-the-longitude-of-smoke/the-longitude-of-smoke.epub",
+    "cover_style": "classic"
+  },
+  {
+    "title": "Borrowed Light",
+    "author": "Harper Novak",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-09",
+    "slug": "borrowed-light",
+    "cover_url": "https://shmindle.com/dl/book-borrowed-light/borrowed-light.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-borrowed-light/borrowed-light.pdf",
+    "epub_url": "https://shmindle.com/dl/book-borrowed-light/borrowed-light.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "What the Canals Remember",
     "author": "Morgan Lewis",
     "poem_form": "haiku",
@@ -140,45 +192,6 @@
     "cover_url": "https://shmindle.com/dl/book-the-last-peony/the-last-peony.jpg",
     "pdf_url": "https://shmindle.com/dl/book-the-last-peony/the-last-peony.pdf",
     "epub_url": "https://shmindle.com/dl/book-the-last-peony/the-last-peony.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "Borrowed Light",
-    "author": "Harper Novak",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-04-09",
-    "slug": "borrowed-light",
-    "cover_url": "https://shmindle.com/dl/book-borrowed-light/borrowed-light.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-borrowed-light/borrowed-light.pdf",
-    "epub_url": "https://shmindle.com/dl/book-borrowed-light/borrowed-light.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "The Longitude of Smoke",
-    "author": "Morgan Kelly",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-04-09",
-    "slug": "the-longitude-of-smoke",
-    "cover_url": "https://shmindle.com/dl/book-the-longitude-of-smoke/the-longitude-of-smoke.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-the-longitude-of-smoke/the-longitude-of-smoke.pdf",
-    "epub_url": "https://shmindle.com/dl/book-the-longitude-of-smoke/the-longitude-of-smoke.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "The Long Way Around",
-    "author": "Sky Cohen",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-04-09",
-    "slug": "the-long-way-around",
-    "cover_url": "https://shmindle.com/dl/book-the-long-way-around/the-long-way-around.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-the-long-way-around/the-long-way-around.pdf",
-    "epub_url": "https://shmindle.com/dl/book-the-long-way-around/the-long-way-around.epub",
     "cover_style": "classic"
   },
   {
@@ -377,19 +390,6 @@
     "cover_style": "modern"
   },
   {
-    "title": "Dust on Three Tongues",
-    "author": "Aditya Reddy",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-04-04",
-    "slug": "dust-on-three-tongues",
-    "cover_url": "https://shmindle.com/dl/book-dust-on-three-tongues/dust-on-three-tongues.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-dust-on-three-tongues/dust-on-three-tongues.pdf",
-    "epub_url": "https://shmindle.com/dl/book-dust-on-three-tongues/dust-on-three-tongues.epub",
-    "cover_style": "modern"
-  },
-  {
     "title": "What the Light Remembers",
     "author": "Jordan Rodriguez",
     "poem_form": "haiku",
@@ -401,6 +401,19 @@
     "pdf_url": "https://shmindle.com/dl/book-what-the-light-remembers/what-the-light-remembers.pdf",
     "epub_url": "https://shmindle.com/dl/book-what-the-light-remembers/what-the-light-remembers.epub",
     "cover_style": "classic"
+  },
+  {
+    "title": "Dust on Three Tongues",
+    "author": "Aditya Reddy",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-04",
+    "slug": "dust-on-three-tongues",
+    "cover_url": "https://shmindle.com/dl/book-dust-on-three-tongues/dust-on-three-tongues.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-dust-on-three-tongues/dust-on-three-tongues.pdf",
+    "epub_url": "https://shmindle.com/dl/book-dust-on-three-tongues/dust-on-three-tongues.epub",
+    "cover_style": "modern"
   },
   {
     "title": "The Body Keeps Time",
@@ -494,6 +507,19 @@
     "cover_style": "classic"
   },
   {
+    "title": "Before the City Wakes",
+    "author": "Guadalupe Rodríguez",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-02",
+    "slug": "before-the-city-wakes",
+    "cover_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.pdf",
+    "epub_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "Meridians of Forgetting",
     "author": "Aditya Khan",
     "poem_form": "haiku",
@@ -517,19 +543,6 @@
     "cover_url": "https://shmindle.com/dl/book-what-remains-when-water-moves/what-remains-when-water-moves.jpg",
     "pdf_url": "https://shmindle.com/dl/book-what-remains-when-water-moves/what-remains-when-water-moves.pdf",
     "epub_url": "https://shmindle.com/dl/book-what-remains-when-water-moves/what-remains-when-water-moves.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "Before the City Wakes",
-    "author": "Guadalupe Rodríguez",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-04-02",
-    "slug": "before-the-city-wakes",
-    "cover_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.pdf",
-    "epub_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.epub",
     "cover_style": "classic"
   },
   {
@@ -559,19 +572,6 @@
     "cover_style": "classic"
   },
   {
-    "title": "Light Coming Through",
-    "author": "Taylor Smith",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-03-26",
-    "slug": "light-coming-through",
-    "cover_url": "https://shmindle.com/dl/book-light-coming-through/light-coming-through.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-light-coming-through/light-coming-through.pdf",
-    "epub_url": "https://shmindle.com/dl/book-light-coming-through/light-coming-through.epub",
-    "cover_style": "modern"
-  },
-  {
     "title": "The Slow Work of Light",
     "author": "Harper Smith",
     "poem_form": "haiku",
@@ -583,6 +583,19 @@
     "pdf_url": "https://shmindle.com/dl/book-the-slow-work-of-light/the-slow-work-of-light.pdf",
     "epub_url": "https://shmindle.com/dl/book-the-slow-work-of-light/the-slow-work-of-light.epub",
     "cover_style": "classic"
+  },
+  {
+    "title": "Light Coming Through",
+    "author": "Taylor Smith",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-03-26",
+    "slug": "light-coming-through",
+    "cover_url": "https://shmindle.com/dl/book-light-coming-through/light-coming-through.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-light-coming-through/light-coming-through.pdf",
+    "epub_url": "https://shmindle.com/dl/book-light-coming-through/light-coming-through.epub",
+    "cover_style": "modern"
   },
   {
     "title": "What the Body Carries",
@@ -637,6 +650,19 @@
     "cover_style": "classic"
   },
   {
+    "title": "The Body Keeps the Latitude",
+    "author": "Casey Müller",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-03-24",
+    "slug": "the-body-keeps-the-latitude",
+    "cover_url": "https://shmindle.com/dl/book-the-body-keeps-the-latitude/the-body-keeps-the-latitude.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-the-body-keeps-the-latitude/the-body-keeps-the-latitude.pdf",
+    "epub_url": "https://shmindle.com/dl/book-the-body-keeps-the-latitude/the-body-keeps-the-latitude.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "Stone and Current",
     "author": "Taylor Anderson",
     "poem_form": "haiku",
@@ -663,19 +689,6 @@
     "cover_style": "classic"
   },
   {
-    "title": "The Body Keeps the Latitude",
-    "author": "Casey Müller",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-03-24",
-    "slug": "the-body-keeps-the-latitude",
-    "cover_url": "https://shmindle.com/dl/book-the-body-keeps-the-latitude/the-body-keeps-the-latitude.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-the-body-keeps-the-latitude/the-body-keeps-the-latitude.pdf",
-    "epub_url": "https://shmindle.com/dl/book-the-body-keeps-the-latitude/the-body-keeps-the-latitude.epub",
-    "cover_style": "classic"
-  },
-  {
     "title": "The Ground Beneath the Ground",
     "author": "Sol Vázquez",
     "poem_form": "haiku",
@@ -686,6 +699,19 @@
     "cover_url": "https://shmindle.com/dl/book-the-ground-beneath-the-ground/the-ground-beneath-the-ground.jpg",
     "pdf_url": "https://shmindle.com/dl/book-the-ground-beneath-the-ground/the-ground-beneath-the-ground.pdf",
     "epub_url": "https://shmindle.com/dl/book-the-ground-beneath-the-ground/the-ground-beneath-the-ground.epub",
+    "cover_style": "classic"
+  },
+  {
+    "title": "What the Soil Remembers",
+    "author": "Ariel Sánchez",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-03-23",
+    "slug": "what-the-soil-remembers",
+    "cover_url": "https://shmindle.com/dl/book-what-the-soil-remembers/what-the-soil-remembers.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-soil-remembers/what-the-soil-remembers.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-soil-remembers/what-the-soil-remembers.epub",
     "cover_style": "classic"
   },
   {
@@ -741,19 +767,6 @@
     "cover_style": "classic"
   },
   {
-    "title": "What the Soil Remembers",
-    "author": "Ariel Sánchez",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-03-23",
-    "slug": "what-the-soil-remembers",
-    "cover_url": "https://shmindle.com/dl/book-what-the-soil-remembers/what-the-soil-remembers.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-what-the-soil-remembers/what-the-soil-remembers.pdf",
-    "epub_url": "https://shmindle.com/dl/book-what-the-soil-remembers/what-the-soil-remembers.epub",
-    "cover_style": "classic"
-  },
-  {
     "title": "Dirt Knows My Name",
     "author": "Quinn Jones",
     "poem_form": "haiku",
@@ -793,19 +806,6 @@
     "cover_style": "classic"
   },
   {
-    "title": "What the Centrifuge Kept",
-    "author": "Seo Lim",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-03-21",
-    "slug": "what-the-centrifuge-kept",
-    "cover_url": "https://shmindle.com/dl/book-what-the-centrifuge-kept/what-the-centrifuge-kept.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-what-the-centrifuge-kept/what-the-centrifuge-kept.pdf",
-    "epub_url": "https://shmindle.com/dl/book-what-the-centrifuge-kept/what-the-centrifuge-kept.epub",
-    "cover_style": "classic"
-  },
-  {
     "title": "Grease Under the Fingernails",
     "author": "Riley Müller",
     "poem_form": "haiku",
@@ -816,6 +816,19 @@
     "cover_url": "https://shmindle.com/dl/book-grease-under-the-fingernails/grease-under-the-fingernails.jpg",
     "pdf_url": "https://shmindle.com/dl/book-grease-under-the-fingernails/grease-under-the-fingernails.pdf",
     "epub_url": "https://shmindle.com/dl/book-grease-under-the-fingernails/grease-under-the-fingernails.epub",
+    "cover_style": "classic"
+  },
+  {
+    "title": "What the Centrifuge Kept",
+    "author": "Seo Lim",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-03-21",
+    "slug": "what-the-centrifuge-kept",
+    "cover_url": "https://shmindle.com/dl/book-what-the-centrifuge-kept/what-the-centrifuge-kept.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-centrifuge-kept/what-the-centrifuge-kept.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-centrifuge-kept/what-the-centrifuge-kept.epub",
     "cover_style": "classic"
   },
   {
@@ -910,6 +923,19 @@
     "cover_style": "classic"
   },
   {
+    "title": "The Long Way Round",
+    "author": "Drew Miller",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-03-19",
+    "slug": "the-long-way-round",
+    "cover_url": "https://shmindle.com/dl/book-the-long-way-round/the-long-way-round.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-the-long-way-round/the-long-way-round.pdf",
+    "epub_url": "https://shmindle.com/dl/book-the-long-way-round/the-long-way-round.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "Between Meridians",
     "author": "Harper Patel",
     "poem_form": "haiku",
@@ -959,19 +985,6 @@
     "cover_url": "https://shmindle.com/dl/book-acting-up/acting-up.jpg",
     "pdf_url": "https://shmindle.com/dl/book-acting-up/acting-up.pdf",
     "epub_url": "https://shmindle.com/dl/book-acting-up/acting-up.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "The Long Way Round",
-    "author": "Drew Miller",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-03-19",
-    "slug": "the-long-way-round",
-    "cover_url": "https://shmindle.com/dl/book-the-long-way-round/the-long-way-round.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-the-long-way-round/the-long-way-round.pdf",
-    "epub_url": "https://shmindle.com/dl/book-the-long-way-round/the-long-way-round.epub",
     "cover_style": "classic"
   },
   {
