@@ -26,6 +26,19 @@
     "cover_style": "modern"
   },
   {
+    "title": "Grain Against the Blade",
+    "author": "Jing Li",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-12",
+    "slug": "grain-against-the-blade",
+    "cover_url": "https://shmindle.com/dl/book-grain-against-the-blade/grain-against-the-blade.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-grain-against-the-blade/grain-against-the-blade.pdf",
+    "epub_url": "https://shmindle.com/dl/book-grain-against-the-blade/grain-against-the-blade.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "Loose Soil, Deep Root",
     "author": "Harper Patel",
     "poem_form": "haiku",
