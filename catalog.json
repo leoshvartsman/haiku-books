@@ -26,6 +26,19 @@
     "cover_style": "modern"
   },
   {
+    "title": "Altitude and Ash",
+    "author": "Sacha Martín",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-13",
+    "slug": "altitude-and-ash",
+    "cover_url": "https://shmindle.com/dl/book-altitude-and-ash/altitude-and-ash.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-altitude-and-ash/altitude-and-ash.pdf",
+    "epub_url": "https://shmindle.com/dl/book-altitude-and-ash/altitude-and-ash.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "Stone Remembers Water",
     "author": "Sage Müller",
     "poem_form": "haiku",
