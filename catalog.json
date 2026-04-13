@@ -1,5 +1,18 @@
 [
   {
+    "title": "Before the City Wakes",
+    "author": "Cameron Kim",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-13",
+    "slug": "before-the-city-wakes",
+    "cover_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.pdf",
+    "epub_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "Stone Remembers Water",
     "author": "Sage Müller",
     "poem_form": "haiku",
@@ -543,19 +556,6 @@
     "cover_url": "https://shmindle.com/dl/book-making-great-cake/making-great-cake.jpg",
     "pdf_url": "https://shmindle.com/dl/book-making-great-cake/making-great-cake.pdf",
     "epub_url": "https://shmindle.com/dl/book-making-great-cake/making-great-cake.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "Before the City Wakes",
-    "author": "Guadalupe Rodríguez",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-04-02",
-    "slug": "before-the-city-wakes",
-    "cover_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.pdf",
-    "epub_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.epub",
     "cover_style": "classic"
   },
   {
