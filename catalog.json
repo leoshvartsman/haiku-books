@@ -39,6 +39,19 @@
     "cover_style": "classic"
   },
   {
+    "title": "Stone Water Light",
+    "author": "Sage Lee",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-13",
+    "slug": "stone-water-light",
+    "cover_url": "https://shmindle.com/dl/book-stone-water-light/stone-water-light.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-stone-water-light/stone-water-light.pdf",
+    "epub_url": "https://shmindle.com/dl/book-stone-water-light/stone-water-light.epub",
+    "cover_style": "modern"
+  },
+  {
     "title": "Stone Remembers Water",
     "author": "Sage Müller",
     "poem_form": "haiku",
