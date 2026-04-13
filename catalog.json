@@ -13,6 +13,19 @@
     "cover_style": "classic"
   },
   {
+    "title": "What the Foot Remembers",
+    "author": "Morgan Ali",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-13",
+    "slug": "what-the-foot-remembers",
+    "cover_url": "https://shmindle.com/dl/book-what-the-foot-remembers/what-the-foot-remembers.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-foot-remembers/what-the-foot-remembers.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-foot-remembers/what-the-foot-remembers.epub",
+    "cover_style": "modern"
+  },
+  {
     "title": "Stone Remembers Water",
     "author": "Sage Müller",
     "poem_form": "haiku",
