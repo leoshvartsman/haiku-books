@@ -13,6 +13,19 @@
     "cover_style": "classic"
   },
   {
+    "title": "What the Light Remembers",
+    "author": "Cameron Singh",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-14",
+    "slug": "what-the-light-remembers",
+    "cover_url": "https://shmindle.com/dl/book-what-the-light-remembers/what-the-light-remembers.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-light-remembers/what-the-light-remembers.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-light-remembers/what-the-light-remembers.epub",
+    "cover_style": "modern"
+  },
+  {
     "title": "Before the City Wakes",
     "author": "Cameron Kim",
     "poem_form": "haiku",
@@ -492,19 +505,6 @@
     "pdf_url": "https://shmindle.com/dl/book-canal-light-elsewhere/canal-light-elsewhere.pdf",
     "epub_url": "https://shmindle.com/dl/book-canal-light-elsewhere/canal-light-elsewhere.epub",
     "cover_style": "modern"
-  },
-  {
-    "title": "What the Light Remembers",
-    "author": "Jordan Rodriguez",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-04-04",
-    "slug": "what-the-light-remembers",
-    "cover_url": "https://shmindle.com/dl/book-what-the-light-remembers/what-the-light-remembers.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-what-the-light-remembers/what-the-light-remembers.pdf",
-    "epub_url": "https://shmindle.com/dl/book-what-the-light-remembers/what-the-light-remembers.epub",
-    "cover_style": "classic"
   },
   {
     "title": "Dust on Three Tongues",
