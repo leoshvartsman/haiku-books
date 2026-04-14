@@ -1,5 +1,18 @@
 [
   {
+    "title": "What the Body Remembers",
+    "author": "Sam Chen",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-14",
+    "slug": "what-the-body-remembers",
+    "cover_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "Before the City Wakes",
     "author": "Cameron Kim",
     "poem_form": "haiku",
@@ -518,19 +531,6 @@
     "pdf_url": "https://shmindle.com/dl/book-the-body-keeps-time/the-body-keeps-time.pdf",
     "epub_url": "https://shmindle.com/dl/book-the-body-keeps-time/the-body-keeps-time.epub",
     "cover_style": "modern"
-  },
-  {
-    "title": "What the Body Remembers",
-    "author": "Peyton Anderson",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-04-03",
-    "slug": "what-the-body-remembers",
-    "cover_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.pdf",
-    "epub_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.epub",
-    "cover_style": "classic"
   },
   {
     "title": "Pipe and Flood",
