@@ -1,5 +1,18 @@
 [
   {
+    "title": "The Pavement Remembers Rain",
+    "author": "Aditya Reddy",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-15",
+    "slug": "the-pavement-remembers-rain",
+    "cover_url": "https://shmindle.com/dl/book-the-pavement-remembers-rain/the-pavement-remembers-rain.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-the-pavement-remembers-rain/the-pavement-remembers-rain.pdf",
+    "epub_url": "https://shmindle.com/dl/book-the-pavement-remembers-rain/the-pavement-remembers-rain.epub",
+    "cover_style": "modern"
+  },
+  {
     "title": "What the Body Remembers",
     "author": "Sam Chen",
     "poem_form": "haiku",

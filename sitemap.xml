@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://shmindle.com/</loc><lastmod>2026-04-14</lastmod><priority>1.0</priority></url>
+  <url><loc>https://shmindle.com/</loc><lastmod>2026-04-15</lastmod><priority>1.0</priority></url>
+  <url><loc>https://shmindle.com/books/the-pavement-remembers-rain.html</loc><lastmod>2026-04-15</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/what-the-body-remembers.html</loc><lastmod>2026-04-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/what-the-light-remembers.html</loc><lastmod>2026-04-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/every-threshold-breathes.html</loc><lastmod>2026-04-14</lastmod><priority>0.8</priority></url>
@@ -279,6 +280,7 @@
   <url><loc>https://shmindle.com/books/neon-script-and-sparrows.html</loc><lastmod>2026-02-05</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/tracks-in-fresh-snow.html</loc><lastmod>2026-02-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/stone-lanterns-and-whispers.html</loc><lastmod>2026-02-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://shmindle.com/authors/aditya-reddy.html</loc><lastmod>2026-04-15</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/sam-chen.html</loc><lastmod>2026-04-14</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/cameron-singh.html</loc><lastmod>2026-04-14</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/dakota-young.html</loc><lastmod>2026-04-14</lastmod><priority>0.7</priority></url>
@@ -317,7 +319,6 @@
   <url><loc>https://shmindle.com/authors/casey-garcia.html</loc><lastmod>2026-04-06</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/xia-wu.html</loc><lastmod>2026-04-05</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/sage-andersson.html</loc><lastmod>2026-04-05</lastmod><priority>0.7</priority></url>
-  <url><loc>https://shmindle.com/authors/aditya-reddy.html</loc><lastmod>2026-04-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/jordan-rodriguez.html</loc><lastmod>2026-04-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/morgan-kim.html</loc><lastmod>2026-04-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/michi-suzuki.html</loc><lastmod>2026-04-03</lastmod><priority>0.7</priority></url>
