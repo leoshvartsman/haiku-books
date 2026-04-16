@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://shmindle.com/</loc><lastmod>2026-04-15</lastmod><priority>1.0</priority></url>
+  <url><loc>https://shmindle.com/</loc><lastmod>2026-04-16</lastmod><priority>1.0</priority></url>
+  <url><loc>https://shmindle.com/books/borders-of-monsoon.html</loc><lastmod>2026-04-16</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/the-pavement-remembers-rain.html</loc><lastmod>2026-04-15</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/concrete-roots-open-sky.html</loc><lastmod>2026-04-15</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/ordinary-hours-every-country.html</loc><lastmod>2026-04-15</lastmod><priority>0.8</priority></url>
@@ -283,6 +284,7 @@
   <url><loc>https://shmindle.com/books/neon-script-and-sparrows.html</loc><lastmod>2026-02-05</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/tracks-in-fresh-snow.html</loc><lastmod>2026-02-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/stone-lanterns-and-whispers.html</loc><lastmod>2026-02-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://shmindle.com/authors/sage-sato.html</loc><lastmod>2026-04-16</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/aditya-reddy.html</loc><lastmod>2026-04-15</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/diya-kapoor.html</loc><lastmod>2026-04-15</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/saanvi-singh.html</loc><lastmod>2026-04-15</lastmod><priority>0.7</priority></url>
@@ -421,7 +423,6 @@
   <url><loc>https://shmindle.com/authors/robin-andersson.html</loc><lastmod>2026-03-05</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/blake-novak.html</loc><lastmod>2026-03-05</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/sage-singh.html</loc><lastmod>2026-03-05</lastmod><priority>0.7</priority></url>
-  <url><loc>https://shmindle.com/authors/sage-sato.html</loc><lastmod>2026-03-05</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/robin-kowalski.html</loc><lastmod>2026-03-05</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/haruki-saito.html</loc><lastmod>2026-03-05</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/ryan-walsh.html</loc><lastmod>2026-03-05</lastmod><priority>0.7</priority></url>
