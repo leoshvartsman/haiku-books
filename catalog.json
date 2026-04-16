@@ -13,6 +13,19 @@
     "cover_style": "modern"
   },
   {
+    "title": "Grease and Plum Blossom",
+    "author": "Ariel Santos",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-16",
+    "slug": "grease-and-plum-blossom",
+    "cover_url": "https://shmindle.com/dl/book-grease-and-plum-blossom/grease-and-plum-blossom.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-grease-and-plum-blossom/grease-and-plum-blossom.pdf",
+    "epub_url": "https://shmindle.com/dl/book-grease-and-plum-blossom/grease-and-plum-blossom.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "The Pavement Remembers Rain",
     "author": "Aditya Reddy",
     "poem_form": "haiku",
