@@ -13,6 +13,19 @@
     "cover_style": "modern"
   },
   {
+    "title": "Smoke Remembers Everything",
+    "author": "Alex Novak",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-17",
+    "slug": "smoke-remembers-everything",
+    "cover_url": "https://shmindle.com/dl/book-smoke-remembers-everything/smoke-remembers-everything.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-smoke-remembers-everything/smoke-remembers-everything.pdf",
+    "epub_url": "https://shmindle.com/dl/book-smoke-remembers-everything/smoke-remembers-everything.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "What the Body Remembers",
     "author": "Riley Müller",
     "poem_form": "haiku",
