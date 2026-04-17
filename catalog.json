@@ -26,6 +26,19 @@
     "cover_style": "classic"
   },
   {
+    "title": "Between Every Signal",
+    "author": "Alex Hoffmann",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-17",
+    "slug": "between-every-signal",
+    "cover_url": "https://shmindle.com/dl/book-between-every-signal/between-every-signal.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-between-every-signal/between-every-signal.pdf",
+    "epub_url": "https://shmindle.com/dl/book-between-every-signal/between-every-signal.epub",
+    "cover_style": "modern"
+  },
+  {
     "title": "What the Body Remembers",
     "author": "Riley Müller",
     "poem_form": "haiku",
