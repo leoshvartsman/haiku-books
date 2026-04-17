@@ -1,5 +1,18 @@
 [
   {
+    "title": "What the Body Remembers",
+    "author": "Haruki Tanaka",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-17",
+    "slug": "what-the-body-remembers",
+    "cover_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "Wood Grain and Open Sky",
     "author": "Sam Kowalski",
     "poem_form": "haiku",
@@ -36,19 +49,6 @@
     "cover_url": "https://shmindle.com/dl/book-between-every-signal/between-every-signal.jpg",
     "pdf_url": "https://shmindle.com/dl/book-between-every-signal/between-every-signal.pdf",
     "epub_url": "https://shmindle.com/dl/book-between-every-signal/between-every-signal.epub",
-    "cover_style": "modern"
-  },
-  {
-    "title": "What the Body Remembers",
-    "author": "Riley Müller",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-04-16",
-    "slug": "what-the-body-remembers",
-    "cover_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.pdf",
-    "epub_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.epub",
     "cover_style": "modern"
   },
   {
