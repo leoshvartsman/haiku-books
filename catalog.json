@@ -1,5 +1,18 @@
 [
   {
+    "title": "Before the City Wakes",
+    "author": "Alex Rodríguez",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-18",
+    "slug": "before-the-city-wakes",
+    "cover_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.pdf",
+    "epub_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.epub",
+    "cover_style": "modern"
+  },
+  {
     "title": "What the Body Remembers",
     "author": "Haruki Tanaka",
     "poem_form": "haiku",
@@ -166,19 +179,6 @@
     "cover_url": "https://shmindle.com/dl/book-every-threshold-breathes/every-threshold-breathes.jpg",
     "pdf_url": "https://shmindle.com/dl/book-every-threshold-breathes/every-threshold-breathes.pdf",
     "epub_url": "https://shmindle.com/dl/book-every-threshold-breathes/every-threshold-breathes.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "Before the City Wakes",
-    "author": "Cameron Kim",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-04-13",
-    "slug": "before-the-city-wakes",
-    "cover_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.pdf",
-    "epub_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.epub",
     "cover_style": "classic"
   },
   {
