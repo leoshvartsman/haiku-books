@@ -13,6 +13,19 @@
     "cover_style": "modern"
   },
   {
+    "title": "What the Body Keeps",
+    "author": "Parker Sato",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-18",
+    "slug": "what-the-body-keeps",
+    "cover_url": "https://shmindle.com/dl/book-what-the-body-keeps/what-the-body-keeps.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-body-keeps/what-the-body-keeps.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-body-keeps/what-the-body-keeps.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "What the Body Remembers",
     "author": "Haruki Tanaka",
     "poem_form": "haiku",
