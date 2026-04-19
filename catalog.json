@@ -1,5 +1,18 @@
 [
   {
+    "title": "Stone Remembers Water",
+    "author": "Andrea Muñoz",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-19",
+    "slug": "stone-remembers-water",
+    "cover_url": "https://shmindle.com/dl/book-stone-remembers-water/stone-remembers-water.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-stone-remembers-water/stone-remembers-water.pdf",
+    "epub_url": "https://shmindle.com/dl/book-stone-remembers-water/stone-remembers-water.epub",
+    "cover_style": "modern"
+  },
+  {
     "title": "Before the City Wakes",
     "author": "Alex Rodríguez",
     "poem_form": "haiku",
@@ -258,19 +271,6 @@
     "pdf_url": "https://shmindle.com/dl/book-stone-water-light/stone-water-light.pdf",
     "epub_url": "https://shmindle.com/dl/book-stone-water-light/stone-water-light.epub",
     "cover_style": "modern"
-  },
-  {
-    "title": "Stone Remembers Water",
-    "author": "Sage Müller",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-04-12",
-    "slug": "stone-remembers-water",
-    "cover_url": "https://shmindle.com/dl/book-stone-remembers-water/stone-remembers-water.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-stone-remembers-water/stone-remembers-water.pdf",
-    "epub_url": "https://shmindle.com/dl/book-stone-remembers-water/stone-remembers-water.epub",
-    "cover_style": "classic"
   },
   {
     "title": "Every City Holds Rain",

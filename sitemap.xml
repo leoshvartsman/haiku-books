@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://shmindle.com/</loc><lastmod>2026-04-18</lastmod><priority>1.0</priority></url>
+  <url><loc>https://shmindle.com/</loc><lastmod>2026-04-19</lastmod><priority>1.0</priority></url>
+  <url><loc>https://shmindle.com/books/stone-remembers-water.html</loc><lastmod>2026-04-19</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/before-the-city-wakes.html</loc><lastmod>2026-04-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/what-the-body-keeps.html</loc><lastmod>2026-04-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/ash-and-open-water.html</loc><lastmod>2026-04-18</lastmod><priority>0.8</priority></url>
@@ -21,7 +22,6 @@
   <url><loc>https://shmindle.com/books/what-the-foot-remembers.html</loc><lastmod>2026-04-13</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/altitude-and-ash.html</loc><lastmod>2026-04-13</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/stone-water-light.html</loc><lastmod>2026-04-13</lastmod><priority>0.8</priority></url>
-  <url><loc>https://shmindle.com/books/stone-remembers-water.html</loc><lastmod>2026-04-12</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/every-city-holds-rain.html</loc><lastmod>2026-04-12</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/grain-against-the-blade.html</loc><lastmod>2026-04-12</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/between-measurements.html</loc><lastmod>2026-04-12</lastmod><priority>0.8</priority></url>
@@ -292,6 +292,7 @@
   <url><loc>https://shmindle.com/books/neon-script-and-sparrows.html</loc><lastmod>2026-02-05</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/tracks-in-fresh-snow.html</loc><lastmod>2026-02-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/stone-lanterns-and-whispers.html</loc><lastmod>2026-02-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://shmindle.com/authors/andrea-munoz.html</loc><lastmod>2026-04-19</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/alex-rodriguez.html</loc><lastmod>2026-04-18</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/parker-sato.html</loc><lastmod>2026-04-18</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/cameron-andersson.html</loc><lastmod>2026-04-18</lastmod><priority>0.7</priority></url>
@@ -312,7 +313,6 @@
   <url><loc>https://shmindle.com/authors/morgan-ali.html</loc><lastmod>2026-04-13</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/sacha-martin.html</loc><lastmod>2026-04-13</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/sage-lee.html</loc><lastmod>2026-04-13</lastmod><priority>0.7</priority></url>
-  <url><loc>https://shmindle.com/authors/sage-muller.html</loc><lastmod>2026-04-12</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/ming-xu.html</loc><lastmod>2026-04-12</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/jing-li.html</loc><lastmod>2026-04-12</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/riley-muller.html</loc><lastmod>2026-04-12</lastmod><priority>0.7</priority></url>
