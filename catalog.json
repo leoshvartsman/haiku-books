@@ -39,6 +39,19 @@
     "cover_style": "modern"
   },
   {
+    "title": "Where the Light Changes Language",
+    "author": "Taylor Andersson",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-19",
+    "slug": "where-the-light-changes-language",
+    "cover_url": "https://shmindle.com/dl/book-where-the-light-changes-language/where-the-light-changes-language.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-where-the-light-changes-language/where-the-light-changes-language.pdf",
+    "epub_url": "https://shmindle.com/dl/book-where-the-light-changes-language/where-the-light-changes-language.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "Before the City Wakes",
     "author": "Alex Rodríguez",
     "poem_form": "haiku",
