@@ -26,6 +26,19 @@
     "cover_style": "classic"
   },
   {
+    "title": "The Tide Keeps Different Time",
+    "author": "Casey Smith",
+    "poem_form": "sonnet",
+    "poem_count": 25,
+    "haiku_count": 25,
+    "date": "2026-04-20",
+    "slug": "the-tide-keeps-different-time",
+    "cover_url": "https://shmindle.com/dl/book-the-tide-keeps-different-time/the-tide-keeps-different-time.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-the-tide-keeps-different-time/the-tide-keeps-different-time.pdf",
+    "epub_url": "https://shmindle.com/dl/book-the-tide-keeps-different-time/the-tide-keeps-different-time.epub",
+    "cover_style": "modern"
+  },
+  {
     "title": "What the Body Remembers",
     "author": "Sky Singh",
     "poem_form": "haiku",
