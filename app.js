@@ -67,11 +67,13 @@ function render() {
         ? `${allBooks.length} books`
         : `${filteredBooks.length} of ${allBooks.length} books`;
 
-    const classic = filteredBooks.filter(b => (b.cover_style || 'classic') !== 'modern');
-    const modern  = filteredBooks.filter(b => b.cover_style === 'modern');
+    const classic = filteredBooks.filter(b => b.poem_form !== 'sonnet' && (b.cover_style || 'classic') !== 'modern');
+    const modern  = filteredBooks.filter(b => b.poem_form !== 'sonnet' && b.cover_style === 'modern');
+    const sonnets = filteredBooks.filter(b => b.poem_form === 'sonnet');
 
     document.getElementById('grid-classic').innerHTML = classic.map(bookCard).join('');
     document.getElementById('grid-modern').innerHTML  = modern.map(bookCard).join('');
+    document.getElementById('grid-sonnets').innerHTML = sonnets.map(bookCard).join('');
 
     // Hide empty shelves
     document.querySelectorAll('.shelf-section').forEach(section => {
