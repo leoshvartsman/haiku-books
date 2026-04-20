@@ -98,16 +98,25 @@ def find_cover(title: str, form: str = "haiku") -> Optional[Path]:
     return None
 
 
+COVER_W = 600
+COVER_H = 900  # 2:3 — consistent across all books regardless of band size
+
 def convert_cover_to_jpg(png_path: Path, output_path: Path) -> bool:
-    """Convert PNG cover to smaller JPG."""
+    """Convert PNG cover to a normalised 600x900 JPG (2:3 aspect ratio).
+
+    Scales to fit within the target dimensions with white letterboxing,
+    so no content is ever cropped regardless of source aspect ratio.
+    """
     try:
-        img = Image.open(png_path)
-        img = img.convert('RGB')
-        # Resize to max 600px wide for web
-        if img.width > 600:
-            ratio = 600 / img.width
-            img = img.resize((600, int(img.height * ratio)), Image.LANCZOS)
-        img.save(output_path, 'JPEG', quality=82, optimize=True)
+        img = Image.open(png_path).convert('RGB')
+        # Scale to fit within COVER_W x COVER_H, preserving aspect ratio
+        img.thumbnail((COVER_W, COVER_H), Image.LANCZOS)
+        # Paste centred onto a white canvas
+        canvas = Image.new('RGB', (COVER_W, COVER_H), (255, 255, 255))
+        x = (COVER_W - img.width) // 2
+        y = (COVER_H - img.height) // 2
+        canvas.paste(img, (x, y))
+        canvas.save(output_path, 'JPEG', quality=82, optimize=True)
         return True
     except Exception as e:
         print(f"  Warning: Could not convert cover: {e}")
