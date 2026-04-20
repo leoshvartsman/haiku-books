@@ -78,6 +78,19 @@
     "cover_style": "classic"
   },
   {
+    "title": "The Names I Carried",
+    "author": "Aarav Reddy",
+    "poem_form": "sonnet",
+    "poem_count": 25,
+    "haiku_count": 25,
+    "date": "2026-04-20",
+    "slug": "the-names-i-carried",
+    "cover_url": "https://shmindle.com/dl/book-the-names-i-carried/the-names-i-carried.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-the-names-i-carried/the-names-i-carried.pdf",
+    "epub_url": "https://shmindle.com/dl/book-the-names-i-carried/the-names-i-carried.epub",
+    "cover_style": "modern"
+  },
+  {
     "title": "Before the City Wakes",
     "author": "Luca Esposito",
     "poem_form": "sonnet",
