@@ -39,6 +39,19 @@
     "cover_style": "classic"
   },
   {
+    "title": "Wherever the Jasmine Follows",
+    "author": "Saanvi Nair",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-20",
+    "slug": "wherever-the-jasmine-follows",
+    "cover_url": "https://shmindle.com/dl/book-wherever-the-jasmine-follows/wherever-the-jasmine-follows.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-wherever-the-jasmine-follows/wherever-the-jasmine-follows.pdf",
+    "epub_url": "https://shmindle.com/dl/book-wherever-the-jasmine-follows/wherever-the-jasmine-follows.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "The Tide Keeps Different Time",
     "author": "Casey Smith",
     "poem_form": "sonnet",
