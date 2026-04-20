@@ -1,5 +1,18 @@
 [
   {
+    "title": "What the Body Remembers",
+    "author": "Sky Smith",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-20",
+    "slug": "what-the-body-remembers",
+    "cover_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.epub",
+    "cover_style": "modern"
+  },
+  {
     "title": "The Angle of Ordinary Light",
     "author": "Xia Zhao",
     "poem_form": "haiku",
@@ -37,19 +50,6 @@
     "pdf_url": "https://shmindle.com/dl/book-the-tide-keeps-different-time/the-tide-keeps-different-time.pdf",
     "epub_url": "https://shmindle.com/dl/book-the-tide-keeps-different-time/the-tide-keeps-different-time.epub",
     "cover_style": "modern"
-  },
-  {
-    "title": "What the Body Remembers",
-    "author": "Sky Singh",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-04-19",
-    "slug": "what-the-body-remembers",
-    "cover_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.pdf",
-    "epub_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.epub",
-    "cover_style": "classic"
   },
   {
     "title": "Before the City Wakes",
