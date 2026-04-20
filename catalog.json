@@ -26,6 +26,19 @@
     "cover_style": "classic"
   },
   {
+    "title": "Before the City Wakes",
+    "author": "Luca Esposito",
+    "poem_form": "sonnet",
+    "poem_count": 20,
+    "haiku_count": 20,
+    "date": "2026-04-19",
+    "slug": "before-the-city-wakes",
+    "cover_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.pdf",
+    "epub_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "Stone Remembers Water",
     "author": "Andrea Muñoz",
     "poem_form": "haiku",
@@ -65,17 +78,30 @@
     "cover_style": "classic"
   },
   {
-    "title": "Before the City Wakes",
-    "author": "Alex Rodríguez",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-04-18",
-    "slug": "before-the-city-wakes",
-    "cover_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.pdf",
-    "epub_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.epub",
+    "title": "What the Hands Remember",
+    "author": "Morgan Durand",
+    "poem_form": "sonnet",
+    "poem_count": 20,
+    "haiku_count": 20,
+    "date": "2026-04-19",
+    "slug": "what-the-hands-remember",
+    "cover_url": "https://shmindle.com/dl/book-what-the-hands-remember/what-the-hands-remember.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-hands-remember/what-the-hands-remember.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-hands-remember/what-the-hands-remember.epub",
     "cover_style": "modern"
+  },
+  {
+    "title": "Where the Grass Remembers",
+    "author": "Sam Patel",
+    "poem_form": "sonnet",
+    "poem_count": 20,
+    "haiku_count": 20,
+    "date": "2026-04-19",
+    "slug": "where-the-grass-remembers",
+    "cover_url": "https://shmindle.com/dl/book-where-the-grass-remembers/where-the-grass-remembers.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-where-the-grass-remembers/where-the-grass-remembers.pdf",
+    "epub_url": "https://shmindle.com/dl/book-where-the-grass-remembers/where-the-grass-remembers.epub",
+    "cover_style": "classic"
   },
   {
     "title": "What the Body Keeps",
