@@ -290,6 +290,15 @@ def build_catalog(dry_run=False):
         if has_release:
             print(f"  Release exists, fetching URLs...")
             urls = get_existing_release_urls(tag)
+            # Update cover if a new one is available
+            if cover_jpg:
+                print(f"  Uploading updated cover...")
+                result = subprocess.run(
+                    ["gh", "release", "upload", tag, str(cover_jpg), "--repo", GITHUB_REPO, "--clobber"],
+                    capture_output=True, text=True
+                )
+                if result.returncode == 0:
+                    urls["cover"] = f"https://github.com/{GITHUB_REPO}/releases/download/{tag}/{cover_jpg.name}"
         else:
             # Collect assets to upload
             assets = []
