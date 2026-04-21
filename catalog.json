@@ -13,6 +13,19 @@
     "cover_style": "modern"
   },
   {
+    "title": "What the Water Carries",
+    "author": "Yuki Kato",
+    "poem_form": "sonnet",
+    "poem_count": 25,
+    "haiku_count": 25,
+    "date": "2026-04-21",
+    "slug": "what-the-water-carries",
+    "cover_url": "https://shmindle.com/dl/book-what-the-water-carries/what-the-water-carries.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-water-carries/what-the-water-carries.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-water-carries/what-the-water-carries.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "What the Body Remembers",
     "author": "Sky Smith",
     "poem_form": "haiku",
