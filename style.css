@@ -176,11 +176,13 @@ header h1 {
 .card-cover {
     background: #f0ece6;
     overflow: hidden;
+    aspect-ratio: 2 / 3;
+    width: 100%;
 }
 
 .card img {
     width: 100%;
-    aspect-ratio: 2 / 3;
+    height: 100%;
     object-fit: contain;
     display: block;
     background: #f0ece6;
