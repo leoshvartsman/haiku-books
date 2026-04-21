@@ -56,7 +56,13 @@ function bookCard(book) {
     const pageUrl = `books/${slug}.html`;
     return `<div class="card">
         <a href="${pageUrl}" class="card-link">
-            <div class="card-cover">${coverHtml}</div>
+            <div class="card-cover">
+                ${coverHtml}
+                <div class="card-text-overlay">
+                    <div class="card-title">${book.title}</div>
+                    <div class="card-author">${book.author}</div>
+                </div>
+            </div>
         </a>
     </div>`;
 }

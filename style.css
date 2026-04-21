@@ -178,6 +178,7 @@ header h1 {
     overflow: hidden;
     aspect-ratio: 2 / 3;
     width: 100%;
+    position: relative;
 }
 
 .card img {
@@ -193,6 +194,34 @@ header h1 {
 .card-link:hover ~ .card img,
 .card:hover img {
     transform: scale(1.03);
+}
+
+.card-text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 1.5rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.3), transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.card-text-overlay .card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.card-text-overlay .card-author {
+    font-size: 1rem;
+    color: #f0f0f0;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.5);
 }
 
 .card-footer {
