@@ -101,22 +101,43 @@ def find_cover(title: str, form: str = "haiku") -> Optional[Path]:
 COVER_W = 600
 COVER_H = 900  # 2:3 — consistent across all books regardless of band size
 
-def convert_cover_to_jpg(png_path: Path, output_path: Path) -> bool:
+def convert_cover_to_jpg(png_path: Path, output_path: Path, cover_style: str = "classic") -> bool:
     """Convert PNG cover to a normalised 600x900 JPG (2:3 aspect ratio).
 
-    Scales to fit within the target dimensions with white letterboxing,
-    so no content is ever cropped regardless of source aspect ratio.
+    For classic covers: crops/scales to fill the space (no white letterboxing).
+    For modern covers: scales to fit within the target with white letterboxing.
     """
     try:
         img = Image.open(png_path).convert('RGB')
-        # Scale to fit within COVER_W x COVER_H, preserving aspect ratio
-        img.thumbnail((COVER_W, COVER_H), Image.LANCZOS)
-        # Paste centred onto a white canvas
-        canvas = Image.new('RGB', (COVER_W, COVER_H), (255, 255, 255))
-        x = (COVER_W - img.width) // 2
-        y = (COVER_H - img.height) // 2
-        canvas.paste(img, (x, y))
-        canvas.save(output_path, 'JPEG', quality=82, optimize=True)
+
+        if cover_style == "classic":
+            # For classic covers: scale to fill the space (crop if needed)
+            # Calculate scale to fill either width or height
+            w_ratio = COVER_W / img.width
+            h_ratio = COVER_H / img.height
+            scale = max(w_ratio, h_ratio)  # Use larger scale to fill the space
+
+            # Scale the image
+            new_w = int(img.width * scale)
+            new_h = int(img.height * scale)
+            img = img.resize((new_w, new_h), Image.LANCZOS)
+
+            # Center crop to target size
+            left = (new_w - COVER_W) // 2
+            top = (new_h - COVER_H) // 2
+            right = left + COVER_W
+            bottom = top + COVER_H
+            img = img.crop((left, top, right, bottom))
+        else:
+            # For modern covers: letterbox with white space
+            img.thumbnail((COVER_W, COVER_H), Image.LANCZOS)
+            canvas = Image.new('RGB', (COVER_W, COVER_H), (255, 255, 255))
+            x = (COVER_W - img.width) // 2
+            y = (COVER_H - img.height) // 2
+            canvas.paste(img, (x, y))
+            img = canvas
+
+        img.save(output_path, 'JPEG', quality=82, optimize=True)
         return True
     except Exception as e:
         print(f"  Warning: Could not convert cover: {e}")
@@ -247,7 +268,7 @@ def build_catalog(dry_run=False):
         cover_jpg = None
         if cover_path:
             cover_jpg = tmp_dir / f"{slug}.jpg"
-            if not convert_cover_to_jpg(cover_path, cover_jpg):
+            if not convert_cover_to_jpg(cover_path, cover_jpg, cover_style=cover_style):
                 cover_jpg = None
 
         if dry_run:
