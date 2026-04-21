@@ -1,5 +1,18 @@
 [
   {
+    "title": "Borrowed Light",
+    "author": "Cruz Hernández",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-04-21",
+    "slug": "borrowed-light",
+    "cover_url": "https://shmindle.com/dl/book-borrowed-light/borrowed-light.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-borrowed-light/borrowed-light.pdf",
+    "epub_url": "https://shmindle.com/dl/book-borrowed-light/borrowed-light.epub",
+    "cover_style": "modern"
+  },
+  {
     "title": "What the Body Remembers",
     "author": "Sky Smith",
     "poem_form": "haiku",
@@ -582,19 +595,6 @@
     "cover_url": "https://shmindle.com/dl/book-the-longitude-of-smoke/the-longitude-of-smoke.jpg",
     "pdf_url": "https://shmindle.com/dl/book-the-longitude-of-smoke/the-longitude-of-smoke.pdf",
     "epub_url": "https://shmindle.com/dl/book-the-longitude-of-smoke/the-longitude-of-smoke.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "Borrowed Light",
-    "author": "Harper Novak",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-04-09",
-    "slug": "borrowed-light",
-    "cover_url": "https://shmindle.com/dl/book-borrowed-light/borrowed-light.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-borrowed-light/borrowed-light.pdf",
-    "epub_url": "https://shmindle.com/dl/book-borrowed-light/borrowed-light.epub",
     "cover_style": "classic"
   },
   {
