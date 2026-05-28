@@ -3211,6 +3211,45 @@
     "cover_style": "classic"
   },
   {
+    "title": "Concrete Blossoms",
+    "author": "Xia Wu",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-02-24",
+    "slug": "concrete-blossoms",
+    "cover_url": "https://shmindle.com/dl/book-concrete-blossoms/concrete-blossoms.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-concrete-blossoms/concrete-blossoms.pdf",
+    "epub_url": "https://shmindle.com/dl/book-concrete-blossoms/concrete-blossoms.epub",
+    "cover_style": "classic"
+  },
+  {
+    "title": "Between Measures",
+    "author": "Jona Wagner",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-02-23",
+    "slug": "between-measures",
+    "cover_url": "",
+    "pdf_url": "https://shmindle.com/dl/book-between-measures/between-measures.pdf",
+    "epub_url": "https://shmindle.com/dl/book-between-measures/between-measures.epub",
+    "cover_style": "classic"
+  },
+  {
+    "title": "Dawn Finds Me Here",
+    "author": "Skyler Johnson",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-02-23",
+    "slug": "dawn-finds-me-here",
+    "cover_url": "https://shmindle.com/dl/book-dawn-finds-me-here/dawn-finds-me-here.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-dawn-finds-me-here/dawn-finds-me-here.pdf",
+    "epub_url": "https://shmindle.com/dl/book-dawn-finds-me-here/dawn-finds-me-here.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "The Slow Work of Water",
     "author": "Avery Johnson",
     "poem_form": "haiku",
@@ -3218,9 +3257,9 @@
     "haiku_count": 250,
     "date": "2026-02-23",
     "slug": "the-slow-work-of-water",
-    "cover_url": "",
-    "pdf_url": "",
-    "epub_url": "",
+    "cover_url": "https://shmindle.com/dl/book-the-slow-work-of-water/the-slow-work-of-water.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-the-slow-work-of-water/the-slow-work-of-water.pdf",
+    "epub_url": "https://shmindle.com/dl/book-the-slow-work-of-water/the-slow-work-of-water.epub",
     "cover_style": "classic"
   },
   {
@@ -3231,9 +3270,9 @@
     "haiku_count": 250,
     "date": "2026-02-23",
     "slug": "what-the-light-keeps",
-    "cover_url": "",
-    "pdf_url": "",
-    "epub_url": "",
+    "cover_url": "https://shmindle.com/dl/book-what-the-light-keeps/what-the-light-keeps.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-light-keeps/what-the-light-keeps.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-light-keeps/what-the-light-keeps.epub",
     "cover_style": "classic"
   },
   {
@@ -3244,9 +3283,22 @@
     "haiku_count": 214,
     "date": "2026-02-22",
     "slug": "what-the-monsoon-left-behind",
-    "cover_url": "",
-    "pdf_url": "",
-    "epub_url": "",
+    "cover_url": "https://shmindle.com/dl/book-what-the-monsoon-left-behind/what-the-monsoon-left-behind.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-monsoon-left-behind/what-the-monsoon-left-behind.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-monsoon-left-behind/what-the-monsoon-left-behind.epub",
+    "cover_style": "classic"
+  },
+  {
+    "title": "What the Roots Remember",
+    "author": "Casey García",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-02-22",
+    "slug": "what-the-roots-remember",
+    "cover_url": "https://shmindle.com/dl/book-what-the-roots-remember/what-the-roots-remember.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-roots-remember/what-the-roots-remember.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-roots-remember/what-the-roots-remember.epub",
     "cover_style": "classic"
   },
   {
@@ -3270,9 +3322,9 @@
     "haiku_count": 250,
     "date": "2026-02-21",
     "slug": "wet-season-dry-season",
-    "cover_url": "",
-    "pdf_url": "",
-    "epub_url": "",
+    "cover_url": "https://shmindle.com/dl/book-wet-season-dry-season/wet-season-dry-season.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-wet-season-dry-season/wet-season-dry-season.pdf",
+    "epub_url": "https://shmindle.com/dl/book-wet-season-dry-season/wet-season-dry-season.epub",
     "cover_style": "classic"
   },
   {
@@ -3289,6 +3341,19 @@
     "cover_style": "classic"
   },
   {
+    "title": "Concrete and Snow",
+    "author": "Harper Smith",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-02-20",
+    "slug": "concrete-and-snow",
+    "cover_url": "https://shmindle.com/dl/book-concrete-and-snow/concrete-and-snow.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-concrete-and-snow/concrete-and-snow.pdf",
+    "epub_url": "https://shmindle.com/dl/book-concrete-and-snow/concrete-and-snow.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "Salt on Three Shores",
     "author": "Young Lee",
     "poem_form": "haiku",
@@ -3296,9 +3361,9 @@
     "haiku_count": 250,
     "date": "2026-02-20",
     "slug": "salt-on-three-shores",
-    "cover_url": "",
-    "pdf_url": "",
-    "epub_url": "",
+    "cover_url": "https://shmindle.com/dl/book-salt-on-three-shores/salt-on-three-shores.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-salt-on-three-shores/salt-on-three-shores.pdf",
+    "epub_url": "https://shmindle.com/dl/book-salt-on-three-shores/salt-on-three-shores.epub",
     "cover_style": "classic"
   },
   {
@@ -3309,9 +3374,22 @@
     "haiku_count": 250,
     "date": "2026-02-20",
     "slug": "salt-keeps-its-shape",
-    "cover_url": "",
-    "pdf_url": "",
-    "epub_url": "",
+    "cover_url": "https://shmindle.com/dl/book-salt-keeps-its-shape/salt-keeps-its-shape.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-salt-keeps-its-shape/salt-keeps-its-shape.pdf",
+    "epub_url": "https://shmindle.com/dl/book-salt-keeps-its-shape/salt-keeps-its-shape.epub",
+    "cover_style": "classic"
+  },
+  {
+    "title": "Sand Keeps Its Shape",
+    "author": "Jordan Kowalski",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-02-19",
+    "slug": "sand-keeps-its-shape",
+    "cover_url": "https://shmindle.com/dl/book-sand-keeps-its-shape/sand-keeps-its-shape.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-sand-keeps-its-shape/sand-keeps-its-shape.pdf",
+    "epub_url": "https://shmindle.com/dl/book-sand-keeps-its-shape/sand-keeps-its-shape.epub",
     "cover_style": "classic"
   },
   {
@@ -3354,6 +3432,32 @@
     "cover_style": "classic"
   },
   {
+    "title": "Grain and Altitude",
+    "author": "Robin Ali",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-02-19",
+    "slug": "grain-and-altitude",
+    "cover_url": "https://shmindle.com/dl/book-grain-and-altitude/grain-and-altitude.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-grain-and-altitude/grain-and-altitude.pdf",
+    "epub_url": "https://shmindle.com/dl/book-grain-and-altitude/grain-and-altitude.epub",
+    "cover_style": "classic"
+  },
+  {
+    "title": "Salt Between Latitudes",
+    "author": "Sam Brown",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-02-17",
+    "slug": "salt-between-latitudes",
+    "cover_url": "https://shmindle.com/dl/book-salt-between-latitudes/salt-between-latitudes.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-salt-between-latitudes/salt-between-latitudes.pdf",
+    "epub_url": "https://shmindle.com/dl/book-salt-between-latitudes/salt-between-latitudes.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "Between Ledgers and Light",
     "author": "Sky Singh",
     "poem_form": "haiku",
@@ -3364,6 +3468,19 @@
     "cover_url": "https://shmindle.com/dl/book-between-ledgers-and-light/between-ledgers-and-light.jpg",
     "pdf_url": "https://shmindle.com/dl/book-between-ledgers-and-light/between-ledgers-and-light.pdf",
     "epub_url": "https://shmindle.com/dl/book-between-ledgers-and-light/between-ledgers-and-light.epub",
+    "cover_style": "classic"
+  },
+  {
+    "title": "Borders I Keep Crossing",
+    "author": "Alex Harris",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-02-17",
+    "slug": "borders-i-keep-crossing",
+    "cover_url": "https://shmindle.com/dl/book-borders-i-keep-crossing/borders-i-keep-crossing.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-borders-i-keep-crossing/borders-i-keep-crossing.pdf",
+    "epub_url": "https://shmindle.com/dl/book-borders-i-keep-crossing/borders-i-keep-crossing.epub",
     "cover_style": "classic"
   },
   {
@@ -3419,6 +3536,45 @@
     "cover_style": "classic"
   },
   {
+    "title": "Between Tides",
+    "author": "Riley Wilson",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-02-14",
+    "slug": "between-tides",
+    "cover_url": "https://shmindle.com/dl/book-between-tides/between-tides.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-between-tides/between-tides.pdf",
+    "epub_url": "https://shmindle.com/dl/book-between-tides/between-tides.epub",
+    "cover_style": "classic"
+  },
+  {
+    "title": "Cities Beneath the Skin",
+    "author": "Sol Díaz",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-02-14",
+    "slug": "cities-beneath-the-skin",
+    "cover_url": "https://shmindle.com/dl/book-cities-beneath-the-skin/cities-beneath-the-skin.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-cities-beneath-the-skin/cities-beneath-the-skin.pdf",
+    "epub_url": "https://shmindle.com/dl/book-cities-beneath-the-skin/cities-beneath-the-skin.epub",
+    "cover_style": "classic"
+  },
+  {
+    "title": "Between Pulse and Breath",
+    "author": "Parker Lewis",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-02-14",
+    "slug": "between-pulse-and-breath",
+    "cover_url": "https://shmindle.com/dl/book-between-pulse-and-breath/between-pulse-and-breath.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-between-pulse-and-breath/between-pulse-and-breath.pdf",
+    "epub_url": "https://shmindle.com/dl/book-between-pulse-and-breath/between-pulse-and-breath.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "Four Corners of Salt",
     "author": "Harper Brown",
     "poem_form": "haiku",
@@ -3429,6 +3585,45 @@
     "cover_url": "https://shmindle.com/dl/book-four-corners-of-salt/four-corners-of-salt.jpg",
     "pdf_url": "https://shmindle.com/dl/book-four-corners-of-salt/four-corners-of-salt.pdf",
     "epub_url": "https://shmindle.com/dl/book-four-corners-of-salt/four-corners-of-salt.epub",
+    "cover_style": "classic"
+  },
+  {
+    "title": "Four Seasons, Four Tongues",
+    "author": "Kim Schmidt",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-02-14",
+    "slug": "four-seasons-four-tongues",
+    "cover_url": "https://shmindle.com/dl/book-four-seasons-four-tongues/four-seasons-four-tongues.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-four-seasons-four-tongues/four-seasons-four-tongues.pdf",
+    "epub_url": "https://shmindle.com/dl/book-four-seasons-four-tongues/four-seasons-four-tongues.epub",
+    "cover_style": "classic"
+  },
+  {
+    "title": "Three Seasons Deep",
+    "author": "River García",
+    "poem_form": "haiku",
+    "poem_count": 244,
+    "haiku_count": 244,
+    "date": "2026-02-14",
+    "slug": "three-seasons-deep",
+    "cover_url": "https://shmindle.com/dl/book-three-seasons-deep/three-seasons-deep.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-three-seasons-deep/three-seasons-deep.pdf",
+    "epub_url": "https://shmindle.com/dl/book-three-seasons-deep/three-seasons-deep.epub",
+    "cover_style": "classic"
+  },
+  {
+    "title": "Four Winds, One Sky",
+    "author": "Skyler Anderson",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-02-14",
+    "slug": "four-winds-one-sky",
+    "cover_url": "https://shmindle.com/dl/book-four-winds-one-sky/four-winds-one-sky.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-four-winds-one-sky/four-winds-one-sky.pdf",
+    "epub_url": "https://shmindle.com/dl/book-four-winds-one-sky/four-winds-one-sky.epub",
     "cover_style": "classic"
   },
   {
@@ -3471,6 +3666,45 @@
     "cover_style": "classic"
   },
   {
+    "title": "Borrowed Ground",
+    "author": "Harper Patel",
+    "poem_form": "haiku",
+    "poem_count": 237,
+    "haiku_count": 237,
+    "date": "2026-02-14",
+    "slug": "borrowed-ground",
+    "cover_url": "https://shmindle.com/dl/book-borrowed-ground/borrowed-ground.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-borrowed-ground/borrowed-ground.pdf",
+    "epub_url": "https://shmindle.com/dl/book-borrowed-ground/borrowed-ground.epub",
+    "cover_style": "classic"
+  },
+  {
+    "title": "Between Altitudes",
+    "author": "Robin Novak",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-02-14",
+    "slug": "between-altitudes",
+    "cover_url": "https://shmindle.com/dl/book-between-altitudes/between-altitudes.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-between-altitudes/between-altitudes.pdf",
+    "epub_url": "https://shmindle.com/dl/book-between-altitudes/between-altitudes.epub",
+    "cover_style": "classic"
+  },
+  {
+    "title": "Threading the Monsoon",
+    "author": "Wen Li",
+    "poem_form": "haiku",
+    "poem_count": 227,
+    "haiku_count": 227,
+    "date": "2026-02-07",
+    "slug": "threading-the-monsoon",
+    "cover_url": "https://shmindle.com/dl/book-threading-the-monsoon/threading-the-monsoon.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-threading-the-monsoon/threading-the-monsoon.pdf",
+    "epub_url": "https://shmindle.com/dl/book-threading-the-monsoon/threading-the-monsoon.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "Thimbles and Wehrmacht Boots",
     "author": "Riley Kowalski",
     "poem_form": "haiku",
@@ -3491,9 +3725,22 @@
     "haiku_count": 209,
     "date": "2026-02-07",
     "slug": "tuk-tuk-saints",
-    "cover_url": "",
-    "pdf_url": "",
-    "epub_url": "",
+    "cover_url": "https://shmindle.com/dl/book-tuk-tuk-saints/tuk-tuk-saints.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-tuk-tuk-saints/tuk-tuk-saints.pdf",
+    "epub_url": "https://shmindle.com/dl/book-tuk-tuk-saints/tuk-tuk-saints.epub",
+    "cover_style": "classic"
+  },
+  {
+    "title": "Spine Cracked at Hope",
+    "author": "Emerson Miller",
+    "poem_form": "haiku",
+    "poem_count": 219,
+    "haiku_count": 219,
+    "date": "2026-02-07",
+    "slug": "spine-cracked-at-hope",
+    "cover_url": "https://shmindle.com/dl/book-spine-cracked-at-hope/spine-cracked-at-hope.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-spine-cracked-at-hope/spine-cracked-at-hope.pdf",
+    "epub_url": "https://shmindle.com/dl/book-spine-cracked-at-hope/spine-cracked-at-hope.epub",
     "cover_style": "classic"
   },
   {
@@ -3549,6 +3796,32 @@
     "cover_style": "classic"
   },
   {
+    "title": "Dust Motes Dancing",
+    "author": "Jing Li",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-02-06",
+    "slug": "dust-motes-dancing",
+    "cover_url": "https://shmindle.com/dl/book-dust-motes-dancing/dust-motes-dancing.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-dust-motes-dancing/dust-motes-dancing.pdf",
+    "epub_url": "https://shmindle.com/dl/book-dust-motes-dancing/dust-motes-dancing.epub",
+    "cover_style": "classic"
+  },
+  {
+    "title": "Amber Morse and Cedar",
+    "author": "Saanvi Nair",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-02-06",
+    "slug": "amber-morse-and-cedar",
+    "cover_url": "https://shmindle.com/dl/book-amber-morse-and-cedar/amber-morse-and-cedar.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-amber-morse-and-cedar/amber-morse-and-cedar.pdf",
+    "epub_url": "https://shmindle.com/dl/book-amber-morse-and-cedar/amber-morse-and-cedar.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "Grease and Grace Notes",
     "author": "Blake Lee",
     "poem_form": "haiku",
@@ -3598,6 +3871,58 @@
     "cover_url": "https://shmindle.com/dl/book-mechanisms-in-motion/mechanisms-in-motion.jpg",
     "pdf_url": "https://shmindle.com/dl/book-mechanisms-in-motion/mechanisms-in-motion.pdf",
     "epub_url": "https://shmindle.com/dl/book-mechanisms-in-motion/mechanisms-in-motion.epub",
+    "cover_style": "classic"
+  },
+  {
+    "title": "Ink Between Borders",
+    "author": "Riley Ali",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-02-05",
+    "slug": "ink-between-borders",
+    "cover_url": "https://shmindle.com/dl/book-ink-between-borders/ink-between-borders.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-ink-between-borders/ink-between-borders.pdf",
+    "epub_url": "https://shmindle.com/dl/book-ink-between-borders/ink-between-borders.epub",
+    "cover_style": "classic"
+  },
+  {
+    "title": "Neon Script and Sparrows",
+    "author": "Simone Ricci",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-02-05",
+    "slug": "neon-script-and-sparrows",
+    "cover_url": "https://shmindle.com/dl/book-neon-script-and-sparrows/neon-script-and-sparrows.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-neon-script-and-sparrows/neon-script-and-sparrows.pdf",
+    "epub_url": "https://shmindle.com/dl/book-neon-script-and-sparrows/neon-script-and-sparrows.epub",
+    "cover_style": "classic"
+  },
+  {
+    "title": "Tracks in Fresh Snow",
+    "author": "Andrea Bruno",
+    "poem_form": "haiku",
+    "poem_count": 63,
+    "haiku_count": 63,
+    "date": "2026-02-04",
+    "slug": "tracks-in-fresh-snow",
+    "cover_url": "https://shmindle.com/dl/book-tracks-in-fresh-snow/tracks-in-fresh-snow.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-tracks-in-fresh-snow/tracks-in-fresh-snow.pdf",
+    "epub_url": "https://shmindle.com/dl/book-tracks-in-fresh-snow/tracks-in-fresh-snow.epub",
+    "cover_style": "classic"
+  },
+  {
+    "title": "Stone Lanterns and Whispers",
+    "author": "Yuki Ito",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-02-04",
+    "slug": "stone-lanterns-and-whispers",
+    "cover_url": "https://shmindle.com/dl/book-stone-lanterns-and-whispers/stone-lanterns-and-whispers.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-stone-lanterns-and-whispers/stone-lanterns-and-whispers.pdf",
+    "epub_url": "https://shmindle.com/dl/book-stone-lanterns-and-whispers/stone-lanterns-and-whispers.epub",
     "cover_style": "classic"
   }
 ]
