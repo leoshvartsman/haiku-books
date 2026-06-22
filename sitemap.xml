@@ -82,7 +82,6 @@
   <url><loc>https://shmindle.com/books/what-remains-after-the-thaw.html</loc><lastmod>2026-03-25</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/the-long-way-home.html</loc><lastmod>2026-03-25</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/dust-on-the-lotus.html</loc><lastmod>2026-03-25</lastmod><priority>0.8</priority></url>
-  <url><loc>https://shmindle.com/books/the-body-keeps-the-latitude.html</loc><lastmod>2026-03-24</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/stone-and-current.html</loc><lastmod>2026-03-24</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/the-longitude-of-staying.html</loc><lastmod>2026-03-24</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/the-ground-beneath-the-ground.html</loc><lastmod>2026-03-24</lastmod><priority>0.8</priority></url>
@@ -114,7 +113,6 @@
   <url><loc>https://shmindle.com/books/every-border-leaves-a-watermark.html</loc><lastmod>2026-03-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/the-distance-between-rains.html</loc><lastmod>2026-03-17</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/grease-and-monsoon.html</loc><lastmod>2026-03-17</lastmod><priority>0.8</priority></url>
-  <url><loc>https://shmindle.com/books/every-threshold-holds.html</loc><lastmod>2026-03-17</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/the-spice-routes-home.html</loc><lastmod>2026-03-17</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/pulse-at-the-wrist-of-the-world.html</loc><lastmod>2026-03-16</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/dust-between-latitudes.html</loc><lastmod>2026-03-16</lastmod><priority>0.8</priority></url>
@@ -133,6 +131,7 @@
   <url><loc>https://shmindle.com/books/ledger-of-small-hours.html</loc><lastmod>2026-03-06</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/the-light-moves-differently-here.html</loc><lastmod>2026-03-06</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/dust-on-every-threshold.html</loc><lastmod>2026-03-05</lastmod><priority>0.8</priority></url>
+  <url><loc>https://shmindle.com/books/the-body-keeps-the-latitude.html</loc><lastmod>2026-03-05</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/wherever-the-light-lands.html</loc><lastmod>2026-03-05</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/stone-light-moving-water.html</loc><lastmod>2026-03-05</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/monsoon-whispers.html</loc><lastmod>2026-03-05</lastmod><priority>0.8</priority></url>
@@ -410,6 +409,7 @@
   <url><loc>https://shmindle.com/authors/quinn-kim.html</loc><lastmod>2026-03-06</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/robin-novak.html</loc><lastmod>2026-03-06</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/casey-ali.html</loc><lastmod>2026-03-06</lastmod><priority>0.7</priority></url>
+  <url><loc>https://shmindle.com/authors/harper-martin.html</loc><lastmod>2026-03-05</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/charlie-koch.html</loc><lastmod>2026-03-05</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/taylor-roberts.html</loc><lastmod>2026-03-05</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/arnav-singh.html</loc><lastmod>2026-03-05</lastmod><priority>0.7</priority></url>
@@ -469,7 +469,6 @@
   <url><loc>https://shmindle.com/authors/taylor-patel.html</loc><lastmod>2026-03-05</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/jun-jang.html</loc><lastmod>2026-03-05</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/morgan-andersson.html</loc><lastmod>2026-03-05</lastmod><priority>0.7</priority></url>
-  <url><loc>https://shmindle.com/authors/harper-martin.html</loc><lastmod>2026-03-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/sky-ali.html</loc><lastmod>2026-03-04</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/jun-seo.html</loc><lastmod>2026-03-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/ananya-gupta.html</loc><lastmod>2026-03-02</lastmod><priority>0.7</priority></url>
