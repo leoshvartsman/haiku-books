@@ -1053,6 +1053,19 @@
     "cover_style": "classic"
   },
   {
+    "title": "The Body Keeps the Latitude",
+    "author": "Casey Müller",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-03-24",
+    "slug": "the-body-keeps-the-latitude",
+    "cover_url": "https://shmindle.com/dl/book-the-body-keeps-the-latitude/the-body-keeps-the-latitude.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-the-body-keeps-the-latitude/the-body-keeps-the-latitude.pdf",
+    "epub_url": "https://shmindle.com/dl/book-the-body-keeps-the-latitude/the-body-keeps-the-latitude.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "Stone and Current",
     "author": "Taylor Anderson",
     "poem_form": "haiku",
@@ -1424,9 +1437,9 @@
     "haiku_count": 250,
     "date": "2026-03-18",
     "slug": "every-border-leaves-a-watermark",
-    "cover_url": "",
-    "pdf_url": "",
-    "epub_url": "",
+    "cover_url": "https://shmindle.com/dl/book-every-border-leaves-a-watermark/every-border-leaves-a-watermark.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-every-border-leaves-a-watermark/every-border-leaves-a-watermark.pdf",
+    "epub_url": "https://shmindle.com/dl/book-every-border-leaves-a-watermark/every-border-leaves-a-watermark.epub",
     "cover_style": "classic"
   },
   {
@@ -1453,6 +1466,19 @@
     "cover_url": "https://shmindle.com/dl/book-grease-and-monsoon/grease-and-monsoon.jpg",
     "pdf_url": "https://shmindle.com/dl/book-grease-and-monsoon/grease-and-monsoon.pdf",
     "epub_url": "https://shmindle.com/dl/book-grease-and-monsoon/grease-and-monsoon.epub",
+    "cover_style": "classic"
+  },
+  {
+    "title": "Every Threshold Holds",
+    "author": "Casey Smith",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-03-17",
+    "slug": "every-threshold-holds",
+    "cover_url": "https://shmindle.com/dl/book-every-threshold-holds/every-threshold-holds.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-every-threshold-holds/every-threshold-holds.pdf",
+    "epub_url": "https://shmindle.com/dl/book-every-threshold-holds/every-threshold-holds.epub",
     "cover_style": "classic"
   },
   {
@@ -1687,19 +1713,6 @@
     "cover_url": "https://shmindle.com/dl/book-dust-on-every-threshold/dust-on-every-threshold.jpg",
     "pdf_url": "https://shmindle.com/dl/book-dust-on-every-threshold/dust-on-every-threshold.pdf",
     "epub_url": "https://shmindle.com/dl/book-dust-on-every-threshold/dust-on-every-threshold.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "The Body Keeps the Latitude",
-    "author": "Harper Martin",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-03-05",
-    "slug": "the-body-keeps-the-latitude",
-    "cover_url": "https://shmindle.com/dl/book-the-body-keeps-the-latitude/the-body-keeps-the-latitude.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-the-body-keeps-the-latitude/the-body-keeps-the-latitude.pdf",
-    "epub_url": "https://shmindle.com/dl/book-the-body-keeps-the-latitude/the-body-keeps-the-latitude.epub",
     "cover_style": "classic"
   },
   {
