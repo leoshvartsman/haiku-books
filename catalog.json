@@ -1060,9 +1060,9 @@
     "haiku_count": 250,
     "date": "2026-03-24",
     "slug": "the-body-keeps-the-latitude",
-    "cover_url": "",
-    "pdf_url": "",
-    "epub_url": "",
+    "cover_url": "https://shmindle.com/dl/book-the-body-keeps-the-latitude/the-body-keeps-the-latitude.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-the-body-keeps-the-latitude/the-body-keeps-the-latitude.pdf",
+    "epub_url": "https://shmindle.com/dl/book-the-body-keeps-the-latitude/the-body-keeps-the-latitude.epub",
     "cover_style": "classic"
   },
   {
@@ -1102,6 +1102,19 @@
     "cover_url": "https://shmindle.com/dl/book-the-ground-beneath-the-ground/the-ground-beneath-the-ground.jpg",
     "pdf_url": "https://shmindle.com/dl/book-the-ground-beneath-the-ground/the-ground-beneath-the-ground.pdf",
     "epub_url": "https://shmindle.com/dl/book-the-ground-beneath-the-ground/the-ground-beneath-the-ground.epub",
+    "cover_style": "classic"
+  },
+  {
+    "title": "What the Soil Remembers",
+    "author": "Ariel Sánchez",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-03-23",
+    "slug": "what-the-soil-remembers",
+    "cover_url": "https://shmindle.com/dl/book-what-the-soil-remembers/what-the-soil-remembers.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-soil-remembers/what-the-soil-remembers.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-soil-remembers/what-the-soil-remembers.epub",
     "cover_style": "classic"
   },
   {
@@ -1219,19 +1232,6 @@
     "cover_url": "https://shmindle.com/dl/book-what-the-centrifuge-kept/what-the-centrifuge-kept.jpg",
     "pdf_url": "https://shmindle.com/dl/book-what-the-centrifuge-kept/what-the-centrifuge-kept.pdf",
     "epub_url": "https://shmindle.com/dl/book-what-the-centrifuge-kept/what-the-centrifuge-kept.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "All Types of Dance",
-    "author": "Frank Smith",
-    "poem_form": "haiku",
-    "poem_count": 380,
-    "haiku_count": 380,
-    "date": "2026-03-21",
-    "slug": "all-types-of-dance",
-    "cover_url": "https://shmindle.com/dl/book-all-types-of-dance/all-types-of-dance.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-all-types-of-dance/all-types-of-dance.pdf",
-    "epub_url": "https://shmindle.com/dl/book-all-types-of-dance/all-types-of-dance.epub",
     "cover_style": "classic"
   },
   {
@@ -1960,19 +1960,6 @@
     "cover_url": "https://shmindle.com/dl/book-whispers-of-abaya/whispers-of-abaya.jpg",
     "pdf_url": "https://shmindle.com/dl/book-whispers-of-abaya/whispers-of-abaya.pdf",
     "epub_url": "https://shmindle.com/dl/book-whispers-of-abaya/whispers-of-abaya.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "Whispers Of Place",
-    "author": "River Brown",
-    "poem_form": "haiku",
-    "poem_count": 161,
-    "haiku_count": 161,
-    "date": "2026-03-05",
-    "slug": "whispers-of-place",
-    "cover_url": "https://shmindle.com/dl/book-whispers-of-place/whispers-of-place.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-whispers-of-place/whispers-of-place.pdf",
-    "epub_url": "https://shmindle.com/dl/book-whispers-of-place/whispers-of-place.epub",
     "cover_style": "classic"
   },
   {
@@ -3364,19 +3351,6 @@
     "cover_url": "https://shmindle.com/dl/book-salt-keeps-its-shape/salt-keeps-its-shape.jpg",
     "pdf_url": "https://shmindle.com/dl/book-salt-keeps-its-shape/salt-keeps-its-shape.pdf",
     "epub_url": "https://shmindle.com/dl/book-salt-keeps-its-shape/salt-keeps-its-shape.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "What the Soil Remembers",
-    "author": "Simone Marino",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-02-19",
-    "slug": "what-the-soil-remembers",
-    "cover_url": "https://shmindle.com/dl/book-what-the-soil-remembers/what-the-soil-remembers.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-what-the-soil-remembers/what-the-soil-remembers.pdf",
-    "epub_url": "https://shmindle.com/dl/book-what-the-soil-remembers/what-the-soil-remembers.epub",
     "cover_style": "classic"
   },
   {
