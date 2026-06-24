@@ -1235,6 +1235,19 @@
     "cover_style": "classic"
   },
   {
+    "title": "All Types of Dance",
+    "author": "Frank Smith",
+    "poem_form": "haiku",
+    "poem_count": 380,
+    "haiku_count": 380,
+    "date": "2026-03-21",
+    "slug": "all-types-of-dance",
+    "cover_url": "https://shmindle.com/dl/book-all-types-of-dance/all-types-of-dance.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-all-types-of-dance/all-types-of-dance.pdf",
+    "epub_url": "https://shmindle.com/dl/book-all-types-of-dance/all-types-of-dance.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "Every Border a River",
     "author": "Riley Ali",
     "poem_form": "haiku",
@@ -1960,6 +1973,19 @@
     "cover_url": "https://shmindle.com/dl/book-whispers-of-abaya/whispers-of-abaya.jpg",
     "pdf_url": "https://shmindle.com/dl/book-whispers-of-abaya/whispers-of-abaya.pdf",
     "epub_url": "https://shmindle.com/dl/book-whispers-of-abaya/whispers-of-abaya.epub",
+    "cover_style": "classic"
+  },
+  {
+    "title": "Whispers Of Place",
+    "author": "River Brown",
+    "poem_form": "haiku",
+    "poem_count": 161,
+    "haiku_count": 161,
+    "date": "2026-03-05",
+    "slug": "whispers-of-place",
+    "cover_url": "https://shmindle.com/dl/book-whispers-of-place/whispers-of-place.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-whispers-of-place/whispers-of-place.pdf",
+    "epub_url": "https://shmindle.com/dl/book-whispers-of-place/whispers-of-place.epub",
     "cover_style": "classic"
   },
   {
