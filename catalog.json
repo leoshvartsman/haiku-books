@@ -20,14 +20,14 @@
     "haiku_count": 250,
     "date": "2026-06-26",
     "slug": "stone-fruit-open-sky",
-    "cover_url": "",
+    "cover_url": "https://shmindle.com/dl/book-stone-fruit-open-sky/stone-fruit-open-sky.jpg",
     "pdf_url": "https://shmindle.com/dl/book-stone-fruit-open-sky/stone-fruit-open-sky.pdf",
     "epub_url": "https://shmindle.com/dl/book-stone-fruit-open-sky/stone-fruit-open-sky.epub",
     "cover_style": "modern"
   },
   {
     "title": "Borrowed Light",
-    "author": "Cruz Hernández",
+    "author": "Cruz Hern\u00e1ndez",
     "poem_form": "haiku",
     "poem_count": 250,
     "haiku_count": 250,
@@ -157,7 +157,7 @@
   },
   {
     "title": "Stone Remembers Water",
-    "author": "Andrea Muñoz",
+    "author": "Andrea Mu\u00f1oz",
     "poem_form": "haiku",
     "poem_count": 250,
     "haiku_count": 250,
@@ -326,7 +326,7 @@
   },
   {
     "title": "Where the Compass Hesitates",
-    "author": "Sage García",
+    "author": "Sage Garc\u00eda",
     "poem_form": "haiku",
     "poem_count": 250,
     "haiku_count": 250,
@@ -378,7 +378,7 @@
   },
   {
     "title": "Between Every Border",
-    "author": "Azul Pérez",
+    "author": "Azul P\u00e9rez",
     "poem_form": "haiku",
     "poem_count": 250,
     "haiku_count": 250,
@@ -430,7 +430,7 @@
   },
   {
     "title": "Altitude and Ash",
-    "author": "Sacha Martín",
+    "author": "Sacha Mart\u00edn",
     "poem_form": "haiku",
     "poem_count": 250,
     "haiku_count": 250,
@@ -482,7 +482,7 @@
   },
   {
     "title": "Between Measurements",
-    "author": "Riley Müller",
+    "author": "Riley M\u00fcller",
     "poem_form": "haiku",
     "poem_count": 250,
     "haiku_count": 250,
@@ -560,7 +560,7 @@
   },
   {
     "title": "Between Two Monsoons",
-    "author": "Riley García",
+    "author": "Riley Garc\u00eda",
     "poem_form": "haiku",
     "poem_count": 250,
     "haiku_count": 250,
@@ -690,7 +690,7 @@
   },
   {
     "title": "Stone and Lichen, Moving",
-    "author": "Cruz Hernández",
+    "author": "Cruz Hern\u00e1ndez",
     "poem_form": "haiku",
     "poem_count": 250,
     "haiku_count": 250,
@@ -742,7 +742,7 @@
   },
   {
     "title": "Where the Light Stays Warm",
-    "author": "Riley García",
+    "author": "Riley Garc\u00eda",
     "poem_form": "haiku",
     "poem_count": 250,
     "haiku_count": 250,
@@ -755,7 +755,7 @@
   },
   {
     "title": "Carrying the Altitude",
-    "author": "Jordan Müller",
+    "author": "Jordan M\u00fcller",
     "poem_form": "haiku",
     "poem_count": 250,
     "haiku_count": 250,
@@ -807,7 +807,7 @@
   },
   {
     "title": "The Interval Between Rains",
-    "author": "Casey García",
+    "author": "Casey Garc\u00eda",
     "poem_form": "haiku",
     "poem_count": 250,
     "haiku_count": 250,
@@ -1041,7 +1041,7 @@
   },
   {
     "title": "What Remains After the Thaw",
-    "author": "Casey Müller",
+    "author": "Casey M\u00fcller",
     "poem_form": "haiku",
     "poem_count": 250,
     "haiku_count": 250,
@@ -1080,7 +1080,7 @@
   },
   {
     "title": "The Body Keeps the Latitude",
-    "author": "Casey Müller",
+    "author": "Casey M\u00fcller",
     "poem_form": "haiku",
     "poem_count": 250,
     "haiku_count": 250,
@@ -1106,7 +1106,7 @@
   },
   {
     "title": "The Longitude of Staying",
-    "author": "Riley García",
+    "author": "Riley Garc\u00eda",
     "poem_form": "haiku",
     "poem_count": 250,
     "haiku_count": 250,
@@ -1119,7 +1119,7 @@
   },
   {
     "title": "The Ground Beneath the Ground",
-    "author": "Sol Vázquez",
+    "author": "Sol V\u00e1zquez",
     "poem_form": "haiku",
     "poem_count": 250,
     "haiku_count": 250,
@@ -1132,7 +1132,7 @@
   },
   {
     "title": "What the Soil Remembers",
-    "author": "Ariel Sánchez",
+    "author": "Ariel S\u00e1nchez",
     "poem_form": "haiku",
     "poem_count": 250,
     "haiku_count": 250,
@@ -1236,7 +1236,7 @@
   },
   {
     "title": "Grease Under the Fingernails",
-    "author": "Riley Müller",
+    "author": "Riley M\u00fcller",
     "poem_form": "haiku",
     "poem_count": 250,
     "haiku_count": 250,
@@ -1340,7 +1340,7 @@
   },
   {
     "title": "What the Pigeons Know",
-    "author": "Sol Vázquez",
+    "author": "Sol V\u00e1zquez",
     "poem_form": "haiku",
     "poem_count": 250,
     "haiku_count": 250,
@@ -1509,7 +1509,7 @@
   },
   {
     "title": "Pulse at the Wrist of the World",
-    "author": "Alex Pérez",
+    "author": "Alex P\u00e9rez",
     "poem_form": "haiku",
     "poem_count": 250,
     "haiku_count": 250,
@@ -1587,7 +1587,7 @@
   },
   {
     "title": "Mud on the Threshold",
-    "author": "Riley García",
+    "author": "Riley Garc\u00eda",
     "poem_form": "haiku",
     "poem_count": 250,
     "haiku_count": 250,
@@ -1639,7 +1639,7 @@
   },
   {
     "title": "The Distance Between Pavements",
-    "author": "Andrea Hernández",
+    "author": "Andrea Hern\u00e1ndez",
     "poem_form": "haiku",
     "poem_count": 250,
     "haiku_count": 250,
@@ -1808,7 +1808,7 @@
   },
   {
     "title": "Luminous Migrations",
-    "author": "Sol Gómez",
+    "author": "Sol G\u00f3mez",
     "poem_form": "haiku",
     "poem_count": 138,
     "haiku_count": 138,
@@ -1886,7 +1886,7 @@
   },
   {
     "title": "Fleeting Horizons",
-    "author": "Sol Gómez",
+    "author": "Sol G\u00f3mez",
     "poem_form": "haiku",
     "poem_count": 155,
     "haiku_count": 155,
@@ -1899,7 +1899,7 @@
   },
   {
     "title": "Fractured Light",
-    "author": "Riley García",
+    "author": "Riley Garc\u00eda",
     "poem_form": "haiku",
     "poem_count": 164,
     "haiku_count": 164,
@@ -2107,7 +2107,7 @@
   },
   {
     "title": "Whispers Of Memory",
-    "author": "Harper García",
+    "author": "Harper Garc\u00eda",
     "poem_form": "haiku",
     "poem_count": 143,
     "haiku_count": 143,
@@ -2198,7 +2198,7 @@
   },
   {
     "title": "Riverine Echoes",
-    "author": "Ariel Sánchez",
+    "author": "Ariel S\u00e1nchez",
     "poem_form": "haiku",
     "poem_count": 133,
     "haiku_count": 133,
@@ -2276,7 +2276,7 @@
   },
   {
     "title": "Buenos Aires Breeze",
-    "author": "Valentín García",
+    "author": "Valent\u00edn Garc\u00eda",
     "poem_form": "haiku",
     "poem_count": 184,
     "haiku_count": 184,
@@ -2419,7 +2419,7 @@
   },
   {
     "title": "El Viento De Las Palabras",
-    "author": "Alex Pérez",
+    "author": "Alex P\u00e9rez",
     "poem_form": "haiku",
     "poem_count": 188,
     "haiku_count": 188,
@@ -2432,7 +2432,7 @@
   },
   {
     "title": "Wistful Wanderings",
-    "author": "Riley Müller",
+    "author": "Riley M\u00fcller",
     "poem_form": "haiku",
     "poem_count": 120,
     "haiku_count": 120,
@@ -3082,7 +3082,7 @@
   },
   {
     "title": "What the Meridian Keeps",
-    "author": "Valentín García",
+    "author": "Valent\u00edn Garc\u00eda",
     "poem_form": "haiku",
     "poem_count": 250,
     "haiku_count": 250,
@@ -3303,7 +3303,7 @@
   },
   {
     "title": "What the Roots Remember",
-    "author": "Casey García",
+    "author": "Casey Garc\u00eda",
     "poem_form": "haiku",
     "poem_count": 250,
     "haiku_count": 250,
@@ -3511,7 +3511,7 @@
   },
   {
     "title": "Salt on Every Latitude",
-    "author": "Casey García",
+    "author": "Casey Garc\u00eda",
     "poem_form": "haiku",
     "poem_count": 250,
     "haiku_count": 250,
@@ -3563,7 +3563,7 @@
   },
   {
     "title": "Cities Beneath the Skin",
-    "author": "Sol Díaz",
+    "author": "Sol D\u00edaz",
     "poem_form": "haiku",
     "poem_count": 250,
     "haiku_count": 250,
@@ -3615,7 +3615,7 @@
   },
   {
     "title": "Three Seasons Deep",
-    "author": "River García",
+    "author": "River Garc\u00eda",
     "poem_form": "haiku",
     "poem_count": 244,
     "haiku_count": 244,
