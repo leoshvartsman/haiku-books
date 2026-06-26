@@ -148,7 +148,7 @@ def release_exists(tag: str) -> bool:
     """Check if a GitHub release already exists for this tag."""
     result = subprocess.run(
         ["gh", "release", "view", tag, "--repo", GITHUB_REPO],
-        capture_output=True, text=True
+        capture_output=True, text=True, timeout=30
     )
     return result.returncode == 0
 
@@ -164,9 +164,12 @@ def create_release(tag: str, title: str, assets: List[Path]) -> Dict:
         "--notes", f"Haiku collection: {title}",
     ]
     for asset in assets:
+        print(f"    - Uploading: {asset.name}")
         cmd.append(str(asset))
 
-    result = subprocess.run(cmd, capture_output=True, text=True)
+    print(f"  Running: gh release create {tag} with {len(assets)} assets...")
+    sys.stdout.flush()
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
     if result.returncode != 0:
         print(f"  Error creating release: {result.stderr}")
         return {}
@@ -175,7 +178,7 @@ def create_release(tag: str, title: str, assets: List[Path]) -> Dict:
     urls = {}
     view = subprocess.run(
         ["gh", "release", "view", tag, "--repo", GITHUB_REPO, "--json", "assets"],
-        capture_output=True, text=True
+        capture_output=True, text=True, timeout=30
     )
     if view.returncode == 0:
         data = json.loads(view.stdout)
@@ -197,7 +200,7 @@ def get_existing_release_urls(tag: str) -> dict:
     urls = {}
     result = subprocess.run(
         ["gh", "release", "view", tag, "--repo", GITHUB_REPO, "--json", "assets"],
-        capture_output=True, text=True
+        capture_output=True, text=True, timeout=30
     )
     if result.returncode == 0:
         data = json.loads(result.stdout)
@@ -295,7 +298,7 @@ def build_catalog(dry_run=False):
                 print(f"  Uploading updated cover...")
                 result = subprocess.run(
                     ["gh", "release", "upload", tag, str(cover_jpg), "--repo", GITHUB_REPO, "--clobber"],
-                    capture_output=True, text=True
+                    capture_output=True, text=True, timeout=120
                 )
                 if result.returncode == 0:
                     urls["cover"] = f"https://github.com/{GITHUB_REPO}/releases/download/{tag}/{cover_jpg.name}"
