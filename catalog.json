@@ -20,10 +20,23 @@
     "haiku_count": 250,
     "date": "2026-06-26",
     "slug": "stone-fruit-open-sky",
-    "cover_url": "",
+    "cover_url": "https://shmindle.com/dl/book-stone-fruit-open-sky/stone-fruit-open-sky.jpg",
     "pdf_url": "https://shmindle.com/dl/book-stone-fruit-open-sky/stone-fruit-open-sky.pdf",
     "epub_url": "https://shmindle.com/dl/book-stone-fruit-open-sky/stone-fruit-open-sky.epub",
     "cover_style": "modern"
+  },
+  {
+    "title": "The Ball Goes Far",
+    "author": "Frank Ruth",
+    "poem_form": "haiku",
+    "poem_count": 357,
+    "haiku_count": 357,
+    "date": "2026-06-26",
+    "slug": "the-ball-goes-far",
+    "cover_url": "",
+    "pdf_url": "https://shmindle.com/dl/book-the-ball-goes-far/the-ball-goes-far.pdf",
+    "epub_url": "https://shmindle.com/dl/book-the-ball-goes-far/the-ball-goes-far.epub",
+    "cover_style": "classic"
   },
   {
     "title": "Borrowed Light",
