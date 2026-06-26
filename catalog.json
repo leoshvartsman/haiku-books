@@ -1,5 +1,18 @@
 [
   {
+    "title": "The Long Way Round",
+    "author": "Robin Hughes",
+    "poem_form": "sonnet",
+    "poem_count": 25,
+    "haiku_count": 25,
+    "date": "2026-06-26",
+    "slug": "the-long-way-round",
+    "cover_url": "https://shmindle.com/dl/book-the-long-way-round/the-long-way-round.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-the-long-way-round/the-long-way-round.pdf",
+    "epub_url": "https://shmindle.com/dl/book-the-long-way-round/the-long-way-round.epub",
+    "cover_style": "modern"
+  },
+  {
     "title": "Stone Fruit, Open Sky",
     "author": "Casey Kowalski",
     "poem_form": "haiku",
@@ -1336,19 +1349,6 @@
     "cover_url": "https://shmindle.com/dl/book-what-the-pigeons-know/what-the-pigeons-know.jpg",
     "pdf_url": "https://shmindle.com/dl/book-what-the-pigeons-know/what-the-pigeons-know.pdf",
     "epub_url": "https://shmindle.com/dl/book-what-the-pigeons-know/what-the-pigeons-know.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "The Long Way Round",
-    "author": "Drew Miller",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-03-19",
-    "slug": "the-long-way-round",
-    "cover_url": "https://shmindle.com/dl/book-the-long-way-round/the-long-way-round.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-the-long-way-round/the-long-way-round.pdf",
-    "epub_url": "https://shmindle.com/dl/book-the-long-way-round/the-long-way-round.epub",
     "cover_style": "classic"
   },
   {
