@@ -65,6 +65,19 @@
     "cover_style": "classic"
   },
   {
+    "title": "Three Cities, One Thirst",
+    "author": "Sam Kowalski",
+    "poem_form": "sonnet",
+    "poem_count": 25,
+    "haiku_count": 25,
+    "date": "2026-06-27",
+    "slug": "three-cities-one-thirst",
+    "cover_url": "",
+    "pdf_url": "https://shmindle.com/dl/book-three-cities-one-thirst/three-cities-one-thirst.pdf",
+    "epub_url": "https://shmindle.com/dl/book-three-cities-one-thirst/three-cities-one-thirst.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "The Long Way Round",
     "author": "Robin Hughes",
     "poem_form": "sonnet",
