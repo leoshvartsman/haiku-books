@@ -1,5 +1,18 @@
 [
   {
+    "title": "What the Rain Remembers",
+    "author": "Sam Lewis",
+    "poem_form": "sonnet",
+    "poem_count": 25,
+    "haiku_count": 25,
+    "date": "2026-06-27",
+    "slug": "what-the-rain-remembers",
+    "cover_url": "https://shmindle.com/dl/book-what-the-rain-remembers/what-the-rain-remembers.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-rain-remembers/what-the-rain-remembers.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-rain-remembers/what-the-rain-remembers.epub",
+    "cover_style": "modern"
+  },
+  {
     "title": "Roots in Four Soils",
     "author": "Davi Rodrigues",
     "poem_form": "haiku",
@@ -3208,19 +3221,6 @@
     "cover_url": "https://shmindle.com/dl/book-where-the-water-remembers/where-the-water-remembers.jpg",
     "pdf_url": "https://shmindle.com/dl/book-where-the-water-remembers/where-the-water-remembers.pdf",
     "epub_url": "https://shmindle.com/dl/book-where-the-water-remembers/where-the-water-remembers.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "What the Rain Remembers",
-    "author": "River Lewis",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-02-26",
-    "slug": "what-the-rain-remembers",
-    "cover_url": "https://shmindle.com/dl/book-what-the-rain-remembers/what-the-rain-remembers.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-what-the-rain-remembers/what-the-rain-remembers.pdf",
-    "epub_url": "https://shmindle.com/dl/book-what-the-rain-remembers/what-the-rain-remembers.epub",
     "cover_style": "classic"
   },
   {
