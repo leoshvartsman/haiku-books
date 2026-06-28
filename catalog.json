@@ -1,5 +1,18 @@
 [
   {
+    "title": "The Distance Between Rains",
+    "author": "Saoirse Kelly",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-06-28",
+    "slug": "the-distance-between-rains",
+    "cover_url": "https://shmindle.com/dl/book-the-distance-between-rains/the-distance-between-rains.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-the-distance-between-rains/the-distance-between-rains.pdf",
+    "epub_url": "https://shmindle.com/dl/book-the-distance-between-rains/the-distance-between-rains.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "Clockout in Three Languages",
     "author": "Riley Johnson",
     "poem_form": "haiku",
@@ -1570,19 +1583,6 @@
     "cover_url": "https://shmindle.com/dl/book-every-border-leaves-a-watermark/every-border-leaves-a-watermark.jpg",
     "pdf_url": "https://shmindle.com/dl/book-every-border-leaves-a-watermark/every-border-leaves-a-watermark.pdf",
     "epub_url": "https://shmindle.com/dl/book-every-border-leaves-a-watermark/every-border-leaves-a-watermark.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "The Distance Between Rains",
-    "author": "Ying Hu",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-03-17",
-    "slug": "the-distance-between-rains",
-    "cover_url": "https://shmindle.com/dl/book-the-distance-between-rains/the-distance-between-rains.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-the-distance-between-rains/the-distance-between-rains.pdf",
-    "epub_url": "https://shmindle.com/dl/book-the-distance-between-rains/the-distance-between-rains.epub",
     "cover_style": "classic"
   },
   {
