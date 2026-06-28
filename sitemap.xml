@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://shmindle.com/</loc><lastmod>2026-06-28</lastmod><priority>1.0</priority></url>
   <url><loc>https://shmindle.com/books/clockout-in-three-languages.html</loc><lastmod>2026-06-28</lastmod><priority>0.8</priority></url>
+  <url><loc>https://shmindle.com/books/before-the-harbor-wakes.html</loc><lastmod>2026-06-28</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/what-the-rain-remembers.html</loc><lastmod>2026-06-27</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/roots-in-four-soils.html</loc><lastmod>2026-06-27</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/every-city-teaches-the-rain.html</loc><lastmod>2026-06-27</lastmod><priority>0.8</priority></url>
@@ -312,6 +313,7 @@
   <url><loc>https://shmindle.com/books/tracks-in-fresh-snow.html</loc><lastmod>2026-02-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/stone-lanterns-and-whispers.html</loc><lastmod>2026-02-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/authors/riley-johnson.html</loc><lastmod>2026-06-28</lastmod><priority>0.7</priority></url>
+  <url><loc>https://shmindle.com/authors/quinn-clark.html</loc><lastmod>2026-06-28</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/sam-lewis.html</loc><lastmod>2026-06-27</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/davi-rodrigues.html</loc><lastmod>2026-06-27</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/tomo-yamamoto.html</loc><lastmod>2026-06-27</lastmod><priority>0.7</priority></url>
