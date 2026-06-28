@@ -1,5 +1,18 @@
 [
   {
+    "title": "Longitude of Light",
+    "author": "Parker Thomas",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-06-28",
+    "slug": "longitude-of-light",
+    "cover_url": "https://shmindle.com/dl/book-longitude-of-light/longitude-of-light.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-longitude-of-light/longitude-of-light.pdf",
+    "epub_url": "https://shmindle.com/dl/book-longitude-of-light/longitude-of-light.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "The Distance Between Rains",
     "author": "Saoirse Kelly",
     "poem_form": "haiku",
@@ -3546,19 +3559,6 @@
     "cover_url": "https://shmindle.com/dl/book-where-the-light-arrives-first/where-the-light-arrives-first.jpg",
     "pdf_url": "https://shmindle.com/dl/book-where-the-light-arrives-first/where-the-light-arrives-first.pdf",
     "epub_url": "https://shmindle.com/dl/book-where-the-light-arrives-first/where-the-light-arrives-first.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "Longitude of Light",
-    "author": "Parker Wilson",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-02-19",
-    "slug": "longitude-of-light",
-    "cover_url": "https://shmindle.com/dl/book-longitude-of-light/longitude-of-light.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-longitude-of-light/longitude-of-light.pdf",
-    "epub_url": "https://shmindle.com/dl/book-longitude-of-light/longitude-of-light.epub",
     "cover_style": "classic"
   },
   {

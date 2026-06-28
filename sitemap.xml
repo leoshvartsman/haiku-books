@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://shmindle.com/</loc><lastmod>2026-06-28</lastmod><priority>1.0</priority></url>
+  <url><loc>https://shmindle.com/books/longitude-of-light.html</loc><lastmod>2026-06-28</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/the-distance-between-rains.html</loc><lastmod>2026-06-28</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/clockout-in-three-languages.html</loc><lastmod>2026-06-28</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/before-the-harbor-wakes.html</loc><lastmod>2026-06-28</lastmod><priority>0.8</priority></url>
@@ -274,7 +275,6 @@
   <url><loc>https://shmindle.com/books/sand-keeps-its-shape.html</loc><lastmod>2026-02-19</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/salt-on-every-windowsill.html</loc><lastmod>2026-02-19</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/where-the-light-arrives-first.html</loc><lastmod>2026-02-19</lastmod><priority>0.8</priority></url>
-  <url><loc>https://shmindle.com/books/longitude-of-light.html</loc><lastmod>2026-02-19</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/grain-and-altitude.html</loc><lastmod>2026-02-19</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/salt-between-latitudes.html</loc><lastmod>2026-02-17</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/between-ledgers-and-light.html</loc><lastmod>2026-02-17</lastmod><priority>0.8</priority></url>
@@ -313,6 +313,7 @@
   <url><loc>https://shmindle.com/books/neon-script-and-sparrows.html</loc><lastmod>2026-02-05</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/tracks-in-fresh-snow.html</loc><lastmod>2026-02-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/stone-lanterns-and-whispers.html</loc><lastmod>2026-02-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://shmindle.com/authors/parker-thomas.html</loc><lastmod>2026-06-28</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/saoirse-kelly.html</loc><lastmod>2026-06-28</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/riley-johnson.html</loc><lastmod>2026-06-28</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/quinn-clark.html</loc><lastmod>2026-06-28</lastmod><priority>0.7</priority></url>
