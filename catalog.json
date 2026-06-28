@@ -1,5 +1,18 @@
 [
   {
+    "title": "Clockout in Three Languages",
+    "author": "Riley Johnson",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-06-28",
+    "slug": "clockout-in-three-languages",
+    "cover_url": "",
+    "pdf_url": "https://shmindle.com/dl/book-clockout-in-three-languages/clockout-in-three-languages.pdf",
+    "epub_url": "https://shmindle.com/dl/book-clockout-in-three-languages/clockout-in-three-languages.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "What the Rain Remembers",
     "author": "Sam Lewis",
     "poem_form": "sonnet",
