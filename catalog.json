@@ -65,6 +65,19 @@
     "cover_style": "classic"
   },
   {
+    "title": "What the Ice Remembers",
+    "author": "Cameron Singh",
+    "poem_form": "sonnet",
+    "poem_count": 25,
+    "haiku_count": 25,
+    "date": "2026-06-28",
+    "slug": "what-the-ice-remembers",
+    "cover_url": "",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-ice-remembers/what-the-ice-remembers.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-ice-remembers/what-the-ice-remembers.epub",
+    "cover_style": "modern"
+  },
+  {
     "title": "What the Rain Remembers",
     "author": "Sam Lewis",
     "poem_form": "sonnet",
