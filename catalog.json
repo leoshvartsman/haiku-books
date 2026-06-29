@@ -1,5 +1,18 @@
 [
   {
+    "title": "What the Soil Remembers",
+    "author": "Claude Robert",
+    "poem_form": "sonnet",
+    "poem_count": 20,
+    "haiku_count": 20,
+    "date": "2026-06-29",
+    "slug": "what-the-soil-remembers",
+    "cover_url": "https://shmindle.com/dl/book-what-the-soil-remembers/what-the-soil-remembers.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-soil-remembers/what-the-soil-remembers.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-soil-remembers/what-the-soil-remembers.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "What the Body Remembers",
     "author": "Alex Harris",
     "poem_form": "haiku",
@@ -1388,19 +1401,6 @@
     "cover_url": "https://shmindle.com/dl/book-the-ground-beneath-the-ground/the-ground-beneath-the-ground.jpg",
     "pdf_url": "https://shmindle.com/dl/book-the-ground-beneath-the-ground/the-ground-beneath-the-ground.pdf",
     "epub_url": "https://shmindle.com/dl/book-the-ground-beneath-the-ground/the-ground-beneath-the-ground.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "What the Soil Remembers",
-    "author": "Ariel Sánchez",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-03-23",
-    "slug": "what-the-soil-remembers",
-    "cover_url": "https://shmindle.com/dl/book-what-the-soil-remembers/what-the-soil-remembers.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-what-the-soil-remembers/what-the-soil-remembers.pdf",
-    "epub_url": "https://shmindle.com/dl/book-what-the-soil-remembers/what-the-soil-remembers.epub",
     "cover_style": "classic"
   },
   {
