@@ -39,6 +39,19 @@
     "cover_style": "modern"
   },
   {
+    "title": "Every Border Learns My Name",
+    "author": "Harper Cohen",
+    "poem_form": "sonnet",
+    "poem_count": 25,
+    "haiku_count": 25,
+    "date": "2026-06-29",
+    "slug": "every-border-learns-my-name",
+    "cover_url": "",
+    "pdf_url": "https://shmindle.com/dl/book-every-border-learns-my-name/every-border-learns-my-name.pdf",
+    "epub_url": "https://shmindle.com/dl/book-every-border-learns-my-name/every-border-learns-my-name.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "Longitude of Light",
     "author": "Parker Thomas",
     "poem_form": "haiku",
