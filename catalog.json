@@ -13,6 +13,19 @@
     "cover_style": "classic"
   },
   {
+    "title": "The City Holds Its Breath",
+    "author": "Robin Sato",
+    "poem_form": "sonnet",
+    "poem_count": 25,
+    "haiku_count": 25,
+    "date": "2026-06-29",
+    "slug": "the-city-holds-its-breath",
+    "cover_url": "",
+    "pdf_url": "https://shmindle.com/dl/book-the-city-holds-its-breath/the-city-holds-its-breath.pdf",
+    "epub_url": "https://shmindle.com/dl/book-the-city-holds-its-breath/the-city-holds-its-breath.epub",
+    "cover_style": "modern"
+  },
+  {
     "title": "Longitude of Light",
     "author": "Parker Thomas",
     "poem_form": "haiku",

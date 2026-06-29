@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://shmindle.com/</loc><lastmod>2026-06-29</lastmod><priority>1.0</priority></url>
   <url><loc>https://shmindle.com/books/what-the-body-remembers.html</loc><lastmod>2026-06-29</lastmod><priority>0.8</priority></url>
+  <url><loc>https://shmindle.com/books/the-city-holds-its-breath.html</loc><lastmod>2026-06-29</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/longitude-of-light.html</loc><lastmod>2026-06-28</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/salt-in-every-mouth.html</loc><lastmod>2026-06-28</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/the-distance-between-rains.html</loc><lastmod>2026-06-28</lastmod><priority>0.8</priority></url>
@@ -316,6 +317,7 @@
   <url><loc>https://shmindle.com/books/tracks-in-fresh-snow.html</loc><lastmod>2026-02-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/stone-lanterns-and-whispers.html</loc><lastmod>2026-02-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/authors/alex-harris.html</loc><lastmod>2026-06-29</lastmod><priority>0.7</priority></url>
+  <url><loc>https://shmindle.com/authors/robin-sato.html</loc><lastmod>2026-06-29</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/parker-thomas.html</loc><lastmod>2026-06-28</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/sky-smith.html</loc><lastmod>2026-06-28</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/saoirse-kelly.html</loc><lastmod>2026-06-28</lastmod><priority>0.7</priority></url>
@@ -484,7 +486,6 @@
   <url><loc>https://shmindle.com/authors/jamie-rodriguez.html</loc><lastmod>2026-03-05</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/parker-wilson.html</loc><lastmod>2026-03-05</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/sacha-michel.html</loc><lastmod>2026-03-05</lastmod><priority>0.7</priority></url>
-  <url><loc>https://shmindle.com/authors/robin-sato.html</loc><lastmod>2026-03-05</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/jamie-johnson.html</loc><lastmod>2026-03-05</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/taylor-patel.html</loc><lastmod>2026-03-05</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/jun-jang.html</loc><lastmod>2026-03-05</lastmod><priority>0.7</priority></url>
