@@ -39,6 +39,19 @@
     "cover_style": "classic"
   },
   {
+    "title": "Moth to the Margin",
+    "author": "Saoirse Kelly",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-06-30",
+    "slug": "moth-to-the-margin",
+    "cover_url": "",
+    "pdf_url": "https://shmindle.com/dl/book-moth-to-the-margin/moth-to-the-margin.pdf",
+    "epub_url": "https://shmindle.com/dl/book-moth-to-the-margin/moth-to-the-margin.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "What the Drought Remembers",
     "author": "Sol Gómez",
     "poem_form": "sonnet",
