@@ -1,5 +1,18 @@
 [
   {
+    "title": "What the Light Remembers",
+    "author": "Blake Andersson",
+    "poem_form": "sonnet",
+    "poem_count": 25,
+    "haiku_count": 25,
+    "date": "2026-06-30",
+    "slug": "what-the-light-remembers",
+    "cover_url": "https://shmindle.com/dl/book-what-the-light-remembers/what-the-light-remembers.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-light-remembers/what-the-light-remembers.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-light-remembers/what-the-light-remembers.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "The Long Way Round",
     "author": "Ash Green",
     "poem_form": "haiku",
@@ -62,19 +75,6 @@
     "cover_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.jpg",
     "pdf_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.pdf",
     "epub_url": "https://shmindle.com/dl/book-what-the-body-remembers/what-the-body-remembers.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "What the Light Remembers",
-    "author": "Blake Andersson",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-06-29",
-    "slug": "what-the-light-remembers",
-    "cover_url": "https://shmindle.com/dl/book-what-the-light-remembers/what-the-light-remembers.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-what-the-light-remembers/what-the-light-remembers.pdf",
-    "epub_url": "https://shmindle.com/dl/book-what-the-light-remembers/what-the-light-remembers.epub",
     "cover_style": "classic"
   },
   {
@@ -2555,9 +2555,9 @@
     "haiku_count": 184,
     "date": "2026-03-05",
     "slug": "buenos-aires-breeze",
-    "cover_url": "",
-    "pdf_url": "",
-    "epub_url": "",
+    "cover_url": "https://shmindle.com/dl/book-buenos-aires-breeze/buenos-aires-breeze.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-buenos-aires-breeze/buenos-aires-breeze.pdf",
+    "epub_url": "https://shmindle.com/dl/book-buenos-aires-breeze/buenos-aires-breeze.epub",
     "cover_style": "classic"
   },
   {
