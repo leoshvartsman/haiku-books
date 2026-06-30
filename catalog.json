@@ -26,6 +26,19 @@
     "cover_style": "classic"
   },
   {
+    "title": "The Long Way Home",
+    "author": "Parker Lee",
+    "poem_form": "sonnet",
+    "poem_count": 25,
+    "haiku_count": 25,
+    "date": "2026-06-30",
+    "slug": "the-long-way-home",
+    "cover_url": "https://shmindle.com/dl/book-the-long-way-home/the-long-way-home.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-the-long-way-home/the-long-way-home.pdf",
+    "epub_url": "https://shmindle.com/dl/book-the-long-way-home/the-long-way-home.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "The Light That Follows Me",
     "author": "Sam Martin",
     "poem_form": "haiku",
@@ -1378,19 +1391,6 @@
     "cover_style": "classic"
   },
   {
-    "title": "The Long Way Home",
-    "author": "Jordan White",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-03-25",
-    "slug": "the-long-way-home",
-    "cover_url": "https://shmindle.com/dl/book-the-long-way-home/the-long-way-home.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-the-long-way-home/the-long-way-home.pdf",
-    "epub_url": "https://shmindle.com/dl/book-the-long-way-home/the-long-way-home.epub",
-    "cover_style": "modern"
-  },
-  {
     "title": "Dust on the Lotus",
     "author": "Jun Ito",
     "poem_form": "haiku",
@@ -2727,6 +2727,19 @@
     "cover_url": "https://shmindle.com/dl/book-el-viento-de-las-palabras/el-viento-de-las-palabras.jpg",
     "pdf_url": "https://shmindle.com/dl/book-el-viento-de-las-palabras/el-viento-de-las-palabras.pdf",
     "epub_url": "https://shmindle.com/dl/book-el-viento-de-las-palabras/el-viento-de-las-palabras.epub",
+    "cover_style": "classic"
+  },
+  {
+    "title": "Wistful Wanderings",
+    "author": "Riley Müller",
+    "poem_form": "haiku",
+    "poem_count": 120,
+    "haiku_count": 120,
+    "date": "2026-03-05",
+    "slug": "wistful-wanderings",
+    "cover_url": "https://shmindle.com/dl/book-wistful-wanderings/wistful-wanderings.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-wistful-wanderings/wistful-wanderings.pdf",
+    "epub_url": "https://shmindle.com/dl/book-wistful-wanderings/wistful-wanderings.epub",
     "cover_style": "classic"
   },
   {
