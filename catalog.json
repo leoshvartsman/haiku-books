@@ -1,5 +1,18 @@
 [
   {
+    "title": "The Light That Follows Me",
+    "author": "Sam Martin",
+    "poem_form": "haiku",
+    "poem_count": 246,
+    "haiku_count": 246,
+    "date": "2026-06-30",
+    "slug": "the-light-that-follows-me",
+    "cover_url": "",
+    "pdf_url": "https://shmindle.com/dl/book-the-light-that-follows-me/the-light-that-follows-me.pdf",
+    "epub_url": "https://shmindle.com/dl/book-the-light-that-follows-me/the-light-that-follows-me.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "What the Soil Remembers",
     "author": "Claude Robert",
     "poem_form": "sonnet",
