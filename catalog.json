@@ -1,5 +1,18 @@
 [
   {
+    "title": "Before the City Wakes",
+    "author": "Jun Ito",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-07-01",
+    "slug": "before-the-city-wakes",
+    "cover_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.pdf",
+    "epub_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "What the Light Carries",
     "author": "Simone Bruno",
     "poem_form": "sonnet",
@@ -570,19 +583,6 @@
     "pdf_url": "https://shmindle.com/dl/book-the-names-i-carried/the-names-i-carried.pdf",
     "epub_url": "https://shmindle.com/dl/book-the-names-i-carried/the-names-i-carried.epub",
     "cover_style": "modern"
-  },
-  {
-    "title": "Before the City Wakes",
-    "author": "Luca Esposito",
-    "poem_form": "sonnet",
-    "poem_count": 20,
-    "haiku_count": 20,
-    "date": "2026-04-19",
-    "slug": "before-the-city-wakes",
-    "cover_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.pdf",
-    "epub_url": "https://shmindle.com/dl/book-before-the-city-wakes/before-the-city-wakes.epub",
-    "cover_style": "classic"
   },
   {
     "title": "Stone Remembers Water",
