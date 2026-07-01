@@ -26,6 +26,19 @@
     "cover_style": "classic"
   },
   {
+    "title": "Mud on Every Road",
+    "author": "Jordan Lee",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-07-01",
+    "slug": "mud-on-every-road",
+    "cover_url": "",
+    "pdf_url": "https://shmindle.com/dl/book-mud-on-every-road/mud-on-every-road.pdf",
+    "epub_url": "https://shmindle.com/dl/book-mud-on-every-road/mud-on-every-road.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "What the Season Remembers",
     "author": "Ren Yamamoto",
     "poem_form": "sonnet",
