@@ -1,5 +1,18 @@
 [
   {
+    "title": "Between the River and the Rain",
+    "author": "Jordan Chen",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-07-01",
+    "slug": "between-the-river-and-the-rain",
+    "cover_url": "",
+    "pdf_url": "https://shmindle.com/dl/book-between-the-river-and-the-rain/between-the-river-and-the-rain.pdf",
+    "epub_url": "https://shmindle.com/dl/book-between-the-river-and-the-rain/between-the-river-and-the-rain.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "What the Light Remembers",
     "author": "Blake Andersson",
     "poem_form": "sonnet",
