@@ -1,5 +1,18 @@
 [
   {
+    "title": "What the Light Carries",
+    "author": "Simone Bruno",
+    "poem_form": "sonnet",
+    "poem_count": 25,
+    "haiku_count": 25,
+    "date": "2026-07-01",
+    "slug": "what-the-light-carries",
+    "cover_url": "https://shmindle.com/dl/book-what-the-light-carries/what-the-light-carries.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-light-carries/what-the-light-carries.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-light-carries/what-the-light-carries.epub",
+    "cover_style": "modern"
+  },
+  {
     "title": "Between the River and the Rain",
     "author": "Jordan Chen",
     "poem_form": "haiku",
@@ -2038,19 +2051,6 @@
     "cover_url": "https://shmindle.com/dl/book-the-frequency-of-red-dust/the-frequency-of-red-dust.jpg",
     "pdf_url": "https://shmindle.com/dl/book-the-frequency-of-red-dust/the-frequency-of-red-dust.pdf",
     "epub_url": "https://shmindle.com/dl/book-the-frequency-of-red-dust/the-frequency-of-red-dust.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "What the Light Carries",
-    "author": "Quinn Kim",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-03-06",
-    "slug": "what-the-light-carries",
-    "cover_url": "https://shmindle.com/dl/book-what-the-light-carries/what-the-light-carries.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-what-the-light-carries/what-the-light-carries.pdf",
-    "epub_url": "https://shmindle.com/dl/book-what-the-light-carries/what-the-light-carries.epub",
     "cover_style": "classic"
   },
   {
