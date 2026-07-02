@@ -1,5 +1,18 @@
 [
   {
+    "title": "Grease Under the Fingernails",
+    "author": "Krishna Patel",
+    "poem_form": "sonnet",
+    "poem_count": 25,
+    "haiku_count": 25,
+    "date": "2026-07-02",
+    "slug": "grease-under-the-fingernails",
+    "cover_url": "https://shmindle.com/dl/book-grease-under-the-fingernails/grease-under-the-fingernails.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-grease-under-the-fingernails/grease-under-the-fingernails.pdf",
+    "epub_url": "https://shmindle.com/dl/book-grease-under-the-fingernails/grease-under-the-fingernails.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "Borrowed Light",
     "author": "Morgan Gagnon",
     "poem_form": "haiku",
@@ -1713,19 +1726,6 @@
     "cover_url": "https://shmindle.com/dl/book-but-why/but-why.jpg",
     "pdf_url": "https://shmindle.com/dl/book-but-why/but-why.pdf",
     "epub_url": "https://shmindle.com/dl/book-but-why/but-why.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "Grease Under the Fingernails",
-    "author": "Riley Müller",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-03-21",
-    "slug": "grease-under-the-fingernails",
-    "cover_url": "https://shmindle.com/dl/book-grease-under-the-fingernails/grease-under-the-fingernails.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-grease-under-the-fingernails/grease-under-the-fingernails.pdf",
-    "epub_url": "https://shmindle.com/dl/book-grease-under-the-fingernails/grease-under-the-fingernails.epub",
     "cover_style": "classic"
   },
   {

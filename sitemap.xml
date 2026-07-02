@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://shmindle.com/</loc><lastmod>2026-07-02</lastmod><priority>1.0</priority></url>
+  <url><loc>https://shmindle.com/books/grease-under-the-fingernails.html</loc><lastmod>2026-07-02</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/borrowed-light.html</loc><lastmod>2026-07-02</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/between-one-silence-and-another.html</loc><lastmod>2026-07-02</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/borders-of-the-mouth.html</loc><lastmod>2026-07-02</lastmod><priority>0.8</priority></url>
@@ -133,7 +134,6 @@
   <url><loc>https://shmindle.com/books/dirt-knows-my-name.html</loc><lastmod>2026-03-22</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/the-weight-of-open-hands.html</loc><lastmod>2026-03-22</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/but-why.html</loc><lastmod>2026-03-22</lastmod><priority>0.8</priority></url>
-  <url><loc>https://shmindle.com/books/grease-under-the-fingernails.html</loc><lastmod>2026-03-21</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/what-the-centrifuge-kept.html</loc><lastmod>2026-03-21</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/all-types-of-dance.html</loc><lastmod>2026-03-21</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/every-border-a-river.html</loc><lastmod>2026-03-21</lastmod><priority>0.8</priority></url>
@@ -336,6 +336,7 @@
   <url><loc>https://shmindle.com/books/neon-script-and-sparrows.html</loc><lastmod>2026-02-05</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/tracks-in-fresh-snow.html</loc><lastmod>2026-02-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/stone-lanterns-and-whispers.html</loc><lastmod>2026-02-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://shmindle.com/authors/krishna-patel.html</loc><lastmod>2026-07-02</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/morgan-gagnon.html</loc><lastmod>2026-07-02</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/ash-green.html</loc><lastmod>2026-07-02</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/sage-garcia.html</loc><lastmod>2026-07-02</lastmod><priority>0.7</priority></url>
@@ -458,7 +459,6 @@
   <url><loc>https://shmindle.com/authors/william-kaitel.html</loc><lastmod>2026-03-19</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/sunny-fields.html</loc><lastmod>2026-03-18</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/sky-novak.html</loc><lastmod>2026-03-18</lastmod><priority>0.7</priority></url>
-  <url><loc>https://shmindle.com/authors/krishna-patel.html</loc><lastmod>2026-03-17</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/alex-perez.html</loc><lastmod>2026-03-16</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/robin-lee.html</loc><lastmod>2026-03-10</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/simone-colombo.html</loc><lastmod>2026-03-09</lastmod><priority>0.7</priority></url>
