@@ -65,6 +65,19 @@
     "cover_style": "classic"
   },
   {
+    "title": "What the River Remembers",
+    "author": "Harper Chen",
+    "poem_form": "sonnet",
+    "poem_count": 22,
+    "haiku_count": 22,
+    "date": "2026-07-02",
+    "slug": "what-the-river-remembers",
+    "cover_url": "",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-river-remembers/what-the-river-remembers.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-river-remembers/what-the-river-remembers.epub",
+    "cover_style": "modern"
+  },
+  {
     "title": "Before the City Wakes",
     "author": "Jun Ito",
     "poem_form": "haiku",
