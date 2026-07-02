@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://shmindle.com/</loc><lastmod>2026-07-02</lastmod><priority>1.0</priority></url>
   <url><loc>https://shmindle.com/books/between-one-silence-and-another.html</loc><lastmod>2026-07-02</lastmod><priority>0.8</priority></url>
+  <url><loc>https://shmindle.com/books/borders-of-the-mouth.html</loc><lastmod>2026-07-02</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/what-the-tongue-remembers.html</loc><lastmod>2026-07-02</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/before-the-city-wakes.html</loc><lastmod>2026-07-01</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/what-the-light-carries.html</loc><lastmod>2026-07-01</lastmod><priority>0.8</priority></url>
@@ -333,6 +334,7 @@
   <url><loc>https://shmindle.com/books/tracks-in-fresh-snow.html</loc><lastmod>2026-02-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/books/stone-lanterns-and-whispers.html</loc><lastmod>2026-02-04</lastmod><priority>0.8</priority></url>
   <url><loc>https://shmindle.com/authors/ash-green.html</loc><lastmod>2026-07-02</lastmod><priority>0.7</priority></url>
+  <url><loc>https://shmindle.com/authors/sage-garcia.html</loc><lastmod>2026-07-02</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/riya-kapoor.html</loc><lastmod>2026-07-02</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/jun-ito.html</loc><lastmod>2026-07-01</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/simone-bruno.html</loc><lastmod>2026-07-01</lastmod><priority>0.7</priority></url>
@@ -390,7 +392,6 @@
   <url><loc>https://shmindle.com/authors/alex-hoffmann.html</loc><lastmod>2026-04-17</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/sage-sato.html</loc><lastmod>2026-04-16</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/ariel-santos.html</loc><lastmod>2026-04-16</lastmod><priority>0.7</priority></url>
-  <url><loc>https://shmindle.com/authors/sage-garcia.html</loc><lastmod>2026-04-16</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/aditya-reddy.html</loc><lastmod>2026-04-15</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/diya-kapoor.html</loc><lastmod>2026-04-15</lastmod><priority>0.7</priority></url>
   <url><loc>https://shmindle.com/authors/saanvi-singh.html</loc><lastmod>2026-04-15</lastmod><priority>0.7</priority></url>
