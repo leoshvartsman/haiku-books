@@ -1,5 +1,18 @@
 [
   {
+    "title": "Borrowed Light",
+    "author": "Morgan Gagnon",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-07-02",
+    "slug": "borrowed-light",
+    "cover_url": "",
+    "pdf_url": "https://shmindle.com/dl/book-borrowed-light/borrowed-light.pdf",
+    "epub_url": "https://shmindle.com/dl/book-borrowed-light/borrowed-light.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "Between One Silence and Another",
     "author": "Ash Green",
     "poem_form": "haiku",
@@ -544,19 +557,6 @@
     "pdf_url": "https://shmindle.com/dl/book-the-ball-goes-far/the-ball-goes-far.pdf",
     "epub_url": "https://shmindle.com/dl/book-the-ball-goes-far/the-ball-goes-far.epub",
     "cover_style": "classic"
-  },
-  {
-    "title": "Borrowed Light",
-    "author": "Cruz Hernández",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-04-21",
-    "slug": "borrowed-light",
-    "cover_url": "",
-    "pdf_url": "https://shmindle.com/dl/book-borrowed-light/borrowed-light.pdf",
-    "epub_url": "https://shmindle.com/dl/book-borrowed-light/borrowed-light.epub",
-    "cover_style": "modern"
   },
   {
     "title": "What the Water Carries",
