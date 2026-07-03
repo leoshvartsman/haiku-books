@@ -91,6 +91,19 @@
     "cover_style": "modern"
   },
   {
+    "title": "What the Harbor Remembers",
+    "author": "Alex Patel",
+    "poem_form": "sonnet",
+    "poem_count": 20,
+    "haiku_count": 20,
+    "date": "2026-07-03",
+    "slug": "what-the-harbor-remembers",
+    "cover_url": "",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-harbor-remembers/what-the-harbor-remembers.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-harbor-remembers/what-the-harbor-remembers.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "Grease Under the Fingernails",
     "author": "Krishna Patel",
     "poem_form": "sonnet",
