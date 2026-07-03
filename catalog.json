@@ -65,6 +65,19 @@
     "cover_style": "classic"
   },
   {
+    "title": "The Ledger of Salt",
+    "author": "Riley Sato",
+    "poem_form": "sonnet",
+    "poem_count": 22,
+    "haiku_count": 22,
+    "date": "2026-07-03",
+    "slug": "the-ledger-of-salt",
+    "cover_url": "",
+    "pdf_url": "https://shmindle.com/dl/book-the-ledger-of-salt/the-ledger-of-salt.pdf",
+    "epub_url": "https://shmindle.com/dl/book-the-ledger-of-salt/the-ledger-of-salt.epub",
+    "cover_style": "modern"
+  },
+  {
     "title": "Grease Under the Fingernails",
     "author": "Krishna Patel",
     "poem_form": "sonnet",
