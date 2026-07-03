@@ -13,6 +13,19 @@
     "cover_style": "classic"
   },
   {
+    "title": "Where the Dust Remembers",
+    "author": "Shreya Reddy",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-07-03",
+    "slug": "where-the-dust-remembers",
+    "cover_url": "https://shmindle.com/dl/book-where-the-dust-remembers/where-the-dust-remembers.jpg",
+    "pdf_url": "https://shmindle.com/dl/book-where-the-dust-remembers/where-the-dust-remembers.pdf",
+    "epub_url": "https://shmindle.com/dl/book-where-the-dust-remembers/where-the-dust-remembers.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "The Long Way Home",
     "author": "Nicola Esposito",
     "poem_form": "sonnet",
@@ -2038,19 +2051,6 @@
     "cover_url": "https://shmindle.com/dl/book-the-distance-between-names/the-distance-between-names.jpg",
     "pdf_url": "https://shmindle.com/dl/book-the-distance-between-names/the-distance-between-names.pdf",
     "epub_url": "https://shmindle.com/dl/book-the-distance-between-names/the-distance-between-names.epub",
-    "cover_style": "classic"
-  },
-  {
-    "title": "Where the Dust Remembers",
-    "author": "Robin Lee",
-    "poem_form": "haiku",
-    "poem_count": 250,
-    "haiku_count": 250,
-    "date": "2026-03-10",
-    "slug": "where-the-dust-remembers",
-    "cover_url": "https://shmindle.com/dl/book-where-the-dust-remembers/where-the-dust-remembers.jpg",
-    "pdf_url": "https://shmindle.com/dl/book-where-the-dust-remembers/where-the-dust-remembers.pdf",
-    "epub_url": "https://shmindle.com/dl/book-where-the-dust-remembers/where-the-dust-remembers.epub",
     "cover_style": "classic"
   },
   {
