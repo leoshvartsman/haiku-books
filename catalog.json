@@ -26,6 +26,19 @@
     "cover_style": "modern"
   },
   {
+    "title": "Between Counters",
+    "author": "Jordan White",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-07-03",
+    "slug": "between-counters",
+    "cover_url": "",
+    "pdf_url": "https://shmindle.com/dl/book-between-counters/between-counters.pdf",
+    "epub_url": "https://shmindle.com/dl/book-between-counters/between-counters.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "Grease Under the Fingernails",
     "author": "Krishna Patel",
     "poem_form": "sonnet",
