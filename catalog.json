@@ -13,6 +13,19 @@
     "cover_style": "classic"
   },
   {
+    "title": "What the Concrete Grows",
+    "author": "Jamie White",
+    "poem_form": "sonnet",
+    "poem_count": 25,
+    "haiku_count": 25,
+    "date": "2026-07-04",
+    "slug": "what-the-concrete-grows",
+    "cover_url": "",
+    "pdf_url": "https://shmindle.com/dl/book-what-the-concrete-grows/what-the-concrete-grows.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-the-concrete-grows/what-the-concrete-grows.epub",
+    "cover_style": "modern"
+  },
+  {
     "title": "What the Body Remembers",
     "author": "Alex Singh",
     "poem_form": "haiku",
