@@ -78,6 +78,19 @@
     "cover_style": "modern"
   },
   {
+    "title": "Pipe and Current",
+    "author": "Morgan Kim",
+    "poem_form": "sonnet",
+    "poem_count": 19,
+    "haiku_count": 19,
+    "date": "2026-07-04",
+    "slug": "pipe-and-current",
+    "cover_url": "",
+    "pdf_url": "https://shmindle.com/dl/book-pipe-and-current/pipe-and-current.pdf",
+    "epub_url": "https://shmindle.com/dl/book-pipe-and-current/pipe-and-current.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "What the Body Remembers",
     "author": "Alex Singh",
     "poem_form": "haiku",
