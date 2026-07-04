@@ -39,6 +39,19 @@
     "cover_style": "classic"
   },
   {
+    "title": "What Water Remembers",
+    "author": "Sky Patel",
+    "poem_form": "haiku",
+    "poem_count": 250,
+    "haiku_count": 250,
+    "date": "2026-07-04",
+    "slug": "what-water-remembers",
+    "cover_url": "",
+    "pdf_url": "https://shmindle.com/dl/book-what-water-remembers/what-water-remembers.pdf",
+    "epub_url": "https://shmindle.com/dl/book-what-water-remembers/what-water-remembers.epub",
+    "cover_style": "classic"
+  },
+  {
     "title": "What the Concrete Grows",
     "author": "Jamie White",
     "poem_form": "sonnet",
